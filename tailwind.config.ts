@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Synapse brand colors
+				synapse: {
+          			primary: "#473bbd",
+          			secondary: "#7E69AB",
+          			tertiary: "#6E59A5",
+          			light: "#E5DEFF",
+          			lighter: "#F1F0FB",
+          			dark: "#221F26",
+          			gray: "#8E9196"
+				},
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
+				'medium': '0 6px 30px rgba(0, 0, 0, 0.1)',
 			},
 			keyframes: {
 				'accordion-down': {

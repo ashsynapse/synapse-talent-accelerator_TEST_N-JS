@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +97,29 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter font-bold tracking-tight;
+  }
+}
+
+/* Custom utility classes */
+@layer components {
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-synapse-primary hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border border-synapse-primary text-synapse-primary hover:bg-synapse-light font-medium py-3 px-6 rounded-lg transition-all duration-200;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-24;
   }
 }
