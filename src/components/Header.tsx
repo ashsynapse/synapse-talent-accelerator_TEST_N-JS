@@ -56,9 +56,9 @@ const Header = () => {
           ))}
           <Button
             className="btn-primary ml-4"
-            onClick={() => document.getElementById("demo-form")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() => document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Book a Demo
+            Hire Talent
           </Button>
         </nav>
 
@@ -92,11 +92,11 @@ const Header = () => {
             <Button
               className="btn-primary w-full mt-4"
               onClick={() => {
-                document.getElementById("demo-form")?.scrollIntoView({ behavior: "smooth" });
+                document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" });
                 setMobileMenuOpen(false);
               }}
             >
-              Book a Demo
+              Hire Talent
             </Button>
           </div>
         </nav>

@@ -2,12 +2,10 @@
 import React from "react";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import HowItWorksSection from "../components/HowItWorksSection";
-import IndustriesSection from "../components/IndustriesSection";
-import TestimonialsSection from "../components/TestimonialsSection";
-import CaseStudiesSection from "../components/CaseStudiesSection";
-import FaqSection from "../components/FaqSection";
-import DemoFormSection from "../components/DemoFormSection";
+import KeyMetricsSection from "../components/KeyMetricsSection";
+import IndustryRolesSection from "../components/IndustryRolesSection";
+import PlatformFeaturesSection from "../components/PlatformFeaturesSection";
+import FinalCtaSection from "../components/FinalCtaSection";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -16,12 +14,10 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <HowItWorksSection />
-        <IndustriesSection />
-        <TestimonialsSection />
-        <CaseStudiesSection />
-        <FaqSection />
-        <DemoFormSection />
+        <KeyMetricsSection />
+        <IndustryRolesSection />
+        <PlatformFeaturesSection />
+        <FinalCtaSection />
       </main>
       <Footer />
     </div>

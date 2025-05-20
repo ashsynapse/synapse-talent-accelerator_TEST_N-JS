@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Synapse</div>
             <p className="mb-4 text-gray-300">
-              Tech-enabled recruitment platform delivering pre-vetted candidates within 72 hours through our distributed recruiter network.
+              Global AI-powered recruitment platform automating the entire hiring lifecycle — from job intake to offer — blending artificial intelligence with expert recruiters.
             </p>
             <div className="flex space-x-4">
               {/* Social Media Icons */}
