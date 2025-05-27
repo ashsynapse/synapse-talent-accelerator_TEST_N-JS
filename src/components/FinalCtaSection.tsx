@@ -15,6 +15,7 @@ const FinalCtaSection = () => {
         <div className="flex justify-center">
           <Button 
             className="bg-white text-synapse-primary hover:bg-opacity-90 font-medium py-3 px-8 rounded-lg transition-all duration-200"
+            onClick={() => window.location.href = "mailto:info@synapseint.com"}
           >
             Get in Touch
           </Button>

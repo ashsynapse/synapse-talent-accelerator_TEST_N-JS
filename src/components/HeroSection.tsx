@@ -16,14 +16,14 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               className="btn-primary text-lg py-4 px-8"
-              onClick={() => document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => window.location.href = "mailto:info@synapseint.com"}
             >
               Hire Talent
             </Button>
             <Button 
               variant="outline"
               className="border-2 border-synapse-primary text-synapse-primary bg-white hover:bg-synapse-light text-lg py-4 px-8 rounded-lg transition-all duration-200"
-              onClick={() => window.open("https://synapserecruiternetwork.com", "_blank")}
+              onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
             >
               Join as Recruiter
             </Button>

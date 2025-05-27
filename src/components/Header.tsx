@@ -50,7 +50,7 @@ const Header = () => {
           ))}
           <Button
             className="btn-primary ml-4"
-            onClick={() => document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() => window.location.href = "mailto:info@synapseint.com"}
           >
             Hire Talent
           </Button>
@@ -86,7 +86,7 @@ const Header = () => {
             <Button
               className="btn-primary w-full mt-4"
               onClick={() => {
-                document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" });
+                window.location.href = "mailto:info@synapseint.com";
                 setMobileMenuOpen(false);
               }}
             >
