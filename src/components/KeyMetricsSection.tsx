@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const metrics = [
   {
@@ -22,12 +23,18 @@ const metrics = [
 ];
 
 const KeyMetricsSection = () => {
+  const { addToRefs } = useScrollAnimation({ staggerDelay: 150 });
+
   return (
     <section className="py-16 bg-white">
       <div className="container-wide">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {metrics.map((metric, index) => (
-            <Card key={index} className="border-none shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <Card 
+              key={index} 
+              ref={addToRefs}
+              className="border-none shadow-soft hover:shadow-medium transition-shadow duration-300 scroll-animate"
+            >
               <CardContent className="p-6 flex flex-col items-center justify-center text-center">
                 <h3 className="text-3xl md:text-4xl font-bold text-synapse-primary mb-2">{metric.value}</h3>
                 <p className="text-synapse-dark font-medium">{metric.label}</p>

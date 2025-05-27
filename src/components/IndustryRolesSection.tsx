@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Code, Briefcase, Users, Globe, Building, Handshake } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const industries = [
   {
@@ -47,6 +48,8 @@ const industries = [
 ];
 
 const IndustryRolesSection = () => {
+  const { addToRefs } = useScrollAnimation({ staggerDelay: 100 });
+
   return (
     <section className="py-20 bg-synapse-lighter">
       <div className="container-wide">
@@ -59,7 +62,11 @@ const IndustryRolesSection = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {industries.map((industry, index) => (
-            <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300">
+            <Card 
+              key={index} 
+              ref={addToRefs}
+              className="border hover:border-synapse-primary transition-colors duration-300 scroll-animate"
+            >
               <CardContent className="p-6">
                 <div className="mb-4 text-synapse-primary">
                   {industry.icon}

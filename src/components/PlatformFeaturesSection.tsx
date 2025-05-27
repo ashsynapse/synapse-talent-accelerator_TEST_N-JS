@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Globe, Brain, Users, Clock } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const features = [
   {
@@ -27,6 +28,8 @@ const features = [
 ];
 
 const PlatformFeaturesSection = () => {
+  const { addToRefs } = useScrollAnimation({ staggerDelay: 120 });
+
   return (
     <section className="py-20 bg-white">
       <div className="container-wide">
@@ -39,7 +42,11 @@ const PlatformFeaturesSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border border-gray-200 hover:border-synapse-primary transition-all duration-300">
+            <Card 
+              key={index} 
+              ref={addToRefs}
+              className="border border-gray-200 hover:border-synapse-primary transition-all duration-300 scroll-animate"
+            >
               <CardContent className="p-6">
                 <div className="mb-4 text-synapse-primary">
                   {feature.icon}

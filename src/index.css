@@ -105,6 +105,28 @@
   }
 }
 
+/* Scroll Animation Styles */
+@layer components {
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-scroll-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-animate {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
 /* Custom utility classes */
 @layer components {
   .container-wide {
