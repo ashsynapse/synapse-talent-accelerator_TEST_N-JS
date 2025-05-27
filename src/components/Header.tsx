@@ -19,13 +19,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#" },
-    { label: "Employers", href: "#" },
-    { label: "Recruiters", href: "#" },
-    { label: "Product", href: "#" },
-    { label: "Solutions", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Contact", href: "#final-cta" },
   ];
 
   return (

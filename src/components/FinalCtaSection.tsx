@@ -12,17 +12,11 @@ const FinalCtaSection = () => {
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
           Join us in revolutionizing recruitment. Whether you're hiring talent or building pipelines — Synapse is your platform.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <Button 
             className="bg-white text-synapse-primary hover:bg-opacity-90 font-medium py-3 px-8 rounded-lg transition-all duration-200"
           >
             Get in Touch
-          </Button>
-          <Button 
-            variant="outline"
-            className="border-2 border-white text-white bg-transparent hover:bg-white/10 font-medium py-3 px-8 rounded-lg transition-all duration-200"
-          >
-            Explore Jobs
           </Button>
         </div>
       </div>

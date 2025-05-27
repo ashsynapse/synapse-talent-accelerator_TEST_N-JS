@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, Brain, Users, Code } from "lucide-react";
+import { Globe, Brain, Users, Clock } from "lucide-react";
 
 const features = [
   {
@@ -10,19 +10,19 @@ const features = [
     description: "Access 1,000+ specialized recruiters across 50+ countries, all vetted and performance-tracked"
   },
   {
-    icon: <Code size={32} />,
+    icon: <Brain size={32} />,
     title: "AI-Powered Workflow",
     description: "Automated candidate sourcing, screening, and interview scheduling to reduce time-to-hire"
   },
   {
     icon: <Brain size={32} />,
     title: "Precision Matching",
-    description: "Our proprietary algorithm matches candidates to roles with 94% accuracy"
+    description: "Reinforcement-trained LLMs ensure best-fit talent. Our proprietary algorithm matches candidates to roles with 94% accuracy"
   },
   {
-    icon: <Users size={32} />,
-    title: "Human Support, Always",
-    description: "Expert recruitment professionals available 24/7 to assist with your hiring needs"
+    icon: <Clock size={32} />,
+    title: "Fastest Time-to-Hire",
+    description: "Our AI + recruiter system fills roles in days—not months—accelerating growth and saving weeks of manual effort."
   }
 ];
 
