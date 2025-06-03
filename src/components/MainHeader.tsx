@@ -126,7 +126,7 @@ const MainHeader = () => {
           <div className="flex items-center ml-8">
             <Button
               className="btn-primary"
-              onClick={() => window.location.href = "mailto:info@synapseint.com"}
+              onClick={() => window.location.href = "/contact"}
             >
               Book Demo
             </Button>
@@ -178,7 +178,7 @@ const MainHeader = () => {
               <Button
                 className="btn-primary w-full"
                 onClick={() => {
-                  window.location.href = "mailto:info@synapseint.com";
+                  window.location.href = "/contact";
                   setMobileMenuOpen(false);
                 }}
               >

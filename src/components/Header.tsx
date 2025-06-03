@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -49,7 +50,7 @@ const Header = () => {
           ))}
           <Button
             className="btn-primary ml-4"
-            onClick={() => window.location.href = "mailto:info@synapseint.com"}
+            onClick={() => window.location.href = "/contact"}
           >
             Hire Talent
           </Button>
@@ -85,7 +86,7 @@ const Header = () => {
             <Button
               className="btn-primary w-full mt-4"
               onClick={() => {
-                window.location.href = "mailto:info@synapseint.com";
+                window.location.href = "/contact";
                 setMobileMenuOpen(false);
               }}
             >
