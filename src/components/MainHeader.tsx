@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -95,7 +96,7 @@ const MainHeader = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-1">
+        <nav className="hidden lg:flex items-center space-x-1 ml-12">
           {navItems.map((item) => (
             <div key={item.label} className="relative group">
               <a
@@ -107,7 +108,7 @@ const MainHeader = () => {
               </a>
               
               {item.submenu && (
-                <div className="absolute top-full left-0 w-64 bg-white shadow-medium border border-gray-100 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute top-full left-0 w-64 bg-white shadow-medium border border-gray-100 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   {item.submenu.map((subItem) => (
                     <a
                       key={subItem.label}
@@ -122,19 +123,12 @@ const MainHeader = () => {
             </div>
           ))}
           
-          <div className="flex items-center space-x-3 ml-6">
-            <Button
-              variant="outline"
-              className="border-synapse-primary text-synapse-primary hover:bg-synapse-light"
-              onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
-            >
-              Join as Recruiter
-            </Button>
+          <div className="flex items-center ml-8">
             <Button
               className="btn-primary"
               onClick={() => window.location.href = "mailto:info@synapseint.com"}
             >
-              Hire Talent
+              Book Demo
             </Button>
           </div>
         </nav>
@@ -182,23 +176,13 @@ const MainHeader = () => {
             
             <div className="flex flex-col space-y-3 mt-6 pt-4 border-t border-gray-200">
               <Button
-                variant="outline"
-                className="border-synapse-primary text-synapse-primary hover:bg-synapse-light w-full"
-                onClick={() => {
-                  window.open("https://app.synapserecruiternetwork.com/", "_blank");
-                  setMobileMenuOpen(false);
-                }}
-              >
-                Join as Recruiter
-              </Button>
-              <Button
                 className="btn-primary w-full"
                 onClick={() => {
                   window.location.href = "mailto:info@synapseint.com";
                   setMobileMenuOpen(false);
                 }}
               >
-                Hire Talent
+                Book Demo
               </Button>
             </div>
           </div>
