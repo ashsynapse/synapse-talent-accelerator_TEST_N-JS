@@ -19,8 +19,8 @@ const LogoCarousel = () => {
     { name: "Meta", logo: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=150&h=50&fit=crop&crop=center&q=80" },
   ];
 
-  // Duplicate the companies array to create seamless looping
-  const duplicatedCompanies = [...companies, ...companies];
+  // Triple the companies array to create truly seamless looping
+  const tripleCompanies = [...companies, ...companies, ...companies];
 
   return (
     <section className="py-8 bg-gray-50 border-y border-gray-100">
@@ -29,33 +29,10 @@ const LogoCarousel = () => {
           Trusted by Leading Companies
         </h2>
         
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-            dragFree: true,
-            slidesToScroll: 1,
-            speed: 12,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 0,
-              jump: false,
-              stopOnInteraction: false,
-              stopOnMouseEnter: false,
-              stopOnLastSnap: false,
-            }),
-          ]}
-          className="w-full max-w-6xl mx-auto"
-        >
-          <CarouselContent 
-            className="-ml-2"
-            style={{
-              animation: 'scroll-left 12s linear infinite',
-            }}
-          >
-            {duplicatedCompanies.map((company, index) => (
-              <CarouselItem key={`${company.name}-${index}`} className="pl-2 basis-1/3 md:basis-1/4 lg:basis-1/6 flex-shrink-0">
+        <div className="w-full max-w-6xl mx-auto overflow-hidden">
+          <div className="flex animate-scroll-left">
+            {tripleCompanies.map((company, index) => (
+              <div key={`${company.name}-${index}`} className="flex-shrink-0 w-48 mx-4">
                 <div className="flex items-center justify-center h-16 bg-white rounded-lg border border-gray-100 hover:shadow-sm transition-shadow duration-300 p-4">
                   <img
                     src={company.logo}
@@ -66,22 +43,29 @@ const LogoCarousel = () => {
                     }}
                   />
                 </div>
-              </CarouselItem>
+              </div>
             ))}
-          </CarouselContent>
-        </Carousel>
+          </div>
+        </div>
       </div>
 
-      <style jsx>{`
-        @keyframes scroll-left {
-          0% {
-            transform: translateX(0);
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          @keyframes scroll-left {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-100% / 3));
+            }
           }
-          100% {
-            transform: translateX(-50%);
+          
+          .animate-scroll-left {
+            animation: scroll-left 12s linear infinite;
+            width: max-content;
           }
-        }
-      `}</style>
+        `
+      }} />
     </section>
   );
 };
