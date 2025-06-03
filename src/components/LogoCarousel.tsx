@@ -61,7 +61,7 @@ const LogoCarousel = () => {
           }
           
           .animate-scroll-left {
-            animation: scroll-left 12s linear infinite;
+            animation: scroll-left 24s linear infinite;
             width: max-content;
           }
         `
