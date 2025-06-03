@@ -19,6 +19,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
+    { label: "Home", href: "/" },
+    { label: "Employers", href: "#employers" },
+    { label: "Recruiters", href: "#recruiters" },
+    { label: "Product", href: "#product" },
+    { label: "Solutions", href: "#solutions" },
+    { label: "Blog", href: "#blog" },
     { label: "Contact", href: "#final-cta" },
   ];
 
