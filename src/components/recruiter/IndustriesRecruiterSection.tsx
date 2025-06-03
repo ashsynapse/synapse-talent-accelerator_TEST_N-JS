@@ -1,6 +1,6 @@
-
 import React from "react";
 import { Building, Heart, TrendingUp, Truck, Users, Briefcase } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const IndustriesRecruiterSection = () => {
   const industries = [

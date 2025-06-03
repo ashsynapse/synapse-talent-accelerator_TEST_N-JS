@@ -1,6 +1,6 @@
-
 import React from "react";
-import { Check, Clock, Globe, TrendingUp } from "lucide-react";
+import { Check, Clock, Globe, TrendingUp, DollarSign } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const WhyJoinSRNSection = () => {
   const benefits = [
