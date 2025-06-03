@@ -19,6 +19,9 @@ const LogoCarousel = () => {
     { name: "Meta", logo: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=150&h=50&fit=crop&crop=center&q=80" },
   ];
 
+  // Duplicate the companies array to create seamless looping
+  const duplicatedCompanies = [...companies, ...companies];
+
   return (
     <section className="py-8 bg-gray-50 border-y border-gray-100">
       <div className="container-wide">
@@ -31,19 +34,28 @@ const LogoCarousel = () => {
             align: "start",
             loop: true,
             dragFree: true,
+            slidesToScroll: 1,
+            speed: 12,
           }}
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 0,
+              jump: false,
               stopOnInteraction: false,
-              stopOnMouseEnter: true,
+              stopOnMouseEnter: false,
+              stopOnLastSnap: false,
             }),
           ]}
           className="w-full max-w-6xl mx-auto"
         >
-          <CarouselContent className="-ml-2">
-            {companies.map((company, index) => (
-              <CarouselItem key={index} className="pl-2 basis-1/3 md:basis-1/4 lg:basis-1/6">
+          <CarouselContent 
+            className="-ml-2"
+            style={{
+              animation: 'scroll-left 12s linear infinite',
+            }}
+          >
+            {duplicatedCompanies.map((company, index) => (
+              <CarouselItem key={`${company.name}-${index}`} className="pl-2 basis-1/3 md:basis-1/4 lg:basis-1/6 flex-shrink-0">
                 <div className="flex items-center justify-center h-16 bg-white rounded-lg border border-gray-100 hover:shadow-sm transition-shadow duration-300 p-4">
                   <img
                     src={company.logo}
@@ -59,6 +71,17 @@ const LogoCarousel = () => {
           </CarouselContent>
         </Carousel>
       </div>
+
+      <style jsx>{`
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
     </section>
   );
 };
