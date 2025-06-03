@@ -1,6 +1,6 @@
 
 import React from "react";
-import MainHeader from "../components/MainHeader";
+import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import KeyMetricsSection from "../components/KeyMetricsSection";
 import IndustryRolesSection from "../components/IndustryRolesSection";
@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <MainHeader />
+      <Header />
       <main>
         <HeroSection />
         <KeyMetricsSection />
