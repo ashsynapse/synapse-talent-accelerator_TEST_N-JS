@@ -7,6 +7,7 @@ import LogoCarousel from "../components/LogoCarousel";
 import IndustryRolesSection from "../components/IndustryRolesSection";
 import PlatformFeaturesSection from "../components/PlatformFeaturesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
+import NewsletterSignup from "../components/NewsletterSignup";
 import FinalCtaSection from "../components/FinalCtaSection";
 import Footer from "../components/Footer";
 
@@ -21,6 +22,7 @@ const Home = () => {
         <IndustryRolesSection />
         <PlatformFeaturesSection />
         <TestimonialsSection />
+        <NewsletterSignup />
         <FinalCtaSection />
       </main>
       <Footer />
