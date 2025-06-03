@@ -98,24 +98,6 @@ const TestimonialsSection = () => {
             <CarouselNext className="hidden md:flex -right-12" />
           </Carousel>
         </div>
-
-        <div className="mt-16 pt-12 border-t border-gray-100">
-          <h3 className="text-xl font-bold text-synapse-dark text-center mb-8">
-            Trusted by Leading Companies
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
-            {Array.from({ length: 6 }).map((_, index) => (
-              <div
-                key={index}
-                className="h-10 w-32 bg-gray-100 rounded-md flex items-center justify-center"
-              >
-                <span className="text-synapse-gray text-sm font-medium">
-                  COMPANY {index + 1}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
