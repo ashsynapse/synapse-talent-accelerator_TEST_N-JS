@@ -6,6 +6,7 @@ import KeyMetricsSection from "../components/KeyMetricsSection";
 import IndustryRolesSection from "../components/IndustryRolesSection";
 import PlatformFeaturesSection from "../components/PlatformFeaturesSection";
 import FinalCtaSection from "../components/FinalCtaSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <PlatformFeaturesSection />
         <FinalCtaSection />
       </main>
+      <Footer />
     </div>
   );
 };
