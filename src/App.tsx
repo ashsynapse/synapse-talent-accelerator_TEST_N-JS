@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Home from "./pages/Home";
 import RecruitmentSolutions from "./pages/RecruitmentSolutions";
 import Industries from "./pages/Industries";
+import Recruiters from "./pages/Recruiters";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/home" element={<Home />} />
           <Route path="/recruitment-solutions" element={<RecruitmentSolutions />} />
           <Route path="/industries" element={<Industries />} />
+          <Route path="/recruiters" element={<Recruiters />} />
           {/* Placeholder routes for future implementation */}
           <Route path="/recruitment-tools" element={<div>Recruitment Tools - Coming Soon</div>} />
           <Route path="/locations" element={<div>Locations - Coming Soon</div>} />
