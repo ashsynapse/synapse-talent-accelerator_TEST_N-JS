@@ -20,33 +20,40 @@ const MainHeader = () => {
 
   const navItems = [
     { 
-      label: "Recruitment Solutions", 
+      label: "Solutions", 
       href: "/recruitment-solutions",
       submenu: [
         { label: "Passive Recruitment", href: "/recruitment-solutions/passive-recruitment" },
-        { label: "Active Recruitment", href: "/recruitment-solutions/active-recruitment" },
+        { label: "Candidate Sourcing", href: "/recruitment-solutions/candidate-sourcing" },
+        { label: "Project Staffing", href: "/recruitment-solutions/project-staffing" },
         { label: "Executive Search", href: "/recruitment-solutions/executive-search" },
-        { label: "Contract Staffing", href: "/recruitment-solutions/contract-staffing" }
+        { label: "Remote Staffing", href: "/recruitment-solutions/remote-staffing" },
+        { label: "Permanent Staffing", href: "/recruitment-solutions/permanent-staffing" },
+        { label: "Contingent Staffing", href: "/recruitment-solutions/contingent-staffing" },
+        { label: "Apprenticeship Recruitment", href: "/recruitment-solutions/apprenticeship-recruitment" }
       ]
     },
     { 
-      label: "Recruitment Tools", 
+      label: "Products", 
       href: "/recruitment-tools",
       submenu: [
         { label: "AI Candidate Sourcing", href: "/recruitment-tools/ai-candidate-sourcing" },
-        { label: "Automated Screening", href: "/recruitment-tools/automated-screening" },
-        { label: "Interview Scheduling", href: "/recruitment-tools/interview-scheduling" },
-        { label: "Performance Analytics", href: "/recruitment-tools/performance-analytics" }
+        { label: "Pre-Employment Screening", href: "/recruitment-tools/pre-employment-screening" },
+        { label: "AI Resume Screening", href: "/recruitment-tools/ai-resume-screening" }
       ]
     },
     { 
       label: "Industries", 
       href: "/industries",
       submenu: [
-        { label: "IT Recruitment", href: "/industries/IT-recruitment-solutions" },
-        { label: "Healthcare Recruitment", href: "/industries/healthcare-recruitment-solutions" },
-        { label: "Finance Recruitment", href: "/industries/finance-recruitment-solutions" },
-        { label: "Manufacturing", href: "/industries/manufacturing-recruitment-solutions" }
+        { label: "Information Technology", href: "/industries/information-technology" },
+        { label: "Digital Marketing", href: "/industries/digital-marketing" },
+        { label: "Engineering", href: "/industries/engineering" },
+        { label: "Human Resources (HR)", href: "/industries/human-resources" },
+        { label: "Sales", href: "/industries/sales" },
+        { label: "Accounting", href: "/industries/accounting" },
+        { label: "Legal", href: "/industries/legal" },
+        { label: "Manufacturing", href: "/industries/manufacturing" }
       ]
     },
     { 
