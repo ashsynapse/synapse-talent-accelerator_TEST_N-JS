@@ -11,6 +11,7 @@ import RecruitmentSolutions from "./pages/RecruitmentSolutions";
 import Industries from "./pages/Industries";
 import Recruiters from "./pages/Recruiters";
 import Contact from "./pages/Contact";
+import Locations from "./pages/Locations";
 import NotFound from "./pages/NotFound";
 
 // Create QueryClient with proper configuration
@@ -37,9 +38,9 @@ const App = () => {
             <Route path="/industries" element={<Industries />} />
             <Route path="/recruiters" element={<Recruiters />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/locations" element={<Locations />} />
             {/* Placeholder routes for future implementation */}
             <Route path="/recruitment-tools" element={<div>Recruitment Tools - Coming Soon</div>} />
-            <Route path="/locations" element={<div>Locations - Coming Soon</div>} />
             <Route path="/resources" element={<div>Resources - Coming Soon</div>} />
             <Route path="/for-employers" element={<div>For Employers - Coming Soon</div>} />
             <Route path="/for-recruiters" element={<div>For Recruiters - Coming Soon</div>} />
