@@ -7,7 +7,6 @@ import HowItWorksRecruiterSection from "../components/recruiter/HowItWorksRecrui
 import WhyJoinSRNSection from "../components/recruiter/WhyJoinSRNSection";
 import IndustriesRecruiterSection from "../components/recruiter/IndustriesRecruiterSection";
 import RecruiterFinalCTASection from "../components/recruiter/RecruiterFinalCTASection";
-import KPIPerformanceSection from "../components/KPIPerformanceSection";
 
 const Recruiters = () => {
   return (
@@ -17,7 +16,6 @@ const Recruiters = () => {
     >
       <div className="min-h-screen">
         <RecruiterHeroSection />
-        <KPIPerformanceSection />
         <HowItWorksRecruiterSection />
         <WhyJoinSRNSection />
         <IndustriesRecruiterSection />
