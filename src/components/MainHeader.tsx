@@ -185,22 +185,6 @@ const MainHeader = () => {
           </div>
         </nav>
       )}
-
-      {/* Features Bar */}
-      <div className="mt-2 flex items-center justify-center gap-6 text-synapse-gray text-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-          <span>72h delivery</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-          <span>AI-powered matching</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-          <span>Global talent pool</span>
-        </div>
-      </div>
     </header>
   );
 };

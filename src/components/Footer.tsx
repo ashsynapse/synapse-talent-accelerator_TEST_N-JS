@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-synapse-dark text-white pt-16 pb-8">
       <div className="container-wide">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 pb-12">
           <div className="col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Synapse</div>
             <p className="mb-4 text-gray-300">
@@ -52,8 +52,6 @@ const Footer = () => {
                 "Enterprise",
                 "Case Studies",
                 "Industries",
-                "USA",
-                "Canada",
               ].map((item) => (
                 <li key={item}>
                   <a
@@ -61,6 +59,25 @@ const Footer = () => {
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-4">Locations</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "USA", href: "/locations" },
+                { label: "Canada", href: "/locations" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item.label}
                   </a>
                 </li>
               ))}
