@@ -1,28 +1,39 @@
+
 import React from "react";
-import { Check, Clock, Globe, TrendingUp, DollarSign } from "lucide-react";
+import { DollarSign, Bot, FileText, GraduationCap, Briefcase, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhyJoinSRNSection = () => {
   const benefits = [
     {
-      icon: <Clock className="h-8 w-8 text-synapse-primary" />,
-      title: "Fast Placements with Hiring-Ready Clients",
-      description: "Work with pre-qualified companies that are ready to hire, reducing time-to-placement by 60%."
-    },
-    {
-      icon: <Check className="h-8 w-8 text-synapse-primary" />,
-      title: "Vetted Opportunities Across Multiple Industries",
-      description: "Access curated job openings in tech, healthcare, finance, and more - all verified and active."
-    },
-    {
       icon: <DollarSign className="h-8 w-8 text-synapse-primary" />,
-      title: "Transparent and Automated Payouts",
-      description: "Clear commission structure with automated payments. No chasing invoices or delayed payments."
+      title: "Earn $10K+ per hire",
+      description: "Clear 50% commission structure built for serious recruiters"
+    },
+    {
+      icon: <Bot className="h-8 w-8 text-synapse-primary" />,
+      title: "AI-powered sourcing tools and automations",
+      description: "Accelerate candidate discovery and outreach with tech-first workflows"
+    },
+    {
+      icon: <FileText className="h-8 w-8 text-synapse-primary" />,
+      title: "Outreach playbooks and job guides",
+      description: "Use proven templates, strategies, and recruiter best practices for higher conversions"
+    },
+    {
+      icon: <GraduationCap className="h-8 w-8 text-synapse-primary" />,
+      title: "Continuous recruiter enablement",
+      description: "Grow your skills with free training and support from industry pros"
+    },
+    {
+      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />,
+      title: "Hundreds of verified roles weekly",
+      description: "Access active job openings in tech, healthcare, legal, finance, and more"
     },
     {
       icon: <Globe className="h-8 w-8 text-synapse-primary" />,
-      title: "100% Remote and Flexible Work Model",
-      description: "Work from anywhere, set your own hours, and scale your recruiting business on your terms."
+      title: "Global recruiter community",
+      description: "Collaborate across 25+ countries with high-performing peers"
     }
   ];
 
@@ -34,7 +45,7 @@ const WhyJoinSRNSection = () => {
             Why Join SRN?
           </h2>
           <p className="text-lg text-synapse-gray">
-            Unlike traditional recruiting platforms, SRN provides the tools, support, and opportunities you need to succeed.
+            Join 1,000+ independent, freelance, and full-time recruiters building their own recruiting businesses or earning supplemental income with top-paying roles, AI tools, and expert community support.
           </p>
         </div>
 
@@ -54,6 +65,12 @@ const WhyJoinSRNSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 bg-white rounded-xl p-8 md:p-12 text-center border-l-4 border-synapse-primary shadow-soft">
+          <blockquote className="text-xl md:text-2xl font-medium text-synapse-dark mb-6 italic">
+            "SRN is built for modern recruiters who want speed, scale, and freedom. No fluff—just tools, jobs, and results."
+          </blockquote>
         </div>
 
         <div className="mt-16 bg-synapse-primary rounded-xl p-8 md:p-12 text-white text-center">
