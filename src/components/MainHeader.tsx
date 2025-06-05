@@ -23,14 +23,14 @@ const MainHeader = () => {
       label: "Solutions", 
       href: "/recruitment-solutions",
       submenu: [
-        { label: "Passive Recruitment", href: "/recruitment-solutions/passive-recruitment" },
-        { label: "Candidate Sourcing", href: "/recruitment-solutions/candidate-sourcing" },
+        { label: "Passive AI Sourcing", href: "/recruitment-solutions/passive-recruitment" },
+        { label: "AI Candidate Discovery", href: "/recruitment-solutions/candidate-sourcing" },
         { label: "Project Staffing", href: "/recruitment-solutions/project-staffing" },
         { label: "Executive Search", href: "/recruitment-solutions/executive-search" },
         { label: "Remote Staffing", href: "/recruitment-solutions/remote-staffing" },
-        { label: "Permanent Staffing", href: "/recruitment-solutions/permanent-staffing" },
+        { label: "Permanent Placement", href: "/recruitment-solutions/permanent-staffing" },
         { label: "Contingent Staffing", href: "/recruitment-solutions/contingent-staffing" },
-        { label: "Apprenticeship Recruitment", href: "/recruitment-solutions/apprenticeship-recruitment" }
+        { label: "Apprenticeship AI Sourcing", href: "/recruitment-solutions/apprenticeship-recruitment" }
       ]
     },
     { 
@@ -38,8 +38,8 @@ const MainHeader = () => {
       href: "/recruitment-tools",
       submenu: [
         { label: "AI Candidate Sourcing", href: "/recruitment-tools/ai-candidate-sourcing" },
-        { label: "Pre-Employment Screening", href: "/recruitment-tools/pre-employment-screening" },
-        { label: "AI Resume Screening", href: "/recruitment-tools/ai-resume-screening" }
+        { label: "Pre-Employment AI Screening", href: "/recruitment-tools/pre-employment-screening" },
+        { label: "AI Resume Analysis", href: "/recruitment-tools/ai-resume-screening" }
       ]
     },
     { 
@@ -73,7 +73,8 @@ const MainHeader = () => {
         { label: "Team", href: "/company/team" },
         { label: "Careers", href: "/company/careers" },
         { label: "FAQ", href: "/company/faq" },
-        { label: "Contact", href: "/company/contact" }
+        { label: "Recruiter", href: "/recruiters" },
+        { label: "Contact Us", href: "/company/contact" }
       ]
     }
   ];

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Synapse</div>
             <p className="mb-4 text-gray-300">
-              Global AI-powered recruitment platform automating the entire hiring lifecycle — from job intake to offer — blending artificial intelligence with expert recruiters.
+              Global AI-powered talent acquisition platform automating the entire hiring lifecycle — from job intake to offer — with autonomous AI agents for infinite scale.
             </p>
             <div className="flex space-x-4">
               <a
@@ -52,14 +52,14 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Solutions</h4>
             <ul className="space-y-2">
               {[
-                { label: "Passive Recruitment", href: "/recruitment-solutions" },
-                { label: "Candidate Sourcing", href: "/recruitment-solutions" }, 
+                { label: "Passive AI Sourcing", href: "/recruitment-solutions" },
+                { label: "AI Candidate Discovery", href: "/recruitment-solutions" }, 
                 { label: "Project Staffing", href: "/recruitment-solutions" },
                 { label: "Executive Search", href: "/recruitment-solutions" },
                 { label: "Remote Staffing", href: "/recruitment-solutions" },
-                { label: "Permanent Staffing", href: "/recruitment-solutions" },
+                { label: "Permanent Placement", href: "/recruitment-solutions" },
                 { label: "Contingent Staffing", href: "/recruitment-solutions" },
-                { label: "Apprenticeship Recruitment", href: "/recruitment-solutions" }
+                { label: "Apprenticeship AI Sourcing", href: "/recruitment-solutions" }
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -78,8 +78,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {[
                 { label: "AI Candidate Sourcing", href: "/recruitment-tools" },
-                { label: "Pre-Employment Screening", href: "/recruitment-tools" },
-                { label: "AI Resume Screening", href: "/recruitment-tools" }
+                { label: "Pre-Employment AI Screening", href: "/recruitment-tools" },
+                { label: "AI Resume Analysis", href: "/recruitment-tools" }
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -160,7 +160,8 @@ const Footer = () => {
                 { label: "About Us", href: "/company/about" },
                 { label: "Team", href: "/company/team" },
                 { label: "Careers", href: "/company/careers" },
-                { label: "FAQ", href: "/company/faq" }
+                { label: "FAQ", href: "/company/faq" },
+                { label: "Recruiter", href: "/recruiters" }
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -176,7 +177,7 @@ const Footer = () => {
                   href="mailto:info@synapseint.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Contact
+                  Contact Us
                 </a>
               </li>
             </ul>

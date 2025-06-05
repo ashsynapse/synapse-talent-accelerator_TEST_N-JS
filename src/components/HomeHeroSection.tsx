@@ -12,22 +12,24 @@ const HomeHeroSection = () => {
             <span className="block text-synapse-primary">Hiring on Autopilot.</span>
           </h1>
           <p className="text-xl md:text-2xl text-synapse-gray mb-10 leading-relaxed max-w-4xl mx-auto">
-            We're building the world's first fully autonomous AI recruiting engine—capable of filling tens of thousands of jobs without a single human recruiter.
+            We're building the world's first fully autonomous AI talent acquisition engine—capable of filling tens of thousands of jobs without a single human touch.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex justify-center items-center mb-12">
             <Button 
-              className="btn-primary text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-shadow"
+              className="relative overflow-hidden bg-gradient-to-r from-synapse-primary to-synapse-secondary hover:from-synapse-secondary hover:to-synapse-primary text-white font-semibold text-lg py-6 px-10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
               onClick={() => window.location.href = "/contact"}
             >
-              Deploy AI Hiring
-            </Button>
-            <Button 
-              variant="outline"
-              className="border-2 border-synapse-primary text-synapse-primary bg-white hover:bg-synapse-light text-lg py-4 px-8 rounded-lg transition-all duration-200 shadow-soft hover:shadow-medium"
-              onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
-            >
-              View Platform
+              {/* Animated border effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+              
+              {/* Subtle glow animation */}
+              <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary/50 to-synapse-secondary/50 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+              
+              <span className="relative z-10 flex items-center gap-2">
+                Deploy AI Hiring
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              </span>
             </Button>
           </div>
 
