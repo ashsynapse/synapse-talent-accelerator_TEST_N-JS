@@ -1,81 +1,100 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Briefcase, TrendingUp, Brain, Users } from "lucide-react";
+import { Building2, Briefcase, TrendingUp, Brain, Users, Sparkles } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const KPIPerformanceSection = () => {
+  const { addToRefs } = useScrollAnimation();
+
   const kpis = [
     {
       value: "700+",
       label: "Clients Served",
-      icon: <Building2 className="h-8 w-8 text-synapse-primary" />,
-      bgGradient: "from-synapse-primary/10 to-synapse-secondary/10"
+      icon: <Building2 className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-primary to-synapse-secondary",
+      delay: "0ms"
     },
     {
       value: "1,000+",
       label: "Roles Filled",
-      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />,
-      bgGradient: "from-synapse-secondary/10 to-synapse-tertiary/10"
+      icon: <Briefcase className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-secondary to-synapse-tertiary",
+      delay: "100ms"
     },
     {
       value: "300%",
       label: "YoY Growth",
-      icon: <TrendingUp className="h-8 w-8 text-synapse-primary" />,
-      bgGradient: "from-synapse-tertiary/10 to-synapse-primary/10"
+      icon: <TrendingUp className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-tertiary to-synapse-primary",
+      delay: "200ms"
     },
     {
       value: "95%",
       label: "AI Matching Accuracy",
-      icon: <Brain className="h-8 w-8 text-synapse-primary" />,
-      bgGradient: "from-synapse-primary/10 to-synapse-light/20"
+      icon: <Brain className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-primary to-synapse-light",
+      delay: "300ms"
     },
     {
       value: "96%",
       label: "Client Retention",
-      icon: <Users className="h-8 w-8 text-synapse-primary" />,
-      bgGradient: "from-synapse-secondary/10 to-synapse-primary/10"
+      icon: <Users className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-secondary to-synapse-primary",
+      delay: "400ms"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 20% 80%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-primary')} 0%, transparent 50%), radial-gradient(circle at 80% 20%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-secondary')} 0%, transparent 50%)`
-        }}></div>
+    <section className="py-24 bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-40 h-40 bg-synapse-primary rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-32 h-32 bg-synapse-secondary rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-synapse-tertiary rounded-full blur-xl animate-pulse" style={{ animationDelay: '4s' }}></div>
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-synapse-light/20 px-4 py-2 rounded-full mb-4">
-            <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-synapse-primary">Performance Metrics</span>
+        <div className="text-center mb-20">
+          <div 
+            ref={addToRefs}
+            className="scroll-animate inline-flex items-center gap-2 bg-gradient-to-r from-synapse-primary/10 to-synapse-secondary/10 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-synapse-light/30"
+          >
+            <Sparkles className="h-4 w-4 text-synapse-primary animate-pulse" />
+            <span className="text-sm font-semibold text-synapse-primary uppercase tracking-wide">Performance Metrics</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-synapse-dark mb-4">
-            Performance That Speaks for Itself
+          <h2 
+            ref={addToRefs}
+            className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight"
+          >
+            Performance That 
+            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> Speaks</span>
           </h2>
-          <p className="text-lg text-synapse-gray max-w-2xl mx-auto">
-            Our numbers reflect our commitment to delivering exceptional recruiting results for our clients.
+          <p 
+            ref={addToRefs}
+            className="scroll-animate text-xl text-synapse-gray max-w-3xl mx-auto leading-relaxed"
+          >
+            Our numbers reflect our commitment to delivering exceptional recruiting results for our clients worldwide.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {kpis.map((kpi, index) => (
             <Card 
               key={index} 
-              className="border-none shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2 group overflow-hidden relative"
-              style={{ animationDelay: `${index * 100}ms` }}
+              ref={addToRefs}
+              className="scroll-animate border-none shadow-soft hover:shadow-xl transition-all duration-700 hover:-translate-y-4 group overflow-hidden relative bg-white/80 backdrop-blur-sm"
+              style={{ animationDelay: kpi.delay }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${kpi.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-              <CardContent className="p-6 text-center relative z-10">
-                <div className="bg-white rounded-xl p-4 inline-block mb-4 shadow-soft group-hover:shadow-medium transition-all duration-300 group-hover:scale-110">
+              <div className={`absolute inset-0 bg-gradient-to-br ${kpi.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              <CardContent className="p-8 text-center relative z-10">
+                <div className={`bg-gradient-to-br ${kpi.bgGradient} rounded-2xl p-5 inline-block mb-6 shadow-medium group-hover:shadow-lg transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                   {kpi.icon}
                 </div>
-                <div className="text-2xl md:text-3xl font-bold text-synapse-primary mb-2 group-hover:scale-105 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-synapse-primary mb-3 group-hover:text-white transition-colors duration-500 group-hover:scale-110 transform">
                   {kpi.value}
                 </div>
-                <div className="text-sm font-medium text-synapse-gray leading-tight">
+                <div className="text-sm font-semibold text-synapse-gray group-hover:text-white/90 transition-colors duration-500 leading-tight uppercase tracking-wide">
                   {kpi.label}
                 </div>
               </CardContent>
