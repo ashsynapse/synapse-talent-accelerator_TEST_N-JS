@@ -52,6 +52,8 @@ const Footer = () => {
                 "Enterprise",
                 "Case Studies",
                 "Industries",
+                "USA",
+                "Canada",
               ].map((item) => (
                 <li key={item}>
                   <a
