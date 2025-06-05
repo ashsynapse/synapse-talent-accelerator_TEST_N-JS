@@ -6,7 +6,6 @@ import HowItWorksRecruiterSection from "../components/recruiter/HowItWorksRecrui
 import WhyJoinSRNSection from "../components/recruiter/WhyJoinSRNSection";
 import RecruiterTestimonialsSection from "../components/recruiter/RecruiterTestimonialsSection";
 import IndustriesRecruiterSection from "../components/recruiter/IndustriesRecruiterSection";
-import RecruiterFinalCTASection from "../components/recruiter/RecruiterFinalCTASection";
 
 const Recruiters = () => {
   return (
@@ -20,7 +19,6 @@ const Recruiters = () => {
         <WhyJoinSRNSection />
         <RecruiterTestimonialsSection />
         <IndustriesRecruiterSection />
-        <RecruiterFinalCTASection />
       </div>
     </PageTemplate>
   );
