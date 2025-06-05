@@ -62,7 +62,7 @@ const MainHeader = () => {
       submenu: [
         { label: "Blog", href: "/resources/blog" },
         { label: "Case Studies", href: "/resources/case-studies" },
-        { label: "Webinars", href: "/resources/webinars" }
+        { label: "Events", href: "/resources/events" }
       ]
     },
     { 
@@ -72,6 +72,7 @@ const MainHeader = () => {
         { label: "About Us", href: "/company/about" },
         { label: "Team", href: "/company/team" },
         { label: "Careers", href: "/company/careers" },
+        { label: "FAQ", href: "/company/faq" },
         { label: "Contact", href: "/company/contact" }
       ]
     }

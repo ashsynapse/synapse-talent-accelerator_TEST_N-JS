@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-synapse-dark text-white pt-16 pb-8">
       <div className="container-wide">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-12">
           <div className="col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Synapse</div>
             <p className="mb-4 text-gray-300">
@@ -28,9 +28,111 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4">Company</h4>
+            <h4 className="text-lg font-bold mb-4">Solutions</h4>
             <ul className="space-y-2">
-              {["About Us", "Careers", "Press", "Blog"].map((item) => (
+              {[
+                "Passive Recruitment",
+                "Candidate Sourcing", 
+                "Project Staffing",
+                "Executive Search",
+                "Remote Staffing",
+                "Permanent Staffing",
+                "Contingent Staffing",
+                "Apprenticeship Recruitment"
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-4">Products</h4>
+            <ul className="space-y-2">
+              {[
+                "AI Candidate Sourcing",
+                "Pre-Employment Screening",
+                "AI Resume Screening"
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="text-lg font-bold mb-4 mt-8">Locations</h4>
+            <ul className="space-y-2">
+              {["USA", "Canada"].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-4">Industries</h4>
+            <ul className="space-y-2">
+              {[
+                "Information Technology",
+                "Digital Marketing",
+                "Engineering",
+                "Human Resources (HR)",
+                "Sales",
+                "Accounting",
+                "Legal",
+                "Manufacturing"
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-4">Resources</h4>
+            <ul className="space-y-2">
+              {[
+                "Blogs",
+                "Case Studies",
+                "Events"
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="text-lg font-bold mb-4 mt-8">Company</h4>
+            <ul className="space-y-2">
+              {["About Us", "Team", "Careers", "FAQ"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -49,42 +151,10 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-4">Solutions</h4>
+            <h4 className="text-lg font-bold mb-4 mt-8">Other Pages</h4>
             <ul className="space-y-2">
-              {[
-                "For Employers",
-                "For Recruiters",
-                "Enterprise",
-                "Case Studies",
-                "Industries",
-                "Locations",
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href={item === "Locations" ? "/locations" : "#"}
-                    className="text-gray-300 hover:text-white transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-4">Resources</h4>
-            <ul className="space-y-2">
-              {[
-                "Help Center",
-                "Documentation",
-                "API",
-                "Partner Program",
-                "Privacy Policy",
-                "Terms of Service",
-              ].map((item) => (
+              {["Glossary", "Partners"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -99,7 +169,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-gray-700 text-gray-400 flex flex-col md:flex-row justify-between items-center">
-          <p>© {currentYear} Synapse Recruitment. All rights reserved.</p>
+          <p>© {currentYear} Synapse International. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Privacy
