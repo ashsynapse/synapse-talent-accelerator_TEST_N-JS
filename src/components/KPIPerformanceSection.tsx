@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Briefcase, TrendingUp, Brain, Users, Sparkles } from "lucide-react";
@@ -46,7 +45,7 @@ const KPIPerformanceSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-40 h-40 bg-synapse-primary rounded-full blur-3xl animate-pulse"></div>
@@ -55,7 +54,7 @@ const KPIPerformanceSection = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-16">
           <div 
             ref={addToRefs}
             className="scroll-animate inline-flex items-center gap-2 bg-gradient-to-r from-synapse-primary/10 to-synapse-secondary/10 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-synapse-light/30"

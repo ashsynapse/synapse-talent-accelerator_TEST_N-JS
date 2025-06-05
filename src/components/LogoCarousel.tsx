@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -15,7 +14,7 @@ const LogoCarousel = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-gray-50/50 via-white to-gray-50/50 border-y border-gray-100/50 relative overflow-hidden">
+    <section className="py-8 md:py-12 bg-gradient-to-r from-gray-50/50 via-white to-gray-50/50 border-y border-gray-100/50 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-1/4 w-32 h-32 bg-synapse-primary rounded-full blur-3xl"></div>
@@ -23,7 +22,7 @@ const LogoCarousel = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-10">
           <div 
             ref={addToRefs}
             className="scroll-animate inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-4 shadow-soft border border-synapse-light/30"
