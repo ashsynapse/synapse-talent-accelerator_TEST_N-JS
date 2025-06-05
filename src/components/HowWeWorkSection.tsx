@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Send, Users, Target, CheckCircle } from "lucide-react";
@@ -8,23 +9,23 @@ const HowWeWorkSection = () => {
 
   const steps = [
     {
-      title: "Initial Consultation",
-      description: "Understand your hiring needs and company culture.",
+      title: "Discovery & Requirements",
+      description: "We analyze your specific hiring needs, company culture, and role requirements to ensure perfect alignment.",
       icon: <Send className="h-6 w-6" />,
     },
     {
-      title: "AI-Powered Matching",
-      description: "Match your role with top recruiters in our network.",
+      title: "Expert Recruiter Network",
+      description: "Our AI matches you with specialized recruiters who have proven success in your industry and role type.",
       icon: <Users className="h-6 w-6" />,
     },
     {
-      title: "Candidate Delivery",
-      description: "Receive pre-vetted candidates within 72 hours.",
+      title: "Candidate Sourcing & Vetting",
+      description: "Recruiters leverage their networks and our tools to source, screen, and present only top-tier candidates.",
       icon: <Target className="h-6 w-6" />,
     },
     {
-      title: "Seamless Integration",
-      description: "Streamline your hiring process with our platform.",
+      title: "Seamless Hiring Experience",
+      description: "From interviews to offers, we provide end-to-end support to ensure a smooth hiring process.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
   ];
@@ -57,7 +58,7 @@ const HowWeWorkSection = () => {
             ref={addToRefs}
             className="scroll-animate text-xl text-synapse-gray leading-relaxed"
           >
-            Our streamlined process delivers quality candidates in 72 hours through AI-powered matching
+            Our proven 4-step process connects you with elite talent through our network of specialized recruiters
           </p>
         </div>
 
