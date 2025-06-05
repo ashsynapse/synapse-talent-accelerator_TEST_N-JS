@@ -14,10 +14,21 @@ const RecruiterFinalCTASection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button 
-            className="bg-white text-synapse-primary hover:bg-opacity-90 font-medium py-3 px-8 rounded-lg transition-all duration-200 text-lg"
+            className="relative overflow-hidden bg-white text-synapse-primary hover:bg-opacity-90 font-semibold py-6 px-10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group border-2 border-transparent text-lg"
             onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
           >
-            Join Now
+            {/* Infinite flowing border animation */}
+            <div className="absolute inset-0 rounded-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-synapse-primary to-transparent opacity-80 animate-infinite-flow rounded-xl"></div>
+            </div>
+            
+            {/* Animated shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-synapse-primary/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+            
+            <span className="relative z-10 flex items-center gap-2">
+              Join Now
+              <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
+            </span>
           </Button>
           <Button 
             variant="outline"
