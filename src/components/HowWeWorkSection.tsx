@@ -8,19 +8,22 @@ const HowWeWorkSection = () => {
 
   const steps = [
     {
-      icon: <Brain className="h-10 w-10 text-synapse-primary" />,
+      icon: <Brain className="h-10 w-10 text-white" />,
       title: "AI Agent Deployment",
-      description: "Our autonomous GPT-4 agents analyze job requirements and begin sourcing candidates across global databases instantly."
+      description: "Our autonomous GPT-4 agents analyze job requirements and begin sourcing candidates across global databases instantly.",
+      gradient: "from-synapse-primary to-synapse-secondary"
     },
     {
-      icon: <Cpu className="h-10 w-10 text-synapse-primary" />,
+      icon: <Cpu className="h-10 w-10 text-white" />,
       title: "Automated Screening & Vetting",
-      description: "AI conducts comprehensive candidate evaluation, skills assessment, and cultural fit analysis without human intervention."
+      description: "AI conducts comprehensive candidate evaluation, skills assessment, and cultural fit analysis without human intervention.",
+      gradient: "from-synapse-secondary to-synapse-tertiary"
     },
     {
-      icon: <Zap className="h-10 w-10 text-synapse-primary" />,
+      icon: <Zap className="h-10 w-10 text-white" />,
       title: "Intelligent Matching & Delivery",
-      description: "Advanced algorithms match optimal candidates to roles with 95%+ accuracy, delivering results within hours."
+      description: "Advanced algorithms match optimal candidates to roles with 95%+ accuracy, delivering results within hours.",
+      gradient: "from-synapse-tertiary to-synapse-primary"
     }
   ];
 
@@ -64,7 +67,7 @@ const HowWeWorkSection = () => {
               ref={addToRefs}
               className="scroll-animate bg-white p-6 rounded-xl shadow-soft border border-gray-100 hover:shadow-medium transition-all duration-300"
             >
-              <div className="bg-synapse-lighter p-4 rounded-lg inline-block mb-6">
+              <div className={`bg-gradient-to-br ${step.gradient} p-4 rounded-lg inline-block mb-6`}>
                 {step.icon}
               </div>
               <h3 className="text-xl font-bold text-synapse-dark mb-3">
@@ -100,8 +103,8 @@ const HowWeWorkSection = () => {
             <div className="relative">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="AI-powered recruitment visualization"
+                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="AI neural network visualization with interconnected nodes"
                   className="object-cover w-full h-full"
                 />
               </div>

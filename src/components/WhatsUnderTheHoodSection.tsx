@@ -11,28 +11,28 @@ const WhatsUnderTheHoodSection = () => {
       title: "Autonomous GPT-4 Agents",
       description: "AI agents handle every part of hiring: sourcing, vetting, outreach, scheduling, and more—at infinite scale",
       icon: <Brain className="h-8 w-8" />,
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-synapse-primary to-synapse-secondary",
       stats: "24/7 Operation"
     },
     {
       title: "Feedback Loop Training", 
       description: "Continuous learning algorithms train smarter LLMs with every hire, improving accuracy and efficiency",
       icon: <Cpu className="h-8 w-8" />,
-      gradient: "from-purple-500 to-indigo-500",
+      gradient: "from-synapse-secondary to-synapse-tertiary",
       stats: "Self-Improving"
     },
     {
       title: "Zero Human Intervention",
       description: "Fully automated system eliminates human bottlenecks, burnout, and coordination issues",
       icon: <Zap className="h-8 w-8" />,
-      gradient: "from-emerald-500 to-green-500",
+      gradient: "from-synapse-tertiary to-synapse-primary",
       stats: "100% Automated"
     },
     {
       title: "Infinite Scale Architecture",
       description: "AI infrastructure scales infinitely at near-zero cost, handling thousands of hires simultaneously",
       icon: <Infinity className="h-8 w-8" />,
-      gradient: "from-orange-500 to-amber-500",
+      gradient: "from-synapse-primary to-synapse-light",
       stats: "∞ Capacity"
     }
   ];
@@ -41,11 +41,7 @@ const WhatsUnderTheHoodSection = () => {
     <section className="section-padding bg-gradient-to-br from-synapse-lighter/40 via-white to-synapse-light/30 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-full h-full" 
-             style={{
-               backgroundImage: `radial-gradient(circle at 20% 20%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-primary')} 0%, transparent 50%), radial-gradient(circle at 80% 80%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-secondary')} 0%, transparent 50%)`
-             }}>
-        </div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-synapse-primary/20 via-transparent to-synapse-secondary/20"></div>
       </div>
       
       <div className="container-wide relative">

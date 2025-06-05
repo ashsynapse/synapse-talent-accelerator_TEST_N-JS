@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Briefcase, TrendingUp, Brain, Users, Sparkles } from "lucide-react";
+import { Clock, DollarSign, TrendingUp, Zap, Users, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const KPIPerformanceSection = () => {
@@ -9,36 +9,36 @@ const KPIPerformanceSection = () => {
 
   const kpis = [
     {
-      value: "$200K+",
-      label: "Monthly Placement Revenue",
-      icon: <TrendingUp className="h-8 w-8 text-white" />,
+      value: "90%",
+      label: "Faster Time-to-Hire vs Traditional",
+      icon: <Clock className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-primary to-synapse-secondary",
       delay: "0ms"
     },
     {
-      value: "50+",
-      label: "AI Agents Live by 2026",
-      icon: <Brain className="h-8 w-8 text-white" />,
+      value: "70%",
+      label: "Reduction in Hiring Costs",
+      icon: <DollarSign className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-secondary to-synapse-tertiary",
       delay: "100ms"
     },
     {
-      value: "$8M",
-      label: "ARR Target by Dec 2025",
-      icon: <Briefcase className="h-8 w-8 text-white" />,
+      value: "5x",
+      label: "More Candidate Reach & Coverage",
+      icon: <TrendingUp className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-tertiary to-synapse-primary",
       delay: "200ms"
     },
     {
-      value: "$100M+",
-      label: "ARR by June 2027",
-      icon: <Building2 className="h-8 w-8 text-white" />,
+      value: "24/7",
+      label: "Continuous Hiring Operations",
+      icon: <Zap className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-primary to-synapse-light",
       delay: "300ms"
     },
     {
-      value: "1000s",
-      label: "Hires/Month (AI-Powered)",
+      value: "95%+",
+      label: "Quality Match Accuracy Rate",
       icon: <Users className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-secondary to-synapse-primary",
       delay: "400ms"
@@ -61,20 +61,20 @@ const KPIPerformanceSection = () => {
             className="scroll-animate inline-flex items-center gap-2 bg-gradient-to-r from-synapse-primary/10 to-synapse-secondary/10 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-synapse-light/30"
           >
             <Sparkles className="h-4 w-4 text-synapse-primary animate-pulse" />
-            <span className="text-sm font-semibold text-synapse-primary uppercase tracking-wide">Traction & Milestones</span>
+            <span className="text-sm font-semibold text-synapse-primary uppercase tracking-wide">Client Results</span>
           </div>
           <h2 
             ref={addToRefs}
             className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight"
           >
-            AI-Driven 
-            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> Performance</span>
+            Measurable Impact
+            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> for Your Business</span>
           </h2>
           <p 
             ref={addToRefs}
             className="scroll-animate text-xl text-synapse-gray max-w-3xl mx-auto leading-relaxed"
           >
-            Our autonomous AI recruiting engine delivers unprecedented results at infinite scale
+            See the tangible benefits our AI-first recruiting delivers to organizations worldwide
           </p>
         </div>
 

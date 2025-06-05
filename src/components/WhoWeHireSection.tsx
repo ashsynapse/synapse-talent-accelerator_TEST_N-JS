@@ -11,49 +11,49 @@ const WhoWeHireSection = () => {
       title: "Tech",
       description: "Engineers, PMs, AI/ML specialists across all levels",
       icon: <Code className="h-6 w-6" />,
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-synapse-primary to-synapse-secondary"
     },
     {
       title: "Finance", 
       description: "Controllers, analysts, fintech specialists",
       icon: <Calculator className="h-6 w-6" />,
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-synapse-secondary to-synapse-tertiary"
     },
     {
       title: "Healthcare",
       description: "Clinical, research, and administrative roles",
       icon: <Heart className="h-6 w-6" />,
-      gradient: "from-red-500 to-pink-500"
+      gradient: "from-synapse-tertiary to-synapse-primary"
     },
     {
       title: "Legal",
       description: "Corporate, compliance, and regulatory experts",
       icon: <Brain className="h-6 w-6" />,
-      gradient: "from-purple-500 to-indigo-500"
+      gradient: "from-synapse-primary to-synapse-light"
     },
     {
       title: "Manufacturing",
       description: "Operations, supply chain, and engineering",
       icon: <Factory className="h-6 w-6" />,
-      gradient: "from-orange-500 to-amber-500"
+      gradient: "from-synapse-secondary to-synapse-primary"
     },
     {
       title: "Sales & Marketing",
       description: "Revenue generation and growth specialists",
       icon: <Target className="h-6 w-6" />,
-      gradient: "from-synapse-primary to-synapse-secondary"
+      gradient: "from-synapse-tertiary to-synapse-secondary"
     },
     {
       title: "Leadership",
       description: "C-Suite, VPs, and senior executives",
       icon: <Crown className="h-6 w-6" />,
-      gradient: "from-yellow-500 to-orange-500"
+      gradient: "from-synapse-primary to-synapse-tertiary"
     },
     {
       title: "Operations",
       description: "Strategy, analytics, and business operations",
       icon: <BarChart3 className="h-6 w-6" />,
-      gradient: "from-teal-500 to-blue-500"
+      gradient: "from-synapse-light to-synapse-primary"
     }
   ];
 
