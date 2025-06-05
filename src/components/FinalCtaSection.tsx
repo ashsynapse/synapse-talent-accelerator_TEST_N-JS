@@ -52,21 +52,6 @@ const FinalCtaSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary/10 to-synapse-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
           </div>
-          
-          <div className="mt-8 flex items-center justify-center gap-6 text-white/70 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>72h delivery</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span>AI-powered matching</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-              <span>Global talent pool</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
