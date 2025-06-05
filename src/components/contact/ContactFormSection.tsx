@@ -1,15 +1,13 @@
 
 import React from "react";
 import ContactForm from "./ContactForm";
-import CalendarBooking from "./CalendarBooking";
 
 const ContactFormSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container-wide">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="flex justify-center">
           <ContactForm />
-          <CalendarBooking />
         </div>
         
         {/* Additional Trust Elements */}

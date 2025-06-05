@@ -11,21 +11,21 @@ const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: "",
-    companyName: "",
     email: "",
     phoneNumber: "",
-    hiringNeed: "",
-    industry: ""
+    companyName: "",
+    reasonForContact: "",
+    message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.fullName || !formData.email) {
+    if (!formData.fullName || !formData.email || !formData.reasonForContact || !formData.message) {
       toast({
         title: "Required fields missing",
-        description: "Please fill in your name and email address.",
+        description: "Please fill in all required fields.",
         variant: "destructive",
       });
       return;
@@ -42,11 +42,11 @@ const ContactForm = () => {
     // Reset form
     setFormData({
       fullName: "",
-      companyName: "",
       email: "",
       phoneNumber: "",
-      hiringNeed: "",
-      industry: ""
+      companyName: "",
+      reasonForContact: "",
+      message: ""
     });
   };
 
@@ -55,13 +55,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-soft">
+    <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-soft mx-auto max-w-2xl">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-synapse-dark mb-4">
-          Tell Us About Your Hiring Needs
+          Get in Touch
         </h2>
         <p className="text-synapse-gray">
-          We'll match you with specialized recruiters and start sourcing candidates within 48 hours.
+          Fill out the form below and our team will get back to you within 24 hours.
         </p>
       </div>
 
@@ -79,18 +79,6 @@ const ContactForm = () => {
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="companyName">Company Name</Label>
-            <Input
-              id="companyName"
-              value={formData.companyName}
-              onChange={(e) => handleInputChange("companyName", e.target.value)}
-              placeholder="Acme Corp"
-            />
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="space-y-2">
             <Label htmlFor="email">Email Address *</Label>
             <Input
               id="email"
@@ -101,7 +89,9 @@ const ContactForm = () => {
               required
             />
           </div>
-          
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
             <Label htmlFor="phoneNumber">Phone Number</Label>
             <Input
@@ -112,37 +102,42 @@ const ContactForm = () => {
               placeholder="+1 (555) 123-4567"
             />
           </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="companyName">Company Name</Label>
+            <Input
+              id="companyName"
+              value={formData.companyName}
+              onChange={(e) => handleInputChange("companyName", e.target.value)}
+              placeholder="Acme Corp"
+            />
+          </div>
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="industry">Industry</Label>
-          <Select value={formData.industry} onValueChange={(value) => handleInputChange("industry", value)}>
+          <Label htmlFor="reasonForContact">Reason for Contact *</Label>
+          <Select value={formData.reasonForContact} onValueChange={(value) => handleInputChange("reasonForContact", value)}>
             <SelectTrigger>
-              <SelectValue placeholder="Select your industry" />
+              <SelectValue placeholder="Select reason for contact" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="technology">Technology</SelectItem>
-              <SelectItem value="finance">Finance & Banking</SelectItem>
-              <SelectItem value="healthcare">Healthcare</SelectItem>
-              <SelectItem value="legal">Legal</SelectItem>
-              <SelectItem value="manufacturing">Manufacturing</SelectItem>
-              <SelectItem value="retail">Retail & E-commerce</SelectItem>
-              <SelectItem value="consulting">Consulting</SelectItem>
-              <SelectItem value="real-estate">Real Estate</SelectItem>
-              <SelectItem value="education">Education</SelectItem>
-              <SelectItem value="other">Other</SelectItem>
+              <SelectItem value="hiring-needs">Hiring Needs</SelectItem>
+              <SelectItem value="join-recruiter-network">Join Our Recruiter Network</SelectItem>
+              <SelectItem value="talent-inquiry">Talent Inquiry (Looking for Job)</SelectItem>
+              <SelectItem value="general-query">General Query</SelectItem>
             </SelectContent>
           </Select>
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="hiringNeed">Tell Us About Your Hiring Need</Label>
+          <Label htmlFor="message">Message *</Label>
           <Textarea
-            id="hiringNeed"
-            value={formData.hiringNeed}
-            onChange={(e) => handleInputChange("hiringNeed", e.target.value)}
-            placeholder="We're looking for 3 senior software engineers with React/Node.js experience for our product team..."
+            id="message"
+            value={formData.message}
+            onChange={(e) => handleInputChange("message", e.target.value)}
+            placeholder="Please provide details about your inquiry..."
             rows={4}
+            required
           />
         </div>
 
@@ -150,7 +145,7 @@ const ContactForm = () => {
           type="submit" 
           className="w-full btn-primary text-lg py-4"
         >
-          Submit Hiring Request
+          Submit Request
         </Button>
         
         <p className="text-sm text-synapse-gray text-center">
