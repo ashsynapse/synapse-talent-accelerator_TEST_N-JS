@@ -8,34 +8,50 @@ const KPIPerformanceSection = () => {
     {
       value: "700+",
       label: "Clients Served",
-      icon: <Building2 className="h-8 w-8 text-synapse-primary" />
+      icon: <Building2 className="h-8 w-8 text-synapse-primary" />,
+      bgGradient: "from-synapse-primary/10 to-synapse-secondary/10"
     },
     {
       value: "1,000+",
       label: "Roles Filled",
-      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />
+      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />,
+      bgGradient: "from-synapse-secondary/10 to-synapse-tertiary/10"
     },
     {
       value: "300%",
       label: "YoY Growth",
-      icon: <TrendingUp className="h-8 w-8 text-synapse-primary" />
+      icon: <TrendingUp className="h-8 w-8 text-synapse-primary" />,
+      bgGradient: "from-synapse-tertiary/10 to-synapse-primary/10"
     },
     {
       value: "95%",
       label: "AI Matching Accuracy",
-      icon: <Brain className="h-8 w-8 text-synapse-primary" />
+      icon: <Brain className="h-8 w-8 text-synapse-primary" />,
+      bgGradient: "from-synapse-primary/10 to-synapse-light/20"
     },
     {
       value: "96%",
       label: "Client Retention",
-      icon: <Users className="h-8 w-8 text-synapse-primary" />
+      icon: <Users className="h-8 w-8 text-synapse-primary" />,
+      bgGradient: "from-synapse-secondary/10 to-synapse-primary/10"
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container-wide">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 20% 80%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-primary')} 0%, transparent 50%), radial-gradient(circle at 80% 20%, ${getComputedStyle(document.documentElement).getPropertyValue('--synapse-secondary')} 0%, transparent 50%)`
+        }}></div>
+      </div>
+      
+      <div className="container-wide relative">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-synapse-light/20 px-4 py-2 rounded-full mb-4">
+            <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-synapse-primary">Performance Metrics</span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-synapse-dark mb-4">
             Performance That Speaks for Itself
           </h2>
@@ -48,13 +64,15 @@ const KPIPerformanceSection = () => {
           {kpis.map((kpi, index) => (
             <Card 
               key={index} 
-              className="border-none shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
+              className="border-none shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2 group overflow-hidden relative"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardContent className="p-6 text-center">
-                <div className="bg-synapse-lighter rounded-lg p-4 inline-block mb-4">
+              <div className={`absolute inset-0 bg-gradient-to-br ${kpi.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+              <CardContent className="p-6 text-center relative z-10">
+                <div className="bg-white rounded-xl p-4 inline-block mb-4 shadow-soft group-hover:shadow-medium transition-all duration-300 group-hover:scale-110">
                   {kpi.icon}
                 </div>
-                <div className="text-2xl md:text-3xl font-bold text-synapse-primary mb-2">
+                <div className="text-2xl md:text-3xl font-bold text-synapse-primary mb-2 group-hover:scale-105 transition-transform duration-300">
                   {kpi.value}
                 </div>
                 <div className="text-sm font-medium text-synapse-gray leading-tight">
