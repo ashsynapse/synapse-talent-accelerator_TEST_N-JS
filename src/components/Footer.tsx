@@ -52,10 +52,11 @@ const Footer = () => {
                 "Enterprise",
                 "Case Studies",
                 "Industries",
+                "Locations",
               ].map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    href={item === "Locations" ? "/locations" : "#"}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {item}

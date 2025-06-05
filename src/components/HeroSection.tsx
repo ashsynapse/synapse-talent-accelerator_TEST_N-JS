@@ -33,15 +33,15 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-synapse-gray">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>No setup fees</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>24/7 support</span>
+              <span>72h delivery</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
               <span>AI-powered matching</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+              <span>Global talent pool</span>
             </div>
           </div>
         </div>

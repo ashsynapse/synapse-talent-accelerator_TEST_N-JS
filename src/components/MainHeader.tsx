@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -53,14 +54,6 @@ const MainHeader = () => {
         { label: "Accounting", href: "/industries/accounting" },
         { label: "Legal", href: "/industries/legal" },
         { label: "Manufacturing", href: "/industries/manufacturing" }
-      ]
-    },
-    { 
-      label: "Locations", 
-      href: "/locations",
-      submenu: [
-        { label: "USA", href: "/locations" },
-        { label: "Canada", href: "/locations" }
       ]
     },
     { 
