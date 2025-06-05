@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code, Brain, Calculator, Heart, Factory, Target, Crown, BarChart3 } from "lucide-react";
@@ -57,7 +58,7 @@ const WhoWeHireSection = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-gradient-to-br from-synapse-lighter/30 via-white to-synapse-light/20 relative overflow-hidden">
+    <section className="py-10 md:py-14 bg-gradient-to-br from-synapse-lighter/30 via-white to-synapse-light/20 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-32 h-32 bg-synapse-primary rounded-full blur-3xl"></div>
@@ -65,7 +66,7 @@ const WhoWeHireSection = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-10 md:mb-12">
           <div 
             ref={addToRefs}
             className="scroll-animate inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-soft border border-synapse-light/30"

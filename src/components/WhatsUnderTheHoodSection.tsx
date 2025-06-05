@@ -38,7 +38,7 @@ const WhatsUnderTheHoodSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-synapse-lighter/40 via-white to-synapse-light/30 relative overflow-hidden">
+    <section className="py-10 md:py-14 bg-gradient-to-br from-synapse-lighter/40 via-white to-synapse-light/30 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full" 
@@ -49,7 +49,7 @@ const WhatsUnderTheHoodSection = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center max-w-5xl mx-auto mb-20">
+        <div className="text-center max-w-5xl mx-auto mb-10 md:mb-12">
           <div 
             ref={addToRefs}
             className="scroll-animate inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-soft border border-synapse-light/30"

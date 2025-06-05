@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
+    <section className="py-10 md:py-14 bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-40 h-40 bg-synapse-primary rounded-full blur-3xl animate-pulse"></div>
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="text-center mb-20 max-w-4xl mx-auto">
+        <div className="text-center mb-10 md:mb-12 max-w-4xl mx-auto">
           <div 
             ref={addToRefs}
             className="scroll-animate inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-soft border border-synapse-light/30"
