@@ -26,6 +26,13 @@ import Team from "./pages/company/Team";
 import Careers from "./pages/company/Careers";
 import FAQ from "./pages/company/FAQ";
 
+// Additional Pages
+import Glossary from "./pages/Glossary";
+import Partners from "./pages/Partners";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Cookies from "./pages/Cookies";
+
 // Create QueryClient with proper configuration
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -64,6 +71,13 @@ const App = () => {
             <Route path="/company/careers" element={<Careers />} />
             <Route path="/company/contact" element={<Contact />} />
             <Route path="/company/faq" element={<FAQ />} />
+            
+            {/* Additional Pages */}
+            <Route path="/glossary" element={<Glossary />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/cookies" element={<Cookies />} />
             
             {/* Placeholder routes for future implementation */}
             <Route path="/resources" element={<div>Resources - Coming Soon</div>} />

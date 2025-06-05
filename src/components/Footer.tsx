@@ -52,21 +52,21 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Solutions</h4>
             <ul className="space-y-2">
               {[
-                "Passive Recruitment",
-                "Candidate Sourcing", 
-                "Project Staffing",
-                "Executive Search",
-                "Remote Staffing",
-                "Permanent Staffing",
-                "Contingent Staffing",
-                "Apprenticeship Recruitment"
+                { label: "Passive Recruitment", href: "/recruitment-solutions" },
+                { label: "Candidate Sourcing", href: "/recruitment-solutions" }, 
+                { label: "Project Staffing", href: "/recruitment-solutions" },
+                { label: "Executive Search", href: "/recruitment-solutions" },
+                { label: "Remote Staffing", href: "/recruitment-solutions" },
+                { label: "Permanent Staffing", href: "/recruitment-solutions" },
+                { label: "Contingent Staffing", href: "/recruitment-solutions" },
+                { label: "Apprenticeship Recruitment", href: "/recruitment-solutions" }
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -77,16 +77,16 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Products</h4>
             <ul className="space-y-2">
               {[
-                "AI Candidate Sourcing",
-                "Pre-Employment Screening",
-                "AI Resume Screening"
+                { label: "AI Candidate Sourcing", href: "/recruitment-tools" },
+                { label: "Pre-Employment Screening", href: "/recruitment-tools" },
+                { label: "AI Resume Screening", href: "/recruitment-tools" }
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -94,13 +94,16 @@ const Footer = () => {
 
             <h4 className="text-lg font-bold mb-4 mt-8">Locations</h4>
             <ul className="space-y-2">
-              {["USA", "Canada"].map((item) => (
-                <li key={item}>
+              {[
+                { label: "USA", href: "/locations" },
+                { label: "Canada", href: "/locations" }
+              ].map((item) => (
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -111,21 +114,21 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Industries</h4>
             <ul className="space-y-2">
               {[
-                "Information Technology",
-                "Digital Marketing",
-                "Engineering",
-                "Human Resources (HR)",
-                "Sales",
-                "Accounting",
-                "Legal",
-                "Manufacturing"
+                { label: "Information Technology", href: "/industries" },
+                { label: "Digital Marketing", href: "/industries" },
+                { label: "Engineering", href: "/industries" },
+                { label: "Human Resources (HR)", href: "/industries" },
+                { label: "Sales", href: "/industries" },
+                { label: "Accounting", href: "/industries" },
+                { label: "Legal", href: "/industries" },
+                { label: "Manufacturing", href: "/industries" }
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -136,16 +139,16 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
               {[
-                "Blogs",
-                "Case Studies",
-                "Events"
+                { label: "Blog", href: "/resources/blog" },
+                { label: "Case Studies", href: "/resources/case-studies" },
+                { label: "Events", href: "/resources/events" }
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -153,13 +156,18 @@ const Footer = () => {
 
             <h4 className="text-lg font-bold mb-4 mt-8">Company</h4>
             <ul className="space-y-2">
-              {["About Us", "Team", "Careers", "FAQ"].map((item) => (
-                <li key={item}>
+              {[
+                { label: "About Us", href: "/company/about" },
+                { label: "Team", href: "/company/team" },
+                { label: "Careers", href: "/company/careers" },
+                { label: "FAQ", href: "/company/faq" }
+              ].map((item) => (
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -178,19 +186,19 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-700 text-gray-400 flex flex-col md:flex-row justify-between items-center">
           <p>© {currentYear} Synapse International. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/glossary" className="hover:text-white transition-colors">
               Glossary
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/partners" className="hover:text-white transition-colors">
               Partners
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/privacy" className="hover:text-white transition-colors">
               Privacy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/terms" className="hover:text-white transition-colors">
               Terms
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/cookies" className="hover:text-white transition-colors">
               Cookies
             </a>
           </div>
