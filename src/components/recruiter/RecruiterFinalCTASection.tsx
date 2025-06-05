@@ -39,9 +39,18 @@ const RecruiterFinalCTASection = () => {
           </Button>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 text-sm opacity-75">
-          <span>✓ High-paying roles</span>
-          <span>✓ AI-powered tools</span>
-          <span>✓ Global network</span>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-white rounded-full"></div>
+            <span>High-paying roles</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-white rounded-full"></div>
+            <span>AI-powered tools</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-white rounded-full"></div>
+            <span>Global network</span>
+          </div>
         </div>
       </div>
     </section>

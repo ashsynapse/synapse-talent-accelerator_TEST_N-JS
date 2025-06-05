@@ -47,15 +47,15 @@ const RecruiterHeroSection = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-synapse-gray">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>100% Remote</span>
+              <span>High-paying roles</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>Flexible Schedule</span>
+              <span>AI-powered tools</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>High Commissions</span>
+              <span>Global network</span>
             </div>
           </div>
         </div>

@@ -16,10 +16,10 @@ const Recruiters = () => {
     >
       <div className="min-h-screen">
         <RecruiterHeroSection />
-        <RecruiterTestimonialsSection />
         <HowItWorksRecruiterSection />
         <WhyJoinSRNSection />
         <IndustriesRecruiterSection />
+        <RecruiterTestimonialsSection />
         <RecruiterFinalCTASection />
       </div>
     </PageTemplate>
