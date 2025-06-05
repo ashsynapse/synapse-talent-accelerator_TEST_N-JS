@@ -23,7 +23,7 @@ const RecruiterHeroSection = () => {
             </Button>
             <Button 
               variant="outline"
-              className="bg-synapse-dark text-white border-synapse-dark hover:bg-synapse-dark/90 hover:text-white text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-all duration-200"
+              className="border-2 border-synapse-primary text-synapse-primary bg-white hover:bg-synapse-light text-lg py-4 px-8 rounded-lg transition-all duration-200 shadow-soft hover:shadow-medium"
               onClick={() => window.open("https://app.synapserecruiternetwork.com/login", "_blank")}
             >
               Login
