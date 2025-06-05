@@ -1,7 +1,6 @@
 
 import React from "react";
 import { DollarSign, Bot, FileText, GraduationCap, Briefcase, Globe } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const WhyJoinSRNSection = () => {
   const benefits = [
@@ -71,21 +70,6 @@ const WhyJoinSRNSection = () => {
           <blockquote className="text-xl md:text-2xl font-medium text-synapse-dark mb-6 italic">
             "SRN is built for modern recruiters who want speed, scale, and freedom. No fluff—just tools, jobs, and results."
           </blockquote>
-        </div>
-
-        <div className="mt-16 bg-synapse-primary rounded-xl p-8 md:p-12 text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6">
-            Ready to Accelerate Your Recruiting Career?
-          </h3>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join 500+ successful recruiters who have already transformed their careers with SRN.
-          </p>
-          <Button 
-            className="bg-white text-synapse-primary hover:bg-opacity-90 font-medium py-3 px-8 rounded-lg transition-all duration-200"
-            onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
-          >
-            Start Your Application
-          </Button>
         </div>
       </div>
     </section>

@@ -2,9 +2,9 @@
 import React from "react";
 import PageTemplate from "../components/PageTemplate";
 import RecruiterHeroSection from "../components/recruiter/RecruiterHeroSection";
+import RecruiterTestimonialsSection from "../components/recruiter/RecruiterTestimonialsSection";
 import HowItWorksRecruiterSection from "../components/recruiter/HowItWorksRecruiterSection";
 import WhyJoinSRNSection from "../components/recruiter/WhyJoinSRNSection";
-import RecruiterTestimonialsSection from "../components/recruiter/RecruiterTestimonialsSection";
 import IndustriesRecruiterSection from "../components/recruiter/IndustriesRecruiterSection";
 import RecruiterFinalCTASection from "../components/recruiter/RecruiterFinalCTASection";
 
@@ -16,9 +16,9 @@ const Recruiters = () => {
     >
       <div className="min-h-screen">
         <RecruiterHeroSection />
+        <RecruiterTestimonialsSection />
         <HowItWorksRecruiterSection />
         <WhyJoinSRNSection />
-        <RecruiterTestimonialsSection />
         <IndustriesRecruiterSection />
         <RecruiterFinalCTASection />
       </div>
