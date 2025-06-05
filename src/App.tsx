@@ -15,6 +15,17 @@ import Contact from "./pages/Contact";
 import Locations from "./pages/Locations";
 import NotFound from "./pages/NotFound";
 
+// Resources Pages
+import Blog from "./pages/resources/Blog";
+import CaseStudies from "./pages/resources/CaseStudies";
+import Events from "./pages/resources/Events";
+
+// Company Pages
+import About from "./pages/company/About";
+import Team from "./pages/company/Team";
+import Careers from "./pages/company/Careers";
+import FAQ from "./pages/company/FAQ";
+
 // Create QueryClient with proper configuration
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -41,6 +52,19 @@ const App = () => {
             <Route path="/recruiters" element={<Recruiters />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
+            
+            {/* Resources Routes */}
+            <Route path="/resources/blog" element={<Blog />} />
+            <Route path="/resources/case-studies" element={<CaseStudies />} />
+            <Route path="/resources/events" element={<Events />} />
+            
+            {/* Company Routes */}
+            <Route path="/company/about" element={<About />} />
+            <Route path="/company/team" element={<Team />} />
+            <Route path="/company/careers" element={<Careers />} />
+            <Route path="/company/contact" element={<Contact />} />
+            <Route path="/company/faq" element={<FAQ />} />
+            
             {/* Placeholder routes for future implementation */}
             <Route path="/resources" element={<div>Resources - Coming Soon</div>} />
             <Route path="/for-employers" element={<div>For Employers - Coming Soon</div>} />
