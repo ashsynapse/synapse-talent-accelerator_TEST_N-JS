@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Linkedin, Twitter, Facebook, Instagram, MessageCircle } from "lucide-react";
 
@@ -14,6 +13,22 @@ const Footer = () => {
             <p className="mb-4 text-gray-300">
               Global AI-powered talent acquisition platform automating the entire hiring lifecycle — from job intake to offer — with autonomous AI agents for infinite scale.
             </p>
+            
+            <div className="mb-6 space-y-2">
+              <div className="flex items-center text-sm text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
+                100% AI-powered
+              </div>
+              <div className="flex items-center text-sm text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
+                Zero human intervention
+              </div>
+              <div className="flex items-center text-sm text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
+                Infinite scale
+              </div>
+            </div>
+            
             <div className="flex space-x-4">
               <a
                 href="#"
