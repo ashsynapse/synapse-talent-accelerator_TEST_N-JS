@@ -14,12 +14,19 @@ const RecruiterHeroSection = () => {
             Earn top commissions. Access live jobs. Work on your schedule.
           </p>
           
-          <div className="flex justify-center mb-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <Button 
               className="btn-primary text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-shadow"
               onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
             >
               Join Now
+            </Button>
+            <Button 
+              variant="outline"
+              className="bg-synapse-dark text-white border-synapse-dark hover:bg-synapse-dark/90 hover:text-white text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-all duration-200"
+              onClick={() => window.open("https://app.synapserecruiternetwork.com/login", "_blank")}
+            >
+              Login
             </Button>
           </div>
 
