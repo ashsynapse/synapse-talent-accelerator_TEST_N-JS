@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Contact", href: "#final-cta" },
+    { label: "Contact", href: "mailto:info@synapseint.com" },
   ];
 
   return (
@@ -50,7 +50,7 @@ const Header = () => {
           ))}
           <Button
             className="btn-primary ml-4"
-            onClick={() => window.location.href = "/contact"}
+            onClick={() => window.location.href = "mailto:info@synapseint.com"}
           >
             Hire Talent
           </Button>
@@ -86,7 +86,7 @@ const Header = () => {
             <Button
               className="btn-primary w-full mt-4"
               onClick={() => {
-                window.location.href = "/contact";
+                window.location.href = "mailto:info@synapseint.com";
                 setMobileMenuOpen(false);
               }}
             >
