@@ -17,7 +17,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               className="btn-primary text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-shadow"
-              onClick={() => window.location.href = "/contact"}
+              onClick={() => window.location.href = "mailto:info@synapseint.com"}
             >
               Hire Talent
             </Button>
