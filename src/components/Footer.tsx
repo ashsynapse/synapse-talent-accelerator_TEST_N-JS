@@ -30,7 +30,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Company</h4>
             <ul className="space-y-2">
-              {["About Us", "Careers", "Press", "Blog", "Contact"].map((item) => (
+              {["About Us", "Careers", "Press", "Blog"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -40,6 +40,14 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="mailto:info@synapseint.com"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
