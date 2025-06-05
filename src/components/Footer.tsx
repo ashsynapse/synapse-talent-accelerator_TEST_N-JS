@@ -10,24 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-12">
           <div className="col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Synapse</div>
-            <p className="mb-4 text-gray-300">
+            <p className="mb-6 text-gray-300">
               Global AI-powered talent acquisition platform automating the entire hiring lifecycle — from job intake to offer — with autonomous AI agents for infinite scale.
             </p>
-            
-            <div className="mb-6 space-y-2">
-              <div className="flex items-center text-sm text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
-                100% AI-powered
-              </div>
-              <div className="flex items-center text-sm text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
-                Zero human intervention
-              </div>
-              <div className="flex items-center text-sm text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full mr-3"></div>
-                Infinite scale
-              </div>
-            </div>
             
             <div className="flex space-x-4">
               <a
