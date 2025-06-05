@@ -65,13 +65,18 @@ const HowWeWorkSection = () => {
             <div
               key={index}
               ref={addToRefs}
-              className="scroll-animate bg-white p-6 rounded-xl shadow-soft border border-gray-100 hover:shadow-medium transition-all duration-300"
+              className="scroll-animate bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-medium transition-all duration-300 relative"
             >
-              <div className={`bg-gradient-to-br ${step.gradient} p-4 rounded-lg inline-block mb-6`}>
+              {/* Step Number */}
+              <div className={`absolute -top-4 left-8 w-12 h-12 bg-gradient-to-br ${step.gradient} rounded-full flex items-center justify-center shadow-medium`}>
+                <span className="text-white font-bold text-lg">{index + 1}</span>
+              </div>
+              
+              <div className={`bg-gradient-to-br ${step.gradient} p-4 rounded-lg inline-block mb-6 mt-4`}>
                 {step.icon}
               </div>
               <h3 className="text-xl font-bold text-synapse-dark mb-3">
-                {index + 1}. {step.title}
+                Step {index + 1}: {step.title}
               </h3>
               <p className="text-synapse-gray">{step.description}</p>
             </div>

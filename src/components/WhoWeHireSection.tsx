@@ -8,7 +8,7 @@ const WhoWeHireSection = () => {
 
   const categories = [
     {
-      title: "Tech",
+      title: "Technology",
       description: "Engineers, PMs, AI/ML specialists across all levels",
       icon: <Code className="h-6 w-6" />,
       gradient: "from-synapse-primary to-synapse-secondary"

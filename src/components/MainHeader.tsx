@@ -46,14 +46,14 @@ const MainHeader = () => {
       label: "Industries", 
       href: "/industries",
       submenu: [
-        { label: "Information Technology", href: "/industries/information-technology" },
-        { label: "Digital Marketing", href: "/industries/digital-marketing" },
-        { label: "Engineering", href: "/industries/engineering" },
-        { label: "Human Resources (HR)", href: "/industries/human-resources" },
-        { label: "Sales", href: "/industries/sales" },
-        { label: "Accounting", href: "/industries/accounting" },
+        { label: "Technology", href: "/industries/technology" },
+        { label: "Finance", href: "/industries/finance" },
+        { label: "Healthcare", href: "/industries/healthcare" },
         { label: "Legal", href: "/industries/legal" },
-        { label: "Manufacturing", href: "/industries/manufacturing" }
+        { label: "Manufacturing", href: "/industries/manufacturing" },
+        { label: "Sales & Marketing", href: "/industries/sales-marketing" },
+        { label: "Leadership", href: "/industries/leadership" },
+        { label: "Operations", href: "/industries/operations" }
       ]
     },
     { 
@@ -71,9 +71,9 @@ const MainHeader = () => {
       submenu: [
         { label: "About Us", href: "/company/about" },
         { label: "Team", href: "/company/team" },
+        { label: "Recruiters", href: "/recruiters" },
         { label: "Careers", href: "/company/careers" },
         { label: "FAQ", href: "/company/faq" },
-        { label: "Recruiter", href: "/recruiters" },
         { label: "Contact Us", href: "/company/contact" }
       ]
     }
