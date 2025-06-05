@@ -1,38 +1,39 @@
+
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Globe, Brain, Target, Zap, ArrowRight } from "lucide-react";
+import { Brain, Cpu, Zap, Infinity, ArrowRight } from "lucide-react";
 
 const WhatsUnderTheHoodSection = () => {
   const { addToRefs } = useScrollAnimation();
 
   const features = [
     {
-      title: "Global Recruiter Network",
-      description: "Access 1,000+ specialized recruiters across 50+ countries, all vetted and performance-tracked",
-      icon: <Globe className="h-8 w-8" />,
-      gradient: "from-blue-500 to-cyan-500",
-      stats: "1,000+ Recruiters"
-    },
-    {
-      title: "AI-Powered Workflow", 
-      description: "Automated candidate sourcing, screening, and interview scheduling to reduce time-to-hire",
+      title: "Autonomous GPT-4 Agents",
+      description: "AI agents handle every part of hiring: sourcing, vetting, outreach, scheduling, and more—at infinite scale",
       icon: <Brain className="h-8 w-8" />,
+      gradient: "from-blue-500 to-cyan-500",
+      stats: "24/7 Operation"
+    },
+    {
+      title: "Feedback Loop Training", 
+      description: "Continuous learning algorithms train smarter LLMs with every hire, improving accuracy and efficiency",
+      icon: <Cpu className="h-8 w-8" />,
       gradient: "from-purple-500 to-indigo-500",
-      stats: "95% Automation"
+      stats: "Self-Improving"
     },
     {
-      title: "Precision Matching",
-      description: "Reinforcement-trained LLMs ensure best-fit talent. Our proprietary algorithm matches candidates to roles with 94% accuracy",
-      icon: <Target className="h-8 w-8" />,
-      gradient: "from-emerald-500 to-green-500",
-      stats: "94% Accuracy"
-    },
-    {
-      title: "Fastest Time-to-Hire",
-      description: "Our AI + recruiter system fills roles in days—not months—accelerating growth and saving weeks of manual effort.",
+      title: "Zero Human Intervention",
+      description: "Fully automated system eliminates human bottlenecks, burnout, and coordination issues",
       icon: <Zap className="h-8 w-8" />,
+      gradient: "from-emerald-500 to-green-500",
+      stats: "100% Automated"
+    },
+    {
+      title: "Infinite Scale Architecture",
+      description: "AI infrastructure scales infinitely at near-zero cost, handling thousands of hires simultaneously",
+      icon: <Infinity className="h-8 w-8" />,
       gradient: "from-orange-500 to-amber-500",
-      stats: "72h Delivery"
+      stats: "∞ Capacity"
     }
   ];
 
@@ -54,20 +55,20 @@ const WhatsUnderTheHoodSection = () => {
             className="scroll-animate inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-soft border border-synapse-light/30"
           >
             <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-semibold text-synapse-primary uppercase tracking-wide">Technology & Expertise</span>
+            <span className="text-sm font-semibold text-synapse-primary uppercase tracking-wide">AI Infrastructure</span>
           </div>
           <h2 
             ref={addToRefs}
             className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-8 leading-tight"
           >
-            What's Under
-            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> the Hood</span>
+            The First Agentic
+            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> Hiring Cloud</span>
           </h2>
           <p 
             ref={addToRefs}
             className="scroll-animate text-xl text-synapse-gray leading-relaxed"
           >
-            Our AI-powered platform combines cutting-edge technology and human expertise for faster, more accurate hiring
+            SRN transforms recruiting into software with autonomous AI agents working 24/7
           </p>
         </div>
 
@@ -92,7 +93,7 @@ const WhatsUnderTheHoodSection = () => {
                     </div>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-synapse-primary mb-1">{feature.stats}</div>
-                      <div className="text-xs text-synapse-gray uppercase tracking-wide">Performance</div>
+                      <div className="text-xs text-synapse-gray uppercase tracking-wide">Status</div>
                     </div>
                   </div>
                   

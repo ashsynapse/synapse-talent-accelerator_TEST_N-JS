@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code, Brain, Calculator, Heart, Factory, Target, Crown, BarChart3 } from "lucide-react";
@@ -8,49 +9,49 @@ const WhoWeHireSection = () => {
   const categories = [
     {
       title: "Tech",
-      description: "Engineers, PMs, AI/ML",
+      description: "Engineers, PMs, AI/ML specialists across all levels",
       icon: <Code className="h-6 w-6" />,
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      title: "Legal", 
-      description: "M&A, Tax, Litigation",
-      icon: <Brain className="h-6 w-6" />,
-      gradient: "from-purple-500 to-indigo-500"
-    },
-    {
-      title: "Finance",
-      description: "FP&A, Controllers",
+      title: "Finance", 
+      description: "Controllers, analysts, fintech specialists",
       icon: <Calculator className="h-6 w-6" />,
       gradient: "from-green-500 to-emerald-500"
     },
     {
       title: "Healthcare",
-      description: "Clinical, Research, Admin",
+      description: "Clinical, research, and administrative roles",
       icon: <Heart className="h-6 w-6" />,
       gradient: "from-red-500 to-pink-500"
     },
     {
+      title: "Legal",
+      description: "Corporate, compliance, and regulatory experts",
+      icon: <Brain className="h-6 w-6" />,
+      gradient: "from-purple-500 to-indigo-500"
+    },
+    {
       title: "Manufacturing",
-      description: "Operations, Supply Chain",
+      description: "Operations, supply chain, and engineering",
       icon: <Factory className="h-6 w-6" />,
       gradient: "from-orange-500 to-amber-500"
     },
     {
-      title: "GTM",
-      description: "Sales, Marketing, Customer Success",
+      title: "Sales & Marketing",
+      description: "Revenue generation and growth specialists",
       icon: <Target className="h-6 w-6" />,
       gradient: "from-synapse-primary to-synapse-secondary"
     },
     {
       title: "Leadership",
-      description: "C-Suite, Directors, VPs",
+      description: "C-Suite, VPs, and senior executives",
       icon: <Crown className="h-6 w-6" />,
       gradient: "from-yellow-500 to-orange-500"
     },
     {
-      title: "BizOps",
-      description: "Strategy, Operations, Analytics",
+      title: "Operations",
+      description: "Strategy, analytics, and business operations",
       icon: <BarChart3 className="h-6 w-6" />,
       gradient: "from-teal-500 to-blue-500"
     }
@@ -71,20 +72,20 @@ const WhoWeHireSection = () => {
             className="scroll-animate inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-soft border border-synapse-light/30"
           >
             <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-synapse-primary uppercase tracking-wide">Talent Categories</span>
+            <span className="text-sm font-medium text-synapse-primary uppercase tracking-wide">Market Opportunity</span>
           </div>
           <h2 
             ref={addToRefs}
             className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-8 leading-tight"
           >
-            Who We
-            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> Hire</span>
+            2B+ White-Collar
+            <span className="bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent"> Roles</span>
           </h2>
           <p 
             ref={addToRefs}
             className="scroll-animate text-xl text-synapse-gray leading-relaxed"
           >
-            Our AI-powered platform matches exceptional talent across industries and specialties
+            $758B+ global recruiting industry across tech, finance, healthcare, and beyond
           </p>
         </div>
 
