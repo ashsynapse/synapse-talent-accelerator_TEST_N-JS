@@ -27,7 +27,7 @@ const RecruiterTestimonialsSection = () => {
 
   const metrics = [
     { label: "Active Recruiters", value: "1,000+" },
-    { label: "Avg Commission", value: "$10K-$15K" },
+    { label: "Avg Commission", value: "$10K+" },
     { label: "Countries", value: "25+" },
     { label: "Daily New Jobs", value: "5+" }
   ];
@@ -48,7 +48,7 @@ const RecruiterTestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border border-gray-100 shadow-soft hover:shadow-medium transition-shadow">
               <CardContent className="p-7">
-                <Quote className="h-8 w-8 text-synapse-light mb-4" />
+                <Quote className="h-8 w-8 bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent mb-4" />
                 <p className="text-synapse-dark mb-6 leading-relaxed">
                   "{testimonial.text}"
                 </p>

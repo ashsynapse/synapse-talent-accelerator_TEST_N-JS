@@ -1,108 +1,141 @@
 
 import React from "react";
-import { Code, Heart, TrendingUp, Calculator, Factory, Users, Crown, BarChart3 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { 
+  Code2, 
+  Briefcase, 
+  Calculator, 
+  Hammer, 
+  Heart, 
+  TrendingUp, 
+  Palette, 
+  Users, 
+  ShoppingCart, 
+  Truck 
+} from "lucide-react";
 
 const IndustriesRecruiterSection = () => {
   const industries = [
     {
-      icon: <Code className="h-6 w-6" />,
       name: "Technology",
-      description: "Software engineers, data scientists, product managers, and IT professionals.",
-      gradient: "from-synapse-primary to-synapse-secondary"
+      icon: Code2,
+      description: "Software engineers, data scientists, DevOps specialists, and IT professionals",
+      roles: "1,200+ open roles"
     },
     {
-      icon: <Calculator className="h-6 w-6" />,
-      name: "Finance",
-      description: "Financial analysts, accountants, investment professionals, and fintech roles.",
-      gradient: "from-synapse-secondary to-synapse-tertiary"
-    },
-    {
-      icon: <Heart className="h-6 w-6" />,
-      name: "Healthcare",
-      description: "Nurses, physicians, healthcare administrators, and medical specialists.",
-      gradient: "from-synapse-tertiary to-synapse-primary"
-    },
-    {
-      icon: <Crown className="h-6 w-6" />,
       name: "Legal",
-      description: "Corporate lawyers, compliance specialists, and regulatory experts.",
-      gradient: "from-synapse-primary to-synapse-light"
+      icon: Briefcase,
+      description: "Attorneys, paralegals, compliance officers, and legal support staff",
+      roles: "800+ open roles"
     },
     {
-      icon: <Factory className="h-6 w-6" />,
-      name: "Manufacturing",
-      description: "Operations managers, supply chain specialists, and engineering professionals.",
-      gradient: "from-synapse-secondary to-synapse-primary"
+      name: "Accounting",
+      icon: Calculator,
+      description: "CPAs, financial analysts, bookkeepers, and tax specialists",
+      roles: "950+ open roles"
     },
     {
-      icon: <TrendingUp className="h-6 w-6" />,
+      name: "Industrial",
+      icon: Hammer,
+      description: "Engineers, project managers, quality control, and operations specialists",
+      roles: "600+ open roles"
+    },
+    {
+      name: "Healthcare",
+      icon: Heart,
+      description: "Medical professionals, administrators, technicians, and support staff",
+      roles: "750+ open roles"
+    },
+    {
+      name: "Finance",
+      icon: TrendingUp,
+      description: "Investment bankers, financial advisors, analysts, and portfolio managers",
+      roles: "650+ open roles"
+    },
+    {
+      name: "Creative",
+      icon: Palette,
+      description: "Designers, content creators, marketing specialists, and brand managers",
+      roles: "400+ open roles"
+    },
+    {
+      name: "Human Resources",
+      icon: Users,
+      description: "HR managers, talent acquisition, benefits specialists, and people operations",
+      roles: "350+ open roles"
+    },
+    {
       name: "Sales & Marketing",
-      description: "Account executives, sales managers, business development, and customer success.",
-      gradient: "from-synapse-tertiary to-synapse-secondary"
+      icon: ShoppingCart,
+      description: "Sales representatives, marketing managers, business development, and growth specialists",
+      roles: "900+ open roles"
     },
     {
-      icon: <Crown className="h-6 w-6" />,
-      name: "Leadership",
-      description: "C-Suite executives, VPs, and senior management professionals.",
-      gradient: "from-synapse-primary to-synapse-tertiary"
-    },
-    {
-      icon: <BarChart3 className="h-6 w-6" />,
-      name: "Operations",
-      description: "Strategy specialists, analytics professionals, and business operations experts.",
-      gradient: "from-synapse-light to-synapse-primary"
+      name: "Supply Chain",
+      icon: Truck,
+      description: "Logistics coordinators, procurement specialists, and supply chain analysts",
+      roles: "300+ open roles"
     }
   ];
 
   return (
-    <section className="section-padding bg-synapse-lighter/30">
+    <section className="section-padding bg-gradient-to-br from-synapse-lighter/30 via-white to-synapse-light/20">
       <div className="container-wide">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-synapse-dark mb-4">
             Industries You Can Recruit For
           </h2>
           <p className="text-lg text-synapse-gray">
-            Access opportunities across diverse industries and build your expertise in high-demand sectors.
+            Access high-quality job opportunities across diverse industries with competitive commissions.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {industries.map((industry, index) => (
-            <div key={index} className="group relative h-full">
-              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-100/50 hover:border-synapse-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center relative overflow-hidden h-full flex flex-col">
-                {/* Hover gradient overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${industry.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                
-                {/* Icon */}
-                <div className={`bg-gradient-to-br ${industry.gradient} rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3 mx-auto`}>
-                  <div className="text-white">
-                    {industry.icon}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {industries.map((industry, index) => {
+            const IconComponent = industry.icon;
+            return (
+              <Card key={index} className="border border-gray-100 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-synapse-primary to-synapse-secondary rounded-lg flex items-center justify-center mr-4">
+                      <IconComponent className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-synapse-dark">{industry.name}</h3>
+                      <p className="text-sm text-synapse-primary font-medium">{industry.roles}</p>
+                    </div>
                   </div>
-                </div>
-                
-                <h3 className="text-xl font-bold text-synapse-dark mb-4 group-hover:text-synapse-primary transition-colors duration-300">
-                  {industry.name}
-                </h3>
-                <p className="text-sm text-synapse-gray leading-relaxed group-hover:text-synapse-dark transition-colors duration-300 flex-grow">
-                  {industry.description}
-                </p>
-              </div>
-            </div>
-          ))}
+                  <p className="text-synapse-gray leading-relaxed">{industry.description}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="text-center mt-12">
           <p className="text-lg text-synapse-gray mb-6">
-            Don't see your specialty? We're constantly expanding into new industries based on recruiter expertise.
+            Ready to start recruiting in your preferred industry?
           </p>
-          <Button 
-            variant="outline"
-            className="border-synapse-primary text-synapse-primary hover:bg-synapse-light"
+          <button 
+            className="relative overflow-hidden bg-gradient-to-r from-synapse-primary to-synapse-secondary hover:from-synapse-secondary hover:to-synapse-primary text-white font-semibold text-lg py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group border-2 border-transparent"
             onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
           >
-            Discuss Your Specialty
-          </Button>
+            {/* Infinite flowing black border animation */}
+            <div className="absolute inset-0 rounded-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black to-transparent opacity-80 animate-infinite-flow rounded-xl"></div>
+            </div>
+            
+            {/* Animated shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+            
+            {/* Subtle glow animation */}
+            <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary/50 to-synapse-secondary/50 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+            
+            <span className="relative z-10 flex items-center gap-2">
+              Get Started Today
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+            </span>
+          </button>
         </div>
       </div>
     </section>
