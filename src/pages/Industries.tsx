@@ -3,50 +3,64 @@ import React from "react";
 import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Heart, DollarSign, Factory, Briefcase, Users } from "lucide-react";
+import { Code, TrendingUp, Settings, Users, DollarSign, Calculator, Scale, Factory } from "lucide-react";
 
 const industries = [
   {
     icon: <Code size={32} />,
-    title: "IT & Technology",
+    title: "Information Technology",
     description: "Specialized recruitment for software engineers, data scientists, AI/ML experts, and tech leadership",
-    href: "/industries/IT-recruitment-solutions",
+    href: "/industries/information-technology",
     roles: ["Software Engineers", "Data Scientists", "DevOps Engineers", "Product Managers"]
   },
   {
-    icon: <Heart size={32} />,
-    title: "Healthcare",
-    description: "Comprehensive healthcare recruitment from clinical staff to healthcare administration",
-    href: "/industries/healthcare-recruitment-solutions",
-    roles: ["Nurses", "Physicians", "Healthcare IT", "Medical Research"]
+    icon: <TrendingUp size={32} />,
+    title: "Digital Marketing",
+    description: "Digital marketing professionals including SEO specialists, content creators, and marketing managers",
+    href: "/industries/digital-marketing",
+    roles: ["Digital Marketers", "SEO Specialists", "Content Creators", "Social Media Managers"]
   },
   {
-    icon: <DollarSign size={32} />,
-    title: "Finance & Banking",
-    description: "Financial services recruitment including investment banking, fintech, and regulatory roles",
-    href: "/industries/finance-recruitment-solutions",
-    roles: ["Financial Analysts", "Investment Bankers", "Risk Managers", "Compliance Officers"]
+    icon: <Settings size={32} />,
+    title: "Engineering",
+    description: "Engineering professionals across mechanical, electrical, civil, and other engineering disciplines",
+    href: "/industries/engineering",
+    roles: ["Mechanical Engineers", "Electrical Engineers", "Civil Engineers", "Project Engineers"]
+  },
+  {
+    icon: <Users size={32} />,
+    title: "Human Resources (HR)",
+    description: "HR professionals including talent acquisition specialists, HR managers, and organizational development",
+    href: "/industries/human-resources",
+    roles: ["HR Managers", "Talent Acquisition", "HR Business Partners", "Compensation Analysts"]
+  },
+  {
+    icon: <TrendingUp size={32} />,
+    title: "Sales",
+    description: "Sales professionals from account executives to sales directors and business development roles",
+    href: "/industries/sales",
+    roles: ["Account Executives", "Sales Directors", "Business Development", "Sales Engineers"]
+  },
+  {
+    icon: <Calculator size={32} />,
+    title: "Accounting",
+    description: "Accounting and finance professionals including CPAs, financial analysts, and accounting managers",
+    href: "/industries/accounting",
+    roles: ["CPAs", "Financial Analysts", "Accounting Managers", "Tax Specialists"]
+  },
+  {
+    icon: <Scale size={32} />,
+    title: "Legal",
+    description: "Legal professionals specializing in corporate law, litigation, compliance, and legal operations",
+    href: "/industries/legal",
+    roles: ["Corporate Lawyers", "Paralegals", "Legal Assistants", "Compliance Officers"]
   },
   {
     icon: <Factory size={32} />,
     title: "Manufacturing",
-    description: "Industrial and manufacturing recruitment from operations to supply chain management",
-    href: "/industries/manufacturing-recruitment-solutions",
+    description: "Manufacturing professionals from operations to supply chain management and quality control",
+    href: "/industries/manufacturing",
     roles: ["Operations Managers", "Quality Engineers", "Supply Chain", "Plant Managers"]
-  },
-  {
-    icon: <Briefcase size={32} />,
-    title: "Legal Services",
-    description: "Legal recruitment specializing in corporate law, litigation, and compliance",
-    href: "/industries/legal-recruitment-solutions",
-    roles: ["Corporate Lawyers", "Paralegals", "Legal Assistants", "Compliance Managers"]
-  },
-  {
-    icon: <Users size={32} />,
-    title: "Sales & Marketing",
-    description: "Go-to-market talent acquisition for sales, marketing, and customer success roles",
-    href: "/industries/sales-marketing-recruitment",
-    roles: ["Sales Directors", "Marketing Managers", "Customer Success", "Business Development"]
   }
 ];
 
@@ -67,7 +81,7 @@ const Industries = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {industries.map((industry, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group h-full">
                 <CardContent className="p-6 flex flex-col h-full">

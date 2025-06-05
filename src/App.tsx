@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import Home from "./pages/Home";
 import RecruitmentSolutions from "./pages/RecruitmentSolutions";
 import Industries from "./pages/Industries";
+import Products from "./pages/Products";
 import Recruiters from "./pages/Recruiters";
 import Contact from "./pages/Contact";
 import Locations from "./pages/Locations";
@@ -36,11 +37,11 @@ const App = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/recruitment-solutions" element={<RecruitmentSolutions />} />
             <Route path="/industries" element={<Industries />} />
+            <Route path="/recruitment-tools" element={<Products />} />
             <Route path="/recruiters" element={<Recruiters />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
             {/* Placeholder routes for future implementation */}
-            <Route path="/recruitment-tools" element={<div>Recruitment Tools - Coming Soon</div>} />
             <Route path="/resources" element={<div>Resources - Coming Soon</div>} />
             <Route path="/for-employers" element={<div>For Employers - Coming Soon</div>} />
             <Route path="/for-recruiters" element={<div>For Recruiters - Coming Soon</div>} />

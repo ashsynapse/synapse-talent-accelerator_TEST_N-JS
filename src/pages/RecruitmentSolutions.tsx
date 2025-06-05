@@ -3,7 +3,7 @@ import React from "react";
 import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Users, Target, Clock } from "lucide-react";
+import { Brain, Users, Target, Clock, Globe, UserCheck, Briefcase, GraduationCap } from "lucide-react";
 
 const solutions = [
   {
@@ -14,9 +14,15 @@ const solutions = [
   },
   {
     icon: <Target size={32} />,
-    title: "Active Recruitment",
-    description: "Streamlined process for candidates actively seeking new opportunities",
-    href: "/recruitment-solutions/active-recruitment"
+    title: "Candidate Sourcing",
+    description: "Comprehensive candidate sourcing strategies to find the perfect match for your roles",
+    href: "/recruitment-solutions/candidate-sourcing"
+  },
+  {
+    icon: <Briefcase size={32} />,
+    title: "Project Staffing",
+    description: "Specialized staffing solutions for short-term and long-term project requirements",
+    href: "/recruitment-solutions/project-staffing"
   },
   {
     icon: <Users size={32} />,
@@ -25,10 +31,28 @@ const solutions = [
     href: "/recruitment-solutions/executive-search"
   },
   {
+    icon: <Globe size={32} />,
+    title: "Remote Staffing",
+    description: "Global remote talent acquisition for distributed teams and remote-first companies",
+    href: "/recruitment-solutions/remote-staffing"
+  },
+  {
+    icon: <UserCheck size={32} />,
+    title: "Permanent Staffing",
+    description: "Full-time permanent placement services across all industries and skill levels",
+    href: "/recruitment-solutions/permanent-staffing"
+  },
+  {
     icon: <Clock size={32} />,
-    title: "Contract Staffing",
+    title: "Contingent Staffing",
     description: "Flexible staffing solutions for temporary and contract positions",
-    href: "/recruitment-solutions/contract-staffing"
+    href: "/recruitment-solutions/contingent-staffing"
+  },
+  {
+    icon: <GraduationCap size={32} />,
+    title: "Apprenticeship Recruitment",
+    description: "Specialized recruitment for apprenticeship programs and early career professionals",
+    href: "/recruitment-solutions/apprenticeship-recruitment"
   }
 ];
 
