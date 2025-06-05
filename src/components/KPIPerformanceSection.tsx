@@ -1,38 +1,34 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Building2, Briefcase, TrendingUp, Brain, Users } from "lucide-react";
 
 const KPIPerformanceSection = () => {
   const kpis = [
     {
       value: "700+",
       label: "Clients Served",
-      icon: "🏢"
+      icon: <Building2 className="h-8 w-8 text-synapse-primary" />
     },
     {
       value: "1,000+",
       label: "Roles Filled",
-      icon: "💼"
+      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />
     },
     {
       value: "300%",
       label: "YoY Growth",
-      icon: "📈"
+      icon: <TrendingUp className="h-8 w-8 text-synapse-primary" />
     },
     {
-      value: "<72 Hours",
-      label: "Avg. Time-to-Deliver",
-      icon: "⚡"
+      value: "95%",
+      label: "AI Matching Accuracy",
+      icon: <Brain className="h-8 w-8 text-synapse-primary" />
     },
     {
       value: "96%",
       label: "Client Retention",
-      icon: "🤝"
-    },
-    {
-      value: "2 Regions",
-      label: "Covered per Role",
-      icon: "🌍"
+      icon: <Users className="h-8 w-8 text-synapse-primary" />
     }
   ];
 
@@ -48,14 +44,16 @@ const KPIPerformanceSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {kpis.map((kpi, index) => (
             <Card 
               key={index} 
               className="border-none shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
             >
               <CardContent className="p-6 text-center">
-                <div className="text-3xl mb-3">{kpi.icon}</div>
+                <div className="bg-synapse-lighter rounded-lg p-4 inline-block mb-4">
+                  {kpi.icon}
+                </div>
                 <div className="text-2xl md:text-3xl font-bold text-synapse-primary mb-2">
                   {kpi.value}
                 </div>
