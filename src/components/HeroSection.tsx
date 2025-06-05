@@ -8,13 +8,13 @@ const HeroSection = () => {
       <div className="container-wide">
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
-            AI-Powered SaaS Recruitment Platform for Faster, Smarter Hiring
+            Automating the Entire Hiring Process with AI
           </h1>
           <p className="text-xl md:text-2xl text-synapse-gray mb-10 leading-relaxed max-w-4xl mx-auto">
-            From candidate sourcing to offer — automate every step of hiring with AI precision and global recruiter expertise.
+            From job intake to offer, Synapse is your global AI-powered recruitment platform — blending automation and human expertise to deliver top talent faster than anyone in the market.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               className="btn-primary text-lg py-4 px-8 shadow-medium hover:shadow-lg transition-shadow"
               onClick={() => window.location.href = "/contact"}
@@ -28,21 +28,6 @@ const HeroSection = () => {
             >
               Join as Recruiter
             </Button>
-          </div>
-
-          <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-synapse-gray">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>72h delivery</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>AI-powered matching</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-              <span>Global talent pool</span>
-            </div>
           </div>
         </div>
       </div>
