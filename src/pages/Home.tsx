@@ -1,7 +1,7 @@
 
 import React from "react";
 import MainHeader from "../components/MainHeader";
-import HeroSection from "../components/HeroSection";
+import HomeHeroSection from "../components/HomeHeroSection";
 import LogoCarousel from "../components/LogoCarousel";
 import KPIPerformanceSection from "../components/KPIPerformanceSection";
 import WhoWeHireSection from "../components/WhoWeHireSection";
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="min-h-screen">
       <MainHeader />
       <main>
-        <HeroSection />
+        <HomeHeroSection />
         <LogoCarousel />
         <KPIPerformanceSection />
         <WhoWeHireSection />
