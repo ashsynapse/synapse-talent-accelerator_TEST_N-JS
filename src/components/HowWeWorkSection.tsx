@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Send, Users, Target, CheckCircle } from "lucide-react";
@@ -14,18 +13,18 @@ const HowWeWorkSection = () => {
       icon: <Send className="h-6 w-6" />,
     },
     {
-      title: "Expert Recruiter Network",
-      description: "Our AI matches you with specialized recruiters who have proven success in your industry and role type.",
+      title: "AI-Powered Sourcing & Shortlisting",
+      description: "Our AI technology sources and shortlists candidates from extensive databases, ensuring we capture the best talent available.",
       icon: <Users className="h-6 w-6" />,
     },
     {
-      title: "Candidate Sourcing & Vetting",
-      description: "Recruiters leverage their networks and our tools to source, screen, and present only top-tier candidates.",
+      title: "Expert Recruiter Vetting",
+      description: "Vetted candidates are thoroughly evaluated by our highly specialized large pool of recruiters for quality assurance.",
       icon: <Target className="h-6 w-6" />,
     },
     {
-      title: "Seamless Hiring Experience",
-      description: "From interviews to offers, we provide end-to-end support to ensure a smooth hiring process.",
+      title: "Top 1% Candidate Delivery",
+      description: "We deliver only the top 1% candidates with their comprehensive resumes, ensuring you get the absolute best talent.",
       icon: <CheckCircle className="h-6 w-6" />,
     },
   ];
