@@ -39,9 +39,9 @@ const RecruiterFinalCTASection = () => {
           </Button>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 text-sm opacity-75">
-          <span>✓ No setup fees</span>
-          <span>✓ Start earning immediately</span>
-          <span>✓ Full support provided</span>
+          <span>✓ High-paying roles</span>
+          <span>✓ AI-powered tools</span>
+          <span>✓ Global network</span>
         </div>
       </div>
     </section>

@@ -55,16 +55,16 @@ const FinalCtaSection = () => {
           
           <div className="mt-8 flex items-center justify-center gap-6 text-white/70 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>72h delivery</span>
+              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+              <span>100% AI-powered</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span>AI-powered matching</span>
+              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+              <span>Zero human intervention</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-              <span>Global talent pool</span>
+              <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+              <span>Infinite scale</span>
             </div>
           </div>
         </div>
