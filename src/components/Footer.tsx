@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Linkedin, Twitter, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,16 +15,36 @@ const Footer = () => {
               Global AI-powered recruitment platform automating the entire hiring lifecycle — from job intake to offer — blending artificial intelligence with expert recruiters.
             </p>
             <div className="flex space-x-4">
-              {/* Social Media Icons */}
-              {["LinkedIn", "Twitter", "Facebook", "Instagram"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
-                >
-                  <span className="text-sm">{social.charAt(0)}</span>
-                </a>
-              ))}
+              <a
+                href="#"
+                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a
+                href="#"
+                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+              >
+                <Twitter size={20} />
+              </a>
+              <a
+                href="#"
+                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="#"
+                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="#"
+                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+              >
+                <MessageCircle size={20} />
+              </a>
             </div>
           </div>
 
@@ -151,26 +172,18 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-
-            <h4 className="text-lg font-bold mb-4 mt-8">Other Pages</h4>
-            <ul className="space-y-2">
-              {["Glossary", "Partners"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-white transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-gray-700 text-gray-400 flex flex-col md:flex-row justify-between items-center">
           <p>© {currentYear} Synapse International. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" className="hover:text-white transition-colors">
+              Glossary
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Partners
+            </a>
             <a href="#" className="hover:text-white transition-colors">
               Privacy
             </a>
