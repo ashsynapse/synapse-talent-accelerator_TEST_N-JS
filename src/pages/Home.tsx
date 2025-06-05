@@ -2,12 +2,11 @@
 import React from "react";
 import MainHeader from "../components/MainHeader";
 import HeroSection from "../components/HeroSection";
-import KeyMetricsSection from "../components/KeyMetricsSection";
 import LogoCarousel from "../components/LogoCarousel";
-import IndustryRolesSection from "../components/IndustryRolesSection";
-import PlatformFeaturesSection from "../components/PlatformFeaturesSection";
+import WhyChooseUsSection from "../components/WhyChooseUsSection";
+import KPIPerformanceSection from "../components/KPIPerformanceSection";
+import HowWeWorkSection from "../components/HowWeWorkSection";
 import TestimonialsSection from "../components/TestimonialsSection";
-import NewsletterSignup from "../components/NewsletterSignup";
 import FinalCtaSection from "../components/FinalCtaSection";
 import Footer from "../components/Footer";
 
@@ -17,12 +16,11 @@ const Home = () => {
       <MainHeader />
       <main>
         <HeroSection />
-        <KeyMetricsSection />
         <LogoCarousel />
-        <IndustryRolesSection />
-        <PlatformFeaturesSection />
+        <WhyChooseUsSection />
+        <KPIPerformanceSection />
+        <HowWeWorkSection />
         <TestimonialsSection />
-        <NewsletterSignup />
         <FinalCtaSection />
       </main>
       <Footer />
