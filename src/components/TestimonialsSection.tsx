@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Quote, Star, ArrowLeft, ArrowRight } from "lucide-react";
 import {
@@ -68,7 +67,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-white via-synapse-lighter/20 to-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-40 h-40 bg-synapse-primary rounded-full blur-3xl animate-pulse"></div>
@@ -117,12 +116,12 @@ const TestimonialsSection = () => {
                 <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/2">
                   <div 
                     ref={addToRefs}
-                    className="scroll-animate bg-white/95 backdrop-blur-sm p-10 rounded-3xl shadow-soft border border-white/60 h-full flex flex-col hover:shadow-xl transition-all duration-700 hover:-translate-y-2 group relative overflow-hidden"
+                    className="scroll-animate bg-white/95 backdrop-blur-sm p-10 rounded-3xl shadow-soft border border-white/60 hover:shadow-xl transition-all duration-700 hover:-translate-y-2 group relative overflow-hidden h-full"
                   >
                     {/* Gradient overlay */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                     
-                    <div className="relative z-10 flex flex-col h-full">
+                    <div className="relative z-10 flex flex-col h-full min-h-[400px]">
                       {/* Quote and rating */}
                       <div className="flex items-center justify-between mb-6">
                         <Quote className="h-10 w-10 text-synapse-primary/40 group-hover:text-synapse-primary/60 transition-colors duration-300" />
@@ -139,7 +138,7 @@ const TestimonialsSection = () => {
                       </p>
                       
                       {/* Author info */}
-                      <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                      <div className="flex items-center gap-4 pt-6 border-t border-gray-100 mt-auto">
                         <div className="relative">
                           <Avatar className="h-14 w-14 ring-3 ring-synapse-light/50 group-hover:ring-synapse-primary/30 transition-all duration-300">
                             <AvatarImage src={testimonial.avatar} alt={testimonial.author} />

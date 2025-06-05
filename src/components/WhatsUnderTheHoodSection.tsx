@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Globe, Brain, Target, Zap, ArrowRight } from "lucide-react";
@@ -38,7 +37,7 @@ const WhatsUnderTheHoodSection = () => {
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-gradient-to-br from-synapse-lighter/40 via-white to-synapse-light/30 relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-synapse-lighter/40 via-white to-synapse-light/30 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full" 
@@ -77,13 +76,13 @@ const WhatsUnderTheHoodSection = () => {
             <div 
               key={feature.title}
               ref={addToRefs}
-              className="scroll-animate group relative"
+              className="scroll-animate group relative h-full"
             >
-              <div className="bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-xl transition-all duration-700 hover:-translate-y-3 border border-gray-100/50 hover:border-synapse-primary/20 relative overflow-hidden">
+              <div className="bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-soft hover:shadow-xl transition-all duration-700 hover:-translate-y-3 border border-gray-100/50 hover:border-synapse-primary/20 relative overflow-hidden h-full flex flex-col">
                 {/* Gradient overlay on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col h-full">
                   {/* Icon and stats */}
                   <div className="flex items-center justify-between mb-6">
                     <div className={`bg-gradient-to-br ${feature.gradient} rounded-2xl p-4 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3`}>
@@ -101,12 +100,12 @@ const WhatsUnderTheHoodSection = () => {
                   <h3 className="text-2xl font-bold text-synapse-dark mb-5 group-hover:text-synapse-primary transition-colors duration-300 leading-tight">
                     {feature.title}
                   </h3>
-                  <p className="text-synapse-gray leading-relaxed text-lg group-hover:text-synapse-dark transition-colors duration-300 mb-6">
+                  <p className="text-synapse-gray leading-relaxed text-lg group-hover:text-synapse-dark transition-colors duration-300 mb-6 flex-grow">
                     {feature.description}
                   </p>
                   
                   {/* Action indicator */}
-                  <div className="flex items-center text-synapse-primary font-medium group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-synapse-primary font-medium group-hover:translate-x-2 transition-transform duration-300 mt-auto">
                     <span className="text-sm uppercase tracking-wide">Learn More</span>
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </div>

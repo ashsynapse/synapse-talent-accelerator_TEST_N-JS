@@ -30,7 +30,7 @@ const HowWeWorkSection = () => {
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-white relative overflow-hidden">
+    <section className="section-padding bg-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-synapse-primary rounded-full blur-3xl"></div>
@@ -66,14 +66,14 @@ const HowWeWorkSection = () => {
             <Card
               key={index}
               ref={addToRefs}
-              className="scroll-animate border-none shadow-soft hover:shadow-medium transition-shadow duration-300 group"
+              className="scroll-animate border-none shadow-soft hover:shadow-medium transition-shadow duration-300 group h-full flex flex-col"
             >
-              <CardContent className="p-6 flex flex-col items-center justify-center text-center">
+              <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
                 <div className="w-12 h-12 rounded-full bg-synapse-primary/10 text-synapse-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   {step.icon}
                 </div>
                 <h3 className="text-lg font-bold text-synapse-dark mb-2 group-hover:text-synapse-primary transition-colors duration-300">{step.title}</h3>
-                <p className="text-synapse-gray group-hover:text-synapse-dark transition-colors duration-300">{step.description}</p>
+                <p className="text-synapse-gray group-hover:text-synapse-dark transition-colors duration-300 flex-grow">{step.description}</p>
               </CardContent>
             </Card>
           ))}

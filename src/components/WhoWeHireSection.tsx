@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code, Brain, Calculator, Heart, Factory, Target, Crown, BarChart3 } from "lucide-react";
@@ -58,7 +57,7 @@ const WhoWeHireSection = () => {
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-gradient-to-br from-synapse-lighter/30 via-white to-synapse-light/20 relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-synapse-lighter/30 via-white to-synapse-light/20 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-32 h-32 bg-synapse-primary rounded-full blur-3xl"></div>
@@ -94,14 +93,14 @@ const WhoWeHireSection = () => {
             <div 
               key={category.title}
               ref={addToRefs}
-              className="scroll-animate group relative"
+              className="scroll-animate group relative h-full"
             >
-              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-100/50 hover:border-synapse-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center relative overflow-hidden">
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl border border-gray-100/50 hover:border-synapse-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-center relative overflow-hidden h-full flex flex-col">
                 {/* Hover gradient overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
                 
                 {/* Icon */}
-                <div className={`bg-gradient-to-br ${category.gradient} rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3`}>
+                <div className={`bg-gradient-to-br ${category.gradient} rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3 mx-auto`}>
                   <div className="text-white">
                     {category.icon}
                   </div>
@@ -110,7 +109,7 @@ const WhoWeHireSection = () => {
                 <h3 className="text-xl font-bold text-synapse-dark mb-4 group-hover:text-synapse-primary transition-colors duration-300">
                   {category.title}
                 </h3>
-                <p className="text-sm text-synapse-gray leading-relaxed group-hover:text-synapse-dark transition-colors duration-300">
+                <p className="text-sm text-synapse-gray leading-relaxed group-hover:text-synapse-dark transition-colors duration-300 flex-grow">
                   {category.description}
                 </p>
               </div>
