@@ -9,37 +9,100 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const srnFAQs = [
+  {
+    question: "What is SRN / Synapse?",
+    answer: "SRN (Synapse Recruiter Network), also known simply as Synapse, is part of Synapse International — a Global AI-First Recruitment Platform built with an extensive worldwide network of professional recruiters. We combine the power of AI with the human touch to deliver faster, higher-quality hiring solutions for startups and growing companies across the world. On SRN, recruiters collaborate, share client job opportunities, and earn commissions on successful placements — unlocking a new, smarter way to scale talent acquisition globally. Note: SRN and Synapse refer to the same platform and community."
+  },
+  {
+    question: "Can I Post SRN Jobs Online?",
+    answer: "⭐ No. Never. SRN jobs must not be posted online. You can, however, share them directly with potential candidates who are a fit for the particular job role."
+  },
+  {
+    question: "Are There Membership Fees?",
+    answer: "No. There are no membership fees. SRN earns from placement fees and shares a percentage with recruiters."
+  },
+  {
+    question: "What Are Recruiter Responsibilities?",
+    answer: "Candidate Submissions: Recommend top candidates. Client Referrals: Introduce hiring clients to SRN. Compliance & Confidentiality: Follow laws and protect all sensitive data."
+  },
+  {
+    question: "How Are Jobs & Clients Shared?",
+    answer: "Jobs are posted in Discord and the SRN Job Board. Candidate tracking is done via the ATS Platform."
+  },
+  {
+    question: "Can I Work with My Own Clients?",
+    answer: "Yes, you are allowed to work independently with your own clients while also using SRN's job opportunities."
+  },
+  {
+    question: "How Much Commission Do Recruiters Earn?",
+    answer: "⭐ Recruiters earn 50% of the total placement fee. Example: If a role pays $500K and SRN's fee is 25% ($125K), your commission = $62,500."
+  },
+  {
+    question: "When Are Commissions Paid?",
+    answer: "Within 30 days after SRN receives the placement fee from the client."
+  },
+  {
+    question: "What if a Candidate Doesn't Complete the Guarantee Period?",
+    answer: "Commission payments may be impacted according to specific job terms if the candidate fails to complete the guarantee period."
+  },
+  {
+    question: "How Long Does the Agreement Last?",
+    answer: "The agreement lasts indefinitely until terminated by either party with written notice."
+  },
+  {
+    question: "What is the Recruiter Status?",
+    answer: "Recruiters are independent contractors, not employees or partners of SRN."
+  },
+  {
+    question: "What Are the Confidentiality Rules?",
+    answer: "Use confidential information only for SRN activities. Do not disclose client or candidate details. Protect all sensitive information."
+  },
+  {
+    question: "What Are the Non-Solicitation Rules?",
+    answer: "For 1 year after leaving SRN, you must: Not solicit SRN clients. Not recruit SRN employees or members."
+  },
+  {
+    question: "How Do I Receive Commission Payments?",
+    answer: "Payments are processed through Deel (which includes Wise for international payments)."
+  },
+  {
+    question: "Why Are Some Company Names Hidden?",
+    answer: "For confidentiality reasons. You can share general industry and location details with candidates but not company names unless permitted."
+  }
+];
+
 const generalFAQs = [
   {
     question: "What makes Synapse International different from other recruitment agencies?",
-    answer: "We combine cutting-edge AI technology with expert human recruiters to provide faster, more accurate matches. Our AI-powered platform screens thousands of candidates in minutes, while our experienced recruiters ensure cultural fit and provide personalized service throughout the entire process."
+    answer: "We're an AI-first recruitment platform that focuses exclusively on the top 1% of talent. Unlike traditional agencies, we don't post job boards or chase volume. Our DNA is built around identifying exceptional professionals who aren't actively job hunting but are open to extraordinary opportunities. We combine cutting-edge AI technology with human expertise to deliver faster, more accurate matches."
   },
   {
     question: "How does your AI-powered recruitment process work?",
-    answer: "Our AI system analyzes job requirements, candidate profiles, skills, experience, and cultural preferences to identify the best matches. It continuously learns from successful placements to improve accuracy. However, all final decisions involve human oversight to ensure the perfect fit for both candidates and clients."
+    answer: "Our AI system analyzes job requirements, candidate profiles, skills, experience, and cultural preferences to identify the best matches from the top 1% of professionals. It continuously learns from successful placements to improve accuracy. However, all final decisions involve human oversight to ensure the perfect fit for both candidates and clients."
   },
   {
     question: "What industries do you specialize in?",
-    answer: "We serve multiple industries including Information Technology, Digital Marketing, Engineering, Human Resources, Sales, Accounting, Legal, and Manufacturing. Our recruiters have deep expertise in their respective sectors and understand industry-specific requirements."
+    answer: "We serve multiple industries including Information Technology, Digital Marketing, Engineering, Human Resources, Sales, Accounting, Legal, and Manufacturing. Our recruiters have deep expertise in their respective sectors and understand industry-specific requirements for top-tier talent."
   },
   {
     question: "Do you handle both permanent and temporary staffing?",
-    answer: "Yes, we offer comprehensive staffing solutions including permanent placements, contingent staffing, project-based roles, executive search, and remote staffing. We can adapt our services to meet your specific hiring needs and timeline."
+    answer: "Yes, we offer comprehensive staffing solutions including permanent placements, contingent staffing, project-based roles, executive search, and remote staffing. We specialize in connecting companies with the most exceptional talent for any engagement type."
   },
   {
     question: "What geographical regions do you serve?",
-    answer: "We operate globally with a strong presence in the USA, Canada, and expanding into other markets. Our remote staffing capabilities allow us to source talent worldwide while our local expertise ensures compliance with regional employment laws."
+    answer: "We operate globally with headquarters in Los Angeles, CA, and a network of 1K+ professional recruiters worldwide. Our AI-powered platform and global network allow us to source exceptional talent anywhere while ensuring compliance with regional employment laws."
   }
 ];
 
 const clientFAQs = [
   {
     question: "How much do your recruitment services cost?",
-    answer: "Our pricing varies based on the type of service, role level, and complexity. We offer competitive rates with transparent pricing models. Contact us for a customized quote based on your specific requirements. We also offer volume discounts for multiple positions."
+    answer: "Our pricing varies based on the type of service, role level, and complexity. We offer competitive rates with transparent pricing models focused on quality over quantity. Contact us for a customized quote based on your specific requirements for top 1% talent."
   },
   {
     question: "What is your typical time-to-hire?",
-    answer: "Our AI-powered process significantly reduces time-to-hire. On average, we can present qualified candidates within 48-72 hours and complete the hiring process 40-60% faster than traditional methods. Timeline varies based on role complexity and specific requirements."
+    answer: "Our AI-powered process significantly reduces time-to-hire. We can typically present qualified candidates from the top 1% within 48-72 hours and complete the hiring process 40-60% faster than traditional methods. Timeline varies based on role complexity and specific requirements."
   },
   {
     question: "Do you offer any guarantees on your placements?",
@@ -47,42 +110,19 @@ const clientFAQs = [
   },
   {
     question: "How do you ensure candidate quality?",
-    answer: "We use a multi-step vetting process combining AI screening, skills assessments, background checks, reference verification, and thorough interviews. Our recruiters also assess cultural fit and career motivations to ensure long-term success."
+    answer: "We use a multi-step vetting process combining AI screening, skills assessments, background checks, reference verification, and thorough interviews. Our focus on the top 1% of talent means we only work with professionals who have proven track records of exceptional performance."
   },
   {
     question: "Can you handle high-volume recruitment projects?",
-    answer: "Absolutely. Our AI platform is designed to scale efficiently for high-volume needs. We've successfully managed projects requiring 100+ hires within tight timelines while maintaining quality standards. We assign dedicated project teams for large-scale initiatives."
-  }
-];
-
-const candidateFAQs = [
-  {
-    question: "Is there any cost for candidates to use your services?",
-    answer: "No, our services are completely free for job candidates. We are paid by the hiring companies, so there are never any fees or charges for candidates seeking employment opportunities through our platform."
-  },
-  {
-    question: "How do I apply for positions through Synapse?",
-    answer: "You can submit your resume through our website, apply to specific job postings, or be contacted by our recruiters if your profile matches client requirements. Our AI system will match your profile with relevant opportunities automatically."
-  },
-  {
-    question: "Will I work directly with a human recruiter?",
-    answer: "Yes, while our AI handles initial matching and screening, you'll work directly with an experienced human recruiter who will guide you through the process, prepare you for interviews, and advocate for you with the client."
-  },
-  {
-    question: "How do you protect my personal information?",
-    answer: "We take data privacy seriously and comply with all relevant data protection regulations including GDPR. Your information is secure and only shared with potential employers with your explicit consent. You can update your privacy preferences at any time."
-  },
-  {
-    question: "Do you provide interview coaching and career advice?",
-    answer: "Yes, our recruiters provide interview preparation, resume optimization, salary negotiation guidance, and career counseling. We're invested in your success and offer ongoing support throughout your job search and beyond."
+    answer: "While our focus is on quality over quantity, our AI platform can efficiently scale for projects requiring multiple top-tier hires. We've successfully managed projects requiring dozens of exceptional placements while maintaining our high standards for the top 1% of talent."
   }
 ];
 
 const FAQ = () => {
   return (
     <PageTemplate 
-      title="Frequently Asked Questions"
-      description="Find answers to common questions about our recruitment services, processes, and policies"
+      title="Frequently Asked Questions - Synapse International"
+      description="Find answers to common questions about our AI-powered recruitment services, SRN platform, and policies"
     >
       <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
@@ -91,8 +131,25 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Get answers to the most common questions about our AI-powered recruitment services
+              Get answers to the most common questions about our AI-first recruitment platform and SRN community
             </p>
+          </div>
+
+          {/* SRN/Synapse FAQs */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-synapse-dark mb-8">SRN (Synapse Recruiter Network)</h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {srnFAQs.map((faq, index) => (
+                <AccordionItem key={index} value={`srn-${index}`} className="border border-gray-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-synapse-primary">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-synapse-gray whitespace-pre-line">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
 
           {/* General FAQs */}
@@ -129,30 +186,13 @@ const FAQ = () => {
             </Accordion>
           </div>
 
-          {/* Candidate FAQs */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-synapse-dark mb-8">For Job Seekers</h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {candidateFAQs.map((faq, index) => (
-                <AccordionItem key={index} value={`candidate-${index}`} className="border border-gray-200 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:text-synapse-primary">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-synapse-gray">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-
           {/* Contact Section */}
           <div className="text-center bg-synapse-lighter/30 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-synapse-dark mb-4">
               Still Have Questions?
             </h2>
             <p className="text-synapse-gray mb-6 max-w-2xl mx-auto">
-              Can't find the answer you're looking for? Our team is here to help with any questions about our recruitment services.
+              Can't find the answer you're looking for? Our team is here to help with any questions about our AI-first recruitment services or SRN platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -164,9 +204,9 @@ const FAQ = () => {
               <Button 
                 variant="outline"
                 className="border-synapse-primary text-synapse-primary hover:bg-synapse-light"
-                onClick={() => window.location.href = "mailto:info@synapseint.com"}
+                onClick={() => window.location.href = "/recruiters"}
               >
-                Send Email
+                Join SRN Network
               </Button>
             </div>
           </div>

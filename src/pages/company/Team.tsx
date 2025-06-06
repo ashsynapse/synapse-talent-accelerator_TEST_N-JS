@@ -2,103 +2,42 @@
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Users, Globe } from "lucide-react";
 
 const leadership = [
   {
-    name: "Sarah Johnson",
+    name: "Ali Taghikhani",
     role: "CEO & Co-Founder",
-    bio: "Former VP of Talent at tech unicorn. 15+ years in executive recruitment with expertise in scaling high-growth companies.",
-    image: "/placeholder.svg",
+    bio: "Visionary leader driving AI-first recruitment innovation. 11+ years of experience revolutionizing how exceptional talent connects with outstanding opportunities.",
+    image: "/lovable-uploads/288b2441-5447-41a5-8e94-983b2646dbfb.png",
     linkedin: "#",
-    email: "sarah@synapseint.com"
+    email: "ali@synapseint.com"
   },
   {
-    name: "Michael Chen",
-    role: "CTO & Co-Founder",
-    bio: "AI/ML expert with PhD from Stanford. Previously led engineering teams at Google and Microsoft.",
-    image: "/placeholder.svg",
+    name: "Cody Sklar",
+    role: "COO & Co-Founder",
+    bio: "Operations expert scaling global recruitment networks. Focused on building systems that connect the world's top 1% of talent with companies that value excellence.",
+    image: "/lovable-uploads/cff89055-2eee-4829-9e61-79d45d33d003.png",
     linkedin: "#",
-    email: "michael@synapseint.com"
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "VP of Global Operations",
-    bio: "International business leader with 12+ years experience managing global recruitment operations across 20+ countries.",
-    image: "/placeholder.svg",
-    linkedin: "#",
-    email: "emily@synapseint.com"
-  },
-  {
-    name: "David Kim",
-    role: "Head of AI Research",
-    bio: "Former research scientist at DeepMind. Specializes in natural language processing and machine learning for talent matching.",
-    image: "/placeholder.svg",
-    linkedin: "#",
-    email: "david@synapseint.com"
-  }
-];
-
-const recruitmentTeam = [
-  {
-    name: "Lisa Thompson",
-    role: "Senior Technical Recruiter",
-    specialization: "Software Engineering & AI",
-    experience: "8+ years",
-    image: "/placeholder.svg"
-  },
-  {
-    name: "James Wilson",
-    role: "Executive Search Director",
-    specialization: "C-Suite & Leadership",
-    experience: "12+ years",
-    image: "/placeholder.svg"
-  },
-  {
-    name: "Anna Martinez",
-    role: "Healthcare Recruitment Lead",
-    specialization: "Healthcare & Life Sciences",
-    experience: "10+ years",
-    image: "/placeholder.svg"
-  },
-  {
-    name: "Robert Taylor",
-    role: "Manufacturing Specialist",
-    specialization: "Engineering & Manufacturing",
-    experience: "15+ years",
-    image: "/placeholder.svg"
-  },
-  {
-    name: "Jennifer Lee",
-    role: "Sales Recruitment Manager",
-    specialization: "Sales & Business Development",
-    experience: "7+ years",
-    image: "/placeholder.svg"
-  },
-  {
-    name: "Carlos Garcia",
-    role: "Remote Staffing Expert",
-    specialization: "Global Remote Teams",
-    experience: "9+ years",
-    image: "/placeholder.svg"
+    email: "cody@synapseint.com"
   }
 ];
 
 const Team = () => {
   return (
     <PageTemplate 
-      title="Our Team"
-      description="Meet the experts behind Synapse International's recruitment success"
+      title="Our Team - Synapse International"
+      description="Meet the leadership and global team behind Synapse's AI-first recruitment revolution"
     >
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
-              Meet Our Expert Team
+              Meet Our Global Team
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Our diverse team of recruitment experts, technologists, and industry specialists are dedicated to connecting exceptional talent with outstanding opportunities.
+              The exceptional minds behind Synapse International's AI-first recruitment revolution, connecting the world's top 1% of talent with outstanding opportunities.
             </p>
           </div>
         </div>
@@ -110,37 +49,37 @@ const Team = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Leadership Team</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
-              Visionary leaders with decades of combined experience in recruitment, technology, and business growth
+              Visionary leaders with over 11 years of combined experience in AI-powered recruitment innovation
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {leadership.map((member, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-synapse-lighter overflow-hidden">
+                <CardContent className="p-8 text-center">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-medium">
                     <img 
                       src={member.image} 
                       alt={member.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-synapse-dark mb-1">{member.name}</h3>
-                  <p className="text-synapse-primary font-medium mb-3">{member.role}</p>
-                  <p className="text-sm text-synapse-gray mb-4">{member.bio}</p>
+                  <h3 className="text-2xl font-bold text-synapse-dark mb-2">{member.name}</h3>
+                  <p className="text-synapse-primary font-medium mb-4 text-lg">{member.role}</p>
+                  <p className="text-synapse-gray mb-6 leading-relaxed">{member.bio}</p>
                   
-                  <div className="flex justify-center gap-3">
+                  <div className="flex justify-center gap-4">
                     <a 
                       href={member.linkedin} 
-                      className="text-synapse-gray hover:text-synapse-primary transition-colors"
+                      className="text-synapse-gray hover:text-synapse-primary transition-colors p-2 rounded-full hover:bg-synapse-lighter/20"
                     >
-                      <Linkedin size={20} />
+                      <Linkedin size={24} />
                     </a>
                     <a 
                       href={`mailto:${member.email}`} 
-                      className="text-synapse-gray hover:text-synapse-primary transition-colors"
+                      className="text-synapse-gray hover:text-synapse-primary transition-colors p-2 rounded-full hover:bg-synapse-lighter/20"
                     >
-                      <Mail size={20} />
+                      <Mail size={24} />
                     </a>
                   </div>
                 </CardContent>
@@ -150,91 +89,163 @@ const Team = () => {
         </div>
       </section>
 
-      {/* Recruitment Team */}
+      {/* Team Structure */}
       <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-4">Recruitment Specialists</h2>
+            <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Global Organization</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
-              Industry experts with deep knowledge in their specialized sectors
+              A diverse, worldwide team committed to revolutionizing recruitment through AI and human expertise
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recruitmentTeam.map((member, index) => (
-              <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-16 h-16 rounded-full bg-synapse-lighter overflow-hidden flex-shrink-0">
-                      <img 
-                        src={member.image} 
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                      />
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Internal Team */}
+            <Card className="border-none shadow-soft">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <Users className="text-synapse-primary" size={32} />
+                  <div>
+                    <h3 className="text-2xl font-bold text-synapse-dark">Internal Team</h3>
+                    <p className="text-synapse-primary font-medium">10+ Core Team Members</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3 text-synapse-gray">
+                  <div className="flex items-start gap-2">
+                    <span className="text-synapse-primary">•</span>
+                    <span><strong>Operations Lead:</strong> Streamlining global recruitment processes</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-synapse-primary">•</span>
+                    <span><strong>Marketing Manager:</strong> Building our global brand presence</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-synapse-primary">•</span>
+                    <span><strong>Community Lead:</strong> Managing our recruiter network</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-synapse-primary">•</span>
+                    <span><strong>AI Engineers:</strong> Developing cutting-edge recruitment algorithms</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-synapse-primary">•</span>
+                    <span><strong>Full Stack Engineers:</strong> Building our platform infrastructure</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Global Network */}
+            <Card className="border-none shadow-soft">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <Globe className="text-synapse-primary" size={32} />
+                  <div>
+                    <h3 className="text-2xl font-bold text-synapse-dark">Global Network</h3>
+                    <p className="text-synapse-primary font-medium">1K+ Professional Recruiters</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 text-synapse-gray">
+                  <p>
+                    Our extensive freelance recruiter network spans across continents, bringing together the world's most skilled recruitment professionals.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-synapse-primary">•</span>
+                      <span>Specialized industry experts across all major sectors</span>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-synapse-dark mb-1">{member.name}</h3>
-                      <p className="text-synapse-primary font-medium mb-2">{member.role}</p>
-                      <div className="space-y-1 text-sm">
-                        <p className="text-synapse-gray">
-                          <span className="font-medium">Specialization:</span> {member.specialization}
-                        </p>
-                        <p className="text-synapse-gray">
-                          <span className="font-medium">Experience:</span> {member.experience}
-                        </p>
-                      </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-synapse-primary">•</span>
+                      <span>Regional specialists with local market knowledge</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-synapse-primary">•</span>
+                      <span>Senior-level recruitment professionals</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-synapse-primary">•</span>
+                      <span>Continuous training on AI-powered recruitment tools</span>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Values & Culture */}
+      {/* Culture & Values */}
       <section className="py-20 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-synapse-dark mb-6">Our Culture & Values</h2>
+              <h2 className="text-3xl font-bold text-synapse-dark mb-6">Our Culture & Mission</h2>
               <div className="space-y-4 text-synapse-gray">
                 <p>
-                  At Synapse International, we believe that great recruitment starts with great people. Our team is built on a foundation of diversity, expertise, and shared passion for connecting talent with opportunity.
+                  At Synapse International, we've built more than a company - we've created a global movement. Our team is united by a shared passion for connecting exceptional talent with extraordinary opportunities.
                 </p>
                 <p>
-                  We foster a culture of continuous learning, innovation, and collaboration. Our team members are encouraged to stay ahead of industry trends, develop new skills, and contribute to the evolution of recruitment technology.
+                  Founded in 2013 and headquartered in Los Angeles, CA, we operate with a remote-first mindset that attracts the best talent regardless of geography. Our culture celebrates innovation, excellence, and the belief that the right connection can transform careers and companies.
                 </p>
                 <p>
-                  From our headquarters to our global remote team members, we maintain a people-first approach that extends to both our internal culture and our client relationships.
+                  Every team member, from our Los Angeles headquarters to our global network, contributes to our mission of revolutionizing recruitment through AI-first technology and human expertise.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-synapse-lighter/30 to-synapse-primary/10 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-synapse-dark mb-4">Why Our Team Excels</h3>
+              <h3 className="text-xl font-bold text-synapse-dark mb-4">What Drives Our Team</h3>
               <ul className="space-y-3 text-synapse-gray">
                 <li className="flex items-start gap-2">
                   <span className="text-synapse-primary">•</span>
-                  <span>Deep industry expertise across multiple sectors</span>
+                  <span>Passion for connecting the world's top 1% of talent</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-synapse-primary">•</span>
-                  <span>Continuous training on latest recruitment technologies</span>
+                  <span>Commitment to AI-first innovation in recruitment</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-synapse-primary">•</span>
-                  <span>Global perspective with local market knowledge</span>
+                  <span>Global perspective with local expertise</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-synapse-primary">•</span>
-                  <span>Commitment to diversity and inclusive hiring practices</span>
+                  <span>Quality-over-quantity approach to everything we do</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-synapse-primary">•</span>
-                  <span>Results-driven approach with measurable outcomes</span>
+                  <span>Building long-term partnerships, not just transactions</span>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Join Our Network */}
+      <section className="py-20 bg-gradient-to-br from-synapse-primary to-synapse-primary/80">
+        <div className="container-wide text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Join Our Global Network
+          </h2>
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+            Whether you're exceptional talent or a professional recruiter, there's a place for you in the Synapse family
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8"
+              onClick={() => window.location.href = "/recruiters"}
+            >
+              Join as Recruiter
+            </Button>
+            <Button 
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-synapse-primary font-medium py-3 px-8"
+              onClick={() => window.location.href = "/careers"}
+            >
+              Explore Careers
+            </Button>
           </div>
         </div>
       </section>

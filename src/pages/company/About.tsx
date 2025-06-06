@@ -3,43 +3,66 @@ import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Users, Globe, Award, TrendingUp, Heart } from "lucide-react";
+import { Target, Users, Globe, Award, TrendingUp, Heart, Sparkles, Brain } from "lucide-react";
 
 const stats = [
-  { number: "10,000+", label: "Successful Placements", icon: <Users size={24} /> },
-  { number: "500+", label: "Partner Companies", icon: <Globe size={24} /> },
-  { number: "15+", label: "Countries Served", icon: <Globe size={24} /> },
-  { number: "98%", label: "Client Satisfaction", icon: <Award size={24} /> }
+  { number: "11+", label: "Years of Experience", icon: <Award size={24} /> },
+  { number: "700+", label: "Companies Served", icon: <Globe size={24} /> },
+  { number: "501-1K", label: "Recruiters Community", icon: <Users size={24} /> },
+  { number: "12K+", label: "LinkedIn Followers", icon: <TrendingUp size={24} /> }
+];
+
+const whyUs = [
+  {
+    icon: <Brain size={32} />,
+    title: "AI-First Technology",
+    description: "We pioneered AI-powered recruitment, combining machine learning with human expertise to identify and connect exceptional talent faster than traditional methods."
+  },
+  {
+    icon: <Sparkles size={32} />,
+    title: "Fully Automated Platform",
+    description: "Our proprietary technology automates the entire recruitment pipeline while maintaining the human touch where it matters most - in relationships and decision-making."
+  },
+  {
+    icon: <Target size={32} />,
+    title: "Top 1% Focus",
+    description: "We don't chase volume. Our DNA is built around identifying and connecting with only the most exceptional talent - the top 1% who set industry standards."
+  },
+  {
+    icon: <Globe size={32} />,
+    title: "Global Network",
+    description: "Operating worldwide with headquarters in Los Angeles, CA, we've built an extensive network of 1K+ professional recruiters across multiple continents."
+  }
 ];
 
 const values = [
   {
     icon: <Target size={32} />,
     title: "Excellence",
-    description: "We strive for excellence in every placement, ensuring the perfect match between talent and opportunity."
+    description: "We strive for excellence in every placement, ensuring the perfect match between exceptional talent and outstanding opportunities."
   },
   {
     icon: <Heart size={32} />,
     title: "Integrity",
-    description: "Built on trust and transparency, we maintain the highest ethical standards in all our relationships."
+    description: "Built on trust and transparency, we maintain the highest ethical standards in all our relationships with candidates and clients."
   },
   {
     icon: <TrendingUp size={32} />,
     title: "Innovation",
-    description: "Leveraging cutting-edge AI technology to revolutionize traditional recruitment processes."
+    description: "Since 2013, we've been at the forefront of recruitment technology, continuously pushing the boundaries of what's possible."
   },
   {
     icon: <Users size={32} />,
     title: "Partnership",
-    description: "We view every client relationship as a long-term partnership focused on mutual success."
+    description: "We view every relationship as a long-term partnership focused on mutual success and sustainable growth."
   }
 ];
 
 const About = () => {
   return (
     <PageTemplate 
-      title="About Synapse"
-      description="Learn about our mission to transform recruitment through AI-powered solutions and human expertise"
+      title="About Synapse International"
+      description="Founded in 2013, we're an AI-first recruitment company revolutionizing how exceptional talent connects with outstanding opportunities globally."
     >
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
@@ -49,7 +72,7 @@ const About = () => {
               About Synapse International
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              We're transforming the recruitment industry by combining artificial intelligence with human expertise to create perfect matches between talent and opportunity.
+              AI-first fully automated recruitment company founded in 2013, headquartered in Los Angeles, CA, operating globally. We're transforming how exceptional talent connects with outstanding opportunities.
             </p>
           </div>
 
@@ -78,19 +101,19 @@ const About = () => {
               <h2 className="text-3xl font-bold text-synapse-dark mb-6">Our Story</h2>
               <div className="space-y-4 text-synapse-gray">
                 <p>
-                  Founded in 2018, Synapse International emerged from a simple yet powerful vision: to revolutionize how companies find and hire exceptional talent in an increasingly complex global marketplace.
+                  Founded in 2013 in Los Angeles, California, Synapse International emerged from a revolutionary vision: to create the world's first truly AI-powered recruitment platform that prioritizes quality over quantity.
                 </p>
                 <p>
-                  Our founders, seasoned recruitment professionals with decades of combined experience, recognized that traditional recruitment methods were struggling to keep pace with the rapidly evolving job market. They envisioned a solution that would blend the best of human insight with the power of artificial intelligence.
+                  Over 11 years ago, we recognized that traditional recruitment was fundamentally broken. Companies were drowning in resumes while exceptional talent remained hidden. We set out to build something different - a platform that could identify the top 1% of professionals who weren't actively job hunting but were open to extraordinary opportunities.
                 </p>
                 <p>
-                  Today, we're proud to be at the forefront of recruitment innovation, serving companies from startups to Fortune 500 enterprises across 15+ countries. Our AI-powered platform has facilitated over 10,000 successful placements, transforming how businesses build their teams.
+                  Today, we're proud to operate a global network of 501-1,000 recruiters serving more than 700 companies worldwide. Our AI-first approach has revolutionized how businesses discover and connect with exceptional talent, making us leaders in the recruitment technology space with over 12,000 followers on LinkedIn.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-synapse-primary/10 to-synapse-lighter/50 rounded-lg p-8">
               <blockquote className="text-xl italic text-synapse-dark mb-4">
-                "Our mission is to create a world where every professional finds their perfect role, and every company builds their dream team."
+                "Our mission is to connect the world's most exceptional talent with companies that truly value excellence, using AI to make impossible matches possible."
               </blockquote>
               <cite className="text-synapse-gray">- Synapse International Leadership Team</cite>
             </div>
@@ -98,8 +121,34 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
+        <div className="container-wide">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Choose Synapse?</h2>
+            <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
+              What sets us apart in the recruitment industry
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {whyUs.map((item, index) => (
+              <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
+                <CardContent className="p-6">
+                  <div className="text-synapse-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-synapse-dark">{item.title}</h3>
+                  <p className="text-synapse-gray">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="py-20 bg-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Core Values</h2>
@@ -125,7 +174,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12">
             <Card className="border-none shadow-soft">
@@ -133,7 +182,7 @@ const About = () => {
                 <Target className="text-synapse-primary mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-synapse-dark mb-4">Our Mission</h3>
                 <p className="text-synapse-gray">
-                  To empower organizations worldwide by connecting them with exceptional talent through innovative AI-driven recruitment solutions that prioritize quality, efficiency, and human connection.
+                  To revolutionize global talent acquisition by connecting the world's top 1% of professionals with companies that truly value excellence, using AI-powered technology to make extraordinary matches possible.
                 </p>
               </CardContent>
             </Card>
@@ -143,7 +192,7 @@ const About = () => {
                 <TrendingUp className="text-synapse-primary mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-synapse-dark mb-4">Our Vision</h3>
                 <p className="text-synapse-gray">
-                  To become the global leader in intelligent recruitment, creating a future where finding the right talent is seamless, data-driven, and fundamentally human-centered.
+                  To become the global standard for AI-first recruitment, creating a future where exceptional talent and outstanding opportunities find each other seamlessly, regardless of geography or industry.
                 </p>
               </CardContent>
             </Card>
@@ -158,7 +207,7 @@ const About = () => {
             Ready to Experience the Synapse Difference?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join thousands of companies who trust us to build their exceptional teams
+            Join hundreds of companies who trust us to connect them with the world's most exceptional talent
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -170,7 +219,7 @@ const About = () => {
             <Button 
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-synapse-primary font-medium py-3 px-8"
-              onClick={() => window.location.href = "/company/team"}
+              onClick={() => window.location.href = "/team"}
             >
               Meet Our Team
             </Button>
