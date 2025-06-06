@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
@@ -47,42 +46,38 @@ const ReferralBanner = () => {
       </div>
       
       <div className="container-wide relative">
-        <div className="flex items-center justify-between py-3 md:py-4">
-          <div className="flex-1">
-            <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
-              <div className="text-center md:text-left">
-                <h3 className="text-base md:text-lg font-bold mb-1 italic">
-                  Earn 5% for 12 Months
-                </h3>
-                <p className="text-xs md:text-sm text-white/90 leading-relaxed italic">
-                  Refer recruiters (US/CA) and earn a share of their earnings for a full year
-                </p>
-              </div>
+        <div className="flex items-center justify-between py-3 md:py-4 gap-6">
+          <div className="text-center md:text-left">
+            <h3 className="text-base md:text-lg font-bold mb-1 italic">
+              Earn 5% for 12 Months
+            </h3>
+            <p className="text-xs md:text-sm text-white/90 leading-relaxed italic">
+              Refer recruiters (US/CA) and earn a share of their earnings for a full year
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <button
+              onClick={handleCTAClick}
+              className="relative group cursor-pointer"
+            >
+              <span className="relative text-white font-semibold text-sm transition-all duration-300 transform group-hover:scale-105 flex items-center gap-2">
+                {/* Animated shimmer effect on text */}
+                <span className="relative overflow-hidden">
+                  <span className="relative z-10">{ctaTexts[currentCTAIndex]}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+                </span>
+                <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+              </span>
               
-              <div className="flex justify-center md:justify-start md:ml-auto">
-                <button
-                  onClick={handleCTAClick}
-                  className="relative group cursor-pointer"
-                >
-                  <span className="relative text-white font-semibold text-sm transition-all duration-300 transform group-hover:scale-105 flex items-center gap-2">
-                    {/* Animated shimmer effect on text */}
-                    <span className="relative overflow-hidden">
-                      <span className="relative z-10">{ctaTexts[currentCTAIndex]}</span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
-                    </span>
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
-                  </span>
-                  
-                  {/* Subtle glow animation behind text */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110"></div>
-                </button>
-              </div>
-            </div>
+              {/* Subtle glow animation behind text */}
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110"></div>
+            </button>
           </div>
           
           <button
             onClick={handleDismiss}
-            className="ml-4 p-2 hover:bg-white/20 rounded-full transition-colors duration-200 flex-shrink-0"
+            className="p-2 hover:bg-white/20 rounded-full transition-colors duration-200 flex-shrink-0"
             aria-label="Close banner"
           >
             <X className="h-4 w-4" />
