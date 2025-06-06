@@ -32,8 +32,15 @@ const Header = () => {
     >
       <div className="container-wide flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-synapse-primary">
-            Synapse
+          <a href="#" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/4e0b1cf8-ab85-4f55-a3fb-5f39206731ef.png" 
+              alt="Synapse Logo" 
+              className="h-8 w-8"
+            />
+            <span className="text-2xl font-bold text-synapse-primary">
+              Synapse
+            </span>
           </a>
         </div>
 
