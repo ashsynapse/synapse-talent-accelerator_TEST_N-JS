@@ -176,7 +176,7 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-none shadow-soft">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4">
