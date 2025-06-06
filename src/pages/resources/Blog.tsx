@@ -213,7 +213,7 @@ const Blog = () => {
       title="Recruitment Blog"
       description="Stay updated with the latest insights, trends, and best practices in recruitment and talent acquisition"
     >
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">

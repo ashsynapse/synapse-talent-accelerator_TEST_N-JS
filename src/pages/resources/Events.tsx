@@ -23,7 +23,7 @@ const Events = () => {
       title="Live Sourcing Deep Dive: Full-Funnel Focus"
       description="Join our exclusive live recruiting webinar focused on driving real results through the recruiting funnel"
     >
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
