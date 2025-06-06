@@ -5,22 +5,22 @@ import { UserPlus, Briefcase, Users, DollarSign } from "lucide-react";
 const HowItWorksRecruiterSection = () => {
   const steps = [
     {
-      icon: <UserPlus className="h-10 w-10 text-synapse-primary" />,
+      icon: <UserPlus className="h-10 w-10 text-white" />,
       title: "Sign Up & Complete Onboarding",
       description: "Quick 15-minute application process with skills verification and background check."
     },
     {
-      icon: <Briefcase className="h-10 w-10 text-synapse-primary" />,
+      icon: <Briefcase className="h-10 w-10 text-white" />,
       title: "Access Verified Job Openings",
       description: "Browse live opportunities from pre-qualified clients across multiple industries."
     },
     {
-      icon: <Users className="h-10 w-10 text-synapse-primary" />,
+      icon: <Users className="h-10 w-10 text-white" />,
       title: "Submit Qualified Candidates",
       description: "Use our AI-powered tools to source and submit the best candidates for each role."
     },
     {
-      icon: <DollarSign className="h-10 w-10 text-synapse-primary" />,
+      icon: <DollarSign className="h-10 w-10 text-white" />,
       title: "Get Paid on Successful Placements",
       description: "Receive automated payouts within 5 business days of successful candidate placement."
     }
@@ -41,7 +41,7 @@ const HowItWorksRecruiterSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center">
-              <div className="bg-synapse-lighter p-6 rounded-full inline-block mb-6">
+              <div className="bg-gradient-to-br from-synapse-primary to-synapse-secondary p-6 rounded-lg inline-block mb-6">
                 {step.icon}
               </div>
               <div className="bg-synapse-primary text-white w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">

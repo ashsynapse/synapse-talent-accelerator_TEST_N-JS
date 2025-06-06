@@ -1,7 +1,11 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Plus, Minus } from "lucide-react";
+import { Menu, X, ChevronDown, Plus, Minus, 
+         Bot, Users, Building2, Search, UserCheck, 
+         Briefcase, Code, TrendingUp, Heart, Scale,
+         Factory, Calculator, Crown, FileText, 
+         Calendar, Phone, Info, HelpCircle } from "lucide-react";
 
 const MainHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,6 +29,41 @@ const MainHeader = () => {
         ? prev.filter(item => item !== itemLabel)
         : [...prev, itemLabel]
     );
+  };
+
+  const getIconForSubmenu = (label: string) => {
+    const iconMap: { [key: string]: any } = {
+      "Passive AI Sourcing": Bot,
+      "AI Candidate Discovery": Search,
+      "Project Staffing": Users,
+      "Executive Search": Crown,
+      "Remote Staffing": Building2,
+      "Permanent Placement": UserCheck,
+      "Contingent Staffing": Briefcase,
+      "Apprenticeship AI Sourcing": Bot,
+      "AI Candidate Sourcing": Bot,
+      "Pre-Employment AI Screening": UserCheck,
+      "AI Resume Analysis": FileText,
+      "Technology": Code,
+      "Finance": TrendingUp,
+      "Healthcare": Heart,
+      "Legal": Scale,
+      "Manufacturing": Factory,
+      "Sales & Marketing": Calculator,
+      "Leadership": Crown,
+      "Operations": Users,
+      "Blogs": FileText,
+      "Case Studies": FileText,
+      "Events": Calendar,
+      "About Us": Info,
+      "Team": Users,
+      "Recruiters": UserCheck,
+      "Careers": Briefcase,
+      "FAQ": HelpCircle,
+      "Contact Us": Phone
+    };
+    
+    return iconMap[label] || FileText;
   };
 
   const navItems = [
@@ -133,25 +172,28 @@ const MainHeader = () => {
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-2">
                   <div className="bg-gradient-to-br from-white via-synapse-lighter to-synapse-light shadow-medium border border-synapse-light/30 rounded-xl p-6 backdrop-blur-sm">
                     <div className="grid grid-cols-2 gap-4 min-w-[500px]">
-                      {item.submenu.map((subItem, index) => (
-                        <a
-                          key={subItem.label}
-                          href={subItem.href}
-                          className="group/item flex items-start p-3 rounded-lg hover:bg-white/80 hover:shadow-soft transition-all duration-200 border border-transparent hover:border-synapse-primary/20"
-                        >
-                          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-synapse-primary to-synapse-secondary flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-200">
-                            <div className="w-5 h-5 bg-white rounded-sm opacity-90"></div>
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="font-semibold text-synapse-dark group-hover/item:text-synapse-primary transition-colors text-sm leading-tight">
-                              {subItem.label}
-                            </h3>
-                            <p className="text-xs text-synapse-gray mt-1 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
-                              {index % 2 === 0 ? "Advanced solutions" : "Professional services"}
-                            </p>
-                          </div>
-                        </a>
-                      ))}
+                      {item.submenu.map((subItem, index) => {
+                        const IconComponent = getIconForSubmenu(subItem.label);
+                        return (
+                          <a
+                            key={subItem.label}
+                            href={subItem.href}
+                            className="group/item flex items-start p-3 rounded-lg hover:bg-white/80 hover:shadow-soft transition-all duration-200 border border-transparent hover:border-synapse-primary/20"
+                          >
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-synapse-primary to-synapse-secondary flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-200">
+                              <IconComponent className="h-5 w-5 text-white" />
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="font-semibold text-synapse-dark group-hover/item:text-synapse-primary transition-colors text-sm leading-tight">
+                                {subItem.label}
+                              </h3>
+                              <p className="text-xs text-synapse-gray mt-1 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
+                                {index % 2 === 0 ? "Advanced solutions" : "Professional services"}
+                              </p>
+                            </div>
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

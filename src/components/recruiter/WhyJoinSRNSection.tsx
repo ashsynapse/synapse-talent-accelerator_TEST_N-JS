@@ -5,32 +5,32 @@ import { DollarSign, Bot, FileText, GraduationCap, Briefcase, Globe } from "luci
 const WhyJoinSRNSection = () => {
   const benefits = [
     {
-      icon: <DollarSign className="h-8 w-8 text-synapse-primary" />,
+      icon: <DollarSign className="h-8 w-8 text-white" />,
       title: "Earn $10K+ per hire",
       description: "Clear 50% commission structure built for serious recruiters"
     },
     {
-      icon: <Bot className="h-8 w-8 text-synapse-primary" />,
+      icon: <Bot className="h-8 w-8 text-white" />,
       title: "AI-powered sourcing tools and automations",
       description: "Accelerate candidate discovery and outreach with tech-first workflows"
     },
     {
-      icon: <FileText className="h-8 w-8 text-synapse-primary" />,
+      icon: <FileText className="h-8 w-8 text-white" />,
       title: "Outreach playbooks and job guides",
       description: "Use proven templates, strategies, and recruiter best practices for higher conversions"
     },
     {
-      icon: <GraduationCap className="h-8 w-8 text-synapse-primary" />,
+      icon: <GraduationCap className="h-8 w-8 text-white" />,
       title: "Continuous recruiter enablement",
       description: "Grow your skills with free training and support from industry pros"
     },
     {
-      icon: <Briefcase className="h-8 w-8 text-synapse-primary" />,
+      icon: <Briefcase className="h-8 w-8 text-white" />,
       title: "Hundreds of verified roles weekly",
       description: "Access active job openings in tech, healthcare, legal, finance, and more"
     },
     {
-      icon: <Globe className="h-8 w-8 text-synapse-primary" />,
+      icon: <Globe className="h-8 w-8 text-white" />,
       title: "Global recruiter community",
       description: "Collaborate across 25+ countries with high-performing peers"
     }
@@ -52,7 +52,7 @@ const WhyJoinSRNSection = () => {
           {benefits.map((benefit, index) => (
             <div key={index} className="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-medium transition-all duration-300">
               <div className="flex items-start gap-4">
-                <div className="bg-synapse-lighter p-3 rounded-lg flex-shrink-0">
+                <div className="bg-gradient-to-br from-synapse-primary to-synapse-secondary p-3 rounded-lg flex-shrink-0">
                   {benefit.icon}
                 </div>
                 <div>
