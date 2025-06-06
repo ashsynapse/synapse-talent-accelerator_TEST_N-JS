@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -185,31 +184,6 @@ const FAQ = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-
-          {/* Contact Section */}
-          <div className="text-center bg-synapse-lighter/30 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-synapse-dark mb-4">
-              Still Have Questions?
-            </h2>
-            <p className="text-synapse-gray mb-6 max-w-2xl mx-auto">
-              Can't find the answer you're looking for? Our team is here to help with any questions about our AI-first recruitment services or SRN platform.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                className="btn-primary"
-                onClick={() => window.location.href = "/contact"}
-              >
-                Contact Our Team
-              </Button>
-              <Button 
-                variant="outline"
-                className="border-synapse-primary text-synapse-primary hover:bg-synapse-light"
-                onClick={() => window.location.href = "/recruiters"}
-              >
-                Join SRN Network
-              </Button>
-            </div>
           </div>
         </div>
       </section>
