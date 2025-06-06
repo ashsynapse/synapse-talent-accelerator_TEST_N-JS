@@ -64,6 +64,56 @@ const TestimonialsSection = () => {
       company: "Coins.ph",
       gradient: "from-pink-500 to-rose-500"
     },
+    {
+      text: "We have been looking for researchers all over the world and did not have that many candidates to choose from. Despite that, Synapse International was very helpful in providing Insolar with highly experienced candidates.",
+      author: "Natalia Zhyrkina",
+      position: "Head of HR",
+      avatar: "/lovable-uploads/adc30e12-3c07-495f-900c-7cddd3ec431a.png",
+      initials: "NZ",
+      rating: 5,
+      company: "Insolar",
+      gradient: "from-teal-500 to-blue-500"
+    },
+    {
+      text: "The Synapse Team are experts at understanding exactly what it is you really need, then working to find you the perfect candidate. No matter how narrow the spec, they continue to amaze us by delivering the right folks.",
+      author: "Matt Grotenstein",
+      position: "CEO",
+      avatar: "/lovable-uploads/dd78b784-b909-44a2-9e75-411a173fc73f.png",
+      initials: "MG",
+      rating: 5,
+      company: "Soshio",
+      gradient: "from-red-500 to-pink-500"
+    },
+    {
+      text: "Synapse has helped source many great candidates and assisted in drastically increasing the flow of great candidates in our engineering hiring pipeline. They are personable, forward looking, and well versed with the inherently sensitive nature of Engineering recruiting. I look forward to continuing to work with Synapse on sourcing candidates for our staff sourcing needs.",
+      author: "Jonathan Eppers",
+      position: "CEO",
+      avatar: "/lovable-uploads/7ecc8678-9df9-491b-8673-258bc34f6089.png",
+      initials: "JE",
+      rating: 5,
+      company: "RadPad",
+      gradient: "from-indigo-500 to-purple-500"
+    },
+    {
+      text: "Synapse has helped source many great candidates and assisted in drastically increasing the flow of great candidates in our engineering hiring pipeline. They are personable, forward looking, and well versed with the inherently sensitive nature of Engineering recruiting. I look forward to continuing to work with Synapse on sourcing candidates for our staff sourcing needs.",
+      author: "Zach Sherry",
+      position: "Director of Engineering",
+      avatar: "/lovable-uploads/c45621f8-203b-4345-93e0-fc5ae8751e9e.png",
+      initials: "ZS",
+      rating: 5,
+      company: "Boost Media",
+      gradient: "from-green-500 to-teal-500"
+    },
+    {
+      text: "While most of the recruiters in Montréal kept calling the same individuals, Synapse worked out of a different pool of candidates and quickly presented us many highly qualified, talented and motivated individuals. They soon became our most trusted source of talent.",
+      author: "Maxime Julien",
+      position: "OMsignal",
+      avatar: "/lovable-uploads/8abae81a-37a4-43b1-b2e2-8936ce996b7f.png",
+      initials: "MJ",
+      rating: 5,
+      company: "OMsignal",
+      gradient: "from-yellow-500 to-orange-500"
+    },
   ];
 
   return (
