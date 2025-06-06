@@ -12,7 +12,7 @@ const Careers = () => {
       description="Join the top 1% of exceptional talent. We don't post job boards - we reach out to truly exceptional candidates."
     >
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">

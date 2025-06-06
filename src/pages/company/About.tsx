@@ -1,3 +1,4 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -64,7 +65,7 @@ const About = () => {
       description="Founded in 2013, we're an AI-first recruitment company revolutionizing how exceptional talent connects with outstanding opportunities globally."
     >
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
