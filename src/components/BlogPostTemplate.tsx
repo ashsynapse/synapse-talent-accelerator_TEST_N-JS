@@ -26,7 +26,7 @@ const BlogPostTemplate = ({
   return (
     <PageTemplate 
       title={title}
-      description={excerpt}
+      description={excerpt || `${title} - ${author}`}
     >
       <article className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide max-w-4xl">
