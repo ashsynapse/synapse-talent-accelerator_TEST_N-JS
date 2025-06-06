@@ -48,9 +48,9 @@ const ReferralBanner = () => {
       
       <div className="container-wide relative">
         <div className="flex items-center justify-between py-3 md:py-4">
-          <div className="flex-1 text-center md:text-left">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-center lg:justify-start gap-3">
-              <div>
+          <div className="flex-1">
+            <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
+              <div className="text-center md:text-left">
                 <h3 className="text-base md:text-lg font-bold mb-1 italic">
                   Earn 5% for 12 Months
                 </h3>
@@ -59,26 +59,22 @@ const ReferralBanner = () => {
                 </p>
               </div>
               
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-start md:ml-auto">
                 <button
                   onClick={handleCTAClick}
-                  className="relative overflow-hidden bg-gradient-to-r from-synapse-primary to-synapse-secondary hover:from-synapse-secondary hover:to-synapse-primary text-white font-semibold text-sm py-3 px-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group border-2 border-transparent"
+                  className="relative group cursor-pointer"
                 >
-                  {/* Infinite flowing black border animation */}
-                  <div className="absolute inset-0 rounded-xl">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black to-transparent opacity-80 animate-infinite-flow rounded-xl"></div>
-                  </div>
-                  
-                  {/* Animated shimmer effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
-                  
-                  {/* Subtle glow animation */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary/50 to-synapse-secondary/50 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-                  
-                  <span className="relative z-10 flex items-center gap-2">
-                    {ctaTexts[currentCTAIndex]}
+                  <span className="relative text-white font-semibold text-sm transition-all duration-300 transform group-hover:scale-105 flex items-center gap-2">
+                    {/* Animated shimmer effect on text */}
+                    <span className="relative overflow-hidden">
+                      <span className="relative z-10">{ctaTexts[currentCTAIndex]}</span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+                    </span>
                     <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
                   </span>
+                  
+                  {/* Subtle glow animation behind text */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110"></div>
                 </button>
               </div>
             </div>
