@@ -60,14 +60,16 @@ const Header = ({ isRecruiterPage = false }: HeaderProps) => {
             </a>
           ))}
           
-          {isRecruiterPage ? (
+          {isRecruiterPage && (
             <Button
               className="bg-gradient-to-r from-synapse-primary to-synapse-secondary hover:from-synapse-secondary hover:to-synapse-primary text-white font-semibold px-6 py-2 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-transparent"
               onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
             >
               Login
             </Button>
-          ) : (
+          )}
+          
+          {!isRecruiterPage && (
             <Button
               className="btn-primary ml-4"
               onClick={() => window.location.href = "mailto:info@synapseint.com"}
@@ -105,7 +107,7 @@ const Header = ({ isRecruiterPage = false }: HeaderProps) => {
               </a>
             ))}
             
-            {isRecruiterPage ? (
+            {isRecruiterPage && (
               <Button
                 className="bg-gradient-to-r from-synapse-primary to-synapse-secondary hover:from-synapse-secondary hover:to-synapse-primary text-white font-semibold w-full mt-4"
                 onClick={() => {
@@ -115,7 +117,9 @@ const Header = ({ isRecruiterPage = false }: HeaderProps) => {
               >
                 Login
               </Button>
-            ) : (
+            )}
+            
+            {!isRecruiterPage && (
               <Button
                 className="btn-primary w-full mt-4"
                 onClick={() => {

@@ -53,7 +53,7 @@ const LogoCarousel = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-[scroll_10s_linear_infinite] md:animate-[scroll_15s_linear_infinite] hover:pause">
+          <div className="flex animate-[scroll_5s_linear_infinite] md:animate-[scroll_15s_linear_infinite] hover:pause">
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
