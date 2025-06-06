@@ -1,6 +1,7 @@
 
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail, Users, Globe } from "lucide-react";
 
