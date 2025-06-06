@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -11,19 +10,22 @@ const Careers = () => {
       title="Careers at Synapse"
       description="Join the top 1% of exceptional talent. We don't post job boards - we reach out to truly exceptional candidates."
     >
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
               Are You in the Top 1%?
             </h1>
-            <p className="text-xl text-synapse-gray max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-synapse-gray mb-12 leading-relaxed">
               We don't have a traditional job board. Our DNA is to reach out to the top 1% of exceptional talent only - not job hoppers or those actively seeking positions. If you truly believe you're in that elite category of professionals, we'd love to hear from you.
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* Key Message Cards */}
+      {/* Key Message Cards */}
+      <section className="standard-section bg-white">
+        <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="text-center border hover:border-synapse-primary transition-colors duration-300 group">
               <CardContent className="p-6">
@@ -59,7 +61,7 @@ const Careers = () => {
       </section>
 
       {/* Our Philosophy */}
-      <section className="py-20 bg-white">
+      <section className="standard-section bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -106,7 +108,7 @@ const Careers = () => {
       </section>
 
       {/* Why Synapse */}
-      <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="standard-section bg-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Synapse International?</h2>
@@ -168,7 +170,7 @@ const Careers = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary relative overflow-hidden">
+      <section className="standard-section bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>

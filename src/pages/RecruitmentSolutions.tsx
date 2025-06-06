@@ -63,17 +63,21 @@ const RecruitmentSolutions = () => {
       title="Recruitment Solutions"
       description="Comprehensive AI-powered recruitment solutions for modern hiring challenges"
     >
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
         <div className="container-wide">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
               Recruitment Solutions
             </h1>
-            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
+            <p className="text-xl text-synapse-gray mb-12 leading-relaxed">
               End-to-end recruitment solutions powered by AI and backed by global expertise. From passive recruitment to executive search, we deliver tailored strategies that transform your hiring process.
             </p>
           </div>
+        </div>
+      </section>
 
+      <section className="standard-section bg-white">
+        <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {solutions.map((solution, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
