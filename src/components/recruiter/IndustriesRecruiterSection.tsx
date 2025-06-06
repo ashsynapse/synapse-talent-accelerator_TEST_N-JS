@@ -5,13 +5,11 @@ import {
   Code2, 
   Briefcase, 
   Calculator, 
-  Hammer, 
   Heart, 
+  Factory, 
   TrendingUp, 
-  Palette, 
   Users, 
-  ShoppingCart, 
-  Truck 
+  Crown
 } from "lucide-react";
 
 const IndustriesRecruiterSection = () => {
@@ -23,22 +21,10 @@ const IndustriesRecruiterSection = () => {
       roles: "1,200+ open roles"
     },
     {
-      name: "Legal",
-      icon: Briefcase,
-      description: "Attorneys, paralegals, compliance officers, and legal support staff",
-      roles: "800+ open roles"
-    },
-    {
-      name: "Accounting",
-      icon: Calculator,
-      description: "CPAs, financial analysts, bookkeepers, and tax specialists",
-      roles: "950+ open roles"
-    },
-    {
-      name: "Industrial",
-      icon: Hammer,
-      description: "Engineers, project managers, quality control, and operations specialists",
-      roles: "600+ open roles"
+      name: "Finance",
+      icon: TrendingUp,
+      description: "Investment bankers, financial advisors, analysts, and portfolio managers",
+      roles: "650+ open roles"
     },
     {
       name: "Healthcare",
@@ -47,34 +33,34 @@ const IndustriesRecruiterSection = () => {
       roles: "750+ open roles"
     },
     {
-      name: "Finance",
-      icon: TrendingUp,
-      description: "Investment bankers, financial advisors, analysts, and portfolio managers",
-      roles: "650+ open roles"
+      name: "Legal",
+      icon: Briefcase,
+      description: "Attorneys, paralegals, compliance officers, and legal support staff",
+      roles: "800+ open roles"
     },
     {
-      name: "Creative",
-      icon: Palette,
-      description: "Designers, content creators, marketing specialists, and brand managers",
-      roles: "400+ open roles"
-    },
-    {
-      name: "Human Resources",
-      icon: Users,
-      description: "HR managers, talent acquisition, benefits specialists, and people operations",
-      roles: "350+ open roles"
+      name: "Manufacturing",
+      icon: Factory,
+      description: "Engineers, project managers, quality control, and operations specialists",
+      roles: "600+ open roles"
     },
     {
       name: "Sales & Marketing",
-      icon: ShoppingCart,
+      icon: Calculator,
       description: "Sales representatives, marketing managers, business development, and growth specialists",
       roles: "900+ open roles"
     },
     {
-      name: "Supply Chain",
-      icon: Truck,
-      description: "Logistics coordinators, procurement specialists, and supply chain analysts",
-      roles: "300+ open roles"
+      name: "Leadership",
+      icon: Crown,
+      description: "C-Suite executives, VPs, directors, and senior management professionals",
+      roles: "450+ open roles"
+    },
+    {
+      name: "Operations",
+      icon: Users,
+      description: "Operations managers, business analysts, project coordinators, and process specialists",
+      roles: "550+ open roles"
     }
   ];
 
@@ -90,7 +76,7 @@ const IndustriesRecruiterSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((industry, index) => {
             const IconComponent = industry.icon;
             return (
