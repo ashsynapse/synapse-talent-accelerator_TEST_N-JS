@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Plus, Minus } from "lucide-react";
 
 const MainHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<string[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,14 @@ const MainHeader = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleMobileItem = (itemLabel: string) => {
+    setExpandedItems(prev => 
+      prev.includes(itemLabel) 
+        ? prev.filter(item => item !== itemLabel)
+        : [...prev, itemLabel]
+    );
+  };
 
   const navItems = [
     { 
@@ -169,26 +178,40 @@ const MainHeader = () => {
             <div className="space-y-2">
               {navItems.map((item) => (
                 <div key={item.label}>
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="block py-2 text-synapse-dark hover:text-synapse-primary font-medium transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </a>
-                  ) : (
-                    <span className="block py-2 text-synapse-dark font-medium">
-                      {item.label}
-                    </span>
-                  )}
-                  {item.submenu && (
-                    <div className="pl-4 space-y-1">
+                  <div className="flex items-center justify-between">
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="flex-1 py-2 text-synapse-dark hover:text-synapse-primary font-medium transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <span className="flex-1 py-2 text-synapse-dark font-medium">
+                        {item.label}
+                      </span>
+                    )}
+                    {item.submenu && (
+                      <button
+                        onClick={() => toggleMobileItem(item.label)}
+                        className="p-2 text-synapse-dark hover:text-synapse-primary transition-colors"
+                      >
+                        {expandedItems.includes(item.label) ? (
+                          <Minus size={20} />
+                        ) : (
+                          <Plus size={20} />
+                        )}
+                      </button>
+                    )}
+                  </div>
+                  {item.submenu && expandedItems.includes(item.label) && (
+                    <div className="pl-4 space-y-1 mt-2">
                       {item.submenu.map((subItem) => (
                         <a
                           key={subItem.label}
                           href={subItem.href}
-                          className="block py-1 text-sm text-synapse-gray hover:text-synapse-primary transition-colors"
+                          className="block py-2 text-sm text-synapse-gray hover:text-synapse-primary transition-colors"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {subItem.label}
