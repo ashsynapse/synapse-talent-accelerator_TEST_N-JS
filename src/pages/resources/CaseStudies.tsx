@@ -175,6 +175,40 @@ const realCaseStudies = [
       partnership: "Long-term ongoing relationship"
     },
     description: "Telescope Partners is a thesis-driven, early growth investor for exceptional entrepreneurs building enterprise software companies. Our successful partnership demonstrates the value of quality placements and has expanded to include multiple portfolio companies through referrals."
+  },
+  {
+    title: "The Latest Scoop: Long Time Partnership with a Venture Capital Firm",
+    client: "The Latest Scoop",
+    industry: "Retail/Lifestyle",
+    location: "Vancouver, Canada",
+    year: "September 2023",
+    image: "/lovable-uploads/f4a6fd4b-02af-4c94-b61c-7b5bcf903d24.png",
+    challenge: "They wanted a senior creative director to be in charge of the vision of the brick and mortar stores. They had tried looking on their own.",
+    solution: "We outreached to several professionals and made two proposals. They ended up hiring one as Sr. Creative Director, and loved the other one so much, they opened a position tailored to them. After that, we continue to hire other roles for them, such as Graphic Designer from Argentina.",
+    results: {
+      seniorCreativeDirector: "Successfully hired Sr. Creative Director",
+      additionalHire: "Created tailored position for second candidate",
+      continuedPartnership: "Ongoing hiring for multiple roles",
+      internationalTalent: "Graphic Designer from Argentina"
+    },
+    description: "The Latest Scoop is a lifestyle concept store where buyers travel the world - Los Angeles, New York, Paris, Toronto - to curate a unique mix of products including fashion, furniture, home decor, accessories, footwear, stationary and gifts. Our buying is not based on brands, but instead on what we believe to be beautiful, affordable and desirable."
+  },
+  {
+    title: "Katimavik: Making a Candidate Fall in Love with the Organization's Mission",
+    client: "Katimavik",
+    industry: "Non-Profit/Youth Development",
+    location: "Montreal, Canada",
+    year: "September 2023",
+    image: "/lovable-uploads/57a49bd8-d0eb-485b-b8ea-98378d62e2bc.png",
+    challenge: "They needed to hire an HR officer who was local to Montreal, bilingual, with extensive experience in local laws, but being a non-profit organization, they had limited budget.",
+    solution: "We realized it was a tricky role, because we had several obstacles: low budget and geographic constraints. We approached several qualified candidates, with one sticking out. We talked to her about the mission of the organization and he happily took on the position because of it.",
+    results: {
+      localHire: "Successfully hired local Montreal HR officer",
+      bilingualRequirement: "Met bilingual language requirements",
+      budgetConstraints: "Worked within non-profit budget limitations",
+      missionAlignment: "Candidate motivated by organization's mission"
+    },
+    description: "Katimavik is a registered charity that engages Canadian youth through volunteer work. Katimavik provides opportunities for young Canadians to participate in five to six-month periods of community service throughout the country via the National Experience program."
   }
 ];
 
@@ -273,7 +307,7 @@ const CaseStudies = () => {
               Ready to Write Your Success Story?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Join leading companies like Joy, Breadwallet, SERMO, Gojek, Uniswap, Polymath, Exodus, Conduit, and many more who have transformed their teams with our strategic talent acquisition solutions
+              Join leading companies like Joy, Breadwallet, SERMO, Gojek, Uniswap, Polymath, Exodus, Conduit, Katimavik, The Latest Scoop, and many more who have transformed their teams with our strategic talent acquisition solutions
             </p>
             <Button 
               className="bg-white text-synapse-primary hover:bg-synapse-lighter text-lg py-4 px-8 font-semibold"
