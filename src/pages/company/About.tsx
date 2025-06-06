@@ -1,9 +1,8 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Users, Globe, Award, TrendingUp, Heart, Sparkles, Brain } from "lucide-react";
+import { Target, Users, Globe, Award, TrendingUp, Heart, Sparkles, Brain, ArrowRight } from "lucide-react";
 
 const stats = [
   { number: "11+", label: "Years of Experience", icon: <Award size={24} /> },
@@ -177,7 +176,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-none shadow-soft">
+            <Card className="border-none shadow-soft h-full">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4">
                   <Target size={32} />
@@ -189,7 +188,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-soft">
+            <Card className="border-none shadow-soft h-full">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4">
                   <TrendingUp size={32} />
@@ -222,17 +221,25 @@ const About = () => {
         </div>
         
         <div className="container-wide text-center relative">
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/30">
+            <Sparkles className="h-4 w-4 text-white animate-pulse" />
+            <span className="text-white/90 text-sm font-medium">Ready to Get Started?</span>
+          </div>
+          
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Experience the Synapse Difference?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Join hundreds of companies who trust us to connect them with the world's most exceptional talent
           </p>
           <Button 
-            className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
             onClick={() => window.location.href = "/contact"}
           >
-            Get in Touch
+            <span className="flex items-center gap-2">
+              Contact Us Today
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </span>
           </Button>
         </div>
       </section>

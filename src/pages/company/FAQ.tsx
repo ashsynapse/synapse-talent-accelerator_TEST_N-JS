@@ -1,3 +1,4 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -237,10 +238,10 @@ const FAQ = () => {
           </div>
           
           <h2 className="text-3xl font-bold text-white mb-4">
-            Have More Questions?
+            Ready to Experience the Synapse Difference?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Our team is here to help you understand how our AI-first recruitment platform can transform your hiring process.
+            Join hundreds of companies who trust us to connect them with the world's most exceptional talent
           </p>
           <Button 
             className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
