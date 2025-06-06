@@ -1,3 +1,4 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -66,7 +67,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               About Synapse International
             </h1>
@@ -76,7 +77,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center border-none shadow-soft">
                 <CardContent className="p-6">
@@ -123,14 +124,14 @@ const About = () => {
       {/* Why Choose Us */}
       <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Choose Synapse?</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               What sets us apart in the recruitment industry
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             {whyUs.map((item, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
@@ -149,7 +150,7 @@ const About = () => {
       {/* Our Values */}
       <section className="py-16 bg-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Core Values</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               The principles that guide everything we do
