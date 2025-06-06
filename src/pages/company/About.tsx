@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -65,9 +66,9 @@ const About = () => {
       description="Founded in 2013, we're an AI-first recruitment company revolutionizing how exceptional talent connects with outstanding opportunities globally."
     >
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               About Synapse International
             </h1>
@@ -77,7 +78,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center border-none shadow-soft">
                 <CardContent className="p-6">
@@ -94,7 +95,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -122,16 +123,16 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-8 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Choose Synapse?</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               What sets us apart in the recruitment industry
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {whyUs.map((item, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
@@ -148,9 +149,9 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container-wide">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Core Values</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               The principles that guide everything we do
@@ -174,7 +175,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-8 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-none shadow-soft h-full">
@@ -249,3 +250,4 @@ const About = () => {
 };
 
 export default About;
+
