@@ -57,7 +57,7 @@ const Carousel = React.forwardRef<
     ref
   ) => {
     const defaultOptions = { speed: 10 } // Increased speed (lower value = faster animation)
-    const axis = orientation === "horizontal" ? "x" : "y" as const
+    const axis = orientation === "horizontal" ? "x" : "y"
     const mergedOpts = { ...defaultOptions, ...opts, axis }
     
     const [carouselRef, api] = useEmblaCarousel(

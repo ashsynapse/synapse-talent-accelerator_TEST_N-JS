@@ -56,10 +56,11 @@ const Header = () => {
             </a>
           ))}
           <Button
-            className="btn-primary ml-4"
-            onClick={() => window.location.href = "mailto:info@synapseint.com"}
+            variant="outline"
+            className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors"
+            onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
           >
-            Hire Talent
+            Login
           </Button>
         </nav>
 
@@ -91,13 +92,14 @@ const Header = () => {
               </a>
             ))}
             <Button
-              className="btn-primary w-full mt-4"
+              variant="outline"
+              className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors w-full mt-4"
               onClick={() => {
-                window.location.href = "mailto:info@synapseint.com";
+                window.open("https://app.synapserecruiternetwork.com/", "_blank");
                 setMobileMenuOpen(false);
               }}
             >
-              Hire Talent
+              Login
             </Button>
           </div>
         </nav>
