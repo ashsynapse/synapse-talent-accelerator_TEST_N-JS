@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -59,7 +58,7 @@ const Careers = () => {
       </section>
 
       {/* Our Philosophy */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -106,7 +105,7 @@ const Careers = () => {
       </section>
 
       {/* Why Synapse */}
-      <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Synapse International?</h2>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -94,7 +93,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -122,7 +121,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Choose Synapse?</h2>
@@ -148,7 +147,7 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Core Values</h2>
@@ -174,7 +173,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-none shadow-soft h-full">
