@@ -1,50 +1,29 @@
 
-import React, { ReactElement } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from "react";
 import MainHeader from "./MainHeader";
+import Footer from "./Footer";
 
 interface PageTemplateProps {
   children: React.ReactNode;
-  title: string;
-  description: string;
-  customHeader?: ReactElement;
-  disableMainHeader?: boolean;
+  title?: string;
+  description?: string;
 }
 
-const PageTemplate = ({
-  children,
-  title,
-  description,
-  customHeader,
-  disableMainHeader = false,
-}: PageTemplateProps) => {
-  // Set the document title and meta description
-  React.useEffect(() => {
-    document.title = `${title} | Synapse`;
-    
-    // Find or create meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
-    
-    return () => {
-      // Clean up is optional for title, as it will be overwritten by the next page
-    };
-  }, [title, description]);
-  
+const PageTemplate = ({ children, title, description }: PageTemplateProps) => {
   return (
-    <>
-      {customHeader || (disableMainHeader ? <Header /> : <MainHeader />)}
-      
-      <main>{children}</main>
-      
+    <div className="min-h-screen">
+      {title && (
+        <head>
+          <title>{title} | Synapse</title>
+          {description && <meta name="description" content={description} />}
+        </head>
+      )}
+      <MainHeader />
+      <main className="pt-20">
+        {children}
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
