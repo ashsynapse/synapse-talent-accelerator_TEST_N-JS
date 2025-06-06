@@ -2,7 +2,7 @@ import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Clock, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { TrendingUp, Clock, Users, Award, ArrowRight, CheckCircle, Building, Calendar, MapPin } from "lucide-react";
 
 const realCaseStudies = [
   {
