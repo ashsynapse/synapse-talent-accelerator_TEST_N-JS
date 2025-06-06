@@ -16,13 +16,13 @@ const LogoCarousel = () => {
     { name: "Gojek", url: "/lovable-uploads/327ff1f3-3247-4c56-b852-9253a14b2ac0.png" },
     { name: "IN", url: "/lovable-uploads/d88e9238-084c-4f57-9ef3-d729a3890674.png" },
     { name: "Joy", url: "/lovable-uploads/67bfefa5-8cf4-4d15-9cb9-dcf9a4d5d145.png" },
-    { name: "OMsignal", url: "/lovable-uploads/1d2ac75e-6108-4f1c-8357-f20bd52554e4.png" },
-    { name: "Polymath", url: "/lovable-uploads/ae3f6bd7-1a43-4d9f-b75c-3bd3cf4d7e06.png" },
-    { name: "Quandary Peak Research", url: "/lovable-uploads/6800dfe4-443e-4742-add0-ec604f1c81c3.png" },
-    { name: "RadPad", url: "/lovable-uploads/e4128f84-9175-41a4-8404-3732b84787ec.png" },
-    { name: "Soshio", url: "/lovable-uploads/346ec70d-988e-4d4b-b307-84c8586bed88.png" },
-    { name: "Telescope", url: "/lovable-uploads/634f7947-c6a3-4072-8f70-13d26e40be14.png" },
-    { name: "Uniswap", url: "/lovable-uploads/749d3409-ff1f-472c-812f-57afc7af5a1f.png" },
+    { name: "OMsignal", url: "/lovable-uploads/59460ce8-ffec-445c-b563-389e602f8460.png" },
+    { name: "Polymath", url: "/lovable-uploads/576277ea-71e0-41dd-85de-89a281cd3e5e.png" },
+    { name: "Quandary Peak Research", url: "/lovable-uploads/80275ff1-f6b1-44d0-8ce1-e93117378a3c.png" },
+    { name: "RadPad", url: "/lovable-uploads/7e22dca5-c9ca-4f12-ad00-04514d2d25c2.png" },
+    { name: "Soshio", url: "/lovable-uploads/0962ef3c-a61b-4179-8057-c1621a2ca200.png" },
+    { name: "Telescope", url: "/lovable-uploads/b0354fa4-d158-4bc7-a82b-9ee68d44e7d7.png" },
+    { name: "Uniswap", url: "/lovable-uploads/f6649d08-2922-4751-9687-a5d55a57c45b.png" },
   ];
 
   // Debug logging
