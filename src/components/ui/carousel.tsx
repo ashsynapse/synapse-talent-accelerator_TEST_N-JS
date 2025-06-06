@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -56,9 +57,9 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
-    const defaultOptions = { speed: 10 } // Increased speed (lower value = faster animation)
-    const axis = orientation === "horizontal" ? "x" : "y" as const
-    const mergedOpts = { ...defaultOptions, ...opts, axis }
+    const defaultOptions = { speed: 5 } // Even faster animation (lower value = faster animation)
+    const axis = orientation === "horizontal" ? "x" : "y"
+    const mergedOpts = { ...defaultOptions, ...opts, axis } as CarouselOptions
     
     const [carouselRef, api] = useEmblaCarousel(
       mergedOpts,
