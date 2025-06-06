@@ -89,7 +89,7 @@ const MainHeader = () => {
     >
       <div className="container-wide flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-1">
             <img 
               src="/lovable-uploads/4e0b1cf8-ab85-4f55-a3fb-5f39206731ef.png" 
               alt="Synapse Logo" 
@@ -129,7 +129,14 @@ const MainHeader = () => {
             </div>
           ))}
           
-          <div className="flex items-center ml-8">
+          <div className="flex items-center gap-3 ml-8">
+            <Button
+              variant="outline"
+              className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors"
+              onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
+            >
+              Login
+            </Button>
             <Button
               className="btn-primary"
               onClick={() => window.location.href = "/contact"}
@@ -181,6 +188,16 @@ const MainHeader = () => {
             </div>
             
             <div className="flex flex-col space-y-3 mt-6 pt-4 border-t border-gray-200">
+              <Button
+                variant="outline"
+                className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors w-full"
+                onClick={() => {
+                  window.open("https://app.synapserecruiternetwork.com/", "_blank");
+                  setMobileMenuOpen(false);
+                }}
+              >
+                Login
+              </Button>
               <Button
                 className="btn-primary w-full"
                 onClick={() => {
