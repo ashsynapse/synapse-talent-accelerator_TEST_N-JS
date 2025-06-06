@@ -140,9 +140,9 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
               {[
-                { label: "Blogs", href: "/resources/blog" },
-                { label: "Case Studies", href: "/resources/case-studies" },
-                { label: "Events", href: "/resources/events" }
+                { label: "Blogs", href: "/blogs" },
+                { label: "Case Studies", href: "/case-studies" },
+                { label: "Events", href: "/events" }
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -158,11 +158,11 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4 mt-8">Company</h4>
             <ul className="space-y-2">
               {[
-                { label: "About Us", href: "/company/about" },
-                { label: "Team", href: "/company/team" },
+                { label: "About Us", href: "/about" },
+                { label: "Team", href: "/team" },
                 { label: "Recruiters", href: "/recruiters" },
-                { label: "Careers", href: "/company/careers" },
-                { label: "FAQ", href: "/company/faq" }
+                { label: "Careers", href: "/careers" },
+                { label: "FAQ", href: "/faq" }
               ].map((item) => (
                 <li key={item.label}>
                   <a

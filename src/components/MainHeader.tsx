@@ -144,21 +144,21 @@ const MainHeader = () => {
       label: "Resources", 
       href: null,
       submenu: [
-        { label: "Blogs", href: "/resources/blog" },
-        { label: "Case Studies", href: "/resources/case-studies" },
-        { label: "Events", href: "/resources/events" }
+        { label: "Blogs", href: "/blogs" },
+        { label: "Case Studies", href: "/case-studies" },
+        { label: "Events", href: "/events" }
       ]
     },
     { 
       label: "Company", 
       href: null,
       submenu: [
-        { label: "About Us", href: "/company/about" },
-        { label: "Team", href: "/company/team" },
+        { label: "About Us", href: "/about" },
+        { label: "Team", href: "/team" },
         { label: "Recruiters", href: "/recruiters" },
-        { label: "Careers", href: "/company/careers" },
-        { label: "FAQ", href: "/company/faq" },
-        { label: "Contact Us", href: "/company/contact" }
+        { label: "Careers", href: "/careers" },
+        { label: "FAQ", href: "/faq" },
+        { label: "Contact Us", href: "/contact" }
       ]
     }
   ];

@@ -60,12 +60,23 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
             
-            {/* Resources Routes */}
+            {/* Resources Routes - Direct URLs */}
+            <Route path="/blogs" element={<Blog />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/events" element={<Events />} />
+            
+            {/* Company Routes - Direct URLs */}
+            <Route path="/about" element={<About />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/faq" element={<FAQ />} />
+            
+            {/* Legacy Resources Routes (for backward compatibility) */}
             <Route path="/resources/blog" element={<Blog />} />
             <Route path="/resources/case-studies" element={<CaseStudies />} />
             <Route path="/resources/events" element={<Events />} />
             
-            {/* Company Routes */}
+            {/* Legacy Company Routes (for backward compatibility) */}
             <Route path="/company/about" element={<About />} />
             <Route path="/company/team" element={<Team />} />
             <Route path="/company/careers" element={<Careers />} />
