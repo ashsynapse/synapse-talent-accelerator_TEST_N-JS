@@ -4,6 +4,7 @@ import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Users, Target, Clock, Globe, UserCheck, Briefcase, GraduationCap } from "lucide-react";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 const solutions = [
   {
@@ -62,18 +63,18 @@ const RecruitmentSolutions = () => {
       title="Recruitment Solutions"
       description="Comprehensive AI-powered recruitment solutions for modern hiring challenges"
     >
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Recruitment Solutions
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              End-to-end recruitment solutions powered by AI and backed by global expertise
+              End-to-end recruitment solutions powered by AI and backed by global expertise. From passive recruitment to executive search, we deliver tailored strategies that transform your hiring process.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {solutions.map((solution, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
@@ -93,17 +94,9 @@ const RecruitmentSolutions = () => {
               </Card>
             ))}
           </div>
-
-          <div className="text-center">
-            <Button 
-              className="btn-primary text-lg py-4 px-8"
-              onClick={() => window.location.href = "mailto:info@synapseint.com"}
-            >
-              Get Started Today
-            </Button>
-          </div>
         </div>
       </section>
+      <FinalCtaSection />
     </PageTemplate>
   );
 };

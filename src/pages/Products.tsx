@@ -4,6 +4,7 @@ import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Shield, FileSearch } from "lucide-react";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 const products = [
   {
@@ -32,18 +33,18 @@ const Products = () => {
       title="Recruitment Products"
       description="AI-powered recruitment tools and products for modern hiring needs"
     >
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Recruitment Products
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Cutting-edge AI-powered tools designed to streamline your recruitment process
+              Cutting-edge AI-powered tools designed to streamline your recruitment process and deliver exceptional results for your hiring needs.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
@@ -63,17 +64,9 @@ const Products = () => {
               </Card>
             ))}
           </div>
-
-          <div className="text-center">
-            <Button 
-              className="btn-primary text-lg py-4 px-8"
-              onClick={() => window.location.href = "mailto:info@synapseint.com"}
-            >
-              Request Demo
-            </Button>
-          </div>
         </div>
       </section>
+      <FinalCtaSection />
     </PageTemplate>
   );
 };

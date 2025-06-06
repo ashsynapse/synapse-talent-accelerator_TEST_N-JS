@@ -4,6 +4,7 @@ import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, TrendingUp, Settings, Users, DollarSign, Calculator, Scale, Factory } from "lucide-react";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 const industries = [
   {
@@ -70,14 +71,14 @@ const Industries = () => {
       title="Industry-Specific Recruitment Solutions"
       description="Specialized recruitment solutions tailored to industry-specific needs and challenges"
     >
-      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Industry Expertise
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Deep industry knowledge combined with AI-powered recruitment technology
+              Deep industry knowledge combined with AI-powered recruitment technology. We understand the unique challenges and requirements of each sector, delivering specialized talent acquisition solutions.
             </p>
           </div>
 
@@ -118,6 +119,7 @@ const Industries = () => {
           </div>
         </div>
       </section>
+      <FinalCtaSection />
     </PageTemplate>
   );
 };
