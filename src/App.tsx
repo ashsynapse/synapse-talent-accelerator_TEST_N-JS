@@ -94,6 +94,19 @@ const App = () => {
             <Route path="/blogs/linkedin-optimization" element={<LinkedInOptimization />} />
             <Route path="/blogs/referral-based-platforms" element={<ReferralPlatforms />} />
             <Route path="/blogs/ai-recruitment-2025" element={<AIRecruitment2025 />} />
+            <Route path="/blogs/outsourced-development-team" element={<OutsourcedDevelopmentTeam />} />
+            <Route path="/blogs/recruitment-trends-2025" element={<RecruitmentTrends2025 />} />
+            <Route path="/blogs/talent-acquisition-strategies" element={<TalentAcquisitionStrategies />} />
+            <Route path="/blogs/employer-branding" element={<EmployerBranding />} />
+            <Route path="/blogs/retention-succession-planning" element={<RetentionSuccessionPlanning />} />
+            <Route path="/blogs/global-hiring-trends-2025" element={<GlobalHiringTrends2025 />} />
+            <Route path="/blogs/expert-hiring-tips" element={<ExpertHiringTips />} />
+            <Route path="/blogs/future-of-recruiting" element={<FutureOfRecruiting />} />
+            <Route path="/blogs/speed-matters-recruitment" element={<SpeedMattersRecruitment />} />
+            <Route path="/blogs/remote-recruitment-simple" element={<RemoteRecruitmentSimple />} />
+            <Route path="/blogs/remote-recruitment-guide" element={<RemoteRecruitmentGuide />} />
+            <Route path="/blogs/gen-z-job-market" element={<GenZJobMarket />} />
+            <Route path="/blogs/side-hustles-gig-economy" element={<SideHustlesGigEconomy />} />
             
             {/* Company Routes - Direct URLs */}
             <Route path="/about" element={<About />} />

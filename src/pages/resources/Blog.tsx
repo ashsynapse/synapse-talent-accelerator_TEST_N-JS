@@ -6,6 +6,51 @@ import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "The Rise of Side Hustles: Why Gen Z is Shaping the Gig Economy",
+    excerpt: "In recent years, the gig economy has seen exponential growth, driven largely by Generation Z. This digitally savvy generation is redefining work culture by embracing flexibility, entrepreneurship, and multiple streams of income.",
+    author: "SRN Knowledge Base",
+    date: "February 21, 2025",
+    readTime: "6 min read",
+    category: "Industry Insights",
+    href: "/blogs/side-hustles-gig-economy"
+  },
+  {
+    title: "How Gen Z is Redefining the Job Market: Trends Recruiters Need to Know",
+    excerpt: "The job market is undergoing a transformation, driven by the entry of Generation Z. As the first fully digital-native generation, Gen Z brings new expectations, values, and work habits that are reshaping hiring practices.",
+    author: "SRN Knowledge Base",
+    date: "February 18, 2025",
+    readTime: "7 min read",
+    category: "Industry Insights",
+    href: "/blogs/gen-z-job-market"
+  },
+  {
+    title: "Remote Recruitment: A Comprehensive Guide",
+    excerpt: "Remote recruitment involves sourcing, interviewing, assessing, and hiring employees for remote positions using online tools. In today's digital age, an efficient remote hiring process is essential for organizations.",
+    author: "SRN Knowledge Base",
+    date: "February 10, 2025",
+    readTime: "8 min read",
+    category: "Remote Work",
+    href: "/blogs/remote-recruitment-guide"
+  },
+  {
+    title: "Remote Recruitment Made Simple",
+    excerpt: "In today's fast-paced digital world, remote recruitment has become not just a trend but a necessity for many organizations. As companies expand their horizons beyond geographical boundaries, the ability to attract and hire top talent from anywhere in the world is crucial.",
+    author: "SRN Knowledge Base",
+    date: "January 31, 2025",
+    readTime: "5 min read",
+    category: "Remote Work",
+    href: "/blogs/remote-recruitment-simple"
+  },
+  {
+    title: "Speed Matters in Recruitment: Why Moving Fast is the Key to Success",
+    excerpt: "In today's hyper-competitive business landscape, time is one of the most valuable resources. For organizations looking to grow, innovate, and stay ahead of the competition, the ability to hire top talent quickly is no longer a luxury — it's a necessity.",
+    author: "SRN Knowledge Base",
+    date: "January 28, 2025",
+    readTime: "6 min read",
+    category: "Recruitment Strategy",
+    href: "/blogs/speed-matters-recruitment"
+  },
+  {
     title: "Building the Future of Recruiting at SRN!",
     excerpt: "As we embark on a transformative journey at SRN, we're excited to share our ambitious plans to integrate artificial intelligence (AI) into every facet of our recruitment process.",
     author: "SRN Knowledge Base",
@@ -160,7 +205,7 @@ const blogPosts = [
   }
 ];
 
-const categories = ["All", "AI & Technology", "Sourcing Strategies", "Talent Acquisition", "Industry Insights", "Professional Development", "Company Updates", "Tech Startups", "HR Leadership", "Employer Branding", "HR Strategy"];
+const categories = ["All", "AI & Technology", "Sourcing Strategies", "Talent Acquisition", "Industry Insights", "Professional Development", "Company Updates", "Tech Startups", "HR Leadership", "Employer Branding", "HR Strategy", "Remote Work", "Recruitment Strategy"];
 
 const Blog = () => {
   return (
