@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const ReferralBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -56,19 +55,34 @@ const ReferralBanner = () => {
                   Earn 5% for 12 Months
                 </h3>
                 <p className="text-sm md:text-base text-white/90 leading-relaxed">
-                  Refer recruiters (US/Canada preferred) and earn a share of their earnings for a full year
+                  Refer recruiters (US/CA) and earn a share of their earnings for a full year
                 </p>
               </div>
               
               <div className="flex justify-center md:justify-start">
-                <Button
+                <button
                   onClick={handleCTAClick}
-                  className="bg-white text-synapse-primary hover:bg-white/90 hover:text-synapse-primary font-semibold px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-soft min-w-[120px]"
+                  className="relative overflow-hidden bg-white text-synapse-primary font-bold px-8 py-3 border-2 border-white/30 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+                  style={{
+                    clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
+                  }}
                 >
-                  <span className="animate-fade-in" key={currentCTAIndex}>
+                  {/* Blinking background effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-300 opacity-0 animate-pulse group-hover:opacity-20 transition-opacity duration-300"></div>
+                  
+                  {/* Shimmer effect */}
+                  <div className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+                  
+                  <span className="relative z-10 animate-fade-in" key={currentCTAIndex}>
                     {ctaTexts[currentCTAIndex]}
                   </span>
-                </Button>
+                  
+                  {/* Blinking border */}
+                  <div className="absolute inset-0 border-2 border-yellow-400 opacity-0 animate-pulse" style={{
+                    clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
+                    animationDuration: '1.5s'
+                  }}></div>
+                </button>
               </div>
             </div>
           </div>
