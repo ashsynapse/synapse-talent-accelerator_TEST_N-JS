@@ -4,6 +4,7 @@ import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Users, Target, Clock, Globe, UserCheck, Briefcase, GraduationCap } from "lucide-react";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 const solutions = [
   {
@@ -68,9 +69,23 @@ const RecruitmentSolutions = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Recruitment Solutions
             </h1>
-            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              End-to-end recruitment solutions powered by AI and backed by global expertise
+            <p className="text-xl text-synapse-gray max-w-3xl mx-auto mb-8">
+              End-to-end recruitment solutions powered by AI and backed by global expertise. From passive candidate sourcing to executive search, we provide comprehensive recruitment strategies tailored to your specific hiring needs and organizational goals.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Custom Strategies</span>
+              </div>
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Expert Consultancy</span>
+              </div>
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Scalable Solutions</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -93,17 +108,9 @@ const RecruitmentSolutions = () => {
               </Card>
             ))}
           </div>
-
-          <div className="text-center">
-            <Button 
-              className="btn-primary text-lg py-4 px-8"
-              onClick={() => window.location.href = "mailto:info@synapseint.com"}
-            >
-              Get Started Today
-            </Button>
-          </div>
         </div>
       </section>
+      <FinalCtaSection />
     </PageTemplate>
   );
 };

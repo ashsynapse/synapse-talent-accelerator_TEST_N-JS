@@ -4,6 +4,7 @@ import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, TrendingUp, Settings, Users, DollarSign, Calculator, Scale, Factory } from "lucide-react";
+import FinalCtaSection from "../components/FinalCtaSection";
 
 const industries = [
   {
@@ -76,9 +77,23 @@ const Industries = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Industry Expertise
             </h1>
-            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Deep industry knowledge combined with AI-powered recruitment technology
+            <p className="text-xl text-synapse-gray max-w-3xl mx-auto mb-8">
+              Deep industry knowledge combined with AI-powered recruitment technology. Our specialized approach ensures we understand the unique challenges, requirements, and opportunities within each sector, delivering candidates who not only have the right skills but also understand your industry's nuances.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Industry Specialists</span>
+              </div>
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Sector Knowledge</span>
+              </div>
+              <div className="flex items-center gap-2 text-synapse-primary">
+                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
+                <span className="text-sm">Targeted Approach</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -118,6 +133,7 @@ const Industries = () => {
           </div>
         </div>
       </section>
+      <FinalCtaSection />
     </PageTemplate>
   );
 };
