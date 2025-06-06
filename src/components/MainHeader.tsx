@@ -131,17 +131,17 @@ const MainHeader = () => {
           
           <div className="flex items-center gap-3 ml-8">
             <Button
+              className="btn-primary"
+              onClick={() => window.location.href = "/contact"}
+            >
+              Book Demo
+            </Button>
+            <Button
               variant="outline"
               className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors"
               onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
             >
               Login
-            </Button>
-            <Button
-              className="btn-primary"
-              onClick={() => window.location.href = "/contact"}
-            >
-              Book Demo
             </Button>
           </div>
         </nav>
@@ -189,6 +189,15 @@ const MainHeader = () => {
             
             <div className="flex flex-col space-y-3 mt-6 pt-4 border-t border-gray-200">
               <Button
+                className="btn-primary w-full"
+                onClick={() => {
+                  window.location.href = "/contact";
+                  setMobileMenuOpen(false);
+                }}
+              >
+                Book Demo
+              </Button>
+              <Button
                 variant="outline"
                 className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors w-full"
                 onClick={() => {
@@ -197,15 +206,6 @@ const MainHeader = () => {
                 }}
               >
                 Login
-              </Button>
-              <Button
-                className="btn-primary w-full"
-                onClick={() => {
-                  window.location.href = "/contact";
-                  setMobileMenuOpen(false);
-                }}
-              >
-                Book Demo
               </Button>
             </div>
           </div>
