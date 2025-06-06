@@ -3,7 +3,7 @@ import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, Users, Globe } from "lucide-react";
+import { Linkedin, Mail, Users, Globe, ArrowRight, Sparkles } from "lucide-react";
 
 const leadership = [
   {
@@ -72,15 +72,15 @@ const Team = () => {
                   <div className="flex justify-center gap-4">
                     <a 
                       href={member.linkedin} 
-                      className="text-synapse-gray hover:text-synapse-primary transition-colors p-2 rounded-full hover:bg-synapse-lighter/20"
+                      className="w-12 h-12 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                     >
-                      <Linkedin size={24} />
+                      <Linkedin size={20} />
                     </a>
                     <a 
                       href={`mailto:${member.email}`} 
-                      className="text-synapse-gray hover:text-synapse-primary transition-colors p-2 rounded-full hover:bg-synapse-lighter/20"
+                      className="w-12 h-12 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                     >
-                      <Mail size={24} />
+                      <Mail size={20} />
                     </a>
                   </div>
                 </CardContent>
@@ -105,7 +105,9 @@ const Team = () => {
             <Card className="border-none shadow-soft">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <Users className="text-synapse-primary" size={32} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white">
+                    <Users size={32} />
+                  </div>
                   <div>
                     <h3 className="text-2xl font-bold text-synapse-dark">Internal Team</h3>
                     <p className="text-synapse-primary font-medium">10+ Core Team Members</p>
@@ -141,7 +143,9 @@ const Team = () => {
             <Card className="border-none shadow-soft">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <Globe className="text-synapse-primary" size={32} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white">
+                    <Globe size={32} />
+                  </div>
                   <div>
                     <h3 className="text-2xl font-bold text-synapse-dark">Global Network</h3>
                     <p className="text-synapse-primary font-medium">1K+ Professional Recruiters</p>
@@ -225,29 +229,43 @@ const Team = () => {
       </section>
 
       {/* Join Our Network */}
-      <section className="py-20 bg-gradient-to-br from-synapse-primary to-synapse-primary/80">
-        <div className="container-wide text-center">
+      <section className="py-20 bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+        
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        <div className="container-wide text-center relative">
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/30">
+            <Sparkles className="h-4 w-4 text-white animate-pulse" />
+            <span className="text-white/90 text-sm font-medium">Join Our Global Network</span>
+          </div>
+          
           <h2 className="text-3xl font-bold text-white mb-4">
-            Join Our Global Network
+            Ready to Be Part of Something Bigger?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Whether you're exceptional talent or a professional recruiter, there's a place for you in the Synapse family
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8"
-              onClick={() => window.location.href = "/recruiters"}
-            >
-              Join as Recruiter
-            </Button>
-            <Button 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-synapse-primary font-medium py-3 px-8"
-              onClick={() => window.location.href = "/careers"}
-            >
-              Explore Careers
-            </Button>
-          </div>
+          <Button 
+            className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+            onClick={() => window.location.href = "/contact"}
+          >
+            <span className="flex items-center gap-2">
+              Get in Touch
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </span>
+          </Button>
         </div>
       </section>
     </PageTemplate>

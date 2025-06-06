@@ -81,7 +81,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <Card key={index} className="text-center border-none shadow-soft">
                 <CardContent className="p-6">
-                  <div className="text-synapse-primary mb-3 flex justify-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-3 mx-auto">
                     {stat.icon}
                   </div>
                   <div className="text-3xl font-bold text-synapse-dark mb-2">{stat.number}</div>
@@ -135,7 +135,7 @@ const About = () => {
             {whyUs.map((item, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
-                  <div className="text-synapse-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-synapse-dark">{item.title}</h3>
@@ -161,7 +161,7 @@ const About = () => {
             {values.map((value, index) => (
               <Card key={index} className="text-center border hover:border-synapse-primary transition-colors duration-300 group">
                 <CardContent className="p-6">
-                  <div className="text-synapse-primary mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
                     {value.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-synapse-dark">{value.title}</h3>
@@ -179,7 +179,9 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <Card className="border-none shadow-soft">
               <CardContent className="p-8">
-                <Target className="text-synapse-primary mb-4" size={32} />
+                <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4">
+                  <Target size={32} />
+                </div>
                 <h3 className="text-2xl font-bold text-synapse-dark mb-4">Our Mission</h3>
                 <p className="text-synapse-gray">
                   To revolutionize global talent acquisition by connecting the world's top 1% of professionals with companies that truly value excellence, using AI-powered technology to make extraordinary matches possible.
@@ -189,7 +191,9 @@ const About = () => {
 
             <Card className="border-none shadow-soft">
               <CardContent className="p-8">
-                <TrendingUp className="text-synapse-primary mb-4" size={32} />
+                <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4">
+                  <TrendingUp size={32} />
+                </div>
                 <h3 className="text-2xl font-bold text-synapse-dark mb-4">Our Vision</h3>
                 <p className="text-synapse-gray">
                   To become the global standard for AI-first recruitment, creating a future where exceptional talent and outstanding opportunities find each other seamlessly, regardless of geography or industry.
@@ -201,29 +205,35 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-synapse-primary to-synapse-primary/80">
-        <div className="container-wide text-center">
+      <section className="py-20 bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-white/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+        
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        <div className="container-wide text-center relative">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Experience the Synapse Difference?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Join hundreds of companies who trust us to connect them with the world's most exceptional talent
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8"
-              onClick={() => window.location.href = "/contact"}
-            >
-              Get Started Today
-            </Button>
-            <Button 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-synapse-primary font-medium py-3 px-8"
-              onClick={() => window.location.href = "/team"}
-            >
-              Meet Our Team
-            </Button>
-          </div>
+          <Button 
+            className="bg-white text-synapse-primary hover:bg-gray-100 font-medium py-3 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            onClick={() => window.location.href = "/contact"}
+          >
+            Get in Touch
+          </Button>
         </div>
       </section>
     </PageTemplate>
