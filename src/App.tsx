@@ -26,6 +26,17 @@ import Team from "./pages/company/Team";
 import Careers from "./pages/company/Careers";
 import FAQ from "./pages/company/FAQ";
 
+// Blog Post Pages
+import CandidateEngagement from "./pages/blog/CandidateEngagement";
+import ChatGPTQuality from "./pages/blog/ChatGPTQuality";
+import ChatGPTFitAnalysis from "./pages/blog/ChatGPTFitAnalysis";
+import GoogleXrayBoolean from "./pages/blog/GoogleXrayBoolean";
+import SRNWebApp from "./pages/blog/SRNWebApp";
+import StrategicSourcing from "./pages/blog/StrategicSourcing";
+import LinkedInOptimization from "./pages/blog/LinkedInOptimization";
+import ReferralPlatforms from "./pages/blog/ReferralPlatforms";
+import AIRecruitment2025 from "./pages/blog/AIRecruitment2025";
+
 // Additional Pages
 import Glossary from "./pages/Glossary";
 import Partners from "./pages/Partners";
@@ -64,6 +75,17 @@ const App = () => {
             <Route path="/blogs" element={<Blog />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/events" element={<Events />} />
+            
+            {/* Individual Blog Post Routes */}
+            <Route path="/blogs/candidate-engagement" element={<CandidateEngagement />} />
+            <Route path="/blogs/chatgpt-quality-submissions" element={<ChatGPTQuality />} />
+            <Route path="/blogs/chatgpt-candidate-fit-analysis" element={<ChatGPTFitAnalysis />} />
+            <Route path="/blogs/google-xray-boolean-sourcing" element={<GoogleXrayBoolean />} />
+            <Route path="/blogs/srn-web-app-beta" element={<SRNWebApp />} />
+            <Route path="/blogs/strategic-talent-sourcing" element={<StrategicSourcing />} />
+            <Route path="/blogs/linkedin-optimization" element={<LinkedInOptimization />} />
+            <Route path="/blogs/referral-based-platforms" element={<ReferralPlatforms />} />
+            <Route path="/blogs/ai-recruitment-2025" element={<AIRecruitment2025 />} />
             
             {/* Company Routes - Direct URLs */}
             <Route path="/about" element={<About />} />

@@ -7,62 +7,89 @@ import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "The Future of AI in Recruitment: Trends for 2024",
-    excerpt: "Discover how artificial intelligence is transforming the recruitment landscape and what it means for employers and job seekers.",
-    author: "Sarah Johnson",
-    date: "December 15, 2024",
+    title: "AI's Role in Shaping Recruitment: What to Expect in 2025",
+    excerpt: "As 2024 comes to a close, artificial intelligence is transforming recruitment, not just in efficiency but in fundamentally reimagining the hiring process.",
+    author: "SRN Knowledge Base",
+    date: "December 24, 2024",
+    readTime: "7 min read",
+    category: "AI & Technology",
+    href: "/blogs/ai-recruitment-2025"
+  },
+  {
+    title: "Why 75% of Top Employers Prefer Hiring Through Referral-Based Platforms Like Synapse",
+    excerpt: "In today's competitive job market, recruitment strategies are evolving rapidly, with many companies turning to innovative platforms and methods to find the best talent.",
+    author: "SRN Knowledge Base",
+    date: "December 21, 2024",
+    readTime: "8 min read",
+    category: "Industry Insights",
+    href: "/blogs/referral-based-platforms"
+  },
+  {
+    title: "Upcoming Changes to SRN — Web App Beta",
+    excerpt: "In August 2024, Synapse International launched a pilot project, Synapse Recruiter Network (SRN), and now we're ready for the next phase.",
+    author: "Cody & Ali",
+    date: "November 7, 2024",
+    readTime: "6 min read",
+    category: "Company Updates",
+    href: "/blogs/srn-web-app-beta"
+  },
+  {
+    title: "Using ChatGPT + Google Xray Boolean to Find Candidates Not Active on LinkedIn",
+    excerpt: "Learn how to combine ChatGPT and Google Xray/boolean search to find amazing candidates who don't spend much time on LinkedIn.",
+    author: "Ali Taghikhani",
+    date: "October 17, 2024",
+    readTime: "7 min read",
+    category: "Sourcing Strategies",
+    href: "/blogs/google-xray-boolean-sourcing"
+  },
+  {
+    title: "Using ChatGPT: Telling us why a candidate is NOT a fit",
+    excerpt: "Discover how leveraging ChatGPT could save valuable time when identifying candidates who aren't the right fit for specific roles.",
+    author: "SRN Knowledge Base",
+    date: "October 9, 2024",
+    readTime: "4 min read",
+    category: "AI & Technology",
+    href: "/blogs/chatgpt-candidate-fit-analysis"
+  },
+  {
+    title: "Using ChatGPT for Higher Quality Candidate Submissions",
+    excerpt: "In today's fast-paced recruiting landscape, AI-powered tools like ChatGPT can streamline the process and enhance submission quality.",
+    author: "SRN Knowledge Base",
+    date: "October 9, 2024",
     readTime: "5 min read",
     category: "AI & Technology",
-    href: "/resources/blog/ai-recruitment-trends-2024"
+    href: "/blogs/chatgpt-quality-submissions"
   },
   {
-    title: "Remote Hiring Best Practices: Building Global Teams",
-    excerpt: "Learn the essential strategies for successfully hiring and onboarding remote talent across different time zones and cultures.",
-    author: "Michael Chen",
-    date: "December 10, 2024",
-    readTime: "7 min read",
-    category: "Remote Work",
-    href: "/resources/blog/remote-hiring-best-practices"
-  },
-  {
-    title: "Candidate Experience: Why It Matters More Than Ever",
-    excerpt: "Explore how providing an exceptional candidate experience can transform your employer brand and attract top talent.",
-    author: "Emily Rodriguez",
-    date: "December 5, 2024",
-    readTime: "6 min read",
-    category: "Talent Acquisition",
-    href: "/resources/blog/candidate-experience-matters"
-  },
-  {
-    title: "Diversity & Inclusion in Tech Recruitment",
-    excerpt: "Strategies for building more diverse and inclusive teams in the technology sector and overcoming common hiring biases.",
-    author: "David Kim",
-    date: "November 28, 2024",
+    title: "How to Keep Candidates Engaged During the Recruitment Process",
+    excerpt: "As a third-party recruiter working on behalf of undisclosed companies, keeping candidates engaged can be challenging. Here are proven strategies.",
+    author: "SRN Knowledge Base",
+    date: "September 30, 2024",
     readTime: "8 min read",
-    category: "Diversity & Inclusion",
-    href: "/resources/blog/diversity-inclusion-tech-recruitment"
+    category: "Talent Acquisition",
+    href: "/blogs/candidate-engagement"
   },
   {
-    title: "The Art of Technical Interviewing",
-    excerpt: "Best practices for conducting effective technical interviews that accurately assess candidates while providing a positive experience.",
-    author: "Lisa Thompson",
-    date: "November 20, 2024",
-    readTime: "5 min read",
-    category: "Interview Process",
-    href: "/resources/blog/art-of-technical-interviewing"
+    title: "LinkedIn Optimization (Tips and Best Practices)",
+    excerpt: "Comprehensive guidelines on optimizing your LinkedIn profile to attract top candidates and increase your placements.",
+    author: "SRN Knowledge Base",
+    date: "September 30, 2024",
+    readTime: "12 min read",
+    category: "Professional Development",
+    href: "/blogs/linkedin-optimization"
   },
   {
-    title: "Building Your Employer Brand in a Competitive Market",
-    excerpt: "How to differentiate your company and attract top talent in today's highly competitive recruitment landscape.",
-    author: "James Wilson",
-    date: "November 15, 2024",
-    readTime: "6 min read",
-    category: "Employer Branding",
-    href: "/resources/blog/building-employer-brand"
+    title: "How to Source Talent Strategically Rather Than Merely Conducting Basic Outreach",
+    excerpt: "Learn how to move from simple sourcing to effective, strategic sourcing that actively engages and attracts high-quality candidates.",
+    author: "SRN Knowledge Base",
+    date: "September 26, 2024",
+    readTime: "9 min read",
+    category: "Sourcing Strategies",
+    href: "/blogs/strategic-talent-sourcing"
   }
 ];
 
-const categories = ["All", "AI & Technology", "Remote Work", "Talent Acquisition", "Diversity & Inclusion", "Interview Process", "Employer Branding"];
+const categories = ["All", "AI & Technology", "Sourcing Strategies", "Talent Acquisition", "Industry Insights", "Professional Development", "Company Updates"];
 
 const Blog = () => {
   return (
