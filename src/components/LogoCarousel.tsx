@@ -6,12 +6,16 @@ const LogoCarousel = () => {
   const { addToRefs } = useScrollAnimation();
   
   const logos = [
-    { name: "TechCorp", url: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=120&h=60&fit=crop&crop=center" },
-    { name: "InnovateHub", url: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=60&fit=crop&crop=center" },
-    { name: "DataFlow", url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&h=60&fit=crop&crop=center" },
-    { name: "CloudTech", url: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=120&h=60&fit=crop&crop=center" },
-    { name: "NextGen", url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=60&fit=crop&crop=center" },
-    { name: "ScaleUp", url: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=120&h=60&fit=crop&crop=center" },
+    { name: "Sermo", url: "/lovable-uploads/01d0c7c8-ccb3-4373-b2aa-1682616d8e1b.png" },
+    { name: "Boost Media", url: "/lovable-uploads/7dad1848-c16f-470e-82cb-049fd51234ce.png" },
+    { name: "Bread", url: "/lovable-uploads/67a605b0-9587-44b7-b089-651cb314ba5e.png" },
+    { name: "Coins.ph", url: "/lovable-uploads/a50812b7-7ab3-48ba-b221-015ea950c671.png" },
+    { name: "Conduit", url: "/lovable-uploads/37f14594-ad62-458c-9104-4c5e2290cca5.png" },
+    { name: "Livepeer", url: "/lovable-uploads/1158a508-ae52-46da-93f0-8d958af12dbf.png" },
+    { name: "Exodus", url: "/lovable-uploads/657ecdd7-703c-4f39-b015-0825e89fcbac.png" },
+    { name: "Gojek", url: "/lovable-uploads/327ff1f3-3247-4c56-b852-9253a14b2ac0.png" },
+    { name: "IN", url: "/lovable-uploads/d88e9238-084c-4f57-9ef3-d729a3890674.png" },
+    { name: "Joy", url: "/lovable-uploads/67bfefa5-8cf4-4d15-9cb9-dcf9a4d5d145.png" },
   ];
 
   return (
