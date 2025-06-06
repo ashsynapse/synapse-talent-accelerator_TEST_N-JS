@@ -90,6 +90,91 @@ const realCaseStudies = [
       expertise: "Smart contract development and auditing"
     },
     description: "Uniswap is the largest decentralized exchange and the fourth-largest cryptocurrency exchange overall by daily trading volume created by Hayden Adams. Our recruitment helped them secure world-class blockchain talent to maintain their market-leading position."
+  },
+  {
+    title: "Polymath Network: Finding Professionals That Build Exceptional Products",
+    client: "Polymath Network",
+    industry: "Blockchain/Security Tokens",
+    location: "Barbados based, $58M ICO",
+    year: "Recent",
+    image: "/lovable-uploads/c5a92efe-bd92-4c6c-8c65-9c205e21a1a9.png",
+    challenge: "The challenge was to help them find a Product Designer who could improve the look, feel, and experience of their platform. Driving more users, engagement, and growth of the platform.",
+    solution: "We found a Designer who came from ConsenSys and already had deep experience working in Blockchain projects professionally and personally. He was not only the right technical fit, he was a great cultural fit.",
+    results: {
+      hire: "Product Designer from ConsenSys",
+      expertise: "Blockchain experience professionally and personally",
+      impact: "Improved platform UX and user engagement",
+      culturalFit: "Great alignment with company values"
+    },
+    description: "Polymath Network is an institutional-grade open-source blockchain built specifically for regulated assets and one of the first to focus on Security Tokens. Our successful placement helped enhance their platform's user experience and drive growth."
+  },
+  {
+    title: "Exodus: The Right Cultural Fit for Crypto Wallets",
+    client: "Exodus",
+    industry: "Cryptocurrency/Digital Wallets",
+    location: "Venture & Stock Offering, 110M Total",
+    year: "Recent",
+    image: "/lovable-uploads/3b991102-a9cf-49c8-9cf0-c1753507e459.png",
+    challenge: "Exodus had already established itself as a major player in the market and had been getting prepared to make its first public offering of Class A stock. They wanted to make a push with marketing and continue developing their online communities.",
+    solution: "We helped them successfully hire a talented Social Media Manager who previously worked at Litecoin to run their Twitter Page who helped improve growth in their following and engagement on the platform. We later brought in a Product Marketing Director from ShapeShift to focus on the direction of the product and expansion into other features and offerings.",
+    results: {
+      socialMediaManager: "Previously worked at Litecoin",
+      productMarketingDirector: "From ShapeShift",
+      impact: "Improved social media growth and engagement",
+      expansion: "Product direction and feature development"
+    },
+    description: "Exodus is a multi-asset software wallet that removes the geek requirement and keeps design a priority to make cryptocurrency and digital assets easy for everyone. Our strategic hires helped position them for their successful public offering and continued market growth."
+  },
+  {
+    title: "Conduit: Bulk Engineers for Fast Growing Start-ups",
+    client: "Conduit",
+    industry: "FinTech/Payments",
+    location: "Boston based, Seed Round Funded, $17M",
+    year: "Recent",
+    image: "/lovable-uploads/8f9b6048-531f-4cf9-8283-4a044062f598.png",
+    challenge: "Conduit had begun making significant growth in their platform and customer base and it was time to start scaling. They needed to hire several engineers to help build new features and work on scaling the platform to handle even more increased volume.",
+    solution: "We helped them hire 3 talented engineers who came in and made significant contributions to the growth of the product and Conduit is now continuing to ramp up making a name for themselves in the DeFi space around the world.",
+    results: {
+      engineers: "3 talented engineers hired",
+      impact: "Significant contributions to product growth",
+      outcome: "Successful scaling and DeFi market presence",
+      growth: "Platform ready for increased volume"
+    },
+    description: "Conduit is a company based in Boston that offers a financial API for payments, on ramps, wallets, DeFi. Our engineering talent helped them scale their platform effectively and establish themselves as a prominent player in the DeFi ecosystem."
+  },
+  {
+    title: "Senior Management for the Hospitality Industry",
+    client: "Hospitality Investment Firm",
+    industry: "Hospitality/Investment",
+    location: "United States, Miami, Barton G",
+    year: "September 2023",
+    image: "/lovable-uploads/7a3a9db9-10ef-4c53-b923-1103d086acc3.png",
+    challenge: "It was a very senior position, VP of Sales, and they tried posting it on LinkedIn but they couldn't find anyone as senior. There was a disconnect between what the owner and what the hiring manager wanted.",
+    solution: "In a single call we understood our client's pain. We did outreach, tapped onto our network, and looked for people with: experience in the hospitality industry, sales, and with senior management experience. We found them amazing candidates, among them one with a particular affinity for the brand and they began their role within 10 days.",
+    results: {
+      position: "VP of Sales",
+      timeToHire: "10 days from start to placement",
+      targetExperience: "Hospitality, sales, senior management",
+      outcome: "Strong brand affinity and immediate impact"
+    },
+    description: "A thesis-driven, early growth investor for exceptional entrepreneurs building enterprise software companies in the hospitality sector. Our targeted approach and network leverage helped them find the perfect senior executive match quickly and efficiently."
+  },
+  {
+    title: "Telescope Partners: Long Time Partnership with a Venture Capital Firm",
+    client: "Telescope Partners",
+    industry: "Venture Capital/Investment",
+    location: "San Francisco, US",
+    year: "September 2023",
+    image: "/lovable-uploads/b0e2609b-d5dc-4592-a7dd-37f21dcc3ef6.png",
+    challenge: "They had no experience hiring abroad and wanted to test the waters with candidates in the same time zone. They wanted a software developer at first.",
+    solution: "They loved and hired the first candidate we sent them. Now, we are hiring 2 more candidates and referred us to two other companies in their portfolio, and we hired for them.",
+    results: {
+      firstHire: "Immediate success with first candidate",
+      expansion: "2 additional hires in progress",
+      referrals: "Referred to 2 portfolio companies",
+      partnership: "Long-term ongoing relationship"
+    },
+    description: "Telescope Partners is a thesis-driven, early growth investor for exceptional entrepreneurs building enterprise software companies. Our successful partnership demonstrates the value of quality placements and has expanded to include multiple portfolio companies through referrals."
   }
 ];
 
@@ -188,7 +273,7 @@ const CaseStudies = () => {
               Ready to Write Your Success Story?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Join leading companies like Joy, Breadwallet, SERMO, Gojek, and Uniswap who have transformed their teams with our strategic talent acquisition solutions
+              Join leading companies like Joy, Breadwallet, SERMO, Gojek, Uniswap, Polymath, Exodus, Conduit, and many more who have transformed their teams with our strategic talent acquisition solutions
             </p>
             <Button 
               className="bg-white text-synapse-primary hover:bg-synapse-lighter text-lg py-4 px-8 font-semibold"
