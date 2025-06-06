@@ -1,8 +1,9 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Clock, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { TrendingUp, Users, Clock, Building, ArrowRight, MapPin, Calendar } from "lucide-react";
 
 const realCaseStudies = [
   {
@@ -214,25 +215,10 @@ const realCaseStudies = [
 const CaseStudies = () => {
   return (
     <PageTemplate 
-      title="Case Studies | Synapse Success Stories"
-      description="Discover how leading companies have transformed their hiring with Synapse's AI-powered recruitment solutions"
+      title="Case Studies"
+      description="Real success stories showcasing how we've helped companies transform their recruitment and build exceptional teams"
     >
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
-        <div className="container-wide">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
-              Success Stories
-            </h1>
-            
-            <p className="text-xl text-synapse-gray mb-12 leading-relaxed">
-              Real results from companies that transformed their hiring process with our AI-powered recruitment solutions.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Grid */}
-      <section className="standard-section bg-white">
+      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">

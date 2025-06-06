@@ -1,3 +1,4 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -22,22 +23,18 @@ const Events = () => {
       title="Live Sourcing Deep Dive: Full-Funnel Focus"
       description="Join our exclusive live recruiting webinar focused on driving real results through the recruiting funnel"
     >
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
+      <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Live Sourcing Deep Dive: Full-Funnel Focus
             </h1>
-            <p className="text-xl text-synapse-gray mb-12 leading-relaxed">
+            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
               Join us for a no-fluff, high-impact session focused on driving real results through the recruiting funnel
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Main Event Card */}
-      <section className="standard-section bg-white">
-        <div className="container-wide">
+          {/* Main Event Card */}
           <div className="max-w-4xl mx-auto mb-16">
             <Card className="border-2 border-synapse-primary shadow-xl">
               <CardContent className="p-8">

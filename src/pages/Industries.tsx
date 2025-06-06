@@ -71,21 +71,17 @@ const Industries = () => {
       title="Industry-Specific Recruitment Solutions"
       description="Specialized recruitment solutions tailored to industry-specific needs and challenges"
     >
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Industry Expertise
             </h1>
-            <p className="text-xl text-synapse-gray mb-12 leading-relaxed">
+            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
               Deep industry knowledge combined with AI-powered recruitment technology. We understand the unique challenges and requirements of each sector, delivering specialized talent acquisition solutions.
             </p>
           </div>
-        </div>
-      </section>
 
-      <section className="standard-section bg-white">
-        <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {industries.map((industry, index) => (
               <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group h-full">
