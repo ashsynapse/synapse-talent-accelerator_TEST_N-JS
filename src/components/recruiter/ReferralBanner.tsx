@@ -67,8 +67,9 @@ const ReferralBanner = () => {
                     clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
                   }}
                 >
-                  {/* Blinking background effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-300 opacity-0 animate-pulse group-hover:opacity-20 transition-opacity duration-300"></div>
+                  {/* Blinking background effect with synapse gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary to-synapse-secondary opacity-0 group-hover:opacity-20 transition-opacity duration-300" 
+                       style={{ animation: 'pulse 3s ease-in-out infinite' }}></div>
                   
                   {/* Shimmer effect */}
                   <div className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
@@ -77,11 +78,12 @@ const ReferralBanner = () => {
                     {ctaTexts[currentCTAIndex]}
                   </span>
                   
-                  {/* Blinking border */}
-                  <div className="absolute inset-0 border-2 border-yellow-400 opacity-0 animate-pulse" style={{
-                    clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
-                    animationDuration: '1.5s'
-                  }}></div>
+                  {/* Blinking border with synapse colors */}
+                  <div className="absolute inset-0 border-2 border-synapse-tertiary opacity-0" 
+                       style={{
+                         clipPath: 'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
+                         animation: 'pulse 4s ease-in-out infinite'
+                       }}></div>
                 </button>
               </div>
             </div>
