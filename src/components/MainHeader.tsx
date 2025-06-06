@@ -5,7 +5,8 @@ import { Menu, X, ChevronDown, Plus, Minus,
          Bot, Users, Building2, Search, UserCheck, 
          Briefcase, Code, TrendingUp, Heart, Scale,
          Factory, Calculator, Crown, FileText, 
-         Calendar, Phone, Info, HelpCircle } from "lucide-react";
+         Calendar, Phone, Info, HelpCircle, Target,
+         Globe, Clock, GraduationCap, Shield, Brain } from "lucide-react";
 
 const MainHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,13 +38,13 @@ const MainHeader = () => {
       "AI Candidate Discovery": Search,
       "Project Staffing": Users,
       "Executive Search": Crown,
-      "Remote Staffing": Building2,
+      "Remote Staffing": Globe,
       "Permanent Placement": UserCheck,
-      "Contingent Staffing": Briefcase,
-      "Apprenticeship AI Sourcing": Bot,
+      "Contingent Staffing": Clock,
+      "Apprenticeship AI Sourcing": GraduationCap,
       "AI Candidate Sourcing": Bot,
-      "Pre-Employment AI Screening": UserCheck,
-      "AI Resume Analysis": FileText,
+      "Pre-Employment AI Screening": Shield,
+      "AI Resume Analysis": Brain,
       "Technology": Code,
       "Finance": TrendingUp,
       "Healthcare": Heart,
@@ -71,37 +72,37 @@ const MainHeader = () => {
       label: "Solutions", 
       href: "/recruitment-solutions",
       submenu: [
-        { label: "Passive AI Sourcing", href: "/recruitment-solutions/passive-recruitment" },
-        { label: "AI Candidate Discovery", href: "/recruitment-solutions/candidate-sourcing" },
-        { label: "Project Staffing", href: "/recruitment-solutions/project-staffing" },
-        { label: "Executive Search", href: "/recruitment-solutions/executive-search" },
-        { label: "Remote Staffing", href: "/recruitment-solutions/remote-staffing" },
-        { label: "Permanent Placement", href: "/recruitment-solutions/permanent-staffing" },
-        { label: "Contingent Staffing", href: "/recruitment-solutions/contingent-staffing" },
-        { label: "Apprenticeship AI Sourcing", href: "/recruitment-solutions/apprenticeship-recruitment" }
+        { label: "Passive AI Sourcing", href: "/recruitment-solutions" },
+        { label: "AI Candidate Discovery", href: "/recruitment-solutions" },
+        { label: "Project Staffing", href: "/recruitment-solutions" },
+        { label: "Executive Search", href: "/recruitment-solutions" },
+        { label: "Remote Staffing", href: "/recruitment-solutions" },
+        { label: "Permanent Placement", href: "/recruitment-solutions" },
+        { label: "Contingent Staffing", href: "/recruitment-solutions" },
+        { label: "Apprenticeship AI Sourcing", href: "/recruitment-solutions" }
       ]
     },
     { 
       label: "Products", 
       href: "/recruitment-tools",
       submenu: [
-        { label: "AI Candidate Sourcing", href: "/recruitment-tools/ai-candidate-sourcing" },
-        { label: "Pre-Employment AI Screening", href: "/recruitment-tools/pre-employment-screening" },
-        { label: "AI Resume Analysis", href: "/recruitment-tools/ai-resume-screening" }
+        { label: "AI Candidate Sourcing", href: "/recruitment-tools" },
+        { label: "Pre-Employment AI Screening", href: "/recruitment-tools" },
+        { label: "AI Resume Analysis", href: "/recruitment-tools" }
       ]
     },
     { 
       label: "Industries", 
       href: "/industries",
       submenu: [
-        { label: "Technology", href: "/industries/technology" },
-        { label: "Finance", href: "/industries/finance" },
-        { label: "Healthcare", href: "/industries/healthcare" },
-        { label: "Legal", href: "/industries/legal" },
-        { label: "Manufacturing", href: "/industries/manufacturing" },
-        { label: "Sales & Marketing", href: "/industries/sales-marketing" },
-        { label: "Leadership", href: "/industries/leadership" },
-        { label: "Operations", href: "/industries/operations" }
+        { label: "Technology", href: "/industries" },
+        { label: "Finance", href: "/industries" },
+        { label: "Healthcare", href: "/industries" },
+        { label: "Legal", href: "/industries" },
+        { label: "Manufacturing", href: "/industries" },
+        { label: "Sales & Marketing", href: "/industries" },
+        { label: "Leadership", href: "/industries" },
+        { label: "Operations", href: "/industries" }
       ]
     },
     { 
