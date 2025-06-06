@@ -1,6 +1,6 @@
-
 import React from "react";
-import { Linkedin, Twitter, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Linkedin, Twitter, Instagram, MessageCircle } from "lucide-react";
+import { FaDiscord } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,34 +17,40 @@ const Footer = () => {
             
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/synapse-international/?viewAsMember=true"
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+                aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://x.com/synapseint"
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+                aria-label="X (Twitter)"
               >
                 <Twitter size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/hiringwithsynapse/"
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+                aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://discord.com/invite/7gwf45DJgh"
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="h-10 w-10 bg-synapse-primary bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-40 transition-all"
+                aria-label="Discord"
               >
-                <MessageCircle size={20} />
+                <FaDiscord size={20} />
               </a>
             </div>
           </div>

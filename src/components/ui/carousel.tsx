@@ -56,11 +56,11 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
+    const defaultOptions = { speed: 20 } // Increased speed (lower value = faster animation)
+    const mergedOpts = { ...defaultOptions, ...opts, axis: orientation === "horizontal" ? "x" : "y" }
+    
     const [carouselRef, api] = useEmblaCarousel(
-      {
-        ...opts,
-        axis: orientation === "horizontal" ? "x" : "y",
-      },
+      mergedOpts,
       plugins
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
@@ -123,7 +123,7 @@ const Carousel = React.forwardRef<
         value={{
           carouselRef,
           api: api,
-          opts,
+          opts: mergedOpts,
           orientation:
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,

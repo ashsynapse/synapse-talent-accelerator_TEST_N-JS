@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,7 @@ const leadership = [
     role: "CEO & Co-Founder",
     bio: "Visionary leader driving AI-first recruitment innovation. 11+ years of experience revolutionizing how exceptional talent connects with outstanding opportunities.",
     image: "/lovable-uploads/288b2441-5447-41a5-8e94-983b2646dbfb.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/alitaghikhani/",
     email: "ali@synapseint.com"
   },
   {
@@ -19,7 +18,7 @@ const leadership = [
     role: "COO & Co-Founder",
     bio: "Operations expert scaling global recruitment networks. Focused on building systems that connect the world's top 1% of talent with companies that value excellence.",
     image: "/lovable-uploads/cff89055-2eee-4829-9e61-79d45d33d003.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/codysklarsynapse/",
     email: "cody@synapseint.com"
   }
 ];
@@ -71,14 +70,18 @@ const Team = () => {
                   
                   <div className="flex justify-center gap-4">
                     <a 
-                      href={member.linkedin} 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer" 
                       className="w-12 h-12 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                      aria-label={`${member.name}'s LinkedIn profile`}
                     >
                       <Linkedin size={20} />
                     </a>
                     <a 
                       href={`mailto:${member.email}`} 
                       className="w-12 h-12 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                      aria-label={`Email ${member.name}`}
                     >
                       <Mail size={20} />
                     </a>

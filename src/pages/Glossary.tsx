@@ -21,6 +21,14 @@ const glossaryTerms = [
     definition: "A recruitment model where the recruiter is paid only upon successful placement of a candidate, typically a percentage of the candidate's first-year salary."
   },
   {
+    term: "Cultural Fit",
+    definition: "The alignment between a candidate's values, beliefs, and behaviors with the company's culture and working environment."
+  },
+  {
+    term: "Employer Branding",
+    definition: "The process of promoting a company as the employer of choice to a desired target group, enhancing the company's reputation as a great place to work."
+  },
+  {
     term: "Executive Search",
     definition: "A specialized recruitment service focused on finding and placing senior-level executives and C-suite positions, often involving headhunting passive candidates."
   },
@@ -45,28 +53,38 @@ const glossaryTerms = [
     definition: "The process of identifying and engaging potential candidates for current or future job opportunities through various channels and methods."
   },
   {
+    term: "Talent Acquisition",
+    definition: "A strategic approach to identifying, attracting, and onboarding top talent to efficiently meet dynamic business needs."
+  },
+  {
     term: "Talent Pipeline",
     definition: "A pool of qualified candidates who have been identified and engaged for future job opportunities within an organization."
   },
   {
     term: "Time-to-Fill",
     definition: "The number of days between when a job requisition is opened and when an offer is accepted by a candidate."
-  },
-  {
-    term: "Talent Acquisition",
-    definition: "A strategic approach to identifying, attracting, and onboarding top talent to efficiently meet dynamic business needs."
-  },
-  {
-    term: "Employer Branding",
-    definition: "The process of promoting a company as the employer of choice to a desired target group, enhancing the company's reputation as a great place to work."
-  },
-  {
-    term: "Cultural Fit",
-    definition: "The alignment between a candidate's values, beliefs, and behaviors with the company's culture and working environment."
   }
 ];
 
+// Group glossary terms by first letter
+const groupTermsByFirstLetter = (terms) => {
+  const grouped = {};
+  
+  terms.sort((a, b) => a.term.localeCompare(b.term)).forEach(item => {
+    const firstLetter = item.term.charAt(0).toUpperCase();
+    if (!grouped[firstLetter]) {
+      grouped[firstLetter] = [];
+    }
+    grouped[firstLetter].push(item);
+  });
+  
+  return grouped;
+};
+
 const Glossary = () => {
+  const groupedTerms = groupTermsByFirstLetter(glossaryTerms);
+  const alphabet = Object.keys(groupedTerms).sort();
+  
   return (
     <PageTemplate 
       title="Recruitment Glossary"
@@ -82,21 +100,44 @@ const Glossary = () => {
               Your comprehensive guide to recruitment and talent acquisition terminology
             </p>
           </div>
+          
+          {/* Alphabetical index */}
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {alphabet.map(letter => (
+              <a 
+                key={letter} 
+                href={`#letter-${letter}`}
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-synapse-lighter hover:bg-synapse-light text-synapse-primary font-medium transition-colors"
+              >
+                {letter}
+              </a>
+            ))}
+          </div>
 
-          <div className="grid gap-6 max-w-4xl mx-auto">
-            {glossaryTerms.map((item, index) => (
-              <Card key={index} className="border hover:border-synapse-primary transition-all duration-300">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-xl text-synapse-primary">
-                    {item.term}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-synapse-gray leading-relaxed">
-                    {item.definition}
-                  </p>
-                </CardContent>
-              </Card>
+          {/* Glossary terms by letter */}
+          <div className="space-y-12 max-w-4xl mx-auto">
+            {alphabet.map(letter => (
+              <div key={letter} id={`letter-${letter}`} className="scroll-mt-24">
+                <h2 className="text-3xl font-bold text-synapse-primary mb-6 border-b border-synapse-lighter pb-2">
+                  {letter}
+                </h2>
+                <div className="grid gap-6">
+                  {groupedTerms[letter].map((item, index) => (
+                    <Card key={index} className="border hover:border-synapse-primary transition-all duration-300">
+                      <CardHeader className="pb-3">
+                        <CardTitle className="text-xl text-synapse-primary">
+                          {item.term}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-synapse-gray leading-relaxed">
+                          {item.definition}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
