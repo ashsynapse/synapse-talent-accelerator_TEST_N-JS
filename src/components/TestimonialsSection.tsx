@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Quote, Star, ArrowLeft, ArrowRight } from "lucide-react";
 import {
@@ -15,53 +16,53 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      text: "Synapse delivered outstanding candidates within 72 hours, all of whom were perfectly aligned with our company culture and role requirements. We hired our ideal candidate within 2 weeks.",
-      author: "Sarah Johnson",
-      position: "VP of People, TechGrowth Inc.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      initials: "SJ",
+      text: "Synapse found us the perfect VP of Engineering in just 3 weeks. Their understanding of our technical needs and company culture was exceptional. The candidate they placed has been instrumental in scaling our engineering team.",
+      author: "David Chen",
+      position: "CEO & Co-Founder",
+      avatar: "/lovable-uploads/95c7bc6b-9e7d-4806-a8e0-fb19dd5331ea.png",
+      initials: "DC",
       rating: 5,
-      company: "TechGrowth Inc.",
+      company: "TechFlow Solutions",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      text: "The quality of candidates we received through Synapse was exceptional. Their pre-vetting process saved us countless hours of screening, allowing us to focus on the final selection.",
-      author: "Michael Reeves",
-      position: "Talent Acquisition Manager, HealthPlus",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      text: "Working with Synapse has been a game-changer for our startup. They delivered 5 qualified candidates within 72 hours, and we ended up hiring 2 of them. Their speed and quality are unmatched in the industry.",
+      author: "Marcus Rodriguez",
+      position: "Head of Product",
+      avatar: "/lovable-uploads/85bbef5d-b003-405a-828b-aa3f119ac704.png",
       initials: "MR",
       rating: 5,
-      company: "HealthPlus",
+      company: "InnovateLab",
       gradient: "from-emerald-500 to-green-500"
     },
     {
-      text: "Working with Synapse has transformed our hiring process. Their specialized recruiters understood our industry needs immediately, and their 72-hour turnaround is unmatched.",
-      author: "Jennifer Tang",
-      position: "COO, Hospitality Partners",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      initials: "JT",
+      text: "The AI-powered matching system at Synapse is incredible. Every candidate they sent was perfectly aligned with our requirements. We hired our ideal Marketing Director within 2 weeks.",
+      author: "Zara Williams",
+      position: "VP of People Operations",
+      avatar: "/lovable-uploads/a7d1d816-b7a5-483e-bea1-f31452a0dd87.png",
+      initials: "ZW",
       rating: 5,
-      company: "Hospitality Partners",
+      company: "GrowthCorp",
       gradient: "from-purple-500 to-indigo-500"
     },
     {
-      text: "The AI-powered matching system is incredible. We've seen a 300% improvement in candidate quality and reduced our time-to-hire from months to weeks.",
-      author: "David Chen",
-      position: "Head of Talent, InnovaCorp",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      initials: "DC",
+      text: "Synapse's specialized recruiters understood our fintech industry needs immediately. Their pre-vetting process saved us countless hours, and the quality of candidates was outstanding.",
+      author: "James Thompson",
+      position: "Chief Technology Officer",
+      avatar: "/lovable-uploads/0653c598-da4a-4d28-aba6-621f366ac6df.png",
+      initials: "JT",
       rating: 5,
-      company: "InnovaCorp",
+      company: "FinanceNext",
       gradient: "from-orange-500 to-amber-500"
     },
     {
-      text: "Synapse doesn't just find candidates; they find the right candidates. Our retention rate has improved significantly since we started working with them.",
-      author: "Lisa Rodriguez",
-      position: "Chief People Officer, FutureScale",
-      avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
-      initials: "LR",
+      text: "The turnaround time was incredible - we had our new Head of Sales within 10 days. Synapse doesn't just find candidates; they find the right candidates who fit our culture and drive results.",
+      author: "Alex Chen",
+      position: "Founder & CEO",
+      avatar: "/lovable-uploads/cf21c0b9-b0b6-452d-bc4c-58b66b247e52.png",
+      initials: "AC",
       rating: 5,
-      company: "FutureScale",
+      company: "SalesForce Pro",
       gradient: "from-pink-500 to-rose-500"
     },
   ];
