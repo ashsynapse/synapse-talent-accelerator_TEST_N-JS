@@ -50,7 +50,7 @@ const RecruiterFinalCTASection = () => {
             <Button 
               variant="outline"
               className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-synapse-primary py-3 px-8 rounded-lg transition-all duration-200 text-lg"
-              onClick={() => window.location.href = "mailto:recruiters@synapseint.com"}
+              onClick={() => window.location.href = "/contact"}
             >
               Have Questions?
             </Button>
