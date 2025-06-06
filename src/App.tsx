@@ -44,6 +44,11 @@ import RetentionSuccessionPlanning from "./pages/blog/RetentionSuccessionPlannin
 import GlobalHiringTrends2025 from "./pages/blog/GlobalHiringTrends2025";
 import ExpertHiringTips from "./pages/blog/ExpertHiringTips";
 import FutureOfRecruiting from "./pages/blog/FutureOfRecruiting";
+import SpeedMattersRecruitment from "./pages/blog/SpeedMattersRecruitment";
+import RemoteRecruitmentSimple from "./pages/blog/RemoteRecruitmentSimple";
+import RemoteRecruitmentGuide from "./pages/blog/RemoteRecruitmentGuide";
+import GenZJobMarket from "./pages/blog/GenZJobMarket";
+import SideHustlesGigEconomy from "./pages/blog/SideHustlesGigEconomy";
 
 // Additional Pages
 import Glossary from "./pages/Glossary";
