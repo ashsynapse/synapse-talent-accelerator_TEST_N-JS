@@ -25,6 +25,11 @@ const LogoCarousel = () => {
     { name: "Uniswap", url: "/lovable-uploads/749d3409-ff1f-472c-812f-57afc7af5a1f.png" },
   ];
 
+  // Debug logging
+  console.log("Total logos in array:", logos.length);
+  console.log("All logo names:", logos.map(logo => logo.name));
+  console.log("Last 7 logos:", logos.slice(-7).map(logo => logo.name));
+
   return (
     <section className="py-6 md:py-10 bg-gradient-to-r from-gray-50/50 via-white to-gray-50/50 border-y border-gray-100/50 relative overflow-hidden">
       {/* Subtle background pattern */}
@@ -53,7 +58,7 @@ const LogoCarousel = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-[scroll_35s_linear_infinite] hover:pause">
+          <div className="flex animate-[scroll_40s_linear_infinite] hover:pause">
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
@@ -64,6 +69,8 @@ const LogoCarousel = () => {
                     src={logo.url}
                     alt={logo.name}
                     className="h-10 w-28 object-contain opacity-60 group-hover:opacity-90 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
+                    onLoad={() => console.log(`Logo loaded: ${logo.name}`)}
+                    onError={() => console.log(`Logo failed to load: ${logo.name}, URL: ${logo.url}`)}
                   />
                 </div>
               </div>
