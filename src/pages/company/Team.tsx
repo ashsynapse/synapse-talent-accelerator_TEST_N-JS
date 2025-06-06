@@ -1,3 +1,4 @@
+
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -30,9 +31,9 @@ const Team = () => {
       description="Meet the leadership and global team behind Synapse's AI-first recruitment revolution"
     >
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Meet Our Global Team
             </h1>
@@ -44,9 +45,9 @@ const Team = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Leadership Team</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               Visionary leaders with over 11 years of combined experience in AI-powered recruitment innovation
@@ -94,9 +95,9 @@ const Team = () => {
       </section>
 
       {/* Team Structure */}
-      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-8 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Our Global Organization</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               A diverse, worldwide team committed to revolutionizing recruitment through AI and human expertise
@@ -185,7 +186,7 @@ const Team = () => {
       </section>
 
       {/* Culture & Values */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

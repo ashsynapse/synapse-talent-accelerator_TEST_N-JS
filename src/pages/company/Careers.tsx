@@ -11,9 +11,9 @@ const Careers = () => {
       description="Join the top 1% of exceptional talent. We don't post job boards - we reach out to truly exceptional candidates."
     >
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Are You in the Top 1%?
             </h1>
@@ -23,7 +23,7 @@ const Careers = () => {
           </div>
 
           {/* Key Message Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center border hover:border-synapse-primary transition-colors duration-300 group">
               <CardContent className="p-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
@@ -58,7 +58,7 @@ const Careers = () => {
       </section>
 
       {/* Our Philosophy */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -105,9 +105,9 @@ const Careers = () => {
       </section>
 
       {/* Why Synapse */}
-      <section className="py-16 bg-gradient-to-br from-synapse-lighter/20 to-white">
+      <section className="py-8 bg-gradient-to-br from-synapse-lighter/20 to-white">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-synapse-dark mb-4">Why Synapse International?</h2>
             <p className="text-xl text-synapse-gray max-w-2xl mx-auto">
               Join a company that's redefining the future of talent acquisition

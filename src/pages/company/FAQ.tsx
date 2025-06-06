@@ -125,9 +125,9 @@ const FAQ = () => {
       title="Frequently Asked Questions - Synapse International"
       description="Find answers to common questions about our AI-powered recruitment services, SRN platform, and policies"
     >
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-8 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Frequently Asked Questions
             </h1>
@@ -137,7 +137,7 @@ const FAQ = () => {
           </div>
 
           {/* SRN/Synapse FAQs */}
-          <div className="mb-16">
+          <div className="mb-8">
             <h2 className="text-2xl font-bold text-synapse-dark mb-8">SRN (Synapse Recruiter Network)</h2>
             <Accordion type="single" collapsible className="space-y-4">
               {srnFAQs.map((faq, index) => (
@@ -154,7 +154,7 @@ const FAQ = () => {
           </div>
 
           {/* General FAQs */}
-          <div className="mb-16">
+          <div className="mb-8">
             <h2 className="text-2xl font-bold text-synapse-dark mb-8">General Information</h2>
             <Accordion type="single" collapsible className="space-y-4">
               {generalFAQs.map((faq, index) => (
@@ -171,7 +171,7 @@ const FAQ = () => {
           </div>
 
           {/* Client FAQs */}
-          <div className="mb-16">
+          <div className="mb-8">
             <h2 className="text-2xl font-bold text-synapse-dark mb-8">For Clients & Employers</h2>
             <Accordion type="single" collapsible className="space-y-4">
               {clientFAQs.map((faq, index) => (
