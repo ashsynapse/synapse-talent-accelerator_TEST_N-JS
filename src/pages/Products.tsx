@@ -3,8 +3,7 @@ import React from "react";
 import PageTemplate from "../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Shield, FileSearch, ArrowRight } from "lucide-react";
-import FinalCtaSection from "../components/FinalCtaSection";
+import { Brain, Shield, FileSearch } from "lucide-react";
 
 const products = [
   {
@@ -39,23 +38,9 @@ const Products = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Recruitment Products
             </h1>
-            <p className="text-xl text-synapse-gray max-w-3xl mx-auto mb-8">
-              Cutting-edge AI-powered tools designed to streamline your recruitment process and accelerate your hiring timeline. Our comprehensive suite of products combines advanced artificial intelligence with proven recruitment methodologies to deliver exceptional results for modern businesses.
+            <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
+              Cutting-edge AI-powered tools designed to streamline your recruitment process
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
-              <div className="flex items-center gap-2 text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-                <span className="text-sm">AI-Powered Matching</span>
-              </div>
-              <div className="flex items-center gap-2 text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-                <span className="text-sm">Real-time Analytics</span>
-              </div>
-              <div className="flex items-center gap-2 text-synapse-primary">
-                <div className="w-2 h-2 bg-synapse-primary rounded-full"></div>
-                <span className="text-sm">Global Talent Network</span>
-              </div>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -78,9 +63,17 @@ const Products = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center">
+            <Button 
+              className="btn-primary text-lg py-4 px-8"
+              onClick={() => window.location.href = "mailto:info@synapseint.com"}
+            >
+              Request Demo
+            </Button>
+          </div>
         </div>
       </section>
-      <FinalCtaSection />
     </PageTemplate>
   );
 };

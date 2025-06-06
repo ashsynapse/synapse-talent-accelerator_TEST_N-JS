@@ -50,12 +50,6 @@ import RemoteRecruitmentGuide from "./pages/blog/RemoteRecruitmentGuide";
 import GenZJobMarket from "./pages/blog/GenZJobMarket";
 import SideHustlesGigEconomy from "./pages/blog/SideHustlesGigEconomy";
 
-// Child Pages
-import PassiveRecruitment from "./pages/recruitment-solutions/PassiveRecruitment";
-import CandidateSourcing from "./pages/recruitment-solutions/CandidateSourcing";
-import InformationTechnology from "./pages/industries/InformationTechnology";
-import AICandidateSourcing from "./pages/recruitment-tools/AICandidateSourcing";
-
 // Additional Pages
 import Glossary from "./pages/Glossary";
 import Partners from "./pages/Partners";
@@ -89,31 +83,6 @@ const App = () => {
             <Route path="/recruiters" element={<Recruiters />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
-            
-            {/* Recruitment Solutions Child Pages */}
-            <Route path="/recruitment-solutions/passive-recruitment" element={<PassiveRecruitment />} />
-            <Route path="/recruitment-solutions/candidate-sourcing" element={<CandidateSourcing />} />
-            <Route path="/recruitment-solutions/project-staffing" element={<NotFound />} />
-            <Route path="/recruitment-solutions/executive-search" element={<NotFound />} />
-            <Route path="/recruitment-solutions/remote-staffing" element={<NotFound />} />
-            <Route path="/recruitment-solutions/permanent-staffing" element={<NotFound />} />
-            <Route path="/recruitment-solutions/contingent-staffing" element={<NotFound />} />
-            <Route path="/recruitment-solutions/apprenticeship-recruitment" element={<NotFound />} />
-            
-            {/* Industries Child Pages */}
-            <Route path="/industries/information-technology" element={<InformationTechnology />} />
-            <Route path="/industries/digital-marketing" element={<NotFound />} />
-            <Route path="/industries/engineering" element={<NotFound />} />
-            <Route path="/industries/human-resources" element={<NotFound />} />
-            <Route path="/industries/sales" element={<NotFound />} />
-            <Route path="/industries/accounting" element={<NotFound />} />
-            <Route path="/industries/legal" element={<NotFound />} />
-            <Route path="/industries/manufacturing" element={<NotFound />} />
-            
-            {/* Recruitment Tools Child Pages */}
-            <Route path="/recruitment-tools/ai-candidate-sourcing" element={<AICandidateSourcing />} />
-            <Route path="/recruitment-tools/pre-employment-screening" element={<NotFound />} />
-            <Route path="/recruitment-tools/ai-resume-screening" element={<NotFound />} />
             
             {/* Resources Routes - Direct URLs */}
             <Route path="/blogs" element={<Blog />} />

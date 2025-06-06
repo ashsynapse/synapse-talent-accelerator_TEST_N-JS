@@ -17,42 +17,50 @@ const IndustriesRecruiterSection = () => {
     {
       name: "Technology",
       icon: Code2,
-      description: "Software engineers, data scientists, DevOps specialists, and IT professionals"
+      description: "Software engineers, data scientists, DevOps specialists, and IT professionals",
+      roles: "1,200+ open roles"
     },
     {
       name: "Finance",
       icon: TrendingUp,
-      description: "Investment bankers, financial advisors, analysts, and portfolio managers"
+      description: "Investment bankers, financial advisors, analysts, and portfolio managers",
+      roles: "650+ open roles"
     },
     {
       name: "Healthcare",
       icon: Heart,
-      description: "Medical professionals, administrators, technicians, and support staff"
+      description: "Medical professionals, administrators, technicians, and support staff",
+      roles: "750+ open roles"
     },
     {
       name: "Legal",
       icon: Briefcase,
-      description: "Attorneys, paralegals, compliance officers, and legal support staff"
+      description: "Attorneys, paralegals, compliance officers, and legal support staff",
+      roles: "800+ open roles"
     },
     {
       name: "Manufacturing",
       icon: Factory,
-      description: "Engineers, project managers, quality control, and operations specialists"
+      description: "Engineers, project managers, quality control, and operations specialists",
+      roles: "600+ open roles"
     },
     {
       name: "Sales & Marketing",
       icon: Calculator,
-      description: "Sales representatives, marketing managers, business development, and growth specialists"
+      description: "Sales representatives, marketing managers, business development, and growth specialists",
+      roles: "900+ open roles"
     },
     {
       name: "Leadership",
       icon: Crown,
-      description: "C-Suite executives, VPs, directors, and senior management professionals"
+      description: "C-Suite executives, VPs, directors, and senior management professionals",
+      roles: "450+ open roles"
     },
     {
       name: "Operations",
       icon: Users,
-      description: "Operations managers, business analysts, project coordinators, and process specialists"
+      description: "Operations managers, business analysts, project coordinators, and process specialists",
+      roles: "550+ open roles"
     }
   ];
 
@@ -80,6 +88,7 @@ const IndustriesRecruiterSection = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-synapse-dark">{industry.name}</h3>
+                      <p className="text-sm text-synapse-primary font-medium">{industry.roles}</p>
                     </div>
                   </div>
                   <p className="text-synapse-gray leading-relaxed">{industry.description}</p>
