@@ -3,68 +3,93 @@ import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Users, Clock, Building, ArrowRight } from "lucide-react";
+import { TrendingUp, Users, Clock, Building, ArrowRight, MapPin, Calendar } from "lucide-react";
 
-const caseStudies = [
+const realCaseStudies = [
   {
-    title: "Global Tech Company Scales Engineering Team by 300%",
-    client: "Fortune 500 Technology Company",
-    industry: "Information Technology",
-    challenge: "Rapid expansion required hiring 150+ senior engineers across 5 countries within 6 months",
-    solution: "AI-powered candidate sourcing combined with specialized technical recruiters",
+    title: "Joy: Building a Diverse, Remote Team in 2022",
+    client: "Joy (Modern Wedding Planning Platform)",
+    industry: "Technology/Wedding Tech",
+    location: "San Francisco, $60M raised, Series B",
+    year: "2022",
+    image: "/lovable-uploads/09078dca-7470-4eda-abe6-33d54c86d89b.png",
+    challenge: "Joy needed to scale their engineering team rapidly while maintaining their commitment to diversity and inclusion. They required talented professionals who could work remotely and contribute to their global platform.",
+    solution: "We partnered with Joy in February 2022, shortly before they raised $60M USD in November of that same year. Our focus was on identifying diverse talent that aligned with their inclusive hiring initiatives.",
     results: {
-      timeToHire: "45% reduction",
-      candidateQuality: "92% retention rate",
-      costSavings: "$2.3M saved"
+      timeframe: "12 months",
+      hires: "11 IT professionals",
+      diversity: "3 female software engineers",
+      impact: "Crucial to D&I hiring initiatives success"
     },
-    duration: "6 months",
-    teamSize: "25+ roles filled",
-    href: "/resources/case-studies/tech-company-scaling"
+    description: "Joy is a modern wedding planning platform based in San Francisco and globally distributed. Our partnership helped them build a diverse, high-performing engineering team during a critical growth phase."
   },
   {
-    title: "Healthcare Startup Builds C-Suite Leadership Team",
-    client: "Series B Healthcare Startup",
-    industry: "Healthcare",
-    challenge: "Needed to recruit CTO, VP of Sales, and Head of Marketing for rapid market expansion",
-    solution: "Executive search with industry-specific expertise and extensive network",
+    title: "Breadwallet (BRD): Building a Fast-Paced Global Team",
+    client: "Breadwallet (BRD)",
+    industry: "Cryptocurrency/FinTech",
+    location: "Switzerland (Global)",
+    year: "2018",
+    image: "/lovable-uploads/3a60314f-66de-4d4f-ac0c-15e36e4e3614.png",
+    challenge: "In early 2018, Breadwallet was preparing for its Series A and B funding rounds. To support this growth, they needed to onboard exceptional talent in key roles, including a Chief Marketing Officer (CMO) and a VP of Product.",
+    solution: "We partnered with Breadwallet to fill these critical positions. Our successful recruitment of seven key members, including their CMO and VP of Product, contributed to their successful acquisition by Coinbase in 2021.",
     results: {
-      timeToHire: "60 days average",
-      candidateQuality: "100% acceptance rate",
-      costSavings: "30% below market rate"
+      timeframe: "Partnership since 2018",
+      hires: "7 key executive members",
+      outcome: "Successful acquisition by Coinbase in 2021",
+      impact: "Critical leadership positions filled"
     },
-    duration: "3 months",
-    teamSize: "3 executive roles",
-    href: "/resources/case-studies/healthcare-startup-leadership"
+    description: "Breadwallet is a globally distributed cryptocurrency wallet provider headquartered in Switzerland. Our strategic hiring support helped position them for successful growth and eventual acquisition."
   },
   {
-    title: "Manufacturing Giant Transforms HR Operations",
-    client: "Global Manufacturing Corporation",
-    industry: "Manufacturing",
-    challenge: "Modernize HR operations and fill 200+ positions across multiple locations",
-    solution: "Comprehensive staffing strategy with permanent and contingent solutions",
+    title: "SERMO: Smart Leadership and Team Growth",
+    client: "SERMO",
+    industry: "Healthcare Technology",
+    location: "Global (150 countries)",
+    year: "2015-Present",
+    image: "/lovable-uploads/c27016e5-d7ae-43a4-8cb4-405378ee6792.png",
+    challenge: "SERMO faced a tough time, needing a leadership shake-up and a cost-effective way to grow its engineering team. Their plan was simple - hire experienced leaders to support CEO Peter Kirk in New York City, and create a new R&D team in Toronto.",
+    solution: "In one year, we hired new VPs for Engineering, Product, Marketing, and Sales, plus Directors for Design/UX, Engagement, and IT. We also added 11 varied Software Engineers in Toronto, cutting the cost-per-hire by 32%.",
     results: {
-      timeToHire: "50% faster",
-      candidateQuality: "95% performance rating",
-      costSavings: "$5M operational savings"
+      timeframe: "1 year",
+      executiveHires: "Multiple VP and Director roles",
+      engineeringTeam: "11 software engineers in Toronto",
+      costSavings: "32% reduction in cost-per-hire"
     },
-    duration: "12 months",
-    teamSize: "200+ positions",
-    href: "/resources/case-studies/manufacturing-hr-transformation"
+    description: "SERMO is a private social media network for physicians, open to licensed physicians in 150 countries. This smart, budget-friendly approach led to SERMO's successful comeback, showing the importance of strategic hiring and wise location choices."
   },
   {
-    title: "Financial Services Digital Transformation",
-    client: "Regional Banking Institution",
-    industry: "Financial Services",
-    challenge: "Urgent need for digital transformation expertise and cybersecurity professionals",
-    solution: "Specialized recruiting for fintech and cybersecurity roles with passive candidate engagement",
+    title: "Gojek: International Executive Hires and Talent Acquisition",
+    client: "Gojek",
+    industry: "Technology/Ride-sharing",
+    location: "Indonesia/Southeast Asia",
+    year: "Recent",
+    image: "/lovable-uploads/57579ccb-5396-4eba-bfe1-d322ce885c74.png",
+    challenge: "Gojek, Indonesia's leading Decacorn and the driving force behind the Southeast Asian market, entrusted us with the crucial task of recruiting key international executives for their Jakarta headquarters.",
+    solution: "Our team successfully recruited the Chief Data Officer and Chief Product Officer for Gojek, securing top talent for their leadership positions. Additionally, we bolstered their team with skilled Software Engineers and Product Managers.",
     results: {
-      timeToHire: "40% improvement",
-      candidateQuality: "98% client satisfaction",
-      costSavings: "$1.8M saved"
+      executiveHires: "Chief Data Officer & Chief Product Officer",
+      additionalHires: "Software Engineers and Product Managers",
+      impact: "Strategic talent acquisition for market leadership",
+      scope: "International executive search"
     },
-    duration: "8 months",
-    teamSize: "45 specialized roles",
-    href: "/resources/case-studies/financial-services-digital"
+    description: "Gojek, the first Decacorn in Indonesia, serves as the operating system for Southeast Asia, powering emerging market economies through its superapp. This strategic talent acquisition contributed to Gojek's ongoing growth and solidified its position as a dominant force in the Southeast Asian market."
+  },
+  {
+    title: "Uniswap: Smart Contract Engineer for Crypto Exchange",
+    client: "Uniswap",
+    industry: "Cryptocurrency/DeFi",
+    location: "NYC based, Series B, 176M total funding",
+    year: "Recent",
+    image: "/lovable-uploads/ec3edb28-2f56-461e-b31f-cb1a9fc8e686.png",
+    challenge: "To find a Smart Contract Engineer who could continue to elevate the reputation and credibility of their brand, and make significant improvements to its protocol.",
+    solution: "We were able to find one of the top-rated smart contract engineers and auditors in the industry from OpenZeppelin who has since been contributing to improve the already high industry standard of smart contract development at Uniswap.",
+    results: {
+      hire: "Top-rated Smart Contract Engineer from OpenZeppelin",
+      impact: "Elevated protocol development standards",
+      outcome: "Continued industry leadership",
+      expertise: "Smart contract development and auditing"
+    },
+    description: "Uniswap is the largest decentralized exchange and the fourth-largest cryptocurrency exchange overall by daily trading volume created by Hayden Adams. Our recruitment helped them secure world-class blockchain talent to maintain their market-leading position."
   }
 ];
 
@@ -78,106 +103,99 @@ const CaseStudies = () => {
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
-              Success Stories
+              Client Success Stories
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Discover how we've helped companies across industries build exceptional teams and achieve their growth objectives
+              Discover how we've helped leading companies across industries build exceptional teams and achieve their growth objectives through strategic talent acquisition
             </p>
           </div>
 
-          {/* Case Studies Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {caseStudies.map((study, index) => (
-              <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group">
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Building size={16} className="text-synapse-primary" />
-                      <span className="text-sm text-synapse-gray">{study.industry}</span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-synapse-dark mb-3 group-hover:text-synapse-primary transition-colors">
-                      {study.title}
-                    </h3>
-                    <p className="text-synapse-gray font-medium">{study.client}</p>
-                  </div>
-
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <h4 className="font-semibold text-synapse-dark mb-2">Challenge</h4>
-                      <p className="text-synapse-gray text-sm">{study.challenge}</p>
+          {/* Real Case Studies */}
+          <div className="space-y-12 mb-16">
+            {realCaseStudies.map((study, index) => (
+              <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    {/* Image Section */}
+                    <div className="relative h-64 md:h-full">
+                      <img
+                        src={study.image}
+                        alt={study.client}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-synapse-primary/20 to-transparent"></div>
                     </div>
                     
-                    <div>
-                      <h4 className="font-semibold text-synapse-dark mb-2">Solution</h4>
-                      <p className="text-synapse-gray text-sm">{study.solution}</p>
+                    {/* Content Section */}
+                    <div className="p-8">
+                      <div className="mb-6">
+                        <div className="flex items-center gap-4 mb-3">
+                          <div className="flex items-center gap-2">
+                            <Building size={16} className="text-synapse-primary" />
+                            <span className="text-sm text-synapse-gray font-medium">{study.industry}</span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Calendar size={16} className="text-synapse-primary" />
+                            <span className="text-sm text-synapse-gray">{study.year}</span>
+                          </div>
+                        </div>
+                        <h3 className="text-2xl font-bold text-synapse-dark mb-2 group-hover:text-synapse-primary transition-colors">
+                          {study.title}
+                        </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <MapPin size={16} className="text-synapse-primary" />
+                          <span className="text-synapse-gray font-medium">{study.location}</span>
+                        </div>
+                        <p className="text-synapse-gray text-sm mb-4">{study.description}</p>
+                      </div>
+
+                      <div className="space-y-4 mb-6">
+                        <div>
+                          <h4 className="font-semibold text-synapse-dark mb-2">Challenge</h4>
+                          <p className="text-synapse-gray text-sm">{study.challenge}</p>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-semibold text-synapse-dark mb-2">Solution</h4>
+                          <p className="text-synapse-gray text-sm">{study.solution}</p>
+                        </div>
+                      </div>
+
+                      {/* Results */}
+                      <div className="bg-synapse-lighter/50 rounded-lg p-4">
+                        <h4 className="font-semibold text-synapse-dark mb-3">Key Results</h4>
+                        <div className="grid grid-cols-1 gap-2">
+                          {Object.entries(study.results).map(([key, value]) => (
+                            <div key={key} className="flex items-center gap-2">
+                              <TrendingUp size={14} className="text-synapse-primary flex-shrink-0" />
+                              <span className="text-sm text-synapse-dark">
+                                <strong className="capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}:</strong> {value}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Results */}
-                  <div className="bg-synapse-lighter/50 rounded-lg p-4 mb-6">
-                    <h4 className="font-semibold text-synapse-dark mb-3">Key Results</h4>
-                    <div className="grid grid-cols-1 gap-3">
-                      <div className="flex items-center gap-2">
-                        <TrendingUp size={16} className="text-synapse-primary" />
-                        <span className="text-sm text-synapse-dark">
-                          <strong>Time to Hire:</strong> {study.results.timeToHire}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Users size={16} className="text-synapse-primary" />
-                        <span className="text-sm text-synapse-dark">
-                          <strong>Quality:</strong> {study.results.candidateQuality}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <TrendingUp size={16} className="text-synapse-primary" />
-                        <span className="text-sm text-synapse-dark">
-                          <strong>Cost Impact:</strong> {study.results.costSavings}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Project Details */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-4 text-sm text-synapse-gray">
-                      <div className="flex items-center gap-1">
-                        <Clock size={14} />
-                        <span>{study.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Users size={14} />
-                        <span>{study.teamSize}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-synapse-primary text-synapse-primary hover:bg-synapse-light group-hover:bg-synapse-primary group-hover:text-white transition-all"
-                    onClick={() => window.location.href = study.href}
-                  >
-                    Read Full Case Study
-                    <ArrowRight size={16} className="ml-2" />
-                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
 
           {/* CTA Section */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-4">
+          <div className="text-center bg-gradient-to-r from-synapse-primary to-synapse-secondary rounded-2xl p-12 text-white">
+            <h2 className="text-3xl font-bold mb-4">
               Ready to Write Your Success Story?
             </h2>
-            <p className="text-xl text-synapse-gray mb-8 max-w-2xl mx-auto">
-              Let us help you achieve similar results for your organization
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+              Join leading companies like Joy, Breadwallet, SERMO, Gojek, and Uniswap who have transformed their teams with our strategic talent acquisition solutions
             </p>
             <Button 
-              className="btn-primary text-lg py-4 px-8"
+              className="bg-white text-synapse-primary hover:bg-synapse-lighter text-lg py-4 px-8 font-semibold"
               onClick={() => window.location.href = "/contact"}
             >
               Start Your Journey
+              <ArrowRight size={20} className="ml-2" />
             </Button>
           </div>
         </div>
