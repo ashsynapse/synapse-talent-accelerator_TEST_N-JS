@@ -51,11 +51,11 @@ const Events = () => {
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <Calendar className="text-synapse-primary" size={20} />
-                      <span className="text-synapse-dark font-medium">Wednesday, June 11th</span>
+                      <span className="text-synapse-dark font-medium">Friday</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Clock className="text-synapse-primary" size={20} />
-                      <span className="text-synapse-dark font-medium">6:00 PM - 7:00 PM</span>
+                      <span className="text-synapse-dark font-medium">8:30 AM Eastern Time (ET)</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <MapPin className="text-synapse-primary" size={20} />
@@ -114,10 +114,10 @@ const Events = () => {
             <h2 className="text-3xl font-bold text-synapse-dark mb-8 text-center">Upcoming Events in Series</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
-                { date: "Wed Jun 11th", time: "6:00 PM" },
-                { date: "Wed Jun 18th", time: "6:00 PM" },
-                { date: "Wed Jun 25th", time: "6:00 PM" },
-                { date: "Wed Jul 2nd", time: "6:00 PM" }
+                { date: "Fri Dec 6th", time: "8:30 AM ET" },
+                { date: "Fri Dec 13th", time: "8:30 AM ET" },
+                { date: "Fri Dec 20th", time: "8:30 AM ET" },
+                { date: "Fri Dec 27th", time: "8:30 AM ET" }
               ].map((event, index) => (
                 <Card key={index} className="border hover:border-synapse-primary transition-all duration-300">
                   <CardContent className="p-4 text-center">
