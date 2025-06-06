@@ -16,6 +16,13 @@ const LogoCarousel = () => {
     { name: "Gojek", url: "/lovable-uploads/327ff1f3-3247-4c56-b852-9253a14b2ac0.png" },
     { name: "IN", url: "/lovable-uploads/d88e9238-084c-4f57-9ef3-d729a3890674.png" },
     { name: "Joy", url: "/lovable-uploads/67bfefa5-8cf4-4d15-9cb9-dcf9a4d5d145.png" },
+    { name: "OMsignal", url: "/lovable-uploads/1d2ac75e-6108-4f1c-8357-f20bd52554e4.png" },
+    { name: "Polymath", url: "/lovable-uploads/ae3f6bd7-1a43-4d9f-b75c-3bd3cf4d7e06.png" },
+    { name: "Quandary Peak Research", url: "/lovable-uploads/6800dfe4-443e-4742-add0-ec604f1c81c3.png" },
+    { name: "RadPad", url: "/lovable-uploads/e4128f84-9175-41a4-8404-3732b84787ec.png" },
+    { name: "Soshio", url: "/lovable-uploads/346ec70d-988e-4d4b-b307-84c8586bed88.png" },
+    { name: "Telescope", url: "/lovable-uploads/634f7947-c6a3-4072-8f70-13d26e40be14.png" },
+    { name: "Uniswap", url: "/lovable-uploads/749d3409-ff1f-472c-812f-57afc7af5a1f.png" },
   ];
 
   return (
@@ -46,7 +53,7 @@ const LogoCarousel = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-[scroll_25s_linear_infinite] hover:pause">
+          <div className="flex animate-[scroll_35s_linear_infinite] hover:pause">
             {[...logos, ...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
