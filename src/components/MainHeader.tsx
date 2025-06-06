@@ -130,16 +130,30 @@ const MainHeader = () => {
               )}
               
               {item.submenu && (
-                <div className="absolute top-full left-0 w-64 bg-white shadow-medium border border-gray-100 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  {item.submenu.map((subItem) => (
-                    <a
-                      key={subItem.label}
-                      href={subItem.href}
-                      className="block px-4 py-2 text-sm text-synapse-dark hover:text-synapse-primary hover:bg-synapse-lighter transition-colors"
-                    >
-                      {subItem.label}
-                    </a>
-                  ))}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-2">
+                  <div className="bg-gradient-to-br from-white via-synapse-lighter to-synapse-light shadow-medium border border-synapse-light/30 rounded-xl p-6 backdrop-blur-sm">
+                    <div className="grid grid-cols-2 gap-4 min-w-[500px]">
+                      {item.submenu.map((subItem, index) => (
+                        <a
+                          key={subItem.label}
+                          href={subItem.href}
+                          className="group/item flex items-start p-3 rounded-lg hover:bg-white/80 hover:shadow-soft transition-all duration-200 border border-transparent hover:border-synapse-primary/20"
+                        >
+                          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-synapse-primary to-synapse-secondary flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-200">
+                            <div className="w-5 h-5 bg-white rounded-sm opacity-90"></div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-semibold text-synapse-dark group-hover/item:text-synapse-primary transition-colors text-sm leading-tight">
+                              {subItem.label}
+                            </h3>
+                            <p className="text-xs text-synapse-gray mt-1 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
+                              {index % 2 === 0 ? "Advanced solutions" : "Professional services"}
+                            </p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
