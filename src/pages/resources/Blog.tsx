@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,78 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
+  {
+    title: "Building the Future of Recruiting at SRN!",
+    excerpt: "As we embark on a transformative journey at SRN, we're excited to share our ambitious plans to integrate artificial intelligence (AI) into every facet of our recruitment process.",
+    author: "SRN Knowledge Base",
+    date: "January 24, 2025",
+    readTime: "6 min read",
+    category: "Company Updates",
+    href: "/blogs/future-of-recruiting"
+  },
+  {
+    title: "Expert Hiring Tips for HR Leaders",
+    excerpt: "In today's competitive job market, effective hiring is crucial for organizations aiming to attract and retain top talent. HR leaders play a pivotal role in this process.",
+    author: "SRN Knowledge Base",
+    date: "January 21, 2025",
+    readTime: "8 min read",
+    category: "HR Leadership",
+    href: "/blogs/expert-hiring-tips"
+  },
+  {
+    title: "Global Hiring Trends & Insights for 2025",
+    excerpt: "As we step into 2025, the hiring landscape is undergoing significant transformations, influenced by technological advancements, changing workforce demographics, and evolving candidate expectations.",
+    author: "SRN Knowledge Base",
+    date: "January 17, 2025",
+    readTime: "7 min read",
+    category: "Industry Insights",
+    href: "/blogs/global-hiring-trends-2025"
+  },
+  {
+    title: "Retention and Succession Planning — Strategies to Ensure Long-Term Employee Engagement and Retention",
+    excerpt: "In today's competitive job market, organizations face the challenge of retaining top talent while ensuring a smooth transition of leadership.",
+    author: "SRN Knowledge Base",
+    date: "January 14, 2025",
+    readTime: "8 min read",
+    category: "HR Strategy",
+    href: "/blogs/retention-succession-planning"
+  },
+  {
+    title: "Enhancing Employer Branding: Strategies to Attract Top Talent",
+    excerpt: "In today's competitive job market, a strong employer brand is essential for attracting and retaining top talent. Companies must focus on how they present themselves to potential candidates.",
+    author: "SRN Knowledge Base",
+    date: "January 10, 2025",
+    readTime: "7 min read",
+    category: "Employer Branding",
+    href: "/blogs/employer-branding"
+  },
+  {
+    title: "Talent Acquisition Strategies: Best Practices for Sourcing and Attracting Top Talent Using AI and LinkedIn",
+    excerpt: "As we enter 2025, the competition for top talent is fiercer than ever. Organizations must employ innovative talent acquisition strategies to effectively source and attract the best candidates.",
+    author: "SRN Knowledge Base",
+    date: "January 7, 2025",
+    readTime: "9 min read",
+    category: "Talent Acquisition",
+    href: "/blogs/talent-acquisition-strategies"
+  },
+  {
+    title: "Top 5 Recruitment Trends Shaping 2025",
+    excerpt: "As we step into 2025, the recruitment landscape is set to undergo significant transformations driven by technological advancements and changing workforce expectations.",
+    author: "SRN Knowledge Base",
+    date: "January 3, 2025",
+    readTime: "6 min read",
+    category: "Industry Insights",
+    href: "/blogs/recruitment-trends-2025"
+  },
+  {
+    title: "A Step-by-Step Guide to Hiring and Managing an Outsourced Development Team for Tech Startups",
+    excerpt: "Outsourcing software development is an increasingly popular choice for tech startups. It offers access to specialized expertise, cost efficiency, and a quicker path to achieving your goals.",
+    author: "SRN Knowledge Base",
+    date: "December 27, 2024",
+    readTime: "8 min read",
+    category: "Tech Startups",
+    href: "/blogs/outsourced-development-team"
+  },
   {
     title: "AI's Role in Shaping Recruitment: What to Expect in 2025",
     excerpt: "As 2024 comes to a close, artificial intelligence is transforming recruitment, not just in efficiency but in fundamentally reimagining the hiring process.",
@@ -89,7 +160,7 @@ const blogPosts = [
   }
 ];
 
-const categories = ["All", "AI & Technology", "Sourcing Strategies", "Talent Acquisition", "Industry Insights", "Professional Development", "Company Updates"];
+const categories = ["All", "AI & Technology", "Sourcing Strategies", "Talent Acquisition", "Industry Insights", "Professional Development", "Company Updates", "Tech Startups", "HR Leadership", "Employer Branding", "HR Strategy"];
 
 const Blog = () => {
   return (

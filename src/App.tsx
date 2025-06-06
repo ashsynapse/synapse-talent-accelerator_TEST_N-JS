@@ -36,6 +36,14 @@ import StrategicSourcing from "./pages/blog/StrategicSourcing";
 import LinkedInOptimization from "./pages/blog/LinkedInOptimization";
 import ReferralPlatforms from "./pages/blog/ReferralPlatforms";
 import AIRecruitment2025 from "./pages/blog/AIRecruitment2025";
+import OutsourcedDevelopmentTeam from "./pages/blog/OutsourcedDevelopmentTeam";
+import RecruitmentTrends2025 from "./pages/blog/RecruitmentTrends2025";
+import TalentAcquisitionStrategies from "./pages/blog/TalentAcquisitionStrategies";
+import EmployerBranding from "./pages/blog/EmployerBranding";
+import RetentionSuccessionPlanning from "./pages/blog/RetentionSuccessionPlanning";
+import GlobalHiringTrends2025 from "./pages/blog/GlobalHiringTrends2025";
+import ExpertHiringTips from "./pages/blog/ExpertHiringTips";
+import FutureOfRecruiting from "./pages/blog/FutureOfRecruiting";
 
 // Additional Pages
 import Glossary from "./pages/Glossary";
