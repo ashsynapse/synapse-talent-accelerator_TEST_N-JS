@@ -3,212 +3,153 @@ import React from "react";
 import PageTemplate from "../../components/PageTemplate";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, MapPin, Users, Clock, ExternalLink } from "lucide-react";
-
-const upcomingEvents = [
-  {
-    title: "AI-Powered Recruitment Summit 2024",
-    type: "Virtual Conference",
-    date: "January 25, 2024",
-    time: "9:00 AM - 5:00 PM EST",
-    location: "Virtual Event",
-    attendees: "500+ Expected",
-    description: "Join industry leaders as we explore the latest AI innovations transforming recruitment. Learn about cutting-edge tools, best practices, and future trends.",
-    speakers: ["Dr. Sarah Chen - AI Research Director", "Mike Rodriguez - VP of Talent", "Lisa Wang - Tech Recruiter"],
-    price: "Free",
-    registrationUrl: "/events/ai-recruitment-summit-2024"
-  },
-  {
-    title: "Remote Hiring Masterclass",
-    type: "Workshop",
-    date: "February 8, 2024",
-    time: "2:00 PM - 4:00 PM EST",
-    location: "Virtual Workshop",
-    attendees: "50 Participants",
-    description: "Interactive workshop covering best practices for remote hiring, from sourcing to onboarding distributed teams.",
-    speakers: ["Jennifer Adams - Remote Work Expert", "David Kim - Global Recruiter"],
-    price: "$99",
-    registrationUrl: "/events/remote-hiring-masterclass"
-  },
-  {
-    title: "Tech Recruitment Networking Mixer",
-    type: "Networking Event",
-    date: "February 15, 2024",
-    time: "6:00 PM - 9:00 PM PST",
-    location: "San Francisco, CA",
-    attendees: "200+ Professionals",
-    description: "Connect with fellow recruiters, hiring managers, and tech professionals in the Bay Area. Casual networking with industry insights.",
-    speakers: ["Panel Discussion with Local Tech Leaders"],
-    price: "$50",
-    registrationUrl: "/events/tech-recruitment-mixer-sf"
-  }
-];
-
-const pastEvents = [
-  {
-    title: "The Future of Work: Recruitment Trends 2024",
-    type: "Webinar",
-    date: "December 10, 2023",
-    attendees: "800+ Attendees",
-    recording: "/events/recordings/future-of-work-2024"
-  },
-  {
-    title: "Diversity & Inclusion in Tech Hiring",
-    type: "Panel Discussion",
-    date: "November 20, 2023",
-    attendees: "350+ Attendees",
-    recording: "/events/recordings/diversity-inclusion-tech"
-  },
-  {
-    title: "Candidate Experience Optimization Workshop",
-    type: "Workshop",
-    date: "October 28, 2023",
-    attendees: "120+ Participants",
-    recording: "/events/recordings/candidate-experience-workshop"
-  }
-];
+import { Calendar, MapPin, Users, Clock, ExternalLink, Star, CheckCircle } from "lucide-react";
 
 const Events = () => {
+  const eventDetails = [
+    "How to use the shared lead & company lists",
+    "Walking through the Synapse Recruiting Guide", 
+    "Reviewing new collateral being added to jobs to help you",
+    "Creating urgency - we have a lot of open jobs!!",
+    "Qualifying candidates (salary and beyond)",
+    "Candidate Interview prep and info gathering",
+    "Building trust and getting feedback",
+    "Negotiating and closing",
+    "Tying it all together for consistent wins"
+  ];
+
   return (
     <PageTemplate 
-      title="Events & Webinars"
-      description="Join our exclusive recruitment events, workshops, and webinars to stay ahead of industry trends"
+      title="Live Sourcing Deep Dive: Full-Funnel Focus"
+      description="Join our exclusive live recruiting webinar focused on driving real results through the recruiting funnel"
     >
       <section className="py-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
-              Events & Webinars
+              Live Sourcing Deep Dive: Full-Funnel Focus
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Connect, learn, and grow with industry experts through our exclusive recruitment events and educational content
+              Join us for a no-fluff, high-impact session focused on driving real results through the recruiting funnel
             </p>
           </div>
 
-          {/* Upcoming Events */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-8">Upcoming Events</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {upcomingEvents.map((event, index) => (
-                <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group h-full">
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <div className="mb-4">
-                      <span className="text-xs px-3 py-1 bg-synapse-primary text-white rounded-full font-medium">
-                        {event.type}
+          {/* Main Event Card */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <Card className="border-2 border-synapse-primary shadow-xl">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <Star className="text-yellow-500 fill-current" size={24} />
+                  <span className="text-lg font-semibold text-synapse-primary">Featured Event</span>
+                </div>
+                
+                <h2 className="text-3xl font-bold text-synapse-dark mb-4">
+                  Live Recruiting Webinar and AMA
+                </h2>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Calendar className="text-synapse-primary" size={20} />
+                      <span className="text-synapse-dark font-medium">Wednesday, June 11th</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Clock className="text-synapse-primary" size={20} />
+                      <span className="text-synapse-dark font-medium">6:00 PM - 7:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <MapPin className="text-synapse-primary" size={20} />
+                      <span className="text-synapse-dark font-medium">Virtual Event</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Users className="text-synapse-primary" size={20} />
+                      <span className="text-synapse-dark font-medium">15+ People Interested</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-synapse-lighter/50 p-4 rounded-lg">
+                    <h3 className="font-bold text-synapse-dark mb-2">Event Host</h3>
+                    <p className="text-synapse-gray">Ali Taghikhani</p>
+                    <p className="text-sm text-synapse-gray">CEO at Synapse</p>
+                    <div className="mt-3">
+                      <span className="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                        Absolutely Free
                       </span>
                     </div>
-                    
-                    <h3 className="text-xl font-bold mb-3 text-synapse-dark group-hover:text-synapse-primary transition-colors">
-                      {event.title}
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Star className="text-yellow-500 fill-current" size={20} />
+                    <h3 className="text-xl font-bold text-synapse-dark">
+                      What You'll Learn
                     </h3>
-                    
-                    <div className="space-y-2 mb-4 text-sm text-synapse-gray">
-                      <div className="flex items-center gap-2">
-                        <Calendar size={14} />
-                        <span>{event.date}</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {eventDetails.map((detail, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <CheckCircle className="text-green-500 mt-0.5" size={16} />
+                        <span className="text-synapse-gray text-sm">{detail}</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Clock size={14} />
-                        <span>{event.time}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin size={14} />
-                        <span>{event.location}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Users size={14} />
-                        <span>{event.attendees}</span>
-                      </div>
-                    </div>
-                    
-                    <p className="text-synapse-gray mb-4 flex-grow text-sm">
-                      {event.description}
-                    </p>
-                    
-                    <div className="mb-4">
-                      <h4 className="font-semibold text-synapse-dark text-sm mb-2">Featured Speakers</h4>
-                      <ul className="text-xs text-synapse-gray space-y-1">
-                        {event.speakers.map((speaker, speakerIndex) => (
-                          <li key={speakerIndex}>• {speaker}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div className="flex items-center justify-between mt-auto">
-                      <span className="font-bold text-synapse-primary">{event.price}</span>
-                      <Button 
-                        className="btn-primary"
-                        onClick={() => window.location.href = event.registrationUrl}
-                      >
-                        Register Now
-                      </Button>
-                    </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <Button 
+                    className="btn-primary text-lg px-8 py-3"
+                    onClick={() => window.open("https://meet.google.com/qcw-unwt-xrc", "_blank")}
+                  >
+                    Join Live Session
+                    <ExternalLink size={18} className="ml-2" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Event Series */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-synapse-dark mb-8 text-center">Upcoming Events in Series</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                { date: "Wed Jun 11th", time: "6:00 PM" },
+                { date: "Wed Jun 18th", time: "6:00 PM" },
+                { date: "Wed Jun 25th", time: "6:00 PM" },
+                { date: "Wed Jul 2nd", time: "6:00 PM" }
+              ].map((event, index) => (
+                <Card key={index} className="border hover:border-synapse-primary transition-all duration-300">
+                  <CardContent className="p-4 text-center">
+                    <Calendar className="mx-auto mb-3 text-synapse-primary" size={24} />
+                    <h3 className="font-bold text-synapse-dark mb-1">{event.date}</h3>
+                    <p className="text-synapse-gray text-sm">{event.time}</p>
+                    {index === 0 && (
+                      <span className="inline-block mt-2 bg-synapse-primary text-white text-xs px-2 py-1 rounded">
+                        Next Session
+                      </span>
+                    )}
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
 
-          {/* Past Events */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-8">Past Events & Recordings</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {pastEvents.map((event, index) => (
-                <Card key={index} className="border hover:border-synapse-primary transition-all duration-300 group">
-                  <CardContent className="p-6">
-                    <div className="mb-3">
-                      <span className="text-xs px-3 py-1 bg-synapse-lighter text-synapse-primary rounded-full font-medium">
-                        {event.type}
-                      </span>
-                    </div>
-                    
-                    <h3 className="text-lg font-bold mb-2 text-synapse-dark">
-                      {event.title}
-                    </h3>
-                    
-                    <div className="space-y-1 mb-4 text-sm text-synapse-gray">
-                      <div className="flex items-center gap-2">
-                        <Calendar size={14} />
-                        <span>{event.date}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Users size={14} />
-                        <span>{event.attendees}</span>
-                      </div>
-                    </div>
-                    
-                    <Button 
-                      variant="outline"
-                      className="w-full border-synapse-primary text-synapse-primary hover:bg-synapse-light"
-                      onClick={() => window.location.href = event.recording}
-                    >
-                      Watch Recording
-                      <ExternalLink size={14} className="ml-2" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Newsletter Signup */}
-          <div className="text-center bg-synapse-lighter/30 rounded-lg p-8">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-4">
-              Stay Updated on Upcoming Events
+          {/* Call to Action */}
+          <div className="text-center bg-gradient-to-r from-synapse-primary to-synapse-secondary rounded-lg p-8 text-white">
+            <h2 className="text-3xl font-bold mb-4">
+              Ready to Transform Your Recruiting Results?
             </h2>
-            <p className="text-xl text-synapse-gray mb-6 max-w-2xl mx-auto">
-              Be the first to know about our latest events, workshops, and exclusive industry insights
+            <p className="text-xl mb-6 opacity-90">
+              Don't miss this opportunity to learn proven strategies that drive consistent wins
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-synapse-primary"
-              />
-              <Button className="btn-primary whitespace-nowrap">
-                Subscribe
-              </Button>
-            </div>
+            <Button 
+              className="bg-white text-synapse-primary hover:bg-gray-100 text-lg px-8 py-3"
+              onClick={() => window.open("https://meet.google.com/qcw-unwt-xrc", "_blank")}
+            >
+              Join the Live Session
+              <ExternalLink size={18} className="ml-2" />
+            </Button>
           </div>
         </div>
       </section>
