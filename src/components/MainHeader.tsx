@@ -67,6 +67,41 @@ const MainHeader = () => {
     return iconMap[label] || FileText;
   };
 
+  const getDescriptionForSubmenu = (label: string) => {
+    const descriptionMap: { [key: string]: string } = {
+      "Passive AI Sourcing": "AI-powered talent discovery",
+      "AI Candidate Discovery": "Smart candidate matching",
+      "Project Staffing": "Flexible project teams",
+      "Executive Search": "Leadership recruitment",
+      "Remote Staffing": "Global remote talent",
+      "Permanent Placement": "Long-term hires",
+      "Contingent Staffing": "Temporary workforce",
+      "Apprenticeship AI Sourcing": "Entry-level talent",
+      "AI Candidate Sourcing": "Automated talent search",
+      "Pre-Employment AI Screening": "Smart candidate assessment",
+      "AI Resume Analysis": "Intelligent resume parsing",
+      "Technology": "Tech talent solutions",
+      "Finance": "Financial sector expertise",
+      "Healthcare": "Medical professionals",
+      "Legal": "Legal industry specialists",
+      "Manufacturing": "Industrial workforce",
+      "Sales & Marketing": "Revenue-driving roles",
+      "Leadership": "Executive positions",
+      "Operations": "Operational excellence",
+      "Blogs": "Industry insights",
+      "Case Studies": "Success stories",
+      "Events": "Upcoming events",
+      "About Us": "Our company story",
+      "Team": "Meet our team",
+      "Recruiters": "Join our network",
+      "Careers": "Work with us",
+      "FAQ": "Common questions",
+      "Contact Us": "Get in touch"
+    };
+    
+    return descriptionMap[label] || "Learn more";
+  };
+
   const navItems = [
     { 
       label: "Solutions", 
@@ -173,8 +208,9 @@ const MainHeader = () => {
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-2">
                   <div className="bg-gradient-to-br from-white via-synapse-lighter to-synapse-light shadow-medium border border-synapse-light/30 rounded-xl p-6 backdrop-blur-sm">
                     <div className="grid grid-cols-2 gap-4 min-w-[500px]">
-                      {item.submenu.map((subItem, index) => {
+                      {item.submenu.map((subItem) => {
                         const IconComponent = getIconForSubmenu(subItem.label);
+                        const description = getDescriptionForSubmenu(subItem.label);
                         return (
                           <a
                             key={subItem.label}
@@ -189,7 +225,7 @@ const MainHeader = () => {
                                 {subItem.label}
                               </h3>
                               <p className="text-xs text-synapse-gray mt-1 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
-                                {index % 2 === 0 ? "Advanced solutions" : "Professional services"}
+                                {description}
                               </p>
                             </div>
                           </a>
