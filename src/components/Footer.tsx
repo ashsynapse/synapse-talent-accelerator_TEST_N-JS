@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Linkedin, Twitter, Facebook, Instagram, MessageCircle } from "lucide-react";
 
@@ -139,7 +140,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
               {[
-                { label: "Blog", href: "/resources/blog" },
+                { label: "Blogs", href: "/resources/blog" },
                 { label: "Case Studies", href: "/resources/case-studies" },
                 { label: "Events", href: "/resources/events" }
               ].map((item) => (

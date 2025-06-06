@@ -58,16 +58,16 @@ const MainHeader = () => {
     },
     { 
       label: "Resources", 
-      href: "/resources",
+      href: null,
       submenu: [
-        { label: "Blog", href: "/resources/blog" },
+        { label: "Blogs", href: "/resources/blog" },
         { label: "Case Studies", href: "/resources/case-studies" },
         { label: "Events", href: "/resources/events" }
       ]
     },
     { 
       label: "Company", 
-      href: "/company",
+      href: null,
       submenu: [
         { label: "About Us", href: "/company/about" },
         { label: "Team", href: "/company/team" },
@@ -105,13 +105,20 @@ const MainHeader = () => {
         <nav className="hidden lg:flex items-center space-x-1 ml-12">
           {navItems.map((item) => (
             <div key={item.label} className="relative group">
-              <a
-                href={item.href}
-                className="flex items-center px-3 py-2 text-sm font-medium text-synapse-dark hover:text-synapse-primary transition-colors"
-              >
-                {item.label}
-                {item.submenu && <ChevronDown size={16} className="ml-1" />}
-              </a>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  className="flex items-center px-3 py-2 text-sm font-medium text-synapse-dark hover:text-synapse-primary transition-colors"
+                >
+                  {item.label}
+                  {item.submenu && <ChevronDown size={16} className="ml-1" />}
+                </a>
+              ) : (
+                <span className="flex items-center px-3 py-2 text-sm font-medium text-synapse-dark hover:text-synapse-primary transition-colors cursor-default">
+                  {item.label}
+                  {item.submenu && <ChevronDown size={16} className="ml-1" />}
+                </span>
+              )}
               
               {item.submenu && (
                 <div className="absolute top-full left-0 w-64 bg-white shadow-medium border border-gray-100 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -162,13 +169,19 @@ const MainHeader = () => {
             <div className="space-y-2">
               {navItems.map((item) => (
                 <div key={item.label}>
-                  <a
-                    href={item.href}
-                    className="block py-2 text-synapse-dark hover:text-synapse-primary font-medium transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="block py-2 text-synapse-dark hover:text-synapse-primary font-medium transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <span className="block py-2 text-synapse-dark font-medium">
+                      {item.label}
+                    </span>
+                  )}
                   {item.submenu && (
                     <div className="pl-4 space-y-1">
                       {item.submenu.map((subItem) => (
