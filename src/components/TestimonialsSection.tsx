@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Quote, Star, ArrowLeft, ArrowRight } from "lucide-react";
 import {
@@ -16,53 +15,53 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      text: "Synapse found us the perfect VP of Engineering in just 3 weeks. Their understanding of our technical needs and company culture was exceptional. The candidate they placed has been instrumental in scaling our engineering team.",
-      author: "David Chen",
-      position: "CEO & Co-Founder",
-      avatar: "/lovable-uploads/95c7bc6b-9e7d-4806-a8e0-fb19dd5331ea.png",
-      initials: "DC",
+      text: "Sermo.com is the world's largest social network for doctors, raising more than $100M to date. Based in New York, danish CEO Peter Kirk approached us to fill positions in engineering, Product, Sales, and Marketing across the Americas and Europe. We have helped them fill 17 hires and continue to work together.",
+      author: "Peter Kirk",
+      position: "CEO",
+      avatar: "/lovable-uploads/91bf90aa-d7e5-4b83-8a52-c96419b0980b.png",
+      initials: "PK",
       rating: 5,
-      company: "TechFlow Solutions",
+      company: "Sermo",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      text: "Working with Synapse has been a game-changer for our startup. They delivered 5 qualified candidates within 72 hours, and we ended up hiring 2 of them. Their speed and quality are unmatched in the industry.",
-      author: "Marcus Rodriguez",
-      position: "Head of Product",
-      avatar: "/lovable-uploads/85bbef5d-b003-405a-828b-aa3f119ac704.png",
-      initials: "MR",
+      text: "Cody and Synapse International were instrumental to helping me recruit a co-founder and CTO. It's not easy finding this type of position, however Cody came through in spades.",
+      author: "Oren Singer",
+      position: "CEO",
+      avatar: "/lovable-uploads/2b75feab-e3fd-4139-9fa3-61ef99e4dbee.png",
+      initials: "OS",
       rating: 5,
-      company: "InnovateLab",
+      company: "Sparrow",
       gradient: "from-emerald-500 to-green-500"
     },
     {
-      text: "The AI-powered matching system at Synapse is incredible. Every candidate they sent was perfectly aligned with our requirements. We hired our ideal Marketing Director within 2 weeks.",
-      author: "Zara Williams",
-      position: "VP of People Operations",
-      avatar: "/lovable-uploads/a7d1d816-b7a5-483e-bea1-f31452a0dd87.png",
-      initials: "ZW",
+      text: "Working with Cody and his team at Synapse International was such a pleasure. We often get inbound marketing messages from recruiters offering to help us source talent for our open roles, and more times than not they aren't equipped to locate the web3 talent and experience we're looking for. However, that was not the case for Synapse International so I am looking forward to working with them again in the future. They were an amazing recruitment partner for quite a few of our open roles.",
+      author: "Shaykara Webster, MBA",
+      position: "Head of People",
+      avatar: "/lovable-uploads/5248e727-e17d-45e1-b631-2c2de4612977.png",
+      initials: "SW",
       rating: 5,
-      company: "GrowthCorp",
+      company: "Livepeer",
       gradient: "from-purple-500 to-indigo-500"
     },
     {
-      text: "Synapse's specialized recruiters understood our fintech industry needs immediately. Their pre-vetting process saved us countless hours, and the quality of candidates was outstanding.",
-      author: "James Thompson",
-      position: "Chief Technology Officer",
-      avatar: "/lovable-uploads/0653c598-da4a-4d28-aba6-621f366ac6df.png",
-      initials: "JT",
+      text: "These guys truly lived up to their moniker of 'The Startup Recruiters' by being dedicated to their craft and passionate about their work, all while being flexible and transparent in their process. They brought quality candidates to us when it was needed most.",
+      author: "Ali Khosh",
+      position: "Quandary Peak Research",
+      avatar: "/lovable-uploads/53d68efa-a3fb-40fc-a04a-dca396de8bd0.png",
+      initials: "AK",
       rating: 5,
-      company: "FinanceNext",
+      company: "Quandary Peak Research",
       gradient: "from-orange-500 to-amber-500"
     },
     {
-      text: "The turnaround time was incredible - we had our new Head of Sales within 10 days. Synapse doesn't just find candidates; they find the right candidates who fit our culture and drive results.",
-      author: "Alex Chen",
-      position: "Founder & CEO",
-      avatar: "/lovable-uploads/cf21c0b9-b0b6-452d-bc4c-58b66b247e52.png",
-      initials: "AC",
+      text: "I highly recommend working with Synapse International and believe they can provide a valuable boost to any high-growth company looking to scale their development capabilities.",
+      author: "Colin Goltra",
+      position: "General Manager",
+      avatar: "/lovable-uploads/328759e0-ba0c-4385-96ee-3443e3d95357.png",
+      initials: "CG",
       rating: 5,
-      company: "SalesForce Pro",
+      company: "Coins.ph",
       gradient: "from-pink-500 to-rose-500"
     },
   ];
