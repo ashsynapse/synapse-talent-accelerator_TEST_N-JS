@@ -35,6 +35,16 @@ const LogoCarousel = () => {
     { name: "Coins.ph", url: "/lovable-uploads/d857b7da-a7cd-4922-90c4-8dc11773da4e.png" },
     { name: "Clever", url: "/lovable-uploads/188e51e7-6b89-4cc0-9bc1-911088b00335.png" },
     { name: "Carousell", url: "/lovable-uploads/6f52d6e1-bb7e-4d24-b4dc-98e1c0bf9481.png" },
+    { name: "BuildingConnected", url: "/lovable-uploads/52507e04-6a71-4bec-aed9-cb951df116ce.png" },
+    { name: "Appnovation", url: "/lovable-uploads/040f43ed-2a9f-4a72-b34f-e11d3ad55435.png" },
+    { name: "CobinHood", url: "/lovable-uploads/636fc0e7-2403-4d1d-b1f8-69edf6838780.png" },
+    { name: "Exodus", url: "/lovable-uploads/2d182952-e107-445b-ae7b-7357dded6c07.png" },
+    { name: "AutomotiveMastermind", url: "/lovable-uploads/096316e5-db48-4bd0-8d74-536675fccf4c.png" },
+    { name: "Firo", url: "/lovable-uploads/af6aee13-197e-444c-8884-9b93219dd561.png" },
+    { name: "Sparkcentral", url: "/lovable-uploads/5b0145ab-a72a-45a5-98e1-903a3a6b5f7c.png" },
+    { name: "OKCoin", url: "/lovable-uploads/751876ae-3693-4d30-a07e-1181f07f50ba.png" },
+    { name: "Article", url: "/lovable-uploads/e4d1a282-553b-42fe-bcd0-685d8b2f0bb8.png" },
+    { name: "BRD", url: "/lovable-uploads/a314054d-1605-4329-bad2-16d81b10090c.png" },
   ];
 
   return (
