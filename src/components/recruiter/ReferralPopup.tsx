@@ -32,19 +32,19 @@ const ReferralPopup = () => {
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog open={isOpen} onOpenChange={() => {}}>
       <DialogOverlay className="bg-black/60 backdrop-blur-sm" />
-      <DialogContent className="max-w-lg mx-auto p-0 bg-transparent border-0 shadow-none">
+      <DialogContent className="max-w-lg mx-auto p-0 bg-transparent border-0 shadow-none [&>button]:hidden">
         <div className="relative bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary rounded-2xl overflow-hidden shadow-2xl">
           {/* Background Effects */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
           <div className="absolute top-4 right-8 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-8 left-4 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           
-          {/* Close Button */}
+          {/* Custom Close Button */}
           <button
             onClick={handleClose}
-            className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors duration-200 group"
+            className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors duration-200 group"
             aria-label="Close popup"
           >
             <X className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-200" />
