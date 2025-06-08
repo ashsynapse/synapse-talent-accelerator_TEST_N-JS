@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -26,6 +25,16 @@ const LogoCarousel = () => {
     { name: "MGID", url: "/lovable-uploads/8d50f08d-5437-4c0e-8e72-62454b17fa30.png" },
     { name: "ATIMI", url: "/lovable-uploads/ed93fba4-685c-42f6-8643-f7d0d6757108.png" },
     { name: "JWPlayer", url: "/lovable-uploads/159fe41a-df61-4206-9757-eccd74a15eea.png" },
+    { name: "Instaclustr", url: "/lovable-uploads/ccb518a0-d32e-45c8-9e60-1dae3c457072.png" },
+    { name: "Insolar", url: "/lovable-uploads/3f9ccf1d-6013-4479-959f-0da96842fbea.png" },
+    { name: "Hinge", url: "/lovable-uploads/46d10a5b-9740-4525-9f16-12f840a316ac.png" },
+    { name: "FutureFit AI", url: "/lovable-uploads/e5a29429-20f4-419e-87e9-64c0af3ce760.png" },
+    { name: "Disco", url: "/lovable-uploads/f0f8a312-711c-4987-9a14-09bbc5102054.png" },
+    { name: "AppNeta", url: "/lovable-uploads/ad1bc01d-aa92-41ae-9dab-e1603e3c2ba8.png" },
+    { name: "Uniswap", url: "/lovable-uploads/d4608462-4dfa-4a38-af5e-f309a4a0f413.png" },
+    { name: "Coins.ph", url: "/lovable-uploads/d857b7da-a7cd-4922-90c4-8dc11773da4e.png" },
+    { name: "Clever", url: "/lovable-uploads/188e51e7-6b89-4cc0-9bc1-911088b00335.png" },
+    { name: "Carousell", url: "/lovable-uploads/6f52d6e1-bb7e-4d24-b4dc-98e1c0bf9481.png" },
   ];
 
   return (
