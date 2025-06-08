@@ -8,49 +8,49 @@ import FinalCtaSection from "../components/FinalCtaSection";
 
 const solutions = [
   {
-    icon: <Brain size={32} />,
+    icon: <Brain className="w-8 h-8" />,
     title: "Passive Recruitment",
     description: "AI-powered sourcing to identify and engage top talent who aren't actively job searching",
     href: "/recruitment-solutions/passive-recruitment"
   },
   {
-    icon: <Target size={32} />,
+    icon: <Target className="w-8 h-8" />,
     title: "Candidate Sourcing",
     description: "Comprehensive candidate sourcing strategies to find the perfect match for your roles",
     href: "/recruitment-solutions/candidate-sourcing"
   },
   {
-    icon: <Briefcase size={32} />,
+    icon: <Briefcase className="w-8 h-8" />,
     title: "Project Staffing",
     description: "Specialized staffing solutions for short-term and long-term project requirements",
     href: "/recruitment-solutions/project-staffing"
   },
   {
-    icon: <Users size={32} />,
+    icon: <Users className="w-8 h-8" />,
     title: "Executive Search",
     description: "Specialized recruitment for C-level and senior leadership positions",
     href: "/recruitment-solutions/executive-search"
   },
   {
-    icon: <Globe size={32} />,
+    icon: <Globe className="w-8 h-8" />,
     title: "Remote Staffing",
     description: "Global remote talent acquisition for distributed teams and remote-first companies",
     href: "/recruitment-solutions/remote-staffing"
   },
   {
-    icon: <UserCheck size={32} />,
+    icon: <UserCheck className="w-8 h-8" />,
     title: "Permanent Staffing",
     description: "Full-time permanent placement services across all industries and skill levels",
     href: "/recruitment-solutions/permanent-staffing"
   },
   {
-    icon: <Clock size={32} />,
+    icon: <Clock className="w-8 h-8" />,
     title: "Contingent Staffing",
     description: "Flexible staffing solutions for temporary and contract positions",
     href: "/recruitment-solutions/contingent-staffing"
   },
   {
-    icon: <GraduationCap size={32} />,
+    icon: <GraduationCap className="w-8 h-8" />,
     title: "Apprenticeship Recruitment",
     description: "Specialized recruitment for apprenticeship programs and early career professionals",
     href: "/recruitment-solutions/apprenticeship-recruitment"
@@ -76,16 +76,16 @@ const RecruitmentSolutions = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {solutions.map((solution, index) => (
-              <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group">
-                <CardContent className="p-6">
-                  <div className="text-synapse-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+              <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group h-full">
+                <CardContent className="p-8 flex flex-col h-full">
+                  <div className="text-synapse-primary mb-6 group-hover:scale-110 transition-transform duration-300">
                     {solution.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-synapse-dark">{solution.title}</h3>
-                  <p className="text-synapse-gray mb-4">{solution.description}</p>
+                  <h3 className="text-xl font-bold mb-4 text-synapse-dark">{solution.title}</h3>
+                  <p className="text-synapse-gray mb-6 flex-grow leading-relaxed">{solution.description}</p>
                   <Button 
                     variant="outline" 
-                    className="w-full border-synapse-primary text-synapse-primary hover:bg-synapse-light"
+                    className="w-full border-synapse-primary text-synapse-primary hover:bg-synapse-light mt-auto"
                     onClick={() => window.location.href = solution.href}
                   >
                     Learn More

@@ -56,7 +56,7 @@ const ReferralPopup = () => {
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">
                 Refer Top Recruiters. 💸 <br />
-                <span className="text-synapse-light">Earn 5%—That's $10K–15K a Year.</span>
+                <span className="text-synapse-light">Earn 5%—That's Up To $10K–15K a Year.</span>
               </h2>
               <p className="text-lg text-white/90 leading-relaxed">
                 Bring in US/CA recruiters. Get paid every month for 12 months.
@@ -74,7 +74,7 @@ const ReferralPopup = () => {
                 <div className="text-sm text-white/80">Months</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-synapse-light">$15K</div>
+                <div className="text-3xl font-bold text-synapse-light">Up To $15K</div>
                 <div className="text-sm text-white/80">Per Year</div>
               </div>
             </div>
