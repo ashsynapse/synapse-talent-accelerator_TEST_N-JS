@@ -26,7 +26,7 @@ const ReferralBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden animate-fade-in mt-16 md:mt-20 sticky top-0 z-50 shadow-lg">
+    <div className="bg-gradient-to-r from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden animate-fade-in fixed top-16 md:top-20 left-0 right-0 z-40 shadow-lg">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-32 h-32 bg-white rounded-full blur-3xl animate-pulse"></div>

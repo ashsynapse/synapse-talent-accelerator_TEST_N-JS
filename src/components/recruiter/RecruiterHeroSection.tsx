@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
 const RecruiterHeroSection = () => {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
+    <section className="pt-48 md:pt-52 pb-20 bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50">
       <div className="container-wide">
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-6 leading-tight">
