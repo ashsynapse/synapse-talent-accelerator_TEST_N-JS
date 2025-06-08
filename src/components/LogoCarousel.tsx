@@ -6,23 +6,16 @@ const LogoCarousel = () => {
   const { addToRefs } = useScrollAnimation();
   
   const logos = [
-    { name: "Sermo", url: "/lovable-uploads/01d0c7c8-ccb3-4373-b2aa-1682616d8e1b.png" },
-    { name: "Boost Media", url: "/lovable-uploads/7dad1848-c16f-470e-82cb-049fd51234ce.png" },
-    { name: "Bread", url: "/lovable-uploads/67a605b0-9587-44b7-b089-651cb314ba5e.png" },
-    { name: "Coins.ph", url: "/lovable-uploads/a50812b7-7ab3-48ba-b221-015ea950c671.png" },
-    { name: "Conduit", url: "/lovable-uploads/37f14594-ad62-458c-9104-4c5e2290cca5.png" },
-    { name: "Livepeer", url: "/lovable-uploads/1158a508-ae52-46da-93f0-8d958af12dbf.png" },
-    { name: "Exodus", url: "/lovable-uploads/657ecdd7-703c-4f39-b015-0825e89fcbac.png" },
-    { name: "Gojek", url: "/lovable-uploads/327ff1f3-3247-4c56-b852-9253a14b2ac0.png" },
-    { name: "IN", url: "/lovable-uploads/d88e9238-084c-4f57-9ef3-d729a3890674.png" },
-    { name: "Joy", url: "/lovable-uploads/67bfefa5-8cf4-4d15-9cb9-dcf9a4d5d145.png" },
-    { name: "OMsignal", url: "/lovable-uploads/59460ce8-ffec-445c-b563-389e602f8460.png" },
-    { name: "Polymath", url: "/lovable-uploads/576277ea-71e0-41dd-85de-89a281cd3e5e.png" },
-    { name: "Quandary Peak Research", url: "/lovable-uploads/80275ff1-f6b1-44d0-8ce1-e93117378a3c.png" },
-    { name: "RadPad", url: "/lovable-uploads/7e22dca5-c9ca-4f12-ad00-04514d2d25c2.png" },
-    { name: "Soshio", url: "/lovable-uploads/0962ef3c-a61b-4179-8057-c1621a2ca200.png" },
-    { name: "Telescope", url: "/lovable-uploads/b0354fa4-d158-4bc7-a82b-9ee68d44e7d7.png" },
-    { name: "Uniswap", url: "/lovable-uploads/f6649d08-2922-4751-9687-a5d55a57c45b.png" },
+    { name: "Gojek", url: "/lovable-uploads/29f21b01-cfc6-4c26-bb90-f837348e71ef.png" },
+    { name: "Kittyhawk", url: "/lovable-uploads/18dec220-806a-48c7-974a-567316b5a5d1.png" },
+    { name: "Polymath", url: "/lovable-uploads/21128a83-239b-4d30-a27d-01864fbc6c0d.png" },
+    { name: "Hopper", url: "/lovable-uploads/9be38972-6880-4958-9cca-e862e4788490.png" },
+    { name: "RapidSOS", url: "/lovable-uploads/1d3b4ec5-8f7e-45e9-91bf-1aaceca0bf7f.png" },
+    { name: "1VALET", url: "/lovable-uploads/c345666f-59dd-42c0-ace2-f70f70089ad1.png" },
+    { name: "Genesis Robotics", url: "/lovable-uploads/70303944-1203-42b8-99c1-30966107d1a3.png" },
+    { name: "Super Evil Megacorp", url: "/lovable-uploads/0dad57a5-555e-4a3e-9921-c12ff5f0e992.png" },
+    { name: "Trade.io", url: "/lovable-uploads/6fa14ac5-8ed8-49e8-bb05-c922c98b3c17.png" },
+    { name: "Chatmeter", url: "/lovable-uploads/6a132739-185a-4dc5-837c-0d600ffcf107.png" },
   ];
 
   return (
