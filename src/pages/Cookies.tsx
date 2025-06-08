@@ -39,7 +39,7 @@ const Cookies = () => {
               Cookie Policy
             </h1>
             <p className="text-xl text-synapse-gray">
-              Last updated: December 15, 2024
+              Last updated: June 8, 2025
             </p>
           </div>
 
