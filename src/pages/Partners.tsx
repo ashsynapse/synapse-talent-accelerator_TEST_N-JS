@@ -42,9 +42,9 @@ const Partners = () => {
       title="Our Technology Partners"
       description="We collaborate with industry-leading technology platforms to deliver exceptional recruitment solutions"
     >
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white to-synapse-lighter/30">
+      <section className="pt-32 pb-12 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
               Our Technology Partners
             </h1>
@@ -56,7 +56,7 @@ const Partners = () => {
       </section>
 
       {/* Tech Partners Section */}
-      <section className="py-16 bg-synapse-lighter/20">
+      <section className="py-12 bg-synapse-lighter/20">
         <div className="container-wide">
           <div className="text-center mb-12">
             <div className="flex flex-wrap justify-center gap-4 mb-8">
