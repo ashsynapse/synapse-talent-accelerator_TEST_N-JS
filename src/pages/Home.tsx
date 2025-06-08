@@ -6,7 +6,6 @@ import LogoCarousel from "../components/LogoCarousel";
 import KPIPerformanceSection from "../components/KPIPerformanceSection";
 import WhoWeHireSection from "../components/WhoWeHireSection";
 import HowWeWorkSection from "../components/HowWeWorkSection";
-import ParallaxHiringSection from "../components/ParallaxHiringSection";
 import WhatsUnderTheHoodSection from "../components/WhatsUnderTheHoodSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FinalCtaSection from "../components/FinalCtaSection";
@@ -22,7 +21,6 @@ const Home = () => {
         <KPIPerformanceSection />
         <WhoWeHireSection />
         <HowWeWorkSection />
-        <ParallaxHiringSection />
         <WhatsUnderTheHoodSection />
         <TestimonialsSection />
         <FinalCtaSection />
