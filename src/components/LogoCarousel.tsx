@@ -16,6 +16,16 @@ const LogoCarousel = () => {
     { name: "Super Evil Megacorp", url: "/lovable-uploads/0dad57a5-555e-4a3e-9921-c12ff5f0e992.png" },
     { name: "Trade.io", url: "/lovable-uploads/6fa14ac5-8ed8-49e8-bb05-c922c98b3c17.png" },
     { name: "Chatmeter", url: "/lovable-uploads/6a132739-185a-4dc5-837c-0d600ffcf107.png" },
+    { name: "Yewno", url: "/lovable-uploads/3fd30706-9eaf-4e07-ac29-298a44c01b60.png" },
+    { name: "Teachable", url: "/lovable-uploads/34745bc4-c725-48c6-9a94-a88cab580bb9.png" },
+    { name: "SevenBridges", url: "/lovable-uploads/55cda898-2dc0-4382-8a3d-f5a1081569a6.png" },
+    { name: "Sermo", url: "/lovable-uploads/e080f95f-2a12-4f17-8950-6b62d84fdc85.png" },
+    { name: "Ritual", url: "/lovable-uploads/65001503-5a2b-4a4c-83b2-e70a1b32fff3.png" },
+    { name: "Perlin", url: "/lovable-uploads/d6885201-c9d2-4d1c-85b8-10befc9fab84.png" },
+    { name: "NZXT", url: "/lovable-uploads/2acfb629-aaf9-43a7-bcc1-9c3294cc0795.png" },
+    { name: "MGID", url: "/lovable-uploads/8d50f08d-5437-4c0e-8e72-62454b17fa30.png" },
+    { name: "ATIMI", url: "/lovable-uploads/ed93fba4-685c-42f6-8643-f7d0d6757108.png" },
+    { name: "JWPlayer", url: "/lovable-uploads/159fe41a-df61-4206-9757-eccd74a15eea.png" },
   ];
 
   return (
