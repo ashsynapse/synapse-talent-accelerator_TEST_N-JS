@@ -39,17 +39,17 @@ const toolboxCategories = [
 const Partners = () => {
   return (
     <PageTemplate 
-      title="Partnership Opportunities"
-      description="Join forces with Synapse to create innovative recruitment solutions and expand your business reach"
+      title="Our Technology Partners"
+      description="We collaborate with industry-leading technology platforms to deliver exceptional recruitment solutions"
     >
       <section className="pt-32 pb-20 bg-gradient-to-br from-white to-synapse-lighter/30">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-synapse-dark mb-6">
-              Partnership Opportunities
+              Our Technology Partners
             </h1>
             <p className="text-xl text-synapse-gray max-w-3xl mx-auto">
-              Join our growing network of partners and unlock new opportunities for mutual growth and success
+              We collaborate with industry-leading technology platforms to deliver exceptional recruitment solutions
             </p>
           </div>
         </div>
@@ -59,13 +59,6 @@ const Partners = () => {
       <section className="py-16 bg-synapse-lighter/20">
         <div className="container-wide">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-synapse-dark mb-4">
-              Our Technology Partners
-            </h2>
-            <p className="text-synapse-gray max-w-2xl mx-auto mb-8">
-              We collaborate with industry-leading technology platforms to deliver exceptional recruitment solutions
-            </p>
-            
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               {toolboxCategories.map((category, index) => (
                 <span 
