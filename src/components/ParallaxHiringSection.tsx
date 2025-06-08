@@ -1,155 +1,176 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Brain, Search, UserCheck, Calendar, CheckCircle } from "lucide-react";
 
 const ParallaxHiringSection = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [visibleSteps, setVisibleSteps] = useState<number[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const steps = [
     {
       id: 1,
-      icon: <Brain className="h-8 w-8 text-white" />,
-      title: "AI Agent Analyzes Your Job Description",
-      subtitle: "Intelligent parsing of skills, requirements, and cultural fit criteria"
+      icon: <Brain className="h-6 w-6 text-white" />,
+      title: "AI Job Analysis",
+      subtitle: "Intelligent parsing of skills and requirements"
     },
     {
       id: 2,
-      icon: <Search className="h-8 w-8 text-white" />,
-      title: "Agent-Led Global Sourcing",
-      subtitle: "Real-time candidate identification across global talent pools"
+      icon: <Search className="h-6 w-6 text-white" />,
+      title: "Global Sourcing",
+      subtitle: "Real-time candidate identification"
     },
     {
       id: 3,
-      icon: <UserCheck className="h-8 w-8 text-white" />,
-      title: "Autonomous Screening & Qualification",
-      subtitle: "No human filtering required - AI handles all qualification processes"
+      icon: <UserCheck className="h-6 w-6 text-white" />,
+      title: "Auto Screening",
+      subtitle: "AI handles all qualification processes"
     },
     {
       id: 4,
-      icon: <Calendar className="h-8 w-8 text-white" />,
-      title: "Smart Outreach and Interview Scheduling",
-      subtitle: "24/7 agent operation with personalized candidate engagement"
+      icon: <Calendar className="h-6 w-6 text-white" />,
+      title: "Smart Outreach",
+      subtitle: "24/7 personalized engagement"
     },
     {
       id: 5,
-      icon: <CheckCircle className="h-8 w-8 text-white" />,
-      title: "AI-Powered Offer Management",
-      subtitle: "Final delivery of fully vetted, interview-ready candidates"
+      icon: <CheckCircle className="h-6 w-6 text-white" />,
+      title: "Offer Management",
+      subtitle: "Fully vetted candidates delivered"
     }
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current) return;
+      if (!containerRef.current) return;
 
-      const sectionRect = sectionRef.current.getBoundingClientRect();
-      const sectionHeight = sectionRect.height;
-      const viewportHeight = window.innerHeight;
-      
-      // Calculate how much of the section is visible
-      const visibleTop = Math.max(0, -sectionRect.top);
-      const visibleBottom = Math.min(sectionHeight, viewportHeight - sectionRect.top);
-      const visibleHeight = Math.max(0, visibleBottom - visibleTop);
-      const visiblePercentage = visibleHeight / viewportHeight;
-
-      // Show steps based on scroll progress
-      const newVisibleSteps: number[] = [];
-      steps.forEach((step, index) => {
-        const stepThreshold = (index + 1) / steps.length * 0.8; // Show each step at different scroll positions
-        if (visiblePercentage > stepThreshold) {
-          newVisibleSteps.push(step.id);
-        }
-      });
-
-      setVisibleSteps(newVisibleSteps);
+      const rect = containerRef.current.getBoundingClientRect();
+      const progress = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight));
+      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const sectionStyle = {
-    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tech-pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="%23473bbd" opacity="0.1"/><path d="M5,0 L5,10 M0,5 L10,5" stroke="%23473bbd" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23tech-pattern)"/></svg>')`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
+  const backgroundStyle = {
+    backgroundImage: `
+      radial-gradient(circle at 25% 25%, rgba(71, 59, 189, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(126, 105, 171, 0.08) 0%, transparent 50%),
+      linear-gradient(45deg, transparent 48%, rgba(71, 59, 189, 0.02) 49%, rgba(71, 59, 189, 0.02) 51%, transparent 52%),
+      linear-gradient(-45deg, transparent 48%, rgba(126, 105, 171, 0.02) 49%, rgba(126, 105, 171, 0.02) 51%, transparent 52%)
+    `,
+    backgroundSize: '400px 400px, 300px 300px, 50px 50px, 50px 50px',
+    backgroundPosition: '0% 0%, 100% 100%, 0% 0%, 0% 0%',
+    transform: `translateY(${scrollProgress * 30}px)`,
   };
 
   return (
     <section 
-      ref={sectionRef}
-      className="min-h-screen relative overflow-hidden"
-      style={sectionStyle}
+      ref={containerRef}
+      className="py-16 relative overflow-hidden"
+      style={backgroundStyle}
     >
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-synapse-dark/90 via-synapse-primary/80 to-synapse-secondary/90"></div>
-      
-      <div className="container-wide relative z-10 min-h-screen flex items-center">
-        <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
-          {/* Sticky content on left */}
-          <div className="lg:sticky lg:top-1/2 lg:-translate-y-1/2">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-              Fully Autonomous Hiring,
-              <span className="bg-gradient-to-r from-synapse-light to-white bg-clip-text text-transparent"> Explained</span>
-            </h2>
-            <p className="text-xl text-white/80 mb-12 leading-relaxed">
-              Experience the future of recruitment with our AI-first platform that handles every step of the hiring process.
-            </p>
-            
-            <Button 
-              className="bg-gradient-to-r from-synapse-light to-white text-synapse-dark hover:from-white hover:to-synapse-light font-semibold text-lg py-6 px-10 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open("/contact", "_self")}
-            >
-              Experience AI Hiring Live – Book a Demo
-            </Button>
-          </div>
+      {/* Tech pattern overlay */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="circuit" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.5" fill="%23473bbd" opacity="0.1"/><circle cx="16" cy="16" r="1" fill="%237E69AB" opacity="0.08"/><path d="M4,4 L16,4 L16,16" stroke="%23473bbd" stroke-width="0.5" opacity="0.06" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23circuit)"/></svg>')`,
+          backgroundSize: '40px 40px',
+          transform: `translateX(${scrollProgress * -20}px)`,
+        }}
+      />
 
-          {/* Steps on right with parallax effect */}
-          <div className="space-y-16">
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-synapse-primary/5 to-transparent"></div>
+      
+      <div className="container-wide relative z-10">
+        {/* Horizontal scrolling cards */}
+        <div className="overflow-x-auto pb-6">
+          <div className="flex gap-6 min-w-max px-4">
             {steps.map((step, index) => (
               <div
                 key={step.id}
-                className={`transform transition-all duration-1000 ease-out ${
-                  visibleSteps.includes(step.id)
-                    ? 'translate-y-0 opacity-100'
-                    : 'translate-y-16 opacity-0'
-                }`}
+                className="flex-shrink-0 w-80 transform transition-all duration-700 ease-out hover:scale-105"
                 style={{
-                  transitionDelay: visibleSteps.includes(step.id) ? `${index * 200}ms` : '0ms'
+                  transform: `translateY(${Math.sin((scrollProgress + index * 0.2) * Math.PI) * 10}px)`,
+                  opacity: Math.max(0.7, 1 - Math.abs(scrollProgress - (index * 0.2))),
                 }}
               >
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                  <div className="flex items-start gap-6">
-                    <div className="bg-gradient-to-br from-synapse-light to-white rounded-xl p-4 group-hover:scale-110 transition-transform duration-300">
-                      {step.icon}
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                  {/* Card background pattern */}
+                  <div 
+                    className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                    style={{
+                      backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" stroke="%23473bbd" stroke-width="0.5" fill="none" opacity="0.3"/><circle cx="25" cy="25" r="10" stroke="%237E69AB" stroke-width="0.3" fill="none" opacity="0.2"/></svg>')`,
+                      backgroundSize: '100px 100px',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        {step.icon}
+                      </div>
+                      <div className="text-2xl font-bold text-synapse-primary opacity-30 group-hover:opacity-50 transition-opacity duration-300">
+                        {step.id.toString().padStart(2, '0')}
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-synapse-light transition-colors duration-300">
-                        {step.title}
-                      </h3>
-                      <p className="text-white/80 leading-relaxed text-lg">
-                        {step.subtitle}
-                      </p>
-                    </div>
+                    <h3 className="text-xl font-bold text-synapse-dark mb-2 group-hover:text-synapse-primary transition-colors duration-300">
+                      {step.title}
+                    </h3>
+                    <p className="text-synapse-gray leading-relaxed">
+                      {step.subtitle}
+                    </p>
                   </div>
+
+                  {/* Subtle glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-synapse-light/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Scroll indicator */}
+        <div className="flex justify-center mt-8">
+          <div className="flex items-center gap-2 text-synapse-gray text-sm">
+            <div className="w-4 h-4 border-2 border-synapse-primary/30 rounded-full flex items-center justify-center">
+              <div className="w-1 h-1 bg-synapse-primary rounded-full animate-pulse"></div>
+            </div>
+            Scroll horizontally to explore our AI process
+          </div>
+        </div>
       </div>
 
-      {/* CSS for reduced motion accessibility */}
+      {/* CSS for accessibility */}
       <style>
         {`
           @media (prefers-reduced-motion: reduce) {
-            section {
-              background-attachment: scroll !important;
+            .transform {
+              transform: none !important;
             }
+            .animate-pulse {
+              animation: none !important;
+            }
+          }
+          
+          /* Custom scrollbar for horizontal scroll */
+          .overflow-x-auto::-webkit-scrollbar {
+            height: 6px;
+          }
+          .overflow-x-auto::-webkit-scrollbar-track {
+            background: rgba(71, 59, 189, 0.1);
+            border-radius: 3px;
+          }
+          .overflow-x-auto::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #473bbd, #7E69AB);
+            border-radius: 3px;
+          }
+          .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(90deg, #7E69AB, #473bbd);
           }
         `}
       </style>
