@@ -72,16 +72,18 @@ const ParallaxHiringSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const sectionStyle = {
+    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tech-pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="%23473bbd" opacity="0.1"/><path d="M5,0 L5,10 M0,5 L10,5" stroke="%23473bbd" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23tech-pattern)"/></svg>')`,
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  };
+
   return (
     <section 
       ref={sectionRef}
       className="min-h-screen relative overflow-hidden"
-      style={{
-        backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tech-pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="%23473bbd" opacity="0.1"/><path d="M5,0 L5,10 M0,5 L10,5" stroke="%23473bbd" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23tech-pattern)"/></svg>')`,
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
+      style={sectionStyle}
     >
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-br from-synapse-dark/90 via-synapse-primary/80 to-synapse-secondary/90"></div>
@@ -141,14 +143,16 @@ const ParallaxHiringSection = () => {
         </div>
       </div>
 
-      {/* Accessibility: Disable parallax for reduced motion */}
-      <style jsx>{`
-        @media (prefers-reduced-motion: reduce) {
-          section {
-            background-attachment: scroll !important;
+      {/* CSS for reduced motion accessibility */}
+      <style>
+        {`
+          @media (prefers-reduced-motion: reduce) {
+            section {
+              background-attachment: scroll !important;
+            }
           }
-        }
-      `}</style>
+        `}
+      </style>
     </section>
   );
 };
