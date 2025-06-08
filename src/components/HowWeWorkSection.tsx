@@ -9,30 +9,31 @@ const HowWeWorkSection = () => {
   const steps = [
     {
       icon: <Brain className="h-10 w-10 text-white" />,
-      title: "AI Agent Deployment",
-      description: "Our autonomous GPT-4 agents analyze job requirements and begin sourcing candidates across global databases instantly.",
+      title: "AI Agent Analyzes Your Job",
+      description: "Upload your job description and our AI agent instantly understands requirements, skills, and cultural fit criteria.",
       gradient: "from-synapse-primary to-synapse-secondary"
     },
     {
       icon: <Cpu className="h-10 w-10 text-white" />,
-      title: "Automated Screening & Vetting",
-      description: "AI conducts comprehensive candidate evaluation, skills assessment, and cultural fit analysis without human intervention.",
+      title: "Automated Sourcing & Screening",
+      description: "AI agent sources candidates globally, conducts initial screening, and evaluates qualifications automatically.",
       gradient: "from-synapse-secondary to-synapse-tertiary"
     },
     {
       icon: <Zap className="h-10 w-10 text-white" />,
-      title: "Intelligent Matching & Delivery",
-      description: "Advanced algorithms match optimal candidates to roles with 95%+ accuracy, delivering results within hours.",
+      title: "Smart Outreach & Scheduling",
+      description: "Personalized outreach, interview scheduling, and candidate management - all handled by AI without your intervention.",
       gradient: "from-synapse-tertiary to-synapse-primary"
     }
   ];
 
-  const advantages = [
-    "Zero human bottlenecks or coordination delays",
-    "AI agents work 24/7 across all time zones",
-    "Infinite scale with near-zero marginal cost",
-    "Continuous learning improves with every hire",
-    "Fully automated from sourcing to offer"
+  const benefits = [
+    "Upload job description and let AI handle everything",
+    "AI agent sources from global talent databases",
+    "Automated screening and qualification assessment",
+    "Personalized candidate outreach and engagement",
+    "Interview scheduling and coordination",
+    "Offer management and negotiation support"
   ];
 
   return (
@@ -44,19 +45,19 @@ const HowWeWorkSection = () => {
             className="scroll-animate inline-flex items-center gap-2 bg-synapse-lighter/50 px-4 py-2 rounded-full mb-6"
           >
             <div className="w-2 h-2 bg-synapse-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-synapse-primary uppercase tracking-wide">The Solution</span>
+            <span className="text-sm font-medium text-synapse-primary uppercase tracking-wide">Client Solution</span>
           </div>
           <h2 
             ref={addToRefs}
             className="scroll-animate text-3xl md:text-4xl font-bold text-synapse-dark mb-4"
           >
-            How Our AI Hiring Cloud Works
+            How Our Platform Works for You
           </h2>
           <p 
             ref={addToRefs}
             className="scroll-animate text-lg text-synapse-gray"
           >
-            SRN transforms recruiting into software with fully autonomous AI agents
+            Experience fully automated hiring - from job posting to offer acceptance
           </p>
         </div>
 
@@ -76,7 +77,7 @@ const HowWeWorkSection = () => {
                 {step.icon}
               </div>
               <h3 className="text-xl font-bold text-synapse-dark mb-3">
-                Step {index + 1}: {step.title}
+                {step.title}
               </h3>
               <p className="text-synapse-gray">{step.description}</p>
             </div>
@@ -85,40 +86,22 @@ const HowWeWorkSection = () => {
 
         <div 
           ref={addToRefs}
-          className="scroll-animate bg-synapse-light rounded-xl p-8 md:p-12"
+          className="scroll-animate bg-synapse-light rounded-xl p-8 md:p-12 text-center"
         >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-synapse-dark mb-4">
-                Why AI-First Recruiting Wins
-              </h3>
-              <p className="text-synapse-gray mb-6">
-                Our autonomous system eliminates the inefficiencies, bottlenecks, and costs of traditional human-dependent recruiting.
-              </p>
-              
-              <ul className="space-y-4">
-                {advantages.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-synapse-primary mt-1 flex-shrink-0" />
-                    <span className="text-synapse-dark">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="AI neural network visualization with interconnected nodes"
-                  className="object-cover w-full h-full"
-                />
+          <h3 className="text-2xl md:text-3xl font-bold text-synapse-dark mb-6">
+            Complete Automation from Start to Finish
+          </h3>
+          <p className="text-synapse-gray mb-8 text-lg max-w-3xl mx-auto">
+            Our AI platform handles every step of your hiring process, giving you qualified candidates without the manual work.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {benefits.map((item, index) => (
+              <div key={index} className="flex items-start gap-3 text-left">
+                <Check className="h-5 w-5 text-synapse-primary mt-1 flex-shrink-0" />
+                <span className="text-synapse-dark">{item}</span>
               </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-medium">
-                <span className="text-synapse-primary text-3xl font-bold">∞</span>
-                <span className="text-synapse-dark font-medium">Scale</span>
-                <span className="text-sm text-synapse-gray">AI-powered</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -9,38 +9,38 @@ const KPIPerformanceSection = () => {
 
   const kpis = [
     {
+      value: "95%+",
+      label: "Quality Match Accuracy Rate",
+      icon: <Users className="h-8 w-8 text-white" />,
+      bgGradient: "from-synapse-secondary to-synapse-primary",
+      delay: "0ms"
+    },
+    {
       value: "90%",
       label: "Faster Time-to-Hire vs Traditional",
       icon: <Clock className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-primary to-synapse-secondary",
-      delay: "0ms"
+      delay: "100ms"
     },
     {
       value: "70%",
       label: "Reduction in Hiring Costs",
       icon: <DollarSign className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-secondary to-synapse-tertiary",
-      delay: "100ms"
+      delay: "200ms"
     },
     {
       value: "5x",
       label: "More Candidate Reach & Coverage",
       icon: <TrendingUp className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-tertiary to-synapse-primary",
-      delay: "200ms"
+      delay: "300ms"
     },
     {
       value: "24/7",
       label: "Continuous Hiring Operations",
       icon: <Zap className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-primary to-synapse-light",
-      delay: "300ms"
-    },
-    {
-      value: "95%+",
-      label: "Quality Match Accuracy Rate",
-      icon: <Users className="h-8 w-8 text-white" />,
-      bgGradient: "from-synapse-secondary to-synapse-primary",
       delay: "400ms"
     }
   ];
