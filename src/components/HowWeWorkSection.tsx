@@ -72,21 +72,21 @@ const HowWeWorkSection = () => {
 
         <div 
           ref={addToRefs}
-          className="scroll-animate max-w-5xl mx-auto"
+          className="scroll-animate max-w-6xl mx-auto"
         >
           <Tabs defaultValue="step1" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-5 h-auto bg-synapse-lighter/30 p-2 rounded-xl">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-5 h-auto bg-synapse-lighter/30 p-2 rounded-xl mb-8">
               {steps.map((step) => (
                 <TabsTrigger 
                   key={step.id}
                   value={step.id} 
                   className="text-xs md:text-sm p-3 md:p-4 h-auto flex flex-col items-center gap-2 data-[state=active]:bg-white data-[state=active]:text-synapse-primary data-[state=active]:shadow-soft rounded-lg transition-all duration-300"
                 >
-                  <div className="text-synapse-primary">
+                  <div className="text-synapse-primary mb-1">
                     {step.icon}
                   </div>
                   <span className="font-medium text-center leading-tight">
-                    {step.title}
+                    {step.title.split('.')[1]?.trim()}
                   </span>
                 </TabsTrigger>
               ))}
@@ -96,7 +96,7 @@ const HowWeWorkSection = () => {
               <TabsContent 
                 key={step.id}
                 value={step.id} 
-                className="mt-8 bg-gradient-to-br from-synapse-lighter/20 to-white rounded-xl p-8 border border-synapse-light/30 shadow-soft"
+                className="bg-gradient-to-br from-synapse-lighter/20 to-white rounded-xl p-8 border border-synapse-light/30 shadow-soft"
               >
                 <div className="flex flex-col md:flex-row items-start gap-6">
                   <div className="bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-xl p-4 flex-shrink-0">
