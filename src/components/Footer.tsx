@@ -188,7 +188,7 @@ const Footer = () => {
               ))}
               <li>
                 <a
-                  href="/contact"
+                  href="https://synapsehire.com/contact"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Contact Us
