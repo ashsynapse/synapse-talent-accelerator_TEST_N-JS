@@ -3,14 +3,14 @@ import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Briefcase, 
   Code2, 
   TrendingUp, 
-  Heart, 
+  Settings, 
+  Users, 
+  DollarSign,
   Calculator,
+  Scale,
   Factory,
-  Users,
-  Crown,
   Sparkles
 } from "lucide-react";
 
@@ -19,52 +19,44 @@ const WhoWeHireSection = () => {
 
   const industries = [
     {
-      title: "Technology",
+      title: "Information Technology",
       description: "Software engineers, data scientists, AI specialists, and tech professionals",
-      icon: <Code2 className="h-8 w-8 text-white" />,
-      roles: "25K+ roles"
+      icon: <Code2 className="h-8 w-8 text-white" />
     },
     {
-      title: "Finance & Banking",
-      description: "Investment bankers, financial analysts, fintech professionals",
-      icon: <TrendingUp className="h-8 w-8 text-white" />,
-      roles: "18K+ roles"
+      title: "Digital Marketing",
+      description: "Digital marketing professionals, SEO specialists, content creators",
+      icon: <TrendingUp className="h-8 w-8 text-white" />
     },
     {
-      title: "Healthcare",
-      description: "Healthcare administrators, medical technology, pharmaceutical roles",
-      icon: <Heart className="h-8 w-8 text-white" />,
-      roles: "22K+ roles"
+      title: "Engineering",
+      description: "Engineering professionals across mechanical, electrical, civil disciplines",
+      icon: <Settings className="h-8 w-8 text-white" />
     },
     {
-      title: "Legal Services",
-      description: "Corporate lawyers, legal tech, compliance and regulatory experts",
-      icon: <Briefcase className="h-8 w-8 text-white" />,
-      roles: "12K+ roles"
+      title: "Human Resources (HR)",
+      description: "HR professionals, talent acquisition specialists, organizational development",
+      icon: <Users className="h-8 w-8 text-white" />
     },
     {
-      title: "Consulting",
-      description: "Management consultants, strategy advisors, business analysts",
-      icon: <Users className="h-8 w-8 text-white" />,
-      roles: "15K+ roles"
+      title: "Sales",
+      description: "Sales executives, business development, account management professionals",
+      icon: <DollarSign className="h-8 w-8 text-white" />
     },
     {
-      title: "Sales & Marketing",
-      description: "Sales executives, marketing leaders, growth professionals",
-      icon: <Calculator className="h-8 w-8 text-white" />,
-      roles: "20K+ roles"
+      title: "Accounting",
+      description: "Accounting and finance professionals, CPAs, financial analysts",
+      icon: <Calculator className="h-8 w-8 text-white" />
     },
     {
-      title: "Operations",
-      description: "Operations managers, supply chain, business operations",
-      icon: <Factory className="h-8 w-8 text-white" />,
-      roles: "16K+ roles"
+      title: "Legal",
+      description: "Legal professionals specializing in corporate law, litigation, compliance",
+      icon: <Scale className="h-8 w-8 text-white" />
     },
     {
-      title: "Executive Leadership",
-      description: "C-Suite executives, VPs, directors, senior management",
-      icon: <Crown className="h-8 w-8 text-white" />,
-      roles: "8K+ roles"
+      title: "Manufacturing",
+      description: "Manufacturing professionals, operations, supply chain management",
+      icon: <Factory className="h-8 w-8 text-white" />
     }
   ];
 
@@ -114,12 +106,9 @@ const WhoWeHireSection = () => {
                 <h3 className="text-xl font-bold text-synapse-dark mb-3 group-hover:text-synapse-primary transition-colors duration-300">
                   {industry.title}
                 </h3>
-                <p className="text-synapse-gray mb-4 leading-relaxed group-hover:text-synapse-dark transition-colors duration-300">
+                <p className="text-synapse-gray leading-relaxed group-hover:text-synapse-dark transition-colors duration-300">
                   {industry.description}
                 </p>
-                <div className="text-sm font-medium text-synapse-primary bg-synapse-lighter/50 px-3 py-1 rounded-full inline-block">
-                  {industry.roles}
-                </div>
               </CardContent>
             </Card>
           ))}
