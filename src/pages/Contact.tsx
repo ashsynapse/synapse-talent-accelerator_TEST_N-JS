@@ -12,8 +12,8 @@ const Contact = () => {
       description="Get in touch with Synapse to find top talent fast. Fill out our form or book a demo call with our recruitment experts."
     >
       <ContactHero />
-      <LogoCarousel />
       <ContactFormSection />
+      <LogoCarousel />
     </PageTemplate>
   );
 };
