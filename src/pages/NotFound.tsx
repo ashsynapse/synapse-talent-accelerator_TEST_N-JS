@@ -18,27 +18,27 @@ const NotFound = () => {
 
   return (
     <PageTemplate 
-      title="Page Not Found"
-      description="The page you're looking for doesn't exist. Explore our recruitment solutions and services."
+      title="Coming Soon"
+      description="This page is coming soon. Explore our recruitment solutions and services."
     >
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50 px-4">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-synapse-lighter/30 to-synapse-light/50 px-4 pt-20">
         <div className="text-center max-w-2xl mx-auto">
-          {/* 404 Visual */}
+          {/* Coming Soon Visual */}
           <div className="mb-8">
-            <h1 className="text-8xl md:text-9xl font-bold text-synapse-primary mb-4 leading-none">
-              404
+            <h1 className="text-6xl md:text-7xl font-bold text-synapse-primary mb-4 leading-none">
+              Coming Soon
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-synapse-primary to-synapse-secondary mx-auto rounded-full"></div>
           </div>
 
-          {/* Error Message */}
+          {/* Message */}
           <div className="mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-synapse-dark mb-4">
-              Page Not Found
+              Page Under Construction
             </h2>
             <p className="text-xl text-synapse-gray leading-relaxed">
-              The page you're looking for doesn't exist or has been moved. 
-              Let's get you back to exploring our recruitment solutions.
+              We're working hard to bring you something amazing. 
+              In the meantime, explore our existing recruitment solutions and services.
             </p>
           </div>
 
