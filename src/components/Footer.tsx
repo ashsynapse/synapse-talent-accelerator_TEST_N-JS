@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Linkedin, Twitter, Instagram, MessageCircle } from "lucide-react";
 import { FaDiscord } from 'react-icons/fa';
@@ -188,7 +189,7 @@ const Footer = () => {
               ))}
               <li>
                 <a
-                  href="https://synapsehire.com/contact"
+                  href="/contact"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Contact Us
