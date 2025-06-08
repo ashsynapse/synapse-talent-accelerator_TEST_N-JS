@@ -22,56 +22,48 @@ const WhoWeHireSection = () => {
       title: "Technology",
       description: "Software engineers, data scientists, AI specialists, and tech professionals",
       icon: <Code2 className="h-8 w-8 text-white" />,
-      color: "from-blue-500 to-purple-600",
       roles: "25K+ roles"
     },
     {
       title: "Finance & Banking",
       description: "Investment bankers, financial analysts, fintech professionals",
       icon: <TrendingUp className="h-8 w-8 text-white" />,
-      color: "from-green-500 to-emerald-600",
       roles: "18K+ roles"
     },
     {
       title: "Healthcare",
       description: "Healthcare administrators, medical technology, pharmaceutical roles",
       icon: <Heart className="h-8 w-8 text-white" />,
-      color: "from-red-500 to-pink-600",
       roles: "22K+ roles"
     },
     {
       title: "Legal Services",
       description: "Corporate lawyers, legal tech, compliance and regulatory experts",
       icon: <Briefcase className="h-8 w-8 text-white" />,
-      color: "from-gray-600 to-gray-800",
       roles: "12K+ roles"
     },
     {
       title: "Consulting",
       description: "Management consultants, strategy advisors, business analysts",
       icon: <Users className="h-8 w-8 text-white" />,
-      color: "from-indigo-500 to-blue-600",
       roles: "15K+ roles"
     },
     {
       title: "Sales & Marketing",
       description: "Sales executives, marketing leaders, growth professionals",
       icon: <Calculator className="h-8 w-8 text-white" />,
-      color: "from-orange-500 to-red-600",
       roles: "20K+ roles"
     },
     {
       title: "Operations",
       description: "Operations managers, supply chain, business operations",
       icon: <Factory className="h-8 w-8 text-white" />,
-      color: "from-teal-500 to-cyan-600",
       roles: "16K+ roles"
     },
     {
       title: "Executive Leadership",
       description: "C-Suite executives, VPs, directors, senior management",
       icon: <Crown className="h-8 w-8 text-white" />,
-      color: "from-yellow-500 to-orange-600",
       roles: "8K+ roles"
     }
   ];
@@ -108,7 +100,7 @@ const WhoWeHireSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((industry, index) => (
             <Card 
               key={industry.title}
@@ -116,7 +108,7 @@ const WhoWeHireSection = () => {
               className="scroll-animate border-none shadow-soft hover:shadow-xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden bg-white/90 backdrop-blur-sm"
             >
               <CardContent className="p-8 relative">
-                <div className={`bg-gradient-to-br ${industry.color} rounded-2xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="bg-gradient-to-br from-synapse-primary to-synapse-secondary rounded-2xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform duration-300">
                   {industry.icon}
                 </div>
                 <h3 className="text-xl font-bold text-synapse-dark mb-3 group-hover:text-synapse-primary transition-colors duration-300">
@@ -131,23 +123,6 @@ const WhoWeHireSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div 
-          ref={addToRefs}
-          className="scroll-animate text-center bg-white/80 backdrop-blur-sm rounded-2xl p-10 shadow-soft border border-synapse-light/30"
-        >
-          <h3 className="text-2xl md:text-3xl font-bold text-synapse-dark mb-4">
-            Can't find your industry?
-          </h3>
-          <p className="text-synapse-gray mb-6 text-lg">
-            Our AI agents adapt to any sector. Let's discuss your specific hiring needs.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-synapse-gray">
-            <span className="bg-synapse-lighter/50 px-4 py-2 rounded-full">• Custom AI Training</span>
-            <span className="bg-synapse-lighter/50 px-4 py-2 rounded-full">• Industry-Specific Sourcing</span>
-            <span className="bg-synapse-lighter/50 px-4 py-2 rounded-full">• Specialized Talent Pools</span>
-          </div>
         </div>
       </div>
     </section>

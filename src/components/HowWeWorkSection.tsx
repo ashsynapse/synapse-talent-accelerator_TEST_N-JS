@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Brain, Cpu, Zap, Check } from "lucide-react";
+import { Brain, Cpu, Zap } from "lucide-react";
 
 const HowWeWorkSection = () => {
   const { addToRefs } = useScrollAnimation();
@@ -25,15 +25,6 @@ const HowWeWorkSection = () => {
       description: "Personalized outreach, interview scheduling, and candidate management - all handled by AI without your intervention.",
       gradient: "from-synapse-tertiary to-synapse-primary"
     }
-  ];
-
-  const benefits = [
-    "Upload job description and let AI handle everything",
-    "AI agent sources from global talent databases",
-    "Automated screening and qualification assessment",
-    "Personalized candidate outreach and engagement",
-    "Interview scheduling and coordination",
-    "Offer management and negotiation support"
   ];
 
   return (
@@ -61,7 +52,7 @@ const HowWeWorkSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -82,27 +73,6 @@ const HowWeWorkSection = () => {
               <p className="text-synapse-gray">{step.description}</p>
             </div>
           ))}
-        </div>
-
-        <div 
-          ref={addToRefs}
-          className="scroll-animate bg-synapse-light rounded-xl p-8 md:p-12 text-center"
-        >
-          <h3 className="text-2xl md:text-3xl font-bold text-synapse-dark mb-6">
-            Complete Automation from Start to Finish
-          </h3>
-          <p className="text-synapse-gray mb-8 text-lg max-w-3xl mx-auto">
-            Our AI platform handles every step of your hiring process, giving you qualified candidates without the manual work.
-          </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {benefits.map((item, index) => (
-              <div key={index} className="flex items-start gap-3 text-left">
-                <Check className="h-5 w-5 text-synapse-primary mt-1 flex-shrink-0" />
-                <span className="text-synapse-dark">{item}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
