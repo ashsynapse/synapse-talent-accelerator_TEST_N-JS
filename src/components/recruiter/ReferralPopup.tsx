@@ -56,7 +56,7 @@ const ReferralPopup = () => {
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">
                 Refer Top Recruiters. 💸 <br />
-                <span className="text-yellow-300">Earn 5%—That's $10K–15K a Year.</span>
+                <span className="text-synapse-light">Earn 5%—That's $10K–15K a Year.</span>
               </h2>
               <p className="text-lg text-white/90 leading-relaxed">
                 Bring in US/CA recruiters. Get paid every month for 12 months.
@@ -66,15 +66,15 @@ const ReferralPopup = () => {
             {/* Benefits */}
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">5%</div>
+                <div className="text-3xl font-bold text-synapse-light">5%</div>
                 <div className="text-sm text-white/80">Commission</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">12</div>
+                <div className="text-3xl font-bold text-synapse-light">12</div>
                 <div className="text-sm text-white/80">Months</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">$15K</div>
+                <div className="text-3xl font-bold text-synapse-light">$15K</div>
                 <div className="text-sm text-white/80">Per Year</div>
               </div>
             </div>
@@ -84,10 +84,10 @@ const ReferralPopup = () => {
               onClick={handleCTAClick}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="relative group w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-300 hover:to-yellow-400 text-synapse-dark font-bold text-lg py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
+              className="relative group w-full bg-white hover:bg-white/90 text-synapse-primary font-bold text-lg py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl overflow-hidden"
             >
-              {/* Shimmer effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out rounded-xl"></div>
+              {/* Shimmer effect contained within button */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-synapse-primary/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
               
               <span className="relative z-10 flex items-center justify-center gap-3">
                 {isHovered ? "Invite & Earn" : "Start Earning"}
@@ -95,21 +95,21 @@ const ReferralPopup = () => {
               </span>
               
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/50 to-yellow-500/50 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110 rounded-xl"></div>
+              <div className="absolute inset-0 bg-white/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110 rounded-xl"></div>
             </button>
 
             {/* Trust indicators */}
             <div className="mt-6 flex justify-center items-center gap-4 text-sm text-white/70">
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <div className="w-2 h-2 bg-synapse-light rounded-full"></div>
                 Instant approval
               </span>
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <div className="w-2 h-2 bg-synapse-light rounded-full"></div>
                 No fees
               </span>
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <div className="w-2 h-2 bg-synapse-light rounded-full"></div>
                 Monthly payouts
               </span>
             </div>
