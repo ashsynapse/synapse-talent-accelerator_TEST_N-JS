@@ -13,7 +13,7 @@ const blogPosts = [
     date: "February 21, 2025",
     readTime: "6 min read",
     category: "Industry Insights",
-    href: "/blog/side-hustles-gig-economy"
+    href: "/blogs/side-hustles-gig-economy"
   },
   {
     title: "How Gen Z is Redefining the Job Market: Trends Recruiters Need to Know",
@@ -22,7 +22,7 @@ const blogPosts = [
     date: "February 18, 2025",
     readTime: "7 min read",
     category: "Industry Insights",
-    href: "/blog/gen-z-job-market"
+    href: "/blogs/gen-z-job-market"
   },
   {
     title: "Remote Recruitment: A Comprehensive Guide",
@@ -31,7 +31,7 @@ const blogPosts = [
     date: "February 10, 2025",
     readTime: "8 min read",
     category: "Remote Work",
-    href: "/blog/remote-recruitment-guide"
+    href: "/blogs/remote-recruitment-guide"
   },
   {
     title: "Remote Recruitment Made Simple",
@@ -40,7 +40,7 @@ const blogPosts = [
     date: "January 31, 2025",
     readTime: "5 min read",
     category: "Remote Work",
-    href: "/blog/remote-recruitment-simple"
+    href: "/blogs/remote-recruitment-simple"
   },
   {
     title: "Speed Matters in Recruitment: Why Moving Fast is the Key to Success",
@@ -49,7 +49,7 @@ const blogPosts = [
     date: "January 28, 2025",
     readTime: "6 min read",
     category: "Recruitment Strategy",
-    href: "/blog/speed-matters-recruitment"
+    href: "/blogs/speed-matters-recruitment"
   },
   {
     title: "Building the Future of Recruiting at SRN!",
@@ -58,7 +58,7 @@ const blogPosts = [
     date: "January 24, 2025",
     readTime: "6 min read",
     category: "Company Updates",
-    href: "/blog/future-of-recruiting"
+    href: "/blogs/future-of-recruiting"
   },
   {
     title: "Expert Hiring Tips for HR Leaders",
@@ -67,7 +67,7 @@ const blogPosts = [
     date: "January 21, 2025",
     readTime: "8 min read",
     category: "HR Leadership",
-    href: "/blog/expert-hiring-tips"
+    href: "/blogs/expert-hiring-tips"
   },
   {
     title: "Global Hiring Trends & Insights for 2025",
@@ -76,7 +76,7 @@ const blogPosts = [
     date: "January 17, 2025",
     readTime: "7 min read",
     category: "Industry Insights",
-    href: "/blog/global-hiring-trends-2025"
+    href: "/blogs/global-hiring-trends-2025"
   },
   {
     title: "Retention and Succession Planning — Strategies to Ensure Long-Term Employee Engagement and Retention",
@@ -85,7 +85,7 @@ const blogPosts = [
     date: "January 14, 2025",
     readTime: "8 min read",
     category: "HR Strategy",
-    href: "/blog/retention-succession-planning"
+    href: "/blogs/retention-succession-planning"
   },
   {
     title: "Enhancing Employer Branding: Strategies to Attract Top Talent",
@@ -94,7 +94,7 @@ const blogPosts = [
     date: "January 10, 2025",
     readTime: "7 min read",
     category: "Employer Branding",
-    href: "/blog/employer-branding"
+    href: "/blogs/employer-branding"
   },
   {
     title: "Talent Acquisition Strategies: Best Practices for Sourcing and Attracting Top Talent Using AI and LinkedIn",
@@ -103,7 +103,7 @@ const blogPosts = [
     date: "January 7, 2025",
     readTime: "9 min read",
     category: "Talent Acquisition",
-    href: "/blog/talent-acquisition-strategies"
+    href: "/blogs/talent-acquisition-strategies"
   },
   {
     title: "Top 5 Recruitment Trends Shaping 2025",
@@ -112,7 +112,7 @@ const blogPosts = [
     date: "January 3, 2025",
     readTime: "6 min read",
     category: "Industry Insights",
-    href: "/blog/recruitment-trends-2025"
+    href: "/blogs/recruitment-trends-2025"
   },
   {
     title: "A Step-by-Step Guide to Hiring and Managing an Outsourced Development Team for Tech Startups",
@@ -121,7 +121,7 @@ const blogPosts = [
     date: "December 27, 2024",
     readTime: "8 min read",
     category: "Tech Startups",
-    href: "/blog/outsourced-development-team"
+    href: "/blogs/outsourced-development-team"
   },
   {
     title: "AI's Role in Shaping Recruitment: What to Expect in 2025",
@@ -130,7 +130,7 @@ const blogPosts = [
     date: "December 24, 2024",
     readTime: "7 min read",
     category: "AI & Technology",
-    href: "/blog/ai-recruitment-2025"
+    href: "/blogs/ai-recruitment-2025"
   },
   {
     title: "Why 75% of Top Employers Prefer Hiring Through Referral-Based Platforms Like Synapse",
@@ -139,7 +139,7 @@ const blogPosts = [
     date: "December 21, 2024",
     readTime: "8 min read",
     category: "Industry Insights",
-    href: "/blog/referral-platforms"
+    href: "/blogs/referral-platforms"
   },
   {
     title: "Upcoming Changes to SRN — Web App Beta",
@@ -148,7 +148,7 @@ const blogPosts = [
     date: "November 7, 2024",
     readTime: "6 min read",
     category: "Company Updates",
-    href: "/blog/srn-web-app"
+    href: "/blogs/srn-web-app"
   },
   {
     title: "Using ChatGPT + Google Xray Boolean to Find Candidates Not Active on LinkedIn",
@@ -157,7 +157,7 @@ const blogPosts = [
     date: "October 17, 2024",
     readTime: "7 min read",
     category: "Sourcing Strategies",
-    href: "/blog/google-xray-boolean"
+    href: "/blogs/google-xray-boolean"
   },
   {
     title: "Using ChatGPT: Telling us why a candidate is NOT a fit",
@@ -166,7 +166,7 @@ const blogPosts = [
     date: "October 9, 2024",
     readTime: "4 min read",
     category: "AI & Technology",
-    href: "/blog/chatgpt-fit-analysis"
+    href: "/blogs/chatgpt-fit-analysis"
   },
   {
     title: "Using ChatGPT for Higher Quality Candidate Submissions",
@@ -175,7 +175,7 @@ const blogPosts = [
     date: "October 9, 2024",
     readTime: "5 min read",
     category: "AI & Technology",
-    href: "/blog/chatgpt-quality"
+    href: "/blogs/chatgpt-quality"
   },
   {
     title: "How to Keep Candidates Engaged During the Recruitment Process",
@@ -184,7 +184,7 @@ const blogPosts = [
     date: "September 30, 2024",
     readTime: "8 min read",
     category: "Talent Acquisition",
-    href: "/blog/candidate-engagement"
+    href: "/blogs/candidate-engagement"
   },
   {
     title: "LinkedIn Optimization (Tips and Best Practices)",
@@ -193,7 +193,7 @@ const blogPosts = [
     date: "September 30, 2024",
     readTime: "12 min read",
     category: "Professional Development",
-    href: "/blog/linkedin-optimization"
+    href: "/blogs/linkedin-optimization"
   },
   {
     title: "How to Source Talent Strategically Rather Than Merely Conducting Basic Outreach",
@@ -202,7 +202,7 @@ const blogPosts = [
     date: "September 26, 2024",
     readTime: "9 min read",
     category: "Sourcing Strategies",
-    href: "/blog/strategic-sourcing"
+    href: "/blogs/strategic-sourcing"
   }
 ];
 

@@ -43,7 +43,7 @@ const FinalCtaSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               className="bg-white text-synapse-primary hover:bg-gray-100 text-lg py-6 px-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group relative overflow-hidden"
-              onClick={() => window.location.href = "mailto:info@synapseint.com"}
+              onClick={() => window.location.href = "/contact"}
             >
               <span className="relative z-10 flex items-center gap-2">
                 Get in Touch

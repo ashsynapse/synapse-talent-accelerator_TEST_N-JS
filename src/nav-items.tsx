@@ -1,4 +1,3 @@
-
 import Index from "./pages/Index";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -125,93 +124,93 @@ export const navItems = [
     to: "/glossary",
     page: <Glossary />,
   },
-  // Blog post routes
+  // Blog post routes - updated to use /blogs/ prefix
   {
-    to: "/blog/ai-recruitment-2025",
+    to: "/blogs/ai-recruitment-2025",
     page: <AIRecruitment2025 />,
   },
   {
-    to: "/blog/candidate-engagement",
+    to: "/blogs/candidate-engagement",
     page: <CandidateEngagement />,
   },
   {
-    to: "/blog/chatgpt-fit-analysis",
+    to: "/blogs/chatgpt-fit-analysis",
     page: <ChatGPTFitAnalysis />,
   },
   {
-    to: "/blog/chatgpt-quality",
+    to: "/blogs/chatgpt-quality",
     page: <ChatGPTQuality />,
   },
   {
-    to: "/blog/employer-branding",
+    to: "/blogs/employer-branding",
     page: <EmployerBranding />,
   },
   {
-    to: "/blog/expert-hiring-tips",
+    to: "/blogs/expert-hiring-tips",
     page: <ExpertHiringTips />,
   },
   {
-    to: "/blog/future-of-recruiting",
+    to: "/blogs/future-of-recruiting",
     page: <FutureOfRecruiting />,
   },
   {
-    to: "/blog/gen-z-job-market",
+    to: "/blogs/gen-z-job-market",
     page: <GenZJobMarket />,
   },
   {
-    to: "/blog/global-hiring-trends-2025",
+    to: "/blogs/global-hiring-trends-2025",
     page: <GlobalHiringTrends2025 />,
   },
   {
-    to: "/blog/google-xray-boolean",
+    to: "/blogs/google-xray-boolean",
     page: <GoogleXrayBoolean />,
   },
   {
-    to: "/blog/linkedin-optimization",
+    to: "/blogs/linkedin-optimization",
     page: <LinkedInOptimization />,
   },
   {
-    to: "/blog/outsourced-development-team",
+    to: "/blogs/outsourced-development-team",
     page: <OutsourcedDevelopmentTeam />,
   },
   {
-    to: "/blog/recruitment-trends-2025",
+    to: "/blogs/recruitment-trends-2025",
     page: <RecruitmentTrends2025 />,
   },
   {
-    to: "/blog/referral-platforms",
+    to: "/blogs/referral-platforms",
     page: <ReferralPlatforms />,
   },
   {
-    to: "/blog/remote-recruitment-guide",
+    to: "/blogs/remote-recruitment-guide",
     page: <RemoteRecruitmentGuide />,
   },
   {
-    to: "/blog/remote-recruitment-simple",
+    to: "/blogs/remote-recruitment-simple",
     page: <RemoteRecruitmentSimple />,
   },
   {
-    to: "/blog/retention-succession-planning",
+    to: "/blogs/retention-succession-planning",
     page: <RetentionSuccessionPlanning />,
   },
   {
-    to: "/blog/srn-web-app",
+    to: "/blogs/srn-web-app",
     page: <SRNWebApp />,
   },
   {
-    to: "/blog/side-hustles-gig-economy",
+    to: "/blogs/side-hustles-gig-economy",
     page: <SideHustlesGigEconomy />,
   },
   {
-    to: "/blog/speed-matters-recruitment",
+    to: "/blogs/speed-matters-recruitment",
     page: <SpeedMattersRecruitment />,
   },
   {
-    to: "/blog/strategic-sourcing",
+    to: "/blogs/strategic-sourcing",
     page: <StrategicSourcing />,
   },
   {
-    to: "/blog/talent-acquisition-strategies",
+    to: "/blogs/talent-acquisition-strategies",
     page: <TalentAcquisitionStrategies />,
   },
 ];
