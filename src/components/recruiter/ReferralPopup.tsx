@@ -74,7 +74,7 @@ const ReferralPopup = () => {
                 <div className="text-sm text-white/80">Months</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-synapse-light">Up To $15K</div>
+                <div className="text-3xl font-bold text-synapse-light">$15K</div>
                 <div className="text-sm text-white/80">Per Year</div>
               </div>
             </div>

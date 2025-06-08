@@ -46,10 +46,12 @@ const Products = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
-              <Card key={index} className="border hover:border-synapse-primary transition-colors duration-300 group h-full">
+              <Card key={index} className="border border-gray-100 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 group h-full">
                 <CardContent className="p-8 flex flex-col h-full">
-                  <div className="text-synapse-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {product.icon}
+                  <div className="w-16 h-16 bg-gradient-to-r from-synapse-primary to-synapse-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-white">
+                      {product.icon}
+                    </div>
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-synapse-dark">{product.title}</h3>
                   <p className="text-synapse-gray mb-6 flex-grow leading-relaxed">{product.description}</p>
