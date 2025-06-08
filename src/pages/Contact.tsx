@@ -3,7 +3,7 @@ import React from "react";
 import PageTemplate from "../components/PageTemplate";
 import ContactHero from "../components/contact/ContactHero";
 import ContactFormSection from "../components/contact/ContactFormSection";
-import LogoCarousel from "../components/LogoCarousel";
+import StaticLogosGrid from "../components/StaticLogosGrid";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
     >
       <ContactHero />
       <ContactFormSection />
-      <LogoCarousel />
+      <StaticLogosGrid />
     </PageTemplate>
   );
 };
