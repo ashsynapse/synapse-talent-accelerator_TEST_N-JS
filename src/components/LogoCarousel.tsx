@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -47,6 +48,10 @@ const LogoCarousel = () => {
     { name: "BRD", url: "/lovable-uploads/a314054d-1605-4329-bad2-16d81b10090c.png" },
   ];
 
+  // Calculate animation duration based on number of logos
+  // Each logo takes approximately 0.5s to pass through, so we multiply by number of logos
+  const animationDuration = Math.max(logos.length * 0.8, 30); // Minimum 30s for smooth experience
+
   return (
     <section className="py-6 md:py-10 bg-gradient-to-r from-gray-50/50 via-white to-gray-50/50 border-y border-gray-100/50 relative overflow-hidden">
       {/* Subtle background pattern */}
@@ -75,8 +80,14 @@ const LogoCarousel = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-[scroll_10s_linear_infinite] md:animate-[scroll_15s_linear_infinite] hover:pause">
-            {[...logos, ...logos, ...logos].map((logo, index) => (
+          <div 
+            className="flex hover:pause"
+            style={{
+              animation: `scroll ${animationDuration}s linear infinite`
+            }}
+          >
+            {/* Display logos only twice to ensure smooth infinite loop */}
+            {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
                 className="flex-shrink-0 mx-6 group"
