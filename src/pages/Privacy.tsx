@@ -1,4 +1,3 @@
-
 import React from "react";
 import PageTemplate from "../components/PageTemplate";
 
@@ -54,10 +53,17 @@ const Privacy = () => {
                 <li>Job titles</li>
                 <li>Contact preferences</li>
                 <li>Contact or authentication data</li>
+                <li>Resume and professional information (for recruitment purposes)</li>
+                <li>Company information and hiring requirements</li>
               </ul>
               
               <p className="text-synapse-gray leading-relaxed">
                 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
+              </p>
+
+              <h3 className="text-xl font-semibold text-synapse-dark mb-3 mt-6">Information Automatically Collected</h3>
+              <p className="text-synapse-gray leading-relaxed mb-4">
+                We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, and other technical information.
               </p>
             </div>
 
@@ -67,22 +73,35 @@ const Privacy = () => {
                 We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
               </p>
               <ul className="list-disc pl-6 text-synapse-gray space-y-2">
-                <li>To respond to user inquiries/offer support to users</li>
+                <li>To facilitate recruitment and talent acquisition services</li>
+                <li>To respond to user inquiries and offer support to users</li>
                 <li>To send administrative information to you</li>
-                <li>To request feedback</li>
+                <li>To request feedback and improve our services</li>
                 <li>To send you marketing and promotional communications</li>
                 <li>To deliver targeted advertising to you</li>
+                <li>To protect our Services and investigate potential violations</li>
+                <li>To comply with legal obligations</li>
               </ul>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold text-synapse-dark mb-4">When and With Whom Do We Share Your Personal Information?</h2>
-              <p className="text-synapse-gray leading-relaxed">
+              <p className="text-synapse-gray leading-relaxed mb-4">
                 We may need to share your personal information in the following situations:
               </p>
-              <ul className="list-disc pl-6 text-synapse-gray space-y-2 mt-4">
+              <ul className="list-disc pl-6 text-synapse-gray space-y-2">
                 <li><strong>Business Transfers:</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                <li><strong>With Clients:</strong> For recruitment purposes, we may share candidate information with our clients who are seeking to hire talent, with appropriate consent.</li>
+                <li><strong>Service Providers:</strong> We may share your information with third-party service providers who perform services for us or on our behalf.</li>
+                <li><strong>Legal Requirements:</strong> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process.</li>
               </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-synapse-dark mb-4">How Long Do We Keep Your Information?</h2>
+              <p className="text-synapse-gray leading-relaxed">
+                We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law. When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information.
+              </p>
             </div>
 
             <div>
