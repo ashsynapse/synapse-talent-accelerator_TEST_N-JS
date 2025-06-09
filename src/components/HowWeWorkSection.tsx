@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -11,7 +10,7 @@ const HowWeWorkSection = () => {
     {
       id: "step1",
       title: "AI Agent Analyzes Your Job Description",
-      tabText: "AI Agent\nAnalyzes Your JD",
+      tabText: "Intelligent\nRole Analysis",
       subtitle: "Intelligent Skills Parsing & Requirements Analysis",
       icon: <Brain className="h-8 w-8" />,
       image: "/lovable-uploads/1cbeb378-a3a3-4d62-9d8b-608eb7de1798.png",
@@ -21,7 +20,7 @@ const HowWeWorkSection = () => {
     {
       id: "step2", 
       title: "Agent-Led Global Sourcing",
-      tabText: "Agent-Led\nGlobal Sourcing",
+      tabText: "Smart Talent\nDiscovery",
       subtitle: "Real-time Candidate Identification Worldwide",
       icon: <Globe className="h-8 w-8" />,
       image: "/lovable-uploads/7a0c2330-d0d6-49c8-9ed2-b824e1c54b9c.png",
@@ -31,7 +30,7 @@ const HowWeWorkSection = () => {
     {
       id: "step3",
       title: "Autonomous Screening & Qualification", 
-      tabText: "Autonomous Screening\n& Qualification",
+      tabText: "Automated Candidate\nEvaluation",
       subtitle: "Zero Human Filtering - Pure AI Assessment",
       icon: <Shield className="h-8 w-8" />,
       image: "/lovable-uploads/ae4892c1-4dd7-4d41-ad7a-7525d20003f8.png",
@@ -51,7 +50,7 @@ const HowWeWorkSection = () => {
     {
       id: "step5",
       title: "AI-Powered Offer Management",
-      tabText: "AI-Powered\nOffer Management",
+      tabText: "Streamlined Offer\nOrchestration",
       subtitle: "Final Delivery of Vetted Candidates",
       icon: <Handshake className="h-8 w-8" />,
       image: "/lovable-uploads/14dc1cf3-b974-4964-adf8-ead13e11d927.png",
@@ -183,8 +182,8 @@ const HowWeWorkSection = () => {
                       loading="eager"
                       decoding="async"
                       fetchPriority="high"
-                      width="800"
-                      height="600"
+                      width="400"
+                      height="300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-synapse-primary/20 to-synapse-secondary/10 rounded-lg"></div>
                   </div>

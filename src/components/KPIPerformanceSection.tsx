@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, DollarSign, TrendingUp, Zap, Users, Sparkles } from "lucide-react";
@@ -10,7 +9,7 @@ const KPIPerformanceSection = () => {
   const kpis = [
     {
       value: "95%+",
-      label: "Quality Match Accuracy Rate",
+      label: "Talent-to-Job Match Accuracy",
       icon: <Users className="h-8 w-8 text-white" />,
       bgGradient: "from-synapse-secondary to-synapse-primary",
       delay: "0ms"
