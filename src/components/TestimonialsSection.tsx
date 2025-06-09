@@ -212,20 +212,9 @@ const TestimonialsSection = () => {
               ))}
             </CarouselContent>
             
-            {/* Custom navigation */}
-            <div className="flex items-center justify-center gap-4 mt-12">
-              <CarouselPrevious className="static translate-x-0 translate-y-0 bg-white/90 backdrop-blur-sm hover:bg-synapse-primary hover:text-white border-synapse-light/50 shadow-soft hover:shadow-medium transition-all duration-300 w-12 h-12">
-                <ArrowLeft className="h-5 w-5" />
-              </CarouselPrevious>
-              <div className="flex gap-2">
-                {testimonials.map((_, index) => (
-                  <div key={index} className="w-2 h-2 bg-synapse-light rounded-full opacity-50"></div>
-                ))}
-              </div>
-              <CarouselNext className="static translate-x-0 translate-y-0 bg-white/90 backdrop-blur-sm hover:bg-synapse-primary hover:text-white border-synapse-light/50 shadow-soft hover:shadow-medium transition-all duration-300 w-12 h-12">
-                <ArrowRight className="h-5 w-5" />
-              </CarouselNext>
-            </div>
+            {/* Side navigation arrows */}
+            <CarouselPrevious className="left-4 md:left-8 bg-white/90 backdrop-blur-sm hover:bg-synapse-primary hover:text-white border-synapse-light/50 shadow-soft hover:shadow-medium transition-all duration-300 w-12 h-12" />
+            <CarouselNext className="right-4 md:right-8 bg-white/90 backdrop-blur-sm hover:bg-synapse-primary hover:text-white border-synapse-light/50 shadow-soft hover:shadow-medium transition-all duration-300 w-12 h-12" />
           </Carousel>
         </div>
       </div>

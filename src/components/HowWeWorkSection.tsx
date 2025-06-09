@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,7 +10,7 @@ const HowWeWorkSection = () => {
   const steps = [
     {
       id: "step1",
-      title: "AI Agent Analyzes Your Job Description",
+      title: "Intelligent Role Analysis",
       tabText: "Intelligent\nRole Analysis",
       subtitle: "Intelligent Skills Parsing & Requirements Analysis",
       icon: <Brain className="h-8 w-8" />,
@@ -19,7 +20,7 @@ const HowWeWorkSection = () => {
     },
     {
       id: "step2", 
-      title: "Agent-Led Global Sourcing",
+      title: "Smart Talent Discovery",
       tabText: "Smart Talent\nDiscovery",
       subtitle: "Real-time Candidate Identification Worldwide",
       icon: <Globe className="h-8 w-8" />,
@@ -29,7 +30,7 @@ const HowWeWorkSection = () => {
     },
     {
       id: "step3",
-      title: "Autonomous Screening & Qualification", 
+      title: "Automated Candidate Evaluation", 
       tabText: "Automated Candidate\nEvaluation",
       subtitle: "Zero Human Filtering - Pure AI Assessment",
       icon: <Shield className="h-8 w-8" />,
@@ -39,17 +40,17 @@ const HowWeWorkSection = () => {
     },
     {
       id: "step4",
-      title: "Smart Outreach and Interview Scheduling",
+      title: "Smart Outreach & Interview Scheduling",
       tabText: "Smart Outreach\n& Interview Scheduling",
       subtitle: "24/7 Agent Operation & Coordination", 
       icon: <Calendar className="h-8 w-8" />,
-      image: "/lovable-uploads/637784cc-375b-44ac-97ff-c06a9954691a.png",
+      image: "/lovable-uploads/665aad5b-e81a-44d2-b556-acb35e50095f.png",
       content: "Our AI agent operates around the clock, conducting personalized outreach to qualified candidates, managing responses, and automatically scheduling interviews based on your availability. All communication is handled seamlessly without requiring your direct involvement.",
       number: 4
     },
     {
       id: "step5",
-      title: "AI-Powered Offer Management",
+      title: "Streamlined Offer Orchestration",
       tabText: "Streamlined Offer\nOrchestration",
       subtitle: "Final Delivery of Vetted Candidates",
       icon: <Handshake className="h-8 w-8" />,
