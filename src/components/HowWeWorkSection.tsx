@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -59,9 +60,22 @@ const HowWeWorkSection = () => {
     }
   ];
 
+  // Preload the first image for immediate display
+  React.useEffect(() => {
+    const firstImage = new Image();
+    firstImage.src = steps[0].image;
+  }, []);
+
   return (
     <section className="section-padding bg-white" id="how-it-works">
       <div className="container-wide">
+        {/* Preload critical images */}
+        <div className="hidden">
+          {steps.slice(0, 2).map((step) => (
+            <link key={step.id} rel="preload" as="image" href={step.image} />
+          ))}
+        </div>
+
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <div 
             ref={addToRefs}
@@ -134,7 +148,7 @@ const HowWeWorkSection = () => {
               </TabsList>
             </div>
 
-            {steps.map((step) => (
+            {steps.map((step, index) => (
               <TabsContent 
                 key={step.id}
                 value={step.id} 
@@ -164,6 +178,11 @@ const HowWeWorkSection = () => {
                       src={step.image} 
                       alt={step.title}
                       className="w-full h-full object-cover object-center rounded-lg"
+                      loading={index === 0 ? "eager" : "lazy"}
+                      decoding="async"
+                      fetchpriority={index === 0 ? "high" : "low"}
+                      width="800"
+                      height="600"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-synapse-primary/20 to-synapse-secondary/10 rounded-lg"></div>
                   </div>
