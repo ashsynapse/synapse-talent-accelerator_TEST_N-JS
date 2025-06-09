@@ -1,4 +1,5 @@
 
+
 import React, { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -180,7 +181,7 @@ const HowWeWorkSection = () => {
                       className="w-full h-full object-cover object-center rounded-lg"
                       loading={index === 0 ? "eager" : "lazy"}
                       decoding="async"
-                      fetchpriority={index === 0 ? "high" : "low"}
+                      fetchPriority={index === 0 ? "high" : "low"}
                       width="800"
                       height="600"
                     />
@@ -197,3 +198,4 @@ const HowWeWorkSection = () => {
 };
 
 export default HowWeWorkSection;
+
