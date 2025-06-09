@@ -76,7 +76,13 @@ const HowWeWorkSection = () => {
             className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           >
             <span className="bg-gradient-to-r from-synapse-dark via-synapse-primary to-synapse-secondary bg-clip-text text-transparent">
-              How Our Platform Works for You
+              How Our
+            </span>{" "}
+            <span className="text-synapse-dark">
+              Platform
+            </span>{" "}
+            <span className="bg-gradient-to-r from-synapse-dark via-synapse-primary to-synapse-secondary bg-clip-text text-transparent">
+              Works for You
             </span>
           </h2>
           <p 
