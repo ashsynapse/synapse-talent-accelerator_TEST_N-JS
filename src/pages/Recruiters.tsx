@@ -28,7 +28,7 @@ const Recruiters = () => {
       description="Join a high-performing global recruiter network. Earn top commissions, access live jobs, and work on your schedule with SRN."
     >
       <ReferralBanner />
-      <div className="min-h-screen pt-16 md:pt-20">
+      <div className="min-h-screen pt-12 md:pt-14">
         <RecruiterHeroSection />
         <RecruiterKPISection />
         <HowItWorksRecruiterSection />

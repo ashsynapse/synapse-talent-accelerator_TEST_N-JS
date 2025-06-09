@@ -4,9 +4,9 @@ import React from "react";
 const RecruiterKPISection = () => {
   const metrics = [
     { value: "$30K", description: "Maximum can earn per placement" },
-    { value: "500+", description: "Active Roles" },
-    { value: "48-Hour", description: "Average Match Time" },
-    { value: "97%", description: "Satisfaction" }
+    { value: "499+", description: "Active Roles" },
+    { value: "48-Hour", description: "Average Candidates Match Time" },
+    { value: "97%", description: "Recruiter Satisfaction" }
   ];
 
   return (

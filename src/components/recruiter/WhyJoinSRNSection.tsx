@@ -107,16 +107,16 @@ const WhyJoinSRNSection = () => {
             </blockquote>
             <div className="flex justify-center items-center gap-6 text-sm text-synapse-gray">
               <div className="flex items-center gap-2">
+                <DollarSign className="h-4 w-4 text-synapse-primary" />
+                <span>Max $30K per hire</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Briefcase className="h-4 w-4 text-synapse-primary" />
+                <span>499+ active roles</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-synapse-primary" />
-                <span>48hr avg placement</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-synapse-primary" />
-                <span>97% satisfaction rate</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="h-4 w-4 text-synapse-primary" />
-                <span>1000+ active recruiters</span>
+                <span>48 hours average candidate to job match time</span>
               </div>
             </div>
           </div>
