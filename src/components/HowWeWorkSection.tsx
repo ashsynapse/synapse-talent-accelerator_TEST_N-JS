@@ -73,9 +73,11 @@ const HowWeWorkSection = () => {
           </div>
           <h2 
             ref={addToRefs}
-            className="scroll-animate text-3xl md:text-4xl lg:text-5xl font-bold text-synapse-dark mb-4"
+            className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           >
-            How Our Platform Works for You
+            <span className="bg-gradient-to-r from-synapse-dark via-synapse-primary to-synapse-secondary bg-clip-text text-transparent">
+              How Our Platform Works for You
+            </span>
           </h2>
           <p 
             ref={addToRefs}
