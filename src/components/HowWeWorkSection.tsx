@@ -73,7 +73,7 @@ const HowWeWorkSection = () => {
           </div>
           <h2 
             ref={addToRefs}
-            className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold text-synapse-dark mb-4"
+            className="scroll-animate text-3xl md:text-4xl lg:text-5xl font-bold text-synapse-dark mb-4"
           >
             How Our Platform Works for You
           </h2>
