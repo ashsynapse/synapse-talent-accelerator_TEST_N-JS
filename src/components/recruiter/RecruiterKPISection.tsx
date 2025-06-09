@@ -3,10 +3,10 @@ import React from "react";
 
 const RecruiterKPISection = () => {
   const metrics = [
-    { label: "Active Recruiters", value: "1,000+" },
-    { label: "Avg Commission", value: "$10K+" },
-    { label: "Countries", value: "25+" },
-    { label: "Daily New Jobs", value: "5+" }
+    { label: "Up to $30K", value: "Per Placement" },
+    { label: "500+ Active Roles", value: "Live Jobs" },
+    { label: "48-Hour Avg Match", value: "Quick Results" },
+    { label: "97% Satisfaction", value: "Happy Recruiters" }
   ];
 
   return (
@@ -20,10 +20,10 @@ const RecruiterKPISection = () => {
             {metrics.map((metric, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-synapse-primary to-synapse-secondary bg-clip-text text-transparent mb-2">
-                  {metric.value}
+                  {metric.label}
                 </div>
                 <div className="text-synapse-gray font-medium">
-                  {metric.label}
+                  {metric.value}
                 </div>
               </div>
             ))}
