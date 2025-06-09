@@ -159,9 +159,9 @@ const HowWeWorkSection = () => {
                     <img 
                       src={step.image} 
                       alt={step.title}
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-center rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-synapse-primary/20 to-synapse-secondary/10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-synapse-primary/20 to-synapse-secondary/10 rounded-lg"></div>
                   </div>
                 </div>
               </TabsContent>
