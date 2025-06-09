@@ -155,11 +155,11 @@ const HowWeWorkSection = () => {
                       {step.content}
                     </p>
                   </div>
-                  <div className="relative h-48 md:h-auto order-1 md:order-2">
+                  <div className="relative h-64 md:h-80 order-1 md:order-2">
                     <img 
                       src={step.image} 
                       alt={step.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-synapse-primary/20 to-synapse-secondary/10"></div>
                   </div>
