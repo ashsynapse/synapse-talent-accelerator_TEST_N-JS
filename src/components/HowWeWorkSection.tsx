@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -61,18 +60,20 @@ const HowWeWorkSection = () => {
     }
   ];
 
-  // Preload the first image for immediate display
+  // Preload ALL images when component mounts
   React.useEffect(() => {
-    const firstImage = new Image();
-    firstImage.src = steps[0].image;
+    steps.forEach((step) => {
+      const img = new Image();
+      img.src = step.image;
+    });
   }, []);
 
   return (
     <section className="section-padding bg-white" id="how-it-works">
       <div className="container-wide">
-        {/* Preload critical images */}
+        {/* Preload all images using link tags for better browser optimization */}
         <div className="hidden">
-          {steps.slice(0, 2).map((step) => (
+          {steps.map((step) => (
             <link key={step.id} rel="preload" as="image" href={step.image} />
           ))}
         </div>
@@ -89,7 +90,7 @@ const HowWeWorkSection = () => {
             ref={addToRefs}
             className="scroll-animate text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           >
-            <span className="text-synapse-dark">
+            <span className="text-black">
               How Our Platform
             </span>{" "}
             <span className="bg-gradient-to-r from-synapse-dark via-synapse-primary to-synapse-secondary bg-clip-text text-transparent">
@@ -179,9 +180,9 @@ const HowWeWorkSection = () => {
                       src={step.image} 
                       alt={step.title}
                       className="w-full h-full object-cover object-center rounded-lg"
-                      loading={index === 0 ? "eager" : "lazy"}
+                      loading="eager"
                       decoding="async"
-                      fetchPriority={index === 0 ? "high" : "low"}
+                      fetchPriority="high"
                       width="800"
                       height="600"
                     />
@@ -198,4 +199,3 @@ const HowWeWorkSection = () => {
 };
 
 export default HowWeWorkSection;
-
