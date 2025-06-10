@@ -9,6 +9,7 @@ import IndustriesRecruiterSection from "../components/recruiter/IndustriesRecrui
 import RecruiterFinalCTASection from "../components/recruiter/RecruiterFinalCTASection";
 import RecruiterKPISection from "../components/recruiter/RecruiterKPISection";
 import ReferralBanner from "../components/recruiter/ReferralBanner";
+import RecruiterHeader from "../components/recruiter/RecruiterHeader";
 
 const Recruiters = () => {
   // Override the header to show only the recruiter style
@@ -26,6 +27,7 @@ const Recruiters = () => {
     <PageTemplate 
       title="Join Synapse Recruiter Network"
       description="Join a high-performing global recruiter network. Earn top commissions, access live jobs, and work on your schedule with SRN."
+      customHeader={<RecruiterHeader />}
     >
       <ReferralBanner />
       <div className="min-h-screen pt-24">
