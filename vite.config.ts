@@ -19,4 +19,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Disable minification to avoid SWC-related issues
+    minify: 'terser',
+    // Increase memory limit for build process
+    chunkSizeWarningLimit: 1600,
+  },
 }));
