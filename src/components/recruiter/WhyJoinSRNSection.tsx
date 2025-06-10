@@ -65,7 +65,7 @@ const WhyJoinSRNSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-synapse-light/30 hover:shadow-xl hover:border-synapse-primary/30 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden">
               {/* Highlight badge */}
@@ -87,39 +87,6 @@ const WhyJoinSRNSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Enhanced testimonial section */}
-        <div className="bg-gradient-to-r from-white via-synapse-lighter/30 to-white rounded-2xl p-8 md:p-12 text-center border-l-4 border-synapse-primary shadow-medium relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-synapse-primary/10 rounded-full blur-3xl"></div>
-          <div className="relative z-10">
-            <div className="flex justify-center mb-6">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-6 h-6 bg-gradient-to-r from-synapse-primary to-synapse-secondary rounded-full flex items-center justify-center">
-                    <span className="text-white text-xs">★</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <blockquote className="text-2xl md:text-3xl font-medium text-synapse-dark mb-6 italic leading-relaxed">
-              "SRN isn't just another recruiting platform—it's your complete business acceleration system. Speed, scale, and freedom combined."
-            </blockquote>
-            <div className="flex justify-center items-center gap-6 text-sm text-synapse-gray">
-              <div className="flex items-center gap-2">
-                <DollarSign className="h-4 w-4 text-synapse-primary" />
-                <span>Max $30K per hire</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Briefcase className="h-4 w-4 text-synapse-primary" />
-                <span>499+ active roles</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-synapse-primary" />
-                <span>48 hours average candidate to job match time</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
