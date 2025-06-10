@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { X, Megaphone } from "lucide-react";
+import { X } from "lucide-react";
 
 const ReferralBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -43,22 +43,14 @@ const ReferralBanner = () => {
       
       <div className="container-wide relative">
         <div className="flex items-center justify-between py-2 gap-4">
-          {/* Content Section with Icon */}
-          <div className="flex-1 flex items-center gap-3 text-center md:text-left">
-            {/* Megaphone Icon */}
-            <div className="flex-shrink-0">
-              <Megaphone className="h-5 w-5 md:h-6 md:w-6 text-white/90" />
-            </div>
-            
-            {/* Text Content */}
-            <div>
-              <h3 className="text-sm md:text-lg font-bold mb-0.5 leading-tight">
-                💸 Earn 5%—That's $10K–15K a Year.
-              </h3>
-              <p className="text-xs md:text-sm text-white/90 leading-relaxed">
-                Bring in US/CA recruiters. Get paid every month for 12 months.
-              </p>
-            </div>
+          {/* Content Section */}
+          <div className="flex-1 text-center md:text-left">
+            <h3 className="text-sm md:text-lg font-bold mb-0.5 leading-tight">
+              💸 Earn 5%—That's $10K–15K a Year.
+            </h3>
+            <p className="text-xs md:text-sm text-white/90 leading-relaxed">
+              Bring in US/CA recruiters. Get paid every month for 12 months.
+            </p>
           </div>
           
           {/* CTA Section */}
