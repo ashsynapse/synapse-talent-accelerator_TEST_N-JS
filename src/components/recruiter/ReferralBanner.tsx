@@ -26,11 +26,19 @@ const ReferralBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden fixed top-12 left-0 right-0 z-40 shadow-xl border-b border-white/10">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white rounded-full blur-xl"></div>
+    <div className="bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden fixed top-16 left-0 right-0 z-40 shadow-xl border-b border-white/10">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      {/* Grid Pattern Overlay */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
       </div>
       
       <div className="container-wide relative">
@@ -57,9 +65,6 @@ const ReferralBanner = () => {
                 {isHovered ? "Invite & Earn" : "Start Earning"}
                 <span className="text-sm">→</span>
               </span>
-              
-              {/* Refined glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-full"></div>
             </button>
             
             {/* Close Button */}
