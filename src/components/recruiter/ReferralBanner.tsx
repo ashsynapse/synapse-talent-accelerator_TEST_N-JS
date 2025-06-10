@@ -26,7 +26,7 @@ const ReferralBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden fixed top-16 left-0 right-0 z-40 shadow-xl border-b border-white/10">
+    <div className="bg-gradient-to-br from-synapse-primary via-synapse-secondary to-synapse-tertiary text-white relative overflow-hidden fixed top-0 left-0 right-0 z-50 shadow-xl border-b border-white/10">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
