@@ -178,7 +178,7 @@ const RecruiterHeader = () => {
   return (
     <header
       className={`fixed w-full z-40 transition-all duration-300 ${
-        bannerDismissed ? 'top-0' : 'top-12'
+        bannerDismissed ? 'top-0' : 'top-8'
       } ${
         isScrolled
           ? "bg-white shadow-soft py-2"
@@ -252,7 +252,7 @@ const RecruiterHeader = () => {
             </div>
           ))}
           
-          <div className="flex items-center gap-3 ml-8">
+          <div className="flex items-center gap-3 ml-16">
             <Button
               variant="default"
               className="bg-synapse-dark text-white hover:bg-synapse-dark/90 transition-colors"
