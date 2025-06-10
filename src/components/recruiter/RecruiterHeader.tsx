@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Plus, Minus, 
@@ -12,15 +11,28 @@ const RecruiterHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
+  const [bannerDismissed, setBannerDismissed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
+    // Check if banner was previously dismissed
+    const isDismissed = localStorage.getItem('referral-banner-dismissed');
+    setBannerDismissed(isDismissed === 'true');
+
+    // Listen for banner dismiss event
+    const handleBannerDismissed = () => {
+      setBannerDismissed(true);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener('referralBannerDismissed', handleBannerDismissed);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('referralBannerDismissed', handleBannerDismissed);
     };
   }, []);
 
@@ -165,7 +177,9 @@ const RecruiterHeader = () => {
 
   return (
     <header
-      className={`fixed w-full top-12 z-40 transition-all duration-300 ${
+      className={`fixed w-full z-40 transition-all duration-300 ${
+        bannerDismissed ? 'top-0' : 'top-12'
+      } ${
         isScrolled
           ? "bg-white shadow-soft py-2"
           : "bg-white/95 backdrop-blur-sm py-3"
@@ -240,14 +254,8 @@ const RecruiterHeader = () => {
           
           <div className="flex items-center gap-3 ml-8">
             <Button
-              className="btn-primary"
-              onClick={() => window.location.href = "/contact"}
-            >
-              Book Demo
-            </Button>
-            <Button
-              variant="outline"
-              className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors"
+              variant="default"
+              className="bg-synapse-dark text-white hover:bg-synapse-dark/90 transition-colors"
               onClick={() => window.open("https://app.synapserecruiternetwork.com/", "_blank")}
             >
               Login
@@ -318,17 +326,8 @@ const RecruiterHeader = () => {
             
             <div className="flex flex-col space-y-3 mt-6 pt-4 border-t border-gray-200">
               <Button
-                className="btn-primary w-full"
-                onClick={() => {
-                  window.location.href = "/contact";
-                  setMobileMenuOpen(false);
-                }}
-              >
-                Book Demo
-              </Button>
-              <Button
-                variant="outline"
-                className="border-synapse-primary text-synapse-primary hover:bg-synapse-primary hover:text-white transition-colors w-full"
+                variant="default"
+                className="bg-synapse-dark text-white hover:bg-synapse-dark/90 transition-colors w-full"
                 onClick={() => {
                   window.open("https://app.synapserecruiternetwork.com/", "_blank");
                   setMobileMenuOpen(false);

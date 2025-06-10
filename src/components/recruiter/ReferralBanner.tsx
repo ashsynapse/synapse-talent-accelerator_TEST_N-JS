@@ -17,6 +17,8 @@ const ReferralBanner = () => {
   const handleDismiss = () => {
     setIsVisible(false);
     localStorage.setItem('referral-banner-dismissed', 'true');
+    // Dispatch custom event to notify other components
+    window.dispatchEvent(new CustomEvent('referralBannerDismissed'));
   };
 
   const handleCTAClick = () => {
@@ -43,9 +45,9 @@ const ReferralBanner = () => {
       
       <div className="container-wide relative">
         <div className="flex items-center justify-between py-2 gap-4">
-          {/* Content Section */}
-          <div className="flex-1 text-center md:text-left">
-            <h3 className="text-sm md:text-lg font-bold mb-0.5 leading-tight">
+          {/* Content Section - Made narrower */}
+          <div className="flex-1 text-center md:text-left max-w-2xl">
+            <h3 className="text-sm md:text-base font-bold mb-0.5 leading-tight">
               💸 Earn 5%—That's $10K–15K a Year.
             </h3>
             <p className="text-xs md:text-sm text-white/90 leading-relaxed">
@@ -59,7 +61,7 @@ const ReferralBanner = () => {
               onClick={handleCTAClick}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="relative group bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-semibold text-xs md:text-sm px-3 md:px-6 py-1.5 md:py-2.5 rounded-full transition-all duration-300 transform hover:scale-105 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl overflow-hidden"
+              className="relative group bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-semibold text-xs md:text-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full transition-all duration-300 transform hover:scale-105 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-1.5">
                 {isHovered ? "Invite & Earn" : "Start Earning"}
